@@ -1,0 +1,6 @@
+framework module VLink {
+  umbrella header "VLink.h"
+  export *
+
+  module * { export * }
+}

@@ -1,0 +1,11 @@
+framework module CLDSmartSDK {
+  umbrella header "CLDSmartSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module CLDSmartSDK.Swift {
+  header "CLDSmartSDK-Swift.h"
+  requires objc
+}
