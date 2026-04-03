@@ -500,6 +500,7 @@ typedef SWIFT_ENUM(NSInteger, NetworkAPI, closed) {
   NetworkAPIPtzPresetDel = 54,
   NetworkAPIPtzPresetReturnSet = 55,
   NetworkAPIConnDevice = 56,
+  NetworkAPIDevicekeySynckey = 57,
 };
 
 
@@ -1025,6 +1026,7 @@ typedef SWIFT_ENUM(NSInteger, NetworkAPI, closed) {
   NetworkAPIPtzPresetDel = 54,
   NetworkAPIPtzPresetReturnSet = 55,
   NetworkAPIConnDevice = 56,
+  NetworkAPIDevicekeySynckey = 57,
 };
 
 
