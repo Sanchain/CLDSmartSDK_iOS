@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.source   = { :git => "ssh://git@gitlab.lindu-lab.com:8022/hongtao.liu/cldsmartsdk_ios.git" }
   s.vendored_frameworks = "CLDSmartSDK.xcframework", "VLink.xcframework"
   s.dependency "CocoaMQTT"
-  s.dependency "AgoraRtcEngine_iOS", '<= 4.6.1'
+  s.dependency "AgoraRtcEngine_iOS", '4.5.2'
   #s.ios.dependency 'AgoraRtcEngine_iOS/RtcBasic', '4.3.2'
   #s.ios.dependency 'AgoraRtcEngine_iOS/AINS', '4.3.2'
   #s.ios.dependency 'AgoraRtcEngine_iOS/AIAEC', '4.3.2'
