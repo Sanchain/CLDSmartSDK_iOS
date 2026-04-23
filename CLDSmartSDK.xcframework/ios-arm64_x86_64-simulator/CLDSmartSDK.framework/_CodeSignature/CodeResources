@@ -6,23 +6,23 @@
 	<dict>
 		<key>Headers/CLDSmartSDK-Swift.h</key>
 		<data>
-		29FK+Al+zmWmwT4oSqfwC1F0uAw=
+		G1YMJJPtvuZstJ7Fynxv9508JoE=
 		</data>
 		<key>Headers/CLDSmartSDK-umbrella.h</key>
 		<data>
-		BVRcRJgDI08CfM3c/gPBobYEFoI=
+		YDhHtI+gAdHVDQSQSuJ+M3SYHcg=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Zx5vD4IDw3slVgbkQxpXMm+SZNw=
+		pBzKgepHlcHutJHhg9toc9fPmsY=
 		</data>
 		<key>Modules/CLDSmartSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		64lyRyhJW1JdukEaKdNLP2V+8mQ=
+		IxEo42Xd3X06eNKtoLxt8/+ylAA=
 		</data>
 		<key>Modules/CLDSmartSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		3WSmyAbkpgxTv+Qvbjnst4EYI+o=
+		fihktqZF2rpy3M3B9XWXMjkG/dI=
 		</data>
 		<key>Modules/CLDSmartSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/CLDSmartSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		7CC6OUo6l1T0hyg9/dvXrgm1XoY=
+		HaDQv5Q/1LJTrmWTDyLBmNokTgs=
 		</data>
 		<key>Modules/CLDSmartSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		XqAr4IA5eTyJGQHZzzM0Kcq1RQI=
+		B3EsbghycOMTSeJ1OPxg4oNFlQE=
 		</data>
 		<key>Modules/CLDSmartSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/CLDSmartSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		kTjKXXaEICTg+MM1t/jekvawupc=
+		dNKPpJYgwHOJxpv43eoQpb93Ahg=
 		</data>
 		<key>Modules/CLDSmartSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		TyH1O8RZN5SxDZjnlBhSxwCGpqY=
+		qWkpzmMxiROFx20jeDFjCHbQVyg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -59,28 +59,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lShsvChlD7fI4slJwp3zGMRExHtioqyx7OKCzw8kC04=
+			ScKv1HZ4AdZYpH4/bNZWqZIUCSL9xGIHZ5yBlZklVO8=
 			</data>
 		</dict>
 		<key>Headers/CLDSmartSDK-umbrella.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			awXK1tQqG6aWf/+655n4J4RlayExIaf4U4uKbTBHbjA=
+			t+FawOYx13gDGBBRS60/60iQwPJ+JOugH2+61iOiKB8=
 			</data>
 		</dict>
 		<key>Modules/CLDSmartSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			514QI9J/LwbOFHG+qWqd/SiWziqwDC1oxDSvAekbeXM=
+			wJniYvPi2/PcScelVDKu13xiR28WhyfUddhzclkQoPY=
 			</data>
 		</dict>
 		<key>Modules/CLDSmartSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IruQuA7IWi6d2cSx6bP196uTeDY5cwkf9ByzcpxbhR4=
+			If/IDIEm92H02yzb31ZxARw0niUVO9gljbhQPBAKEe0=
 			</data>
 		</dict>
 		<key>Modules/CLDSmartSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -94,14 +94,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			92jky/X1dwYB0kyA7uYPjup6kweT/QHXv7NagIdKNow=
+			dgfK183JnmQhidsyrDHMbl6rMnX1nQ+b+ZgDwP+rZQk=
 			</data>
 		</dict>
 		<key>Modules/CLDSmartSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y983hZVT1d396+Ccl3zzeg0j2z4JL5a/S0QmaIyo1So=
+			51QECDlHROQrxhKWREqMi8iYAYFrovkThDlgW/PDQs4=
 			</data>
 		</dict>
 		<key>Modules/CLDSmartSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -115,14 +115,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PcjxEFBswWwY25A82hNufvjG3JdNUv79zVjSg6eAtO8=
+			w4nxja4ZgGrmL66Ud24p55/QpgCrBqXOc+RkWoRHYZI=
 			</data>
 		</dict>
 		<key>Modules/CLDSmartSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oOo3onSR5BFg841b20HDXDaYrDX7/fpxmxtywiZc6EY=
+			1FeVjs4bGw6wkP9BIrtv9fHnsNPBKZdhvfGdr08GLBg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

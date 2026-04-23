@@ -6,27 +6,27 @@
 	<dict>
 		<key>Headers/APBLEDevice.h</key>
 		<data>
-		JPcSXl/8HSXMbvNaUbgFdXL4i4g=
+		lFEgM6I1M42hDsOYoNNq8Q8q2RI=
 		</data>
 		<key>Headers/APBLEDeviceType.h</key>
 		<data>
-		bnLTrtDCp0URouWkKRToxb+XMk4=
+		a+XakA7gAbaihOFNU0k0noNrZi4=
 		</data>
 		<key>Headers/APBLEManager.h</key>
 		<data>
-		+qZReX3jtnHILzqcmdyMwlXK9JU=
+		61L/u917pH8p/r5XHvXkqcDV2u4=
 		</data>
 		<key>Headers/APBLEParameter.h</key>
 		<data>
-		uoLtlOwmd21UyXIGO3DV99bcFXQ=
+		xrIOilVkxPzlJZhG9l0E/KNfX1c=
 		</data>
 		<key>Headers/VLink.h</key>
 		<data>
-		5n7iBjVHv8tuupP2vL0Q8x7Yy4E=
+		bnyaIVBV9mdeDznJ7GpLB54nfoY=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		IAyDBQiJ04K2VxgcQz396/ilg8M=
+		m5qmBI2CUgrKwWDnpO98F/TbgSw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -41,65 +41,41 @@
 	<dict>
 		<key>Headers/APBLEDevice.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			JPcSXl/8HSXMbvNaUbgFdXL4i4g=
-			</data>
 			<key>hash2</key>
 			<data>
-			3I0pPoERLAoEkYQPAZA/yQJ9lwzrqLZJjWHy28Vbf7c=
+			pEkRVF+vP9+NLKYOul//WKQaIj4BWf469IOZOqiTT7w=
 			</data>
 		</dict>
 		<key>Headers/APBLEDeviceType.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			bnLTrtDCp0URouWkKRToxb+XMk4=
-			</data>
 			<key>hash2</key>
 			<data>
-			YXGhKRw7CFTIn3I/S4QD9s0RCCBw5fhhZAtD43VNwGQ=
+			Gnk4CB9ch1PkMta1gum7pewbIBjDYmHUaEjdPJynTmw=
 			</data>
 		</dict>
 		<key>Headers/APBLEManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			+qZReX3jtnHILzqcmdyMwlXK9JU=
-			</data>
 			<key>hash2</key>
 			<data>
-			UyuELt6TskIkcnzJ31W+zan6NytMLrarvGWIQacf33A=
+			G3aOtm2SuWMkRbM3w+DOsOwxmQIKtHH22j4Futxwm1Y=
 			</data>
 		</dict>
 		<key>Headers/APBLEParameter.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			uoLtlOwmd21UyXIGO3DV99bcFXQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			i07pCLtJGoFeeCDgI8Fe4MRMirmHJMpTblVQW3io5o8=
+			dwBD1W+bjkL+wziIhGEgaq474TcMqOzUwp3c5nI7Nr4=
 			</data>
 		</dict>
 		<key>Headers/VLink.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			5n7iBjVHv8tuupP2vL0Q8x7Yy4E=
-			</data>
 			<key>hash2</key>
 			<data>
-			pgEFXT05hgexBhFDJ0FdjrxNXb6yQh7fsixfZz6cYfA=
+			e6rxZ5lBjoMUe3xX6KUEBa99wf6Ep1ywjz1Nxa2KG2Y=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			XYPygulti0HovIPeLatCNj2o4N8=
-			</data>
 			<key>hash2</key>
 			<data>
 			LJ+sqoMtPlv//rigSJlFyiIszVHYaKBcjtbAc440IrM=
@@ -107,10 +83,6 @@
 		</dict>
 		<key>VLink.podspec</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			1KOrFPGWLfB9yuZXzTzEilZmS1U=
-			</data>
 			<key>hash2</key>
 			<data>
 			jq13FvJkyqldtpTBkECQRTC3ZEeSvkF0LONzVa+Q5d4=
