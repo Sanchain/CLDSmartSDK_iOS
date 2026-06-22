@@ -6,11 +6,11 @@
 	<dict>
 		<key>Headers/APBLEDevice.h</key>
 		<data>
-		lFEgM6I1M42hDsOYoNNq8Q8q2RI=
+		tXAoXkzR21NOoq/7yxHi68U2OEo=
 		</data>
 		<key>Headers/APBLEDeviceType.h</key>
 		<data>
-		a+XakA7gAbaihOFNU0k0noNrZi4=
+		edgz4wL37YoqkK7r9JsBo4+N8Zg=
 		</data>
 		<key>Headers/APBLEManager.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/APBLEParameter.h</key>
 		<data>
-		xrIOilVkxPzlJZhG9l0E/KNfX1c=
+		mLHK1KzIXGNC+Ov4fepmNdnbKOM=
 		</data>
 		<key>Headers/VLink.h</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		m5qmBI2CUgrKwWDnpO98F/TbgSw=
+		ejl6WgOjaOTGAE1uKJ/W4n/vqxs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -43,14 +43,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pEkRVF+vP9+NLKYOul//WKQaIj4BWf469IOZOqiTT7w=
+			N+L/E1y56wyGs0rgEGaSrGeC4efqmxRPkUydhFHfMu4=
 			</data>
 		</dict>
 		<key>Headers/APBLEDeviceType.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Gnk4CB9ch1PkMta1gum7pewbIBjDYmHUaEjdPJynTmw=
+			wp21r5+SpvpWTxyqI3XJ/KLMeN4bdt9iebXdo9GHXW0=
 			</data>
 		</dict>
 		<key>Headers/APBLEManager.h</key>
@@ -64,7 +64,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dwBD1W+bjkL+wziIhGEgaq474TcMqOzUwp3c5nI7Nr4=
+			Lo853oGHJ5PDWoMB0i4q76NMrY6FZL+Bg2IBW1H+UTA=
 			</data>
 		</dict>
 		<key>Headers/VLink.h</key>

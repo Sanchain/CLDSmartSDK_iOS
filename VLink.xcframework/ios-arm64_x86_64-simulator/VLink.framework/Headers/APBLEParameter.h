@@ -862,6 +862,34 @@ typedef struct {
 @property (nonatomic, copy) NSString *dn;
 @property (nonatomic, copy) NSString *pairingCode; // --- [新增] 供外部访问的配对码字符串 ---
 @end
+
+// 上报防拆告警事件
+typedef struct {
+    uint32_t local_timestamp;
+    uint32_t event_id;
+    uint8_t type;
+} APReportTamperAlarmResp_t;
+@interface APReportTamperAlarmResp : APBLEParameter
+@property (nonatomic, assign) uint32_t local_timestamp;
+@property (nonatomic, assign) uint32_t event_id;
+@property (nonatomic, assign) uint8_t type; // 拆卸类型：0-前锁，1-后锁
+@end
+
+// 人脸白名单(0x9092)
+typedef struct {
+    uint32_t local_timestamp;
+    uint16_t user_id; //用户ID
+    uint16_t whitelist_id; //白名单的唯一编号
+    uint8_t type; //默认传0，0x00=人脸白名单
+}APWhitelistResp_t;
+@interface APWhitelistResp : APBLEParameter
+@property (nonatomic, assign) uint32_t local_timestamp;
+@property (nonatomic, assign) uint16_t user_id;
+@property (nonatomic, assign) uint16_t whitelist_id;
+@property (nonatomic, assign) uint8_t type;
++(NSArray<APWhitelistResp *> *)listWithData:(NSData *)data;
+@end
+
 #pragma pack()
 NS_ASSUME_NONNULL_END
 

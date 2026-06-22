@@ -20,7 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 ///< 设备mac地址
 @property (nonatomic, copy, readonly) NSString *mac;
-
+///< 带前缀的mac地址
+@property (nonatomic, copy, readonly) NSString *mac_prefix;
 @property (nonatomic, copy, readonly) NSString *mac_format;
 
 ///< 设备是否绑定

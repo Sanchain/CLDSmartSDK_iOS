@@ -97,7 +97,7 @@ typedef NS_ENUM(NSInteger, APBLEDeviceMatchType) {
     APBLEDeviceMatchTypeS398DLC = 75,
     APBLEDeviceMatchTypeC630D = 76,
     APBLEDeviceMatchTypeDoorBellDuo = 81,
-    
+    APBLEDeviceMatchTypeB312US3L = 84, //B312US三语版    
     APBLEDeviceMatchTypeD288 = 999999,
 };
 
@@ -154,12 +154,14 @@ typedef NS_ENUM(NSUInteger, APBLEVLinkCommandType) {
     APBLEVLinkCommandType_GetLLStatus = 0x80A6, ///< 获取门锁和锁舌状态
     APBLEVLinkCommandType_GetDoorStatus = 0x80A7, ///< 获取门磁状态
     APBLEVLinkCommandType_LockAllAttr = 0x80B0, ///< 获取门锁所有属性(不包含密码列表信息)
+    
     ///< ==================================OTA
     APBLEVLinkCommandType_OTARequest = 0xC010, ///< OTA升级前准备
     APBLEVLinkCommandType_OTAFileInfo = 0xC011, ///< OTA文件信息
     APBLEVLinkCommandType_OTAFileOffset = 0xC012, ///< OTA文件偏移
     APBLEVLinkCommandType_OTAFileData = 0xC013, ///< OTA文件数据
     APBLEVLinkCommandType_OTAFinished = 0xC014, ///< OTA升级结束
+    
     ///< ==================================9xxx系列
     APBLEVLinkCommandType_NetConfig = 0x9001,           ///< 配网
     APBLEVLinkCommandType_CheckActivate = 0x9002,       ///< 配网激活状态
@@ -202,8 +204,11 @@ typedef NS_ENUM(NSUInteger, APBLEVLinkCommandType) {
     APBLEVLinkCommandType_AddFace = 0x9084, ///< 添加人脸
     APBLEVLinkCommandType_CancelAddFace = 0x9085, ///< 取消添加人脸
     APBLEVLinkCommandType_FaceProgressNotify = 0x9086, ///< 人脸添加结果上报
-    /** 上报防拆告警事件 */
-    APBLEVLinkCommandType_ReportTamperAlarm = 0x9088,
+    APBLEVLinkCommandType_ReportTamperAlarm = 0x9088, /// 上报防拆告警事件
+    APBLEVLinkCommandType_AddFaceWhitelist = 0x9089, /// 添加人脸白名单
+    APBLEVLinkCommandType_CancelAddFaceWhitelist = 0x9090, /// 取消添加人脸白名单
+    APBLEVLinkCommandType_FaceWhitelistProgressNotify = 0x9091, ///人脸白名单添加结果上报
+    APBLEVLinkCommandType_SyncFaceWhitelist = 0x9092, /// 同步人脸白名单
 };
 
 
