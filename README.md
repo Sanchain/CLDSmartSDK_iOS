@@ -1,37 +1,370 @@
 # CLDSmartSDK_iOS
 
-#### 介绍
-集成FuweiCloud接口、音视频模块、蓝牙模块功能的SDK
+CLDSmartSDK iOS SDK 提供账号认证、设备绑定、蓝牙通信、IoT 控制、消息推送和音视频能力。
 
-#### 软件架构
-软件架构说明
+- 当前版本：`1.1.0`
+- 最低系统：iOS 13.0
+- Swift：5.9 或更高版本
+- 分发形式：静态 XCFramework
+- 完整接口文档：[CLDSmartSDK 开发文档](https://wvue9d885o0.feishu.cn/wiki/FKAcwoh0TibL0Sk99nfcgD2gn8f)
 
+> `1.1.0` 的账号认证接口面向 Swift。Objective-C 工程需要增加一层 Swift 包装后调用。
 
-#### 安装教程
+## 安装
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+在客户 App 的 `Podfile` 中添加：
 
-#### 使用说明
+```ruby
+platform :ios, '13.0'
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+source 'https://github.com/CocoaPods/Specs.git'
 
-#### 参与贡献
+target 'YourApp' do
+  use_frameworks!
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+  pod 'CLDSmartSDK_iOS',
+      :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
+      :tag => '1.1.0'
+end
+```
 
+执行：
 
-#### 特技
+```bash
+pod install --repo-update
+```
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+请使用 `.xcworkspace` 打开工程。Pod 会同时处理 VLink、CocoaMQTT 和 Agora 依赖；不要再手动嵌入旧版 `CLDSmartSDK.xcframework`、VLink 或 CocoaMQTT，否则可能出现重复类或重复符号。
+
+Swift 文件中导入：
+
+```swift
+import CLDSmartSDK
+```
+
+直接使用 `APBLEDevice` 等 VLink 类型时，还需要：
+
+```swift
+import VLink
+```
+
+## 初始化
+
+SDK 的所有账号和设备接口都必须在 `initEngine` 成功后调用。App ID 和 Secret Key 由 SDK 服务方分配，不要提交到公开仓库或输出到日志。
+
+```swift
+import CLDSmartSDK
+
+let engine = CldSmartEngine.shared
+
+let config = CldSmartEngineConfig(
+    serverCode: .us,
+    language: .en,
+    isDevServer: false
+)
+
+engine.initEngine(
+    appId: "<YOUR_APP_ID>",
+    // secertKey 是 1.1.0 公开 API 的实际参数名，请保持该拼写。
+    secertKey: "<YOUR_SECRET_KEY>",
+    config: config
+) { success in
+    guard success else {
+        print("CLDSmartSDK initialization failed")
+        return
+    }
+
+    // 在这里继续执行账号登录流程。
+}
+```
+
+服务器配置：
+
+| `serverCode` | 区域 | 账号 `countryCode` | `regionCode` |
+| --- | --- | --- | --- |
+| `.mainland` | 中国大陆 | `+86` | `CN` |
+| `.us` | 美国/国际邮箱 | `N` | `US` |
+| `.taiwan` | 中国台湾 | `+886` | `TW` |
+
+`isDevServer: true` 使用测试环境，`false` 使用正式环境。App ID、Secret Key、服务器区域和环境必须属于同一套后台配置。
+
+## 选择账号模式
+
+SDK 支持两种互斥的账号接入模式。每个 App 应根据合作方案选择一种，不要在同一用户会话中混用。
+
+### 模式一：客户自有账号
+
+客户 App 自己完成注册和登录，取得稳定且唯一的客户用户 ID，然后调用 `login(account:)` 初始化 SDK 用户会话。该方法不是密码登录接口。
+
+调用顺序：
+
+```text
+initEngine -> 客户 App 登录 -> 取得稳定用户 ID -> login(account:)
+```
+
+```swift
+func loginWithCustomerAccount(
+    customerUserID: String,
+    completion: @escaping (Bool) -> Void
+) {
+    engine.initEngine(
+        appId: "<YOUR_APP_ID>",
+        secertKey: "<YOUR_SECRET_KEY>",
+        config: config
+    ) { initialized in
+        guard initialized else {
+            completion(false)
+            return
+        }
+
+        // customerUserID 必须在客户账号系统内长期稳定且唯一。
+        engine.login(account: customerUserID) { success in
+            if success {
+                engine.getMqttConfig()
+            }
+            completion(success)
+        }
+    }
+}
+```
+
+切换客户用户时，必须清除旧用户会话，防止读取到上一个用户的设备数据：
+
+```swift
+engine.logout { _ in
+    // 即使服务端登出因网络问题失败，也应清除本地旧会话。
+    engine.deinitEngine()
+
+    engine.initEngine(
+        appId: "<YOUR_APP_ID>",
+        secertKey: "<YOUR_SECRET_KEY>",
+        config: config
+    ) { initialized in
+        guard initialized else { return }
+
+        engine.login(account: newCustomerUserID) { success in
+            if success {
+                engine.getMqttConfig()
+            }
+        }
+    }
+}
+```
+
+### 模式二：CLDSmart 公司账号
+
+客户直接使用 SDK 提供的注册、密码登录、找回密码和修改密码接口。所有接口仍然要求先成功调用 `initEngine`。
+
+账号上下文示例：
+
+```swift
+let authContext = CLDAuthContext(
+    countryCode: "N",       // 中国大陆手机号使用 "+86"
+    regionCode: "US",       // 中国大陆使用 "CN"
+    deviceToken: apnsToken,  // APNs 十六进制 Token
+    isAPNsSandbox: true      // APNs Sandbox 为 true，Production 为 false
+)
+```
+
+#### 注册
+
+注册分两步：发送验证码，然后校验验证码。
+
+```swift
+engine.register(
+    account: account,
+    password: password,
+    context: authContext
+) { success, code, message in
+    guard success, code == 20000 else {
+        print(message ?? "Register failed")
+        return
+    }
+
+    // 提示用户输入收到的验证码。
+}
+
+engine.validateRegistrationCode(
+    account: account,
+    code: verificationCode
+) { success, code, message in
+    if success, code == 20000 {
+        // 注册完成，下一步调用密码登录。
+    }
+}
+```
+
+密码规则：8 至 12 位，字母、数字、符号至少包含两类。App 应在请求前完成输入校验。
+
+#### 密码登录
+
+```swift
+engine.login(
+    account: account,
+    password: password,
+    context: authContext
+) { userInfo, code, message in
+    guard code == 20000, let userInfo else {
+        print(message ?? "Login failed")
+        return
+    }
+
+    print("Logged in account: \(userInfo.account)")
+
+    // 登录和 MQTT 启动是两个独立步骤。
+    engine.getMqttConfig()
+}
+```
+
+SDK 会保存登录响应中的 access token 和 refresh token。密码登录会话的 access token 失效时，SDK 会合并并发刷新请求；刷新成功后自动重试等待中的原请求。客户 App 不需要直接调用 `refresh-access-token`。
+
+#### 找回密码
+
+找回密码分三步。`resetToken` 属于敏感信息，应只在本次流程的内存中短暂保存，不要写日志或持久化。
+
+```swift
+engine.requestPasswordResetCode(
+    account: account,
+    context: authContext
+) { success, code, message in
+    // 成功后提示用户输入验证码。
+}
+
+engine.validatePasswordResetCode(
+    account: account,
+    code: verificationCode
+) { resetToken, code, message in
+    guard code == 20000, let resetToken, !resetToken.isEmpty else {
+        return
+    }
+
+    engine.resetPassword(
+        resetToken: resetToken,
+        newPassword: newPassword,
+        passwordConfirmation: newPassword
+    ) { success, code, message in
+        // 处理重置结果，并立即清除内存中的 resetToken。
+    }
+}
+```
+
+#### 设置或修改密码
+
+`setPassword` 仅适用于已经登录且 `userInfo.has_password == false` 的第三方登录账号。
+
+```swift
+engine.setPassword(password: newPassword) { success, code, message in
+    // 处理首次设置密码结果。
+}
+
+engine.changePassword(
+    currentPassword: currentPassword,
+    newPassword: newPassword,
+    passwordConfirmation: newPassword
+) { success, code, message in
+    // 处理修改密码结果。
+}
+```
+
+#### 登出
+
+```swift
+engine.logout { success in
+    if !success {
+        // 普通重试可以保留会话；切换用户时必须额外调用 deinitEngine 清理。
+    }
+}
+```
+
+## APNs 推送 Token
+
+正式 App 应启用 Push Notifications Capability，并注册远程通知。登录请求中的 `device_token` 和 `reg_token` 使用同一个 APNs Token。
+
+```swift
+private var apnsToken = ""
+
+func application(
+    _ application: UIApplication,
+    didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data
+) {
+    let token = deviceToken
+        .map { String(format: "%02x", $0) }
+        .joined()
+
+    apnsToken = token
+
+    // 如果 Token 在登录后才取得，通知服务端更新。
+    if CldSmartEngine.shared.isLoggedIn {
+        CldSmartEngine.shared.refreshAPNs(token: token) { success in
+            print("APNs token updated: \(success)")
+        }
+    }
+}
+```
+
+Debug/Sandbox 构建使用 `isAPNsSandbox: true`，正式 APNs 环境使用 `false`。SDK 在 Token 为空时会生成开发占位值，但占位值不能接收推送，生产环境必须传入真实 Token。
+
+## 权限与 Capability
+
+根据实际启用的功能配置：
+
+```xml
+<key>NSBluetoothAlwaysUsageDescription</key>
+<string>Used to discover and communicate with smart devices.</string>
+<key>NSLocalNetworkUsageDescription</key>
+<string>Used to discover and configure devices on the local network.</string>
+<key>NSLocationWhenInUseUsageDescription</key>
+<string>Used to read Wi-Fi information during device setup.</string>
+<key>NSMicrophoneUsageDescription</key>
+<string>Used for device voice intercom.</string>
+```
+
+- 蓝牙设备：开启 Bluetooth 权限。
+- Wi-Fi 配网需要读取 SSID 时：开启 Access WiFi Information Capability，并配置定位权限。
+- 推送：开启 Push Notifications；需要后台接收时再开启 Remote notifications Background Mode。
+- 视频对讲：使用语音功能时配置麦克风权限。
+
+权限用途文案应由客户根据 App 的实际业务和隐私政策调整。
+
+## 请求结果与线程
+
+- 服务端业务成功码为 `20000`。
+- SDK 网络异常公共错误码为 `CldSmartEngine.networkAnomalyCode`，当前值为 `-1009`。
+- 回调不保证位于主线程；更新 UI 时请切换到主线程。
+- 不要在日志中输出密码、access token、refresh token、APNs Token、MQTT 用户名或密码。
+
+## 常见问题
+
+### `No such module CLDSmartSDK`
+
+重新执行 `pod install --repo-update`，并使用 `.xcworkspace` 打开工程。
+
+### `APBLEResponse is implemented in both ...`
+
+工程同时加载了两份 VLink/APBLE 实现。删除手动嵌入的旧版 CLDSmartSDK、VLink 或重复 Pod，清理 Build Folder 后重新安装 App。
+
+### 登录成功但 MQTT 未连接
+
+确认登录成功后调用了 `engine.getMqttConfig()`。登录 API 本身不会自动启动 MQTT。
+
+### `reg_token is a required field`
+
+生产环境应先取得真实 APNs Token，并通过 `CLDAuthContext.deviceToken` 传入密码登录接口。确认 `device_token` 和 `reg_token` 使用同一个非空值。
+
+### 手机号或邮箱注册失败
+
+确认 SDK 服务器、App ID/Secret Key、`countryCode` 和 `regionCode` 属于同一区域；中国大陆手机号的 `countryCode` 必须是 `+86`，不能传 `86` 或 `N`。
+
+### 切换账号后仍看到旧设备
+
+不要直接用新账号覆盖旧会话。按“服务端登出 -> `deinitEngine` -> `initEngine` -> 新账号登录”的顺序切换。
+
+## 版本说明
+
+### 1.1.0
+
+- 增加注册、密码登录、找回密码、设置密码和修改密码接口。
+- 增加 access token 并发刷新与原请求自动重试。
+- 支持客户自有账号和 CLDSmart 公司账号两种接入模式。
+- XCFramework 改为静态分发并提供 Swift Module Interface。
+- MQTT 连接日志进行敏感信息脱敏。
