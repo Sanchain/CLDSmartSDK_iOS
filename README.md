@@ -2,13 +2,13 @@
 
 CLDSmartSDK iOS SDK 提供账号认证、设备绑定、蓝牙通信、IoT 控制、消息推送和音视频能力。
 
-- 当前版本：`1.1.0`
+- 当前版本：`1.2.0`
 - 最低系统：iOS 13.0
 - Swift：5.9 或更高版本
 - 分发形式：静态 XCFramework
 - 完整接口文档：[CLDSmartSDK 开发文档](https://wvue9d885o0.feishu.cn/wiki/FKAcwoh0TibL0Sk99nfcgD2gn8f)
 
-> `1.1.0` 的账号认证接口面向 Swift。Objective-C 工程需要增加一层 Swift 包装后调用。
+> `1.2.0` 的账号认证和账号删除接口面向 Swift。Objective-C 工程需要增加一层 Swift 包装后调用。
 
 ## 安装
 
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.1.0'
+      :tag => '1.2.0'
 end
 ```
 
@@ -65,7 +65,7 @@ let config = CldSmartEngineConfig(
 
 engine.initEngine(
     appId: "<YOUR_APP_ID>",
-    // secertKey 是 1.1.0 公开 API 的实际参数名，请保持该拼写。
+    // secertKey 是公开 API 的实际参数名，请保持该拼写。
     secertKey: "<YOUR_SECRET_KEY>",
     config: config
 ) { success in
@@ -82,9 +82,9 @@ engine.initEngine(
 
 | `serverCode` | 区域 | 账号 `countryCode` | `regionCode` |
 | --- | --- | --- | --- |
-| `.mainland` | 中国大陆 | `+86` | `CN` |
+| `.mainland` | 中国大陆 | 手机号：`+86`；邮箱：`N` | `CN` |
 | `.us` | 美国/国际邮箱 | `N` | `US` |
-| `.taiwan` | 中国台湾 | `+886` | `TW` |
+| `.taiwan` | 中国台湾 | 手机号：`+886`；邮箱：`N` | `TW` |
 
 `isDevServer: true` 使用测试环境，`false` 使用正式环境。App ID、Secret Key、服务器区域和环境必须属于同一套后台配置。
 
@@ -159,8 +159,8 @@ engine.logout { _ in
 
 ```swift
 let authContext = CLDAuthContext(
-    countryCode: "N",       // 中国大陆手机号使用 "+86"
-    regionCode: "US",       // 中国大陆使用 "CN"
+    countryCode: "N",       // 邮箱（包括中国区邮箱）使用 "N"；中国大陆手机号使用 "+86"
+    regionCode: "US",       // 中国区账号（手机号或邮箱）均使用 "CN"
     deviceToken: apnsToken,  // APNs 十六进制 Token
     isAPNsSandbox: true      // APNs Sandbox 为 true，Production 为 false
 )
@@ -266,6 +266,46 @@ engine.changePassword(
 }
 ```
 
+#### 删除公司账号
+
+删除账号仅适用于已通过公司账号密码接口登录的用户，分为“发送验证码”和“确认删除”两步。删除操作不可恢复，正式 App 应在调用前再次向用户确认。
+
+```swift
+// ===== 删除公司账号调用示例开始 =====
+
+// 第一步：向当前登录账号发送删除验证码。
+func requestAccountDeletionCode() {
+    engine.sendDeleteAccountVerificationCode { success, code, message in
+        guard success, code == 20000 else {
+            print(message ?? "发送删除账号验证码失败")
+            return
+        }
+
+        // 提示用户输入收到的验证码，不要在日志中打印验证码。
+    }
+}
+
+// 第二步：用户确认后，使用当前密码和验证码永久删除账号。
+func confirmAccountDeletion(password: String, verificationCode: String) {
+    engine.deleteAccount(
+        password: password,
+        verificationCode: verificationCode
+    ) { success, code, message in
+        guard success, code == 20000 else {
+            print(message ?? "删除账号失败")
+            return
+        }
+
+        // SDK 已清除本地 Token、用户资料并断开 MQTT。
+        // 客户 App 应清理自己的账号页面状态并返回登录页。
+    }
+}
+
+// ===== 删除公司账号调用示例结束 =====
+```
+
+原有 `deleteAccount(captcha:)` 是 OAuth 账号的图片验证码删除接口，不要用于公司账号密码登录流程。
+
 #### 登出
 
 ```swift
@@ -353,13 +393,20 @@ Debug/Sandbox 构建使用 `isAPNsSandbox: true`，正式 APNs 环境使用 `fal
 
 ### 手机号或邮箱注册失败
 
-确认 SDK 服务器、App ID/Secret Key、`countryCode` 和 `regionCode` 属于同一区域；中国大陆手机号的 `countryCode` 必须是 `+86`，不能传 `86` 或 `N`。
+确认 SDK 服务器、App ID/Secret Key、`countryCode` 和 `regionCode` 属于同一区域。中国大陆手机号使用 `countryCode: "+86"`、`regionCode: "CN"`；中国大陆邮箱使用 `countryCode: "N"`、`regionCode: "CN"`。
 
 ### 切换账号后仍看到旧设备
 
 不要直接用新账号覆盖旧会话。按“服务端登出 -> `deinitEngine` -> `initEngine` -> 新账号登录”的顺序切换。
 
 ## 版本说明
+
+### 1.2.0
+
+- 增加公司账号删除验证码接口 `sendDeleteAccountVerificationCode(completion:)`。
+- 增加公司账号密码与验证码删除接口 `deleteAccount(password:verificationCode:completion:)`。
+- 删除成功后自动清除 SDK 本地 Token、用户资料并断开 MQTT。
+- 保留原有 OAuth `deleteAccount(captcha:)` 接口，兼容已有客户代码。
 
 ### 1.1.0
 

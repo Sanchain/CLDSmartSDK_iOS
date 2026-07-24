@@ -3417,6 +3417,150 @@
           },
           {
             "kind": "Function",
+            "name": "sendDeleteAccountVerificationCode",
+            "printedName": "sendDeleteAccountVerificationCode(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Swift.Int, Swift.String?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Swift.Int, Swift.String?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CLDSmartSDK14CldSmartEngineC33sendDeleteAccountVerificationCode10completionyySb_SiSSSgtc_tF",
+            "mangledName": "$s11CLDSmartSDK14CldSmartEngineC33sendDeleteAccountVerificationCode10completionyySb_SiSSSgtc_tF",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deleteAccount",
+            "printedName": "deleteAccount(password:verificationCode:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Swift.Int, Swift.String?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Swift.Int, Swift.String?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CLDSmartSDK14CldSmartEngineC13deleteAccount8password16verificationCode10completionySS_SSySb_SiSSSgtctF",
+            "mangledName": "$s11CLDSmartSDK14CldSmartEngineC13deleteAccount8password16verificationCode10completionySS_SSySb_SiSSSgtctF",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "logout",
             "printedName": "logout(completion:)",
             "children": [
@@ -16861,7 +17005,8 @@
             "moduleName": "CLDSmartSDK",
             "declAttributes": [
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -16905,7 +17050,8 @@
             "moduleName": "CLDSmartSDK",
             "declAttributes": [
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -16949,7 +17095,8 @@
             "moduleName": "CLDSmartSDK",
             "declAttributes": [
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -16993,7 +17140,8 @@
             "moduleName": "CLDSmartSDK",
             "declAttributes": [
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -17062,7 +17210,8 @@
             "mangledName": "$s11CLDSmartSDK14CLDAuthContextV11countryCode06regionF011deviceToken13isAPNsSandboxACSS_S2SSbtcfc",
             "moduleName": "CLDSmartSDK",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "init_kind": "Designated"
           }
@@ -40409,6 +40558,88 @@
             "fixedbinaryorder": 66
           },
           {
+            "kind": "Var",
+            "name": "sendDeleteAccountVerificationCode",
+            "printedName": "sendDeleteAccountVerificationCode",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.NetworkAPI.Type) -> CLDSmartSDK.NetworkAPI",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkAPI",
+                    "printedName": "CLDSmartSDK.NetworkAPI",
+                    "usr": "c:@M@CLDSmartSDK@E@NetworkAPI"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.NetworkAPI.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkAPI",
+                        "printedName": "CLDSmartSDK.NetworkAPI",
+                        "usr": "c:@M@CLDSmartSDK@E@NetworkAPI"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@CLDSmartSDK@E@NetworkAPI@NetworkAPISendDeleteAccountVerificationCode",
+            "mangledName": "$s11CLDSmartSDK10NetworkAPIO33sendDeleteAccountVerificationCodeyA2CmF",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 67
+          },
+          {
+            "kind": "Var",
+            "name": "deleteMemberAccount",
+            "printedName": "deleteMemberAccount",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.NetworkAPI.Type) -> CLDSmartSDK.NetworkAPI",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkAPI",
+                    "printedName": "CLDSmartSDK.NetworkAPI",
+                    "usr": "c:@M@CLDSmartSDK@E@NetworkAPI"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.NetworkAPI.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkAPI",
+                        "printedName": "CLDSmartSDK.NetworkAPI",
+                        "usr": "c:@M@CLDSmartSDK@E@NetworkAPI"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@CLDSmartSDK@E@NetworkAPI@NetworkAPIDeleteMemberAccount",
+            "mangledName": "$s11CLDSmartSDK10NetworkAPIO19deleteMemberAccountyA2CmF",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 68
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -44675,154 +44906,154 @@
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "StringLiteral",
-      "offset": 24292,
+      "offset": 25745,
       "length": 3,
       "value": "\"4\""
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 25400,
+      "offset": 26853,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 25419,
+      "offset": 26872,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "Array",
-      "offset": 28795,
+      "offset": 30248,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 35620,
+      "offset": 37073,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 37587,
+      "offset": 39040,
       "length": 3,
       "value": "120"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "StringLiteral",
-      "offset": 43851,
+      "offset": 45304,
       "length": 7,
       "value": "\"Arpha\""
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 46560,
+      "offset": 48013,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 54878,
+      "offset": 56331,
       "length": 2,
       "value": "90"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 56510,
+      "offset": 57963,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "BooleanLiteral",
-      "offset": 58348,
+      "offset": 59801,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 58367,
+      "offset": 59820,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 58382,
+      "offset": 59835,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 60200,
+      "offset": 61653,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "BooleanLiteral",
-      "offset": 65261,
+      "offset": 66714,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "BooleanLiteral",
-      "offset": 66286,
+      "offset": 67739,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 67418,
+      "offset": 68871,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 68202,
+      "offset": 69655,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 71172,
+      "offset": 72625,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 72926,
+      "offset": 74379,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 72968,
+      "offset": 74421,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 79443,
+      "offset": 80896,
       "length": 1,
       "value": "0"
     },
@@ -45438,434 +45669,434 @@
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
-      "offset": 4825,
+      "offset": 5983,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 4867,
+      "offset": 6025,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 12292,
+      "offset": 13450,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 12304,
+      "offset": 13462,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 12312,
+      "offset": 13470,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 12320,
+      "offset": 13478,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 12335,
+      "offset": 13493,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 12640,
+      "offset": 13798,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 12657,
+      "offset": 13815,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 12679,
+      "offset": 13837,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 12699,
+      "offset": 13857,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 12717,
+      "offset": 13875,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 12727,
+      "offset": 13885,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 12744,
+      "offset": 13902,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 12816,
+      "offset": 13974,
       "length": 7,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 12825,
+      "offset": 13983,
       "length": 5,
       "value": "2"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 12832,
+      "offset": 13990,
       "length": 4,
       "value": "3"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 12838,
+      "offset": 13996,
       "length": 7,
       "value": "4"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 12847,
+      "offset": 14005,
       "length": 9,
       "value": "5"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 12858,
+      "offset": 14016,
       "length": 12,
       "value": "6"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 14730,
+      "offset": 15888,
       "length": 2,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 14734,
+      "offset": 15892,
       "length": 6,
       "value": "2"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 14795,
+      "offset": 15953,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 14798,
+      "offset": 15956,
       "length": 7,
       "value": "2"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 14807,
+      "offset": 15965,
       "length": 6,
       "value": "3"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 17396,
+      "offset": 18554,
       "length": 5,
       "value": "20000"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 17468,
+      "offset": 18626,
       "length": 5,
       "value": "20005"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 17536,
+      "offset": 18694,
       "length": 5,
       "value": "10003"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 17615,
+      "offset": 18773,
       "length": 5,
       "value": "42208"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 17694,
+      "offset": 18852,
       "length": 5,
       "value": "42209"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 17756,
+      "offset": 18914,
       "length": 5,
       "value": "42236"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 17852,
+      "offset": 19010,
       "length": 5,
       "value": "42237"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 17913,
+      "offset": 19071,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 17988,
+      "offset": 19146,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 18041,
+      "offset": 19199,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 18103,
+      "offset": 19261,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 18162,
+      "offset": 19320,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 18233,
+      "offset": 19391,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 18623,
+      "offset": 19781,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 18657,
+      "offset": 19815,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 18689,
+      "offset": 19847,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 18750,
+      "offset": 19908,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 18788,
+      "offset": 19946,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 18975,
+      "offset": 20133,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 19001,
+      "offset": 20159,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 19026,
+      "offset": 20184,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 19089,
+      "offset": 20247,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 19111,
+      "offset": 20269,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 19137,
+      "offset": 20295,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 19162,
+      "offset": 20320,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 19180,
+      "offset": 20338,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 19198,
+      "offset": 20356,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 19226,
+      "offset": 20384,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 19254,
+      "offset": 20412,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 19277,
+      "offset": 20435,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 21162,
+      "offset": 22320,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 21216,
+      "offset": 22374,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 21303,
+      "offset": 22461,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 21390,
+      "offset": 22548,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 21501,
+      "offset": 22659,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 21529,
+      "offset": 22687,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 21551,
+      "offset": 22709,
       "length": 1,
       "value": "1"
     },
@@ -47649,64 +47880,78 @@
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2308,
+      "length": 33,
+      "value": "67"
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2351,
+      "length": 19,
+      "value": "68"
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "BooleanLiteral",
-      "offset": 9190,
+      "offset": 9472,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "Array",
-      "offset": 9248,
+      "offset": 9530,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "StringLiteral",
-      "offset": 9274,
+      "offset": 9556,
       "length": 27,
       "value": "\"com.cldsmart.sdk.userinfo\""
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "Array",
-      "offset": 9529,
+      "offset": 9811,
       "length": 303,
       "value": "[\"password\", \"password_confirmation\", \"old_password\", \"current_password\", \"new_password\", \"new_password_confirmation\", \"validate_code\", \"secret\", \"secret_key\", \"app_client_secret\", \"sign\", \"signature\"]"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "Array",
-      "offset": 9924,
+      "offset": 10206,
       "length": 189,
       "value": "[\"authorization\", \"token\", \"access_token\", \"refresh_token\", \"device_token\", \"reg_token\", \"reset_token\", \"member_token\"]"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "Dictionary",
-      "offset": 12541,
+      "offset": 12823,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "Dictionary",
-      "offset": 14102,
+      "offset": 14384,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "BooleanLiteral",
-      "offset": 28009,
+      "offset": 28291,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "StringLiteral",
-      "offset": 30147,
+      "offset": 30429,
       "length": 17,
       "value": "\"urlPathParamKey\""
     },

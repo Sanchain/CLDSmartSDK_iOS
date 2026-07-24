@@ -146,6 +146,8 @@ extension CLDSmartSDK.CldSmartEngine {
   public func resetPassword(resetToken: Swift.String, newPassword: Swift.String, passwordConfirmation: Swift.String, completion: @escaping CLDSmartSDK.CLDAuthBlock)
   public func setPassword(password: Swift.String, completion: @escaping CLDSmartSDK.CLDAuthBlock)
   public func changePassword(currentPassword: Swift.String, newPassword: Swift.String, passwordConfirmation: Swift.String, completion: @escaping CLDSmartSDK.CLDAuthBlock)
+  public func sendDeleteAccountVerificationCode(completion: @escaping CLDSmartSDK.CLDAuthBlock)
+  public func deleteAccount(password: Swift.String, verificationCode: Swift.String, completion: @escaping CLDSmartSDK.CLDAuthBlock)
   public func logout(completion: @escaping CLDSmartSDK.CLDBoolBlock)
   public func getMqttConfig()
   public func fetchCaptcha(intent: CLDSmartSDK.CLDCaptchaIntent, completion: @escaping CLDSmartSDK.CLDStringBlock)
@@ -1241,6 +1243,8 @@ public enum NetworkMethod : Swift.String {
   case ptzPresetReturnSet
   case connDevice
   case devicekeySynckey
+  case sendDeleteAccountVerificationCode
+  case deleteMemberAccount
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
   #endif

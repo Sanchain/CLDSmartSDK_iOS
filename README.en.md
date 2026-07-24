@@ -2,13 +2,13 @@
 
 CLDSmartSDK for iOS provides account authentication, device binding, Bluetooth communication, IoT control, push messaging, and audio/video capabilities.
 
-- Current version: `1.1.0`
+- Current version: `1.2.0`
 - Minimum deployment target: iOS 13.0
 - Swift: 5.9 or later
 - Distribution: static XCFramework
 - Full API documentation: [CLDSmartSDK Developer Documentation](https://wvue9d885o0.feishu.cn/wiki/FKAcwoh0TibL0Sk99nfcgD2gn8f)
 
-> Account APIs in `1.1.0` are exposed to Swift. An Objective-C application must add a Swift wrapper before calling them.
+> Account authentication and account-deletion APIs in `1.2.0` are exposed to Swift. An Objective-C application must add a Swift wrapper before calling them.
 
 ## Installation
 
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.1.0'
+      :tag => '1.2.0'
 end
 ```
 
@@ -65,7 +65,7 @@ let config = CldSmartEngineConfig(
 
 engine.initEngine(
     appId: "<YOUR_APP_ID>",
-    // secertKey is the spelling used by the public 1.1.0 API.
+    // secertKey is the spelling used by the public API.
     secertKey: "<YOUR_SECRET_KEY>",
     config: config
 ) { success in
@@ -82,9 +82,9 @@ Server and account-region mapping:
 
 | `serverCode` | Region | Account `countryCode` | `regionCode` |
 | --- | --- | --- | --- |
-| `.mainland` | Mainland China | `+86` | `CN` |
+| `.mainland` | Mainland China | Phone: `+86`; email: `N` | `CN` |
 | `.us` | US/international email | `N` | `US` |
-| `.taiwan` | Taiwan | `+886` | `TW` |
+| `.taiwan` | Taiwan | Phone: `+886`; email: `N` | `TW` |
 
 Set `isDevServer` to `true` for the test environment and `false` for production. The App ID, Secret Key, server region, and environment must belong to the same backend configuration.
 
@@ -159,8 +159,8 @@ Create the account context:
 
 ```swift
 let authContext = CLDAuthContext(
-    countryCode: "N",       // Use "+86" for a mainland China phone number.
-    regionCode: "US",       // Use "CN" for mainland China.
+    countryCode: "N",       // Use "N" for email (including China); use "+86" for a mainland China phone.
+    regionCode: "US",       // Use "CN" for any mainland China account.
     deviceToken: apnsToken,  // Hex-encoded APNs token.
     isAPNsSandbox: true      // true for APNs Sandbox, false for Production.
 )
@@ -266,6 +266,47 @@ engine.changePassword(
 }
 ```
 
+#### Delete a CLDSmart Account
+
+Account deletion is only available to a user signed in through the CLDSmart password-login API. It has two steps: send a verification code, then confirm deletion. Deletion cannot be undone; a production application should ask for explicit confirmation before making the final request.
+
+```swift
+// ===== CLDSmart account-deletion example starts here =====
+
+// Step 1: Send a deletion verification code to the current account.
+func requestAccountDeletionCode() {
+    engine.sendDeleteAccountVerificationCode { success, code, message in
+        guard success, code == 20000 else {
+            print(message ?? "Failed to send the account-deletion code")
+            return
+        }
+
+        // Ask the user for the received code. Never print the code in logs.
+    }
+}
+
+// Step 2: After confirmation, permanently delete the account with its
+// current password and the received verification code.
+func confirmAccountDeletion(password: String, verificationCode: String) {
+    engine.deleteAccount(
+        password: password,
+        verificationCode: verificationCode
+    ) { success, code, message in
+        guard success, code == 20000 else {
+            print(message ?? "Failed to delete the account")
+            return
+        }
+
+        // The SDK has cleared local tokens and user data and disconnected MQTT.
+        // Clear application-owned account UI state and return to the login screen.
+    }
+}
+
+// ===== CLDSmart account-deletion example ends here =====
+```
+
+The existing `deleteAccount(captcha:)` overload deletes an OAuth account using an image captcha. Do not use it for the CLDSmart password-login flow.
+
 #### Logout
 
 ```swift
@@ -354,13 +395,20 @@ Obtain a real APNs token and pass it through `CLDAuthContext.deviceToken` before
 
 ### Phone or email registration fails
 
-Verify that the SDK server, App ID/Secret Key, `countryCode`, and `regionCode` belong to the same region. A mainland China phone number requires `countryCode: "+86"`; do not use `"86"` or `"N"`.
+Verify that the SDK server, App ID/Secret Key, `countryCode`, and `regionCode` belong to the same region. A mainland China phone number uses `countryCode: "+86"` and `regionCode: "CN"`; a mainland China email account uses `countryCode: "N"` and `regionCode: "CN"`.
 
 ### A new account still sees the previous user's devices
 
 Do not overwrite an existing session. Switch users in this order: server logout, `deinitEngine`, `initEngine`, and then new-user login.
 
 ## Release Notes
+
+### 1.2.0
+
+- Added `sendDeleteAccountVerificationCode(completion:)` for requesting a CLDSmart account-deletion code.
+- Added `deleteAccount(password:verificationCode:completion:)` for deleting a CLDSmart account with its password and verification code.
+- A successful deletion now clears SDK tokens and user data and disconnects MQTT.
+- Preserved the existing OAuth `deleteAccount(captcha:)` API for source compatibility.
 
 ### 1.1.0
 
