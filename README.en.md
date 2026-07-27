@@ -2,7 +2,7 @@
 
 CLDSmartSDK for iOS provides account authentication, device binding, Bluetooth communication, IoT control, push messaging, and audio/video capabilities.
 
-- Current version: `1.2.0`
+- Current version: `1.3.0`
 - Minimum deployment target: iOS 13.0
 - Swift: 5.9 or later
 - Distribution: static XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.2.0'
+      :tag => '1.3.0'
 end
 ```
 
@@ -318,6 +318,40 @@ engine.logout { success in
 }
 ```
 
+## Delete a Device
+
+Version `1.3.0` provides one device-deletion API for both account modes. The SDK selects the matching server API from the current login mode, so the application does not determine the account type itself.
+
+- Customer-owned account via `login(account:)`: automatically uses image-captcha device deletion.
+- CLDSmart password login via `login(account:password:context:)`: automatically generates the signature and uses signed device deletion.
+- `reset: true`: unbinds the device and clears its data. Use this for the normal confirmed deletion flow.
+- `reset: false`: only unbinds the device and preserves its data.
+
+```swift
+// ===== Unified device-deletion example starts here =====
+
+func deleteDevice(vid: String) {
+    // A production application should show an irreversible-action confirmation first.
+    engine.deleteDevice(
+        vid: vid,
+        reset: true
+    ) { success, code, message in
+        guard success, code == 20000 else {
+            print(message ?? "Failed to delete the device")
+            return
+        }
+
+        // Refresh the device list and close the current device-details screen.
+    }
+}
+
+// ===== Unified device-deletion example ends here =====
+```
+
+Sessions cached by `1.2.0` or earlier do not contain a login mode. After upgrading, have the user log out and sign in again before the first unified device-deletion call. Otherwise, the API returns `40101` with `Unknown login mode. Please log in again.` to prevent the SDK from selecting the wrong deletion API.
+
+The existing `deleteDevice(vid:code:token:completion:)` API remains available for source compatibility. New integrations should use `deleteDevice(vid:reset:completion:)`.
+
 ## APNs Device Token
 
 A production application must enable the Push Notifications capability and register for remote notifications. The login request uses the same APNs token for `device_token` and `reg_token`.
@@ -402,6 +436,14 @@ Verify that the SDK server, App ID/Secret Key, `countryCode`, and `regionCode` b
 Do not overwrite an existing session. Switch users in this order: server logout, `deinitEngine`, `initEngine`, and then new-user login.
 
 ## Release Notes
+
+### 1.3.0
+
+- Added `CLDLoginMode` to distinguish customer-owned sessions from CLDSmart password-login sessions.
+- Added the unified `deleteDevice(vid:reset:completion:)` API.
+- The SDK now selects image-captcha or signed device deletion from the current login mode.
+- Updated the Demo device-details screen to use the unified API and display server error codes and messages.
+- Preserved `deleteDevice(vid:code:token:completion:)` for source compatibility.
 
 ### 1.2.0
 

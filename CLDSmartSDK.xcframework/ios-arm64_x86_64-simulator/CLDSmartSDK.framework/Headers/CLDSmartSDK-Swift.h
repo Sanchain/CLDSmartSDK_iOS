@@ -500,6 +500,7 @@ typedef SWIFT_ENUM(NSInteger, NetworkAPI, open) {
   NetworkAPIDevicekeySynckey = 66,
   NetworkAPISendDeleteAccountVerificationCode = 67,
   NetworkAPIDeleteMemberAccount = 68,
+  NetworkAPIDeleteDeviceBySignature = 69,
 };
 
 SWIFT_CLASS("_TtC11CLDSmartSDK11NetworkCore")
@@ -1023,6 +1024,7 @@ typedef SWIFT_ENUM(NSInteger, NetworkAPI, open) {
   NetworkAPIDevicekeySynckey = 66,
   NetworkAPISendDeleteAccountVerificationCode = 67,
   NetworkAPIDeleteMemberAccount = 68,
+  NetworkAPIDeleteDeviceBySignature = 69,
 };
 
 SWIFT_CLASS("_TtC11CLDSmartSDK11NetworkCore")

@@ -170,6 +170,9 @@ extension CLDSmartSDK.CldSmartEngine {
   #endif
   public func deleteDevice(vid: Swift.String, code: Swift.String, token: Swift.String, completion: @escaping CLDSmartSDK.CLDBoolBlock)
   #if compiler(>=5.3) && $NonescapableTypes
+  public func deleteDevice(vid: Swift.String, reset: Swift.Bool = true, completion: @escaping (Swift.Bool, Swift.Int, Swift.String?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getDeviceKeyList(vid: Swift.String, type: CLDSmartSDK.CLDDeviceKeyType, page: Swift.Int = 1, pageSize: Swift.Int = 20, completion: @escaping ([CLDSmartSDK.CLDDeviceKey]?, Swift.Int, Swift.String?) -> Swift.Void)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
@@ -514,8 +517,23 @@ public struct CLDAuthContext {
 public typealias CLDAuthBlock = (Swift.Bool, Swift.Int, Swift.String?) -> Swift.Void
 public typealias CLDAccountLoginBlock = (CLDSmartSDK.CLDUserInfo?, Swift.Int, Swift.String?) -> Swift.Void
 public typealias CLDResetTokenBlock = (Swift.String?, Swift.Int, Swift.String?) -> Swift.Void
+public enum CLDLoginMode : Swift.String, Swift.Codable {
+  case unknown
+  case customerOwned
+  case accountPassword
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 public struct CLDUserInfo : Swift.Codable {
   public let has_password: Swift.Bool
+  public var loginMode: CLDSmartSDK.CLDLoginMode {
+    get
+  }
   public let name: Swift.String
   public let id: Swift.Int
   public let account: Swift.String
@@ -1245,6 +1263,7 @@ public enum NetworkMethod : Swift.String {
   case devicekeySynckey
   case sendDeleteAccountVerificationCode
   case deleteMemberAccount
+  case deleteDeviceBySignature
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
   #endif
@@ -1346,6 +1365,9 @@ extension CLDSmartSDK.CLDIoTModelProperty : Swift.RawRepresentable {}
 extension CLDSmartSDK.CLDCaptchaIntent : Swift.Equatable {}
 extension CLDSmartSDK.CLDCaptchaIntent : Swift.Hashable {}
 extension CLDSmartSDK.CLDCaptchaIntent : Swift.RawRepresentable {}
+extension CLDSmartSDK.CLDLoginMode : Swift.Equatable {}
+extension CLDSmartSDK.CLDLoginMode : Swift.Hashable {}
+extension CLDSmartSDK.CLDLoginMode : Swift.RawRepresentable {}
 extension CLDSmartSDK.CLDDeviceKeyType : Swift.Equatable {}
 extension CLDSmartSDK.CLDDeviceKeyType : Swift.Hashable {}
 extension CLDSmartSDK.CLDDeviceKeyType : Swift.RawRepresentable {}

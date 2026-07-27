@@ -2,7 +2,7 @@
 
 CLDSmartSDK iOS SDK 提供账号认证、设备绑定、蓝牙通信、IoT 控制、消息推送和音视频能力。
 
-- 当前版本：`1.2.0`
+- 当前版本：`1.3.0`
 - 最低系统：iOS 13.0
 - Swift：5.9 或更高版本
 - 分发形式：静态 XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.2.0'
+      :tag => '1.3.0'
 end
 ```
 
@@ -316,6 +316,40 @@ engine.logout { success in
 }
 ```
 
+## 删除设备
+
+`1.3.0` 提供统一删除设备接口。客户自有账号和 CLDSmart 公司账号使用相同调用方式，SDK 会根据当前登录模式自动选择对应的服务端接口，客户 App 不需要自行判断账号类型。
+
+- 客户自有账号 `login(account:)`：自动使用图片验证码删除接口。
+- 公司账号密码登录 `login(account:password:context:)`：自动生成签名并使用签名删除接口。
+- `reset: true`：解绑设备并清除设备数据，适用于用户确认删除设备的常规流程。
+- `reset: false`：仅解绑设备，不清除设备数据。
+
+```swift
+// ===== 统一删除设备调用示例开始 =====
+
+func deleteDevice(vid: String) {
+    // 正式 App 应在调用前向用户显示不可恢复的删除确认提示。
+    engine.deleteDevice(
+        vid: vid,
+        reset: true
+    ) { success, code, message in
+        guard success, code == 20000 else {
+            print(message ?? "删除设备失败")
+            return
+        }
+
+        // 删除成功后刷新设备列表，并关闭当前设备详情页。
+    }
+}
+
+// ===== 统一删除设备调用示例结束 =====
+```
+
+从 `1.2.0` 或更早版本升级后，旧缓存会话不包含登录模式。首次调用统一删除设备接口前，应让用户退出并重新登录一次。否则接口会返回 `40101` 和 `Unknown login mode. Please log in again.`，用于防止 SDK 误用不匹配的删除接口。
+
+原有 `deleteDevice(vid:code:token:completion:)` 继续保留以兼容已有客户代码。新接入项目应优先使用 `deleteDevice(vid:reset:completion:)`。
+
 ## APNs 推送 Token
 
 正式 App 应启用 Push Notifications Capability，并注册远程通知。登录请求中的 `device_token` 和 `reg_token` 使用同一个 APNs Token。
@@ -400,6 +434,14 @@ Debug/Sandbox 构建使用 `isAPNsSandbox: true`，正式 APNs 环境使用 `fal
 不要直接用新账号覆盖旧会话。按“服务端登出 -> `deinitEngine` -> `initEngine` -> 新账号登录”的顺序切换。
 
 ## 版本说明
+
+### 1.3.0
+
+- 增加登录模式 `CLDLoginMode`，区分客户自有账号和 CLDSmart 公司账号密码登录。
+- 增加统一删除设备接口 `deleteDevice(vid:reset:completion:)`。
+- SDK 根据登录模式自动选择图片验证码删除接口或签名删除接口。
+- Demo 设备详情页改为使用统一删除设备接口，并显示服务端错误码和错误信息。
+- 保留原有 `deleteDevice(vid:code:token:completion:)`，兼容已有客户代码。
 
 ### 1.2.0
 
