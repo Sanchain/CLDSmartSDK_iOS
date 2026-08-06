@@ -2,7 +2,7 @@
 
 CLDSmartSDK for iOS provides account authentication, device binding, Bluetooth communication, IoT control, push messaging, and audio/video capabilities.
 
-- Current version: `1.4.0`
+- Current version: `1.4.1`
 - Minimum deployment target: iOS 13.0
 - Swift: 5.9 or later
 - Distribution: static XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.0'
+      :tag => '1.4.1'
 end
 ```
 
@@ -436,6 +436,12 @@ Verify that the SDK server, App ID/Secret Key, `countryCode`, and `regionCode` b
 Do not overwrite an existing session. Switch users in this order: server logout, `deinitEngine`, `initEngine`, and then new-user login.
 
 ## Release Notes
+
+### 1.4.1
+
+- Added optional `CLDDeviceKey.is_duress_password` to identify duress passwords, fingerprints, palm-vein credentials, and other duress-marked keys.
+- Accepts server values encoded as `true/false`, `0/1`, or the legacy `is_duress` field; returns `nil` when the server omits the flag.
+- Guest passwords remain identified by `unlock_type == .tmpPassword`; regular user passwords use `unlock_type == .password`.
 
 ### 1.4.0
 

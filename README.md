@@ -2,7 +2,7 @@
 
 CLDSmartSDK iOS SDK 提供账号认证、设备绑定、蓝牙通信、IoT 控制、消息推送和音视频能力。
 
-- 当前版本：`1.4.0`
+- 当前版本：`1.4.1`
 - 最低系统：iOS 13.0
 - Swift：5.9 或更高版本
 - 分发形式：静态 XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.0'
+      :tag => '1.4.1'
 end
 ```
 
@@ -434,6 +434,12 @@ Debug/Sandbox 构建使用 `isAPNsSandbox: true`，正式 APNs 环境使用 `fal
 不要直接用新账号覆盖旧会话。按“服务端登出 -> `deinitEngine` -> `initEngine` -> 新账号登录”的顺序切换。
 
 ## 版本说明
+
+### 1.4.1
+
+- `CLDDeviceKey` 增加可选字段 `is_duress_password`，用于识别胁迫密码、胁迫指纹和胁迫掌静脉等凭证。
+- 兼容服务端返回的 `true/false`、`0/1` 和旧字段 `is_duress`；字段缺失时返回 `nil`。
+- 访客密码仍通过 `unlock_type == .tmpPassword` 判断，普通用户密码通过 `unlock_type == .password` 判断。
 
 ### 1.4.0
 

@@ -790,6 +790,7 @@ public struct CLDDeviceKey : Swift.Codable {
   public let start_timestamp: Swift.Int
   public let end_timestamp: Swift.Int
   public let is_admin: Swift.Int
+  public let is_duress_password: Swift.Bool?
   public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
 }
