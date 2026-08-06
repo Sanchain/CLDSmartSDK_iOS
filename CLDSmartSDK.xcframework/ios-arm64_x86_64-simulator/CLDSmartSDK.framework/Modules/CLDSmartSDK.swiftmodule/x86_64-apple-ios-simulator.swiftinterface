@@ -943,6 +943,7 @@ public struct CLDPassword : Swift.Codable {
   public var key_id: Swift.Int?
   public var note: Swift.String
   public var unlock_type: Swift.Int
+  public var is_duress_password: Swift.Bool?
   public var period: Swift.Int
   public var start_min: Swift.Int
   public var end_min: Swift.Int
