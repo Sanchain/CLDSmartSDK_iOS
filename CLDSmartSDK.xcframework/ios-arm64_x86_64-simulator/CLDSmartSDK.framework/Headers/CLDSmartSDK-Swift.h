@@ -408,6 +408,17 @@ SWIFT_CLASS("_TtC11CLDSmartSDK15MQTTCoreMessage")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@interface MQTTCoreMessage (SWIFT_EXTENSION(CLDSmartSDK))
+/// MQTT 原始 method 字符串。
+@property (nonatomic, readonly, copy) NSString * _Nonnull methodName;
+/// 消息所属设备 VID。
+@property (nonatomic, readonly, copy) NSString * _Nonnull deviceVID;
+/// 完整原始消息，便于诊断 actionReport 和 updateKeyList。
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nonnull messagePayload;
+/// actionReport 的 action_id；其他事件返回 nil。
+@property (nonatomic, readonly, copy) NSString * _Nullable actionID;
+@end
+
 SWIFT_CLASS("_TtC11CLDSmartSDK9MediaCore")
 @interface MediaCore : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -930,6 +941,17 @@ SWIFT_CLASS("_TtC11CLDSmartSDK8MQTTCore")
 SWIFT_CLASS("_TtC11CLDSmartSDK15MQTTCoreMessage")
 @interface MQTTCoreMessage : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@interface MQTTCoreMessage (SWIFT_EXTENSION(CLDSmartSDK))
+/// MQTT 原始 method 字符串。
+@property (nonatomic, readonly, copy) NSString * _Nonnull methodName;
+/// 消息所属设备 VID。
+@property (nonatomic, readonly, copy) NSString * _Nonnull deviceVID;
+/// 完整原始消息，便于诊断 actionReport 和 updateKeyList。
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nonnull messagePayload;
+/// actionReport 的 action_id；其他事件返回 nil。
+@property (nonatomic, readonly, copy) NSString * _Nullable actionID;
 @end
 
 SWIFT_CLASS("_TtC11CLDSmartSDK9MediaCore")

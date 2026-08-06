@@ -2,7 +2,7 @@
 
 CLDSmartSDK for iOS provides account authentication, device binding, Bluetooth communication, IoT control, push messaging, and audio/video capabilities.
 
-- Current version: `1.3.0`
+- Current version: `1.4.0`
 - Minimum deployment target: iOS 13.0
 - Swift: 5.9 or later
 - Distribution: static XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.3.0'
+      :tag => '1.4.0'
 end
 ```
 
@@ -436,6 +436,14 @@ Verify that the SDK server, App ID/Secret Key, `countryCode`, and `regionCode` b
 Do not overwrite an existing session. Switch users in this order: server logout, `deinitEngine`, `initEngine`, and then new-user login.
 
 ## Release Notes
+
+### 1.4.0
+
+- Fixed `getDeviceKeyList` returning an empty array when temporary, periodic, or other password credentials were present.
+- `CLDDeviceKey.unlock_type` now returns the detailed `CLDDeviceUnlockType`, distinguishing permanent, TOTP, temporary, periodic, and administrator passwords.
+- Added `CLDDeviceKey.unlock_type_raw` so unknown future server values remain available without failing the entire page decode.
+- Password-list requests now explicitly send `key_type=password`, and rows are decoded independently so one malformed record does not erase the complete list.
+- Added numeric-password acceptance details and MQTT/network diagnostics to distinguish server acceptance, device execution, and list synchronization.
 
 ### 1.3.0
 

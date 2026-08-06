@@ -2,7 +2,7 @@
 
 CLDSmartSDK iOS SDK 提供账号认证、设备绑定、蓝牙通信、IoT 控制、消息推送和音视频能力。
 
-- 当前版本：`1.3.0`
+- 当前版本：`1.4.0`
 - 最低系统：iOS 13.0
 - Swift：5.9 或更高版本
 - 分发形式：静态 XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.3.0'
+      :tag => '1.4.0'
 end
 ```
 
@@ -434,6 +434,14 @@ Debug/Sandbox 构建使用 `isAPNsSandbox: true`，正式 APNs 环境使用 `fal
 不要直接用新账号覆盖旧会话。按“服务端登出 -> `deinitEngine` -> `initEngine` -> 新账号登录”的顺序切换。
 
 ## 版本说明
+
+### 1.4.0
+
+- 修复临时密码、周期密码等凭证导致 `getDeviceKeyList` 返回空数组的问题。
+- `CLDDeviceKey.unlock_type` 现在返回具体的 `CLDDeviceUnlockType`，可区分普通密码、TOTP 密码、临时密码、周期密码和管理员密码。
+- 增加 `CLDDeviceKey.unlock_type_raw`，服务端新增未知类型时仍保留原始整数，避免整页凭证解析失败。
+- 密码列表查询统一发送 `key_type=password`，并改为逐条解析，单条异常数据不再清空整个列表。
+- 增加数字密码受理结果和 MQTT/网络诊断信息，便于区分服务端受理、设备执行及列表同步状态。
 
 ### 1.3.0
 

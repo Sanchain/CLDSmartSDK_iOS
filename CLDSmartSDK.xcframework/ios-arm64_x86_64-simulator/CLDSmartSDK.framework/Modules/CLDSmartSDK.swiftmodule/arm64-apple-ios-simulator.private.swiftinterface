@@ -98,7 +98,8 @@ public enum CldLanguage : Swift.Int, Swift.Codable {
   }
 }
 public class CldSmartEngineConfig : Swift.Codable {
-  public init(serverCode: CLDSmartSDK.CldServerCode = .mainland, language: CLDSmartSDK.CldLanguage = .hans, isDevServer: Swift.Bool = false)
+  public var diagnosticLogEnabled: Swift.Bool
+  public init(serverCode: CLDSmartSDK.CldServerCode = .mainland, language: CLDSmartSDK.CldLanguage = .hans, isDevServer: Swift.Bool = false, diagnosticLogEnabled: Swift.Bool = false)
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
@@ -213,6 +214,7 @@ extension CLDSmartSDK.CldSmartEngine {
   #if compiler(>=5.3) && $NonescapableTypes
   public func addDigitsPassword(vid: Swift.String, password: CLDSmartSDK.CLDPassword, isBLE: Swift.Bool, completion: @escaping (Swift.Bool, Swift.Int, Swift.String?) -> Swift.Void)
   #endif
+  public func addDigitsPasswordWithResult(vid: Swift.String, password: CLDSmartSDK.CLDPassword, isBLE: Swift.Bool, completion: @escaping (CLDSmartSDK.CLDAddPasswordResult) -> Swift.Void)
   public func addKeyInput(vid: Swift.String, password: CLDSmartSDK.CLDPassword, isBLE: Swift.Bool, timeout: Swift.Int = 20, completion: @escaping (Swift.Int, CLDSmartSDK.CLDInputKeyState) -> Swift.Void)
   #if compiler(>=5.3) && $NonescapableTypes
   public func breakKeyInput(vid: Swift.String, keyType: CLDSmartSDK.CLDInputKeyType, isBLE: Swift.Bool, completion: CLDSmartSDK.CLDBoolBlock? = nil)
@@ -566,6 +568,36 @@ public struct CLDInputKeyConfig : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct CLDInputKeyRange : Swift.Codable {
+  public let min: Swift.Int?
+  public let max: Swift.Int?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CLDInputKeyInfo : Swift.Codable {
+  public let category: Swift.Int?
+  public let add: [Swift.Int]?
+  public let del: [Swift.Int]?
+  public let timeout: Swift.Int?
+  public let range: CLDSmartSDK.CLDInputKeyRange?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CLDDeviceUser : Swift.Codable {
+  public let id: Swift.Int?
+  public let user_code: Swift.String?
+  public let user_id: Swift.Int?
+  public let name: Swift.String?
+  public let user_type: Swift.Int?
+  public let role_name: Swift.String?
+  public let is_master: Swift.Int?
+  public let family_role: Swift.Int?
+  public let is_children: Swift.Int?
+  public let birthday: Swift.Int?
+  public let device_user_type: Swift.Int?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct CLDOneTimePassword : Swift.Codable {
   public let one_time_password_key: Swift.String
   public let one_time_password_interval: Swift.Int
@@ -666,6 +698,10 @@ public struct CLDDevice : Swift.Codable {
   public let is_bind: Swift.Int
   public let input_key_protocol: Swift.Int
   public let input_key_timeout: CLDSmartSDK.CLDInputKeyConfig
+  public let is_must_password: Swift.Int?
+  public let is_support_user_role: Swift.Int?
+  public let default_user: CLDSmartSDK.CLDDeviceUser?
+  public let input_key_info: [CLDSmartSDK.CLDInputKeyInfo]?
   public let one_time_password: CLDSmartSDK.CLDOneTimePassword
   public let match_num: Swift.Int
   public let bt_config: CLDSmartSDK.CLDBLEConfig
@@ -713,7 +749,16 @@ public enum CLDDeviceKeyType : Swift.Int, Swift.Codable {
   }
 }
 public enum CLDDeviceUnlockType : Swift.Int, Swift.Codable {
-  case password, tmpPassword, periodicPassword, adminPassword, fingerprint, card, palm_venous
+  case fingerprint
+  case password
+  case totpPassword
+  case tmpPassword
+  case card
+  case face
+  case periodicPassword
+  case adminPassword
+  case palm_venous
+  case palmVein
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
   #endif
@@ -737,15 +782,16 @@ public struct CLDDeviceKey : Swift.Codable {
   public let key_id: Swift.Int?
   public let note: Swift.String?
   public let effective: CLDSmartSDK.CLDDeviceKeyStatus?
-  public let unlock_type: CLDSmartSDK.CLDDeviceKeyType?
+  public let unlock_type: CLDSmartSDK.CLDDeviceUnlockType?
+  public let unlock_type_raw: Swift.Int?
   public let period: Swift.Int
   public let start_min: Swift.Int
   public let end_min: Swift.Int
   public let start_timestamp: Swift.Int
   public let end_timestamp: Swift.Int
   public let is_admin: Swift.Int
-  public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 public struct CLDProductGroup : Swift.Codable {
   public let name: Swift.String
@@ -904,6 +950,17 @@ public struct CLDPassword : Swift.Codable {
   public init(unlock_type: Swift.Int, note: Swift.String)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
+}
+public struct CLDAddPasswordResult {
+  public let accepted: Swift.Bool
+  public let code: Swift.Int
+  public let message: Swift.String?
+  public let keyRecordID: Swift.Int?
+  public let checkToken: Swift.String?
+  public let isActionShadow: Swift.Int?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(accepted: Swift.Bool, code: Swift.Int, message: Swift.String?, keyRecordID: Swift.Int? = nil, checkToken: Swift.String? = nil, isActionShadow: Swift.Int? = nil)
+  #endif
 }
 public enum CLDInputKeyState : Swift.Int {
   case inputting
@@ -1156,6 +1213,48 @@ extension CLDSmartSDK.CldSmartEngine {
   public func addQrcodeMatchCallback(completion: @escaping (CLDSmartSDK.MQTTCoreMessage) -> Swift.Void)
   public func cancelQrcodeCallback()
 }
+public enum CLDMQTTMessageMethod : Swift.String {
+  case unknown
+  case addDevice
+  case delDevice
+  case otherLogin
+  case event
+  case updateDeviceStatus
+  case deviceEvent
+  case actionReport
+  case updateKeyList
+  case otaDownload
+  case otaUpgrade
+  case playback
+  case deviceLink
+  case nfEvent
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension CLDSmartSDK.MQTTCoreMessage {
+  @objc dynamic public var methodName: Swift.String {
+    @objc get
+  }
+  @nonobjc public var eventMethod: CLDSmartSDK.CLDMQTTMessageMethod {
+    get
+  }
+  @objc dynamic public var deviceVID: Swift.String {
+    @objc get
+  }
+  @objc dynamic public var messagePayload: [Swift.String : Any] {
+    @objc get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public var actionID: Swift.String? {
+    @objc get
+  }
+  #endif
+}
 public enum OTPAlgorithm {
   case sha1
   case sha256
@@ -1392,6 +1491,9 @@ extension CLDSmartSDK.CLDInputKeyState : Swift.RawRepresentable {}
 extension CLDSmartSDK.CLDInputKeyType : Swift.Equatable {}
 extension CLDSmartSDK.CLDInputKeyType : Swift.Hashable {}
 extension CLDSmartSDK.CLDInputKeyType : Swift.RawRepresentable {}
+extension CLDSmartSDK.CLDMQTTMessageMethod : Swift.Equatable {}
+extension CLDSmartSDK.CLDMQTTMessageMethod : Swift.Hashable {}
+extension CLDSmartSDK.CLDMQTTMessageMethod : Swift.RawRepresentable {}
 extension CLDSmartSDK.OTPAlgorithm : Swift.Equatable {}
 extension CLDSmartSDK.OTPAlgorithm : Swift.Hashable {}
 extension CLDSmartSDK.NetworkError : Swift.Equatable {}

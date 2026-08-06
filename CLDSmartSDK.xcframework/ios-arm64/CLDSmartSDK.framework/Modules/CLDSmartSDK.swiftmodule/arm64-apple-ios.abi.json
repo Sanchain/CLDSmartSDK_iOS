@@ -1852,9 +1852,96 @@
         "printedName": "CldSmartEngineConfig",
         "children": [
           {
+            "kind": "Var",
+            "name": "diagnosticLogEnabled",
+            "printedName": "diagnosticLogEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK20CldSmartEngineConfigC20diagnosticLogEnabledSbvp",
+            "mangledName": "$s11CLDSmartSDK20CldSmartEngineConfigC20diagnosticLogEnabledSbvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK20CldSmartEngineConfigC20diagnosticLogEnabledSbvg",
+                "mangledName": "$s11CLDSmartSDK20CldSmartEngineConfigC20diagnosticLogEnabledSbvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK20CldSmartEngineConfigC20diagnosticLogEnabledSbvs",
+                "mangledName": "$s11CLDSmartSDK20CldSmartEngineConfigC20diagnosticLogEnabledSbvs",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK20CldSmartEngineConfigC20diagnosticLogEnabledSbvM",
+                "mangledName": "$s11CLDSmartSDK20CldSmartEngineConfigC20diagnosticLogEnabledSbvM",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(serverCode:language:isDevServer:)",
+            "printedName": "init(serverCode:language:isDevServer:diagnosticLogEnabled:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1882,11 +1969,18 @@
                 "printedName": "Swift.Bool",
                 "hasDefaultArg": true,
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:11CLDSmartSDK20CldSmartEngineConfigC10serverCode8language11isDevServerAcA0clH0O_AA0C8LanguageOSbtcfc",
-            "mangledName": "$s11CLDSmartSDK20CldSmartEngineConfigC10serverCode8language11isDevServerAcA0clH0O_AA0C8LanguageOSbtcfc",
+            "usr": "s:11CLDSmartSDK20CldSmartEngineConfigC10serverCode8language11isDevServer20diagnosticLogEnabledAcA0clH0O_AA0C8LanguageOS2btcfc",
+            "mangledName": "$s11CLDSmartSDK20CldSmartEngineConfigC10serverCode8language11isDevServer20diagnosticLogEnabledAcA0clH0O_AA0C8LanguageOS2btcfc",
             "moduleName": "CLDSmartSDK",
             "declAttributes": [
               "AccessControl",
@@ -5639,6 +5733,63 @@
             "declKind": "Func",
             "usr": "s:11CLDSmartSDK14CldSmartEngineC17addDigitsPassword3vid8password5isBLE10completionySS_AA11CLDPasswordVSbySb_SiSSSgtctF",
             "mangledName": "$s11CLDSmartSDK14CldSmartEngineC17addDigitsPassword3vid8password5isBLE10completionySS_AA11CLDPasswordVSbySb_SiSSSgtctF",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addDigitsPasswordWithResult",
+            "printedName": "addDigitsPasswordWithResult(vid:password:isBLE:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLDPassword",
+                "printedName": "CLDSmartSDK.CLDPassword",
+                "usr": "s:11CLDSmartSDK11CLDPasswordV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDAddPasswordResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDAddPasswordResult",
+                    "printedName": "CLDSmartSDK.CLDAddPasswordResult",
+                    "usr": "s:11CLDSmartSDK20CLDAddPasswordResultV"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CLDSmartSDK14CldSmartEngineC27addDigitsPasswordWithResult3vid8password5isBLE10completionySS_AA11CLDPasswordVSbyAA06CLDAddhJ0VctF",
+            "mangledName": "$s11CLDSmartSDK14CldSmartEngineC27addDigitsPasswordWithResult3vid8password5isBLE10completionySS_AA11CLDPasswordVSbyAA06CLDAddhJ0VctF",
             "moduleName": "CLDSmartSDK",
             "declAttributes": [
               "RawDocComment"
@@ -19134,6 +19285,1406 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "CLDInputKeyRange",
+        "printedName": "CLDInputKeyRange",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "min",
+            "printedName": "min",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK16CLDInputKeyRangeV3minSiSgvp",
+            "mangledName": "$s11CLDSmartSDK16CLDInputKeyRangeV3minSiSgvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK16CLDInputKeyRangeV3minSiSgvg",
+                "mangledName": "$s11CLDSmartSDK16CLDInputKeyRangeV3minSiSgvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "max",
+            "printedName": "max",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK16CLDInputKeyRangeV3maxSiSgvp",
+            "mangledName": "$s11CLDSmartSDK16CLDInputKeyRangeV3maxSiSgvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK16CLDInputKeyRangeV3maxSiSgvg",
+                "mangledName": "$s11CLDSmartSDK16CLDInputKeyRangeV3maxSiSgvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CLDInputKeyRange",
+                "printedName": "CLDSmartSDK.CLDInputKeyRange",
+                "usr": "s:11CLDSmartSDK16CLDInputKeyRangeV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11CLDSmartSDK16CLDInputKeyRangeV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s11CLDSmartSDK16CLDInputKeyRangeV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "CLDSmartSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CLDSmartSDK16CLDInputKeyRangeV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s11CLDSmartSDK16CLDInputKeyRangeV6encode2toys7Encoder_p_tKF",
+            "moduleName": "CLDSmartSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11CLDSmartSDK16CLDInputKeyRangeV",
+        "mangledName": "$s11CLDSmartSDK16CLDInputKeyRangeV",
+        "moduleName": "CLDSmartSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CLDInputKeyInfo",
+        "printedName": "CLDInputKeyInfo",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "category",
+            "printedName": "category",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK15CLDInputKeyInfoV8categorySiSgvp",
+            "mangledName": "$s11CLDSmartSDK15CLDInputKeyInfoV8categorySiSgvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK15CLDInputKeyInfoV8categorySiSgvg",
+                "mangledName": "$s11CLDSmartSDK15CLDInputKeyInfoV8categorySiSgvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "add",
+            "printedName": "add",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.Int]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK15CLDInputKeyInfoV3addSaySiGSgvp",
+            "mangledName": "$s11CLDSmartSDK15CLDInputKeyInfoV3addSaySiGSgvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.Int]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.Int]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK15CLDInputKeyInfoV3addSaySiGSgvg",
+                "mangledName": "$s11CLDSmartSDK15CLDInputKeyInfoV3addSaySiGSgvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "del",
+            "printedName": "del",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.Int]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK15CLDInputKeyInfoV3delSaySiGSgvp",
+            "mangledName": "$s11CLDSmartSDK15CLDInputKeyInfoV3delSaySiGSgvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.Int]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.Int]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK15CLDInputKeyInfoV3delSaySiGSgvg",
+                "mangledName": "$s11CLDSmartSDK15CLDInputKeyInfoV3delSaySiGSgvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timeout",
+            "printedName": "timeout",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK15CLDInputKeyInfoV7timeoutSiSgvp",
+            "mangledName": "$s11CLDSmartSDK15CLDInputKeyInfoV7timeoutSiSgvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK15CLDInputKeyInfoV7timeoutSiSgvg",
+                "mangledName": "$s11CLDSmartSDK15CLDInputKeyInfoV7timeoutSiSgvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "range",
+            "printedName": "range",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CLDSmartSDK.CLDInputKeyRange?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDInputKeyRange",
+                    "printedName": "CLDSmartSDK.CLDInputKeyRange",
+                    "usr": "s:11CLDSmartSDK16CLDInputKeyRangeV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK15CLDInputKeyInfoV5rangeAA0cD5RangeVSgvp",
+            "mangledName": "$s11CLDSmartSDK15CLDInputKeyInfoV5rangeAA0cD5RangeVSgvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CLDSmartSDK.CLDInputKeyRange?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDInputKeyRange",
+                        "printedName": "CLDSmartSDK.CLDInputKeyRange",
+                        "usr": "s:11CLDSmartSDK16CLDInputKeyRangeV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK15CLDInputKeyInfoV5rangeAA0cD5RangeVSgvg",
+                "mangledName": "$s11CLDSmartSDK15CLDInputKeyInfoV5rangeAA0cD5RangeVSgvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CLDInputKeyInfo",
+                "printedName": "CLDSmartSDK.CLDInputKeyInfo",
+                "usr": "s:11CLDSmartSDK15CLDInputKeyInfoV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11CLDSmartSDK15CLDInputKeyInfoV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s11CLDSmartSDK15CLDInputKeyInfoV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "CLDSmartSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CLDSmartSDK15CLDInputKeyInfoV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s11CLDSmartSDK15CLDInputKeyInfoV6encode2toys7Encoder_p_tKF",
+            "moduleName": "CLDSmartSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11CLDSmartSDK15CLDInputKeyInfoV",
+        "mangledName": "$s11CLDSmartSDK15CLDInputKeyInfoV",
+        "moduleName": "CLDSmartSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CLDDeviceUser",
+        "printedName": "CLDDeviceUser",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK13CLDDeviceUserV2idSiSgvp",
+            "mangledName": "$s11CLDSmartSDK13CLDDeviceUserV2idSiSgvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK13CLDDeviceUserV2idSiSgvg",
+                "mangledName": "$s11CLDSmartSDK13CLDDeviceUserV2idSiSgvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "user_code",
+            "printedName": "user_code",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK13CLDDeviceUserV9user_codeSSSgvp",
+            "mangledName": "$s11CLDSmartSDK13CLDDeviceUserV9user_codeSSSgvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK13CLDDeviceUserV9user_codeSSSgvg",
+                "mangledName": "$s11CLDSmartSDK13CLDDeviceUserV9user_codeSSSgvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "user_id",
+            "printedName": "user_id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK13CLDDeviceUserV7user_idSiSgvp",
+            "mangledName": "$s11CLDSmartSDK13CLDDeviceUserV7user_idSiSgvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK13CLDDeviceUserV7user_idSiSgvg",
+                "mangledName": "$s11CLDSmartSDK13CLDDeviceUserV7user_idSiSgvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK13CLDDeviceUserV4nameSSSgvp",
+            "mangledName": "$s11CLDSmartSDK13CLDDeviceUserV4nameSSSgvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK13CLDDeviceUserV4nameSSSgvg",
+                "mangledName": "$s11CLDSmartSDK13CLDDeviceUserV4nameSSSgvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "user_type",
+            "printedName": "user_type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK13CLDDeviceUserV9user_typeSiSgvp",
+            "mangledName": "$s11CLDSmartSDK13CLDDeviceUserV9user_typeSiSgvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK13CLDDeviceUserV9user_typeSiSgvg",
+                "mangledName": "$s11CLDSmartSDK13CLDDeviceUserV9user_typeSiSgvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "role_name",
+            "printedName": "role_name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK13CLDDeviceUserV9role_nameSSSgvp",
+            "mangledName": "$s11CLDSmartSDK13CLDDeviceUserV9role_nameSSSgvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK13CLDDeviceUserV9role_nameSSSgvg",
+                "mangledName": "$s11CLDSmartSDK13CLDDeviceUserV9role_nameSSSgvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "is_master",
+            "printedName": "is_master",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK13CLDDeviceUserV9is_masterSiSgvp",
+            "mangledName": "$s11CLDSmartSDK13CLDDeviceUserV9is_masterSiSgvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK13CLDDeviceUserV9is_masterSiSgvg",
+                "mangledName": "$s11CLDSmartSDK13CLDDeviceUserV9is_masterSiSgvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "family_role",
+            "printedName": "family_role",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK13CLDDeviceUserV11family_roleSiSgvp",
+            "mangledName": "$s11CLDSmartSDK13CLDDeviceUserV11family_roleSiSgvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK13CLDDeviceUserV11family_roleSiSgvg",
+                "mangledName": "$s11CLDSmartSDK13CLDDeviceUserV11family_roleSiSgvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "is_children",
+            "printedName": "is_children",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK13CLDDeviceUserV11is_childrenSiSgvp",
+            "mangledName": "$s11CLDSmartSDK13CLDDeviceUserV11is_childrenSiSgvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK13CLDDeviceUserV11is_childrenSiSgvg",
+                "mangledName": "$s11CLDSmartSDK13CLDDeviceUserV11is_childrenSiSgvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "birthday",
+            "printedName": "birthday",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK13CLDDeviceUserV8birthdaySiSgvp",
+            "mangledName": "$s11CLDSmartSDK13CLDDeviceUserV8birthdaySiSgvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK13CLDDeviceUserV8birthdaySiSgvg",
+                "mangledName": "$s11CLDSmartSDK13CLDDeviceUserV8birthdaySiSgvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "device_user_type",
+            "printedName": "device_user_type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK13CLDDeviceUserV16device_user_typeSiSgvp",
+            "mangledName": "$s11CLDSmartSDK13CLDDeviceUserV16device_user_typeSiSgvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK13CLDDeviceUserV16device_user_typeSiSgvg",
+                "mangledName": "$s11CLDSmartSDK13CLDDeviceUserV16device_user_typeSiSgvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CLDDeviceUser",
+                "printedName": "CLDSmartSDK.CLDDeviceUser",
+                "usr": "s:11CLDSmartSDK13CLDDeviceUserV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11CLDSmartSDK13CLDDeviceUserV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s11CLDSmartSDK13CLDDeviceUserV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "CLDSmartSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CLDSmartSDK13CLDDeviceUserV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s11CLDSmartSDK13CLDDeviceUserV6encode2toys7Encoder_p_tKF",
+            "moduleName": "CLDSmartSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11CLDSmartSDK13CLDDeviceUserV",
+        "mangledName": "$s11CLDSmartSDK13CLDDeviceUserV",
+        "moduleName": "CLDSmartSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "CLDOneTimePassword",
         "printedName": "CLDOneTimePassword",
         "children": [
@@ -19326,7 +20877,8 @@
         "mangledName": "$s11CLDSmartSDK18CLDOneTimePasswordV",
         "moduleName": "CLDSmartSDK",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -23406,6 +24958,266 @@
           },
           {
             "kind": "Var",
+            "name": "is_must_password",
+            "printedName": "is_must_password",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK9CLDDeviceV16is_must_passwordSiSgvp",
+            "mangledName": "$s11CLDSmartSDK9CLDDeviceV16is_must_passwordSiSgvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK9CLDDeviceV16is_must_passwordSiSgvg",
+                "mangledName": "$s11CLDSmartSDK9CLDDeviceV16is_must_passwordSiSgvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "is_support_user_role",
+            "printedName": "is_support_user_role",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK9CLDDeviceV20is_support_user_roleSiSgvp",
+            "mangledName": "$s11CLDSmartSDK9CLDDeviceV20is_support_user_roleSiSgvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK9CLDDeviceV20is_support_user_roleSiSgvg",
+                "mangledName": "$s11CLDSmartSDK9CLDDeviceV20is_support_user_roleSiSgvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "default_user",
+            "printedName": "default_user",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CLDSmartSDK.CLDDeviceUser?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDDeviceUser",
+                    "printedName": "CLDSmartSDK.CLDDeviceUser",
+                    "usr": "s:11CLDSmartSDK13CLDDeviceUserV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK9CLDDeviceV12default_userAA0C4UserVSgvp",
+            "mangledName": "$s11CLDSmartSDK9CLDDeviceV12default_userAA0C4UserVSgvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CLDSmartSDK.CLDDeviceUser?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDDeviceUser",
+                        "printedName": "CLDSmartSDK.CLDDeviceUser",
+                        "usr": "s:11CLDSmartSDK13CLDDeviceUserV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK9CLDDeviceV12default_userAA0C4UserVSgvg",
+                "mangledName": "$s11CLDSmartSDK9CLDDeviceV12default_userAA0C4UserVSgvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "input_key_info",
+            "printedName": "input_key_info",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[CLDSmartSDK.CLDInputKeyInfo]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[CLDSmartSDK.CLDInputKeyInfo]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDInputKeyInfo",
+                        "printedName": "CLDSmartSDK.CLDInputKeyInfo",
+                        "usr": "s:11CLDSmartSDK15CLDInputKeyInfoV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK9CLDDeviceV14input_key_infoSayAA15CLDInputKeyInfoVGSgvp",
+            "mangledName": "$s11CLDSmartSDK9CLDDeviceV14input_key_infoSayAA15CLDInputKeyInfoVGSgvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[CLDSmartSDK.CLDInputKeyInfo]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[CLDSmartSDK.CLDInputKeyInfo]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CLDInputKeyInfo",
+                            "printedName": "CLDSmartSDK.CLDInputKeyInfo",
+                            "usr": "s:11CLDSmartSDK15CLDInputKeyInfoV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK9CLDDeviceV14input_key_infoSayAA15CLDInputKeyInfoVGSgvg",
+                "mangledName": "$s11CLDSmartSDK9CLDDeviceV14input_key_infoSayAA15CLDInputKeyInfoVGSgvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "one_time_password",
             "printedName": "one_time_password",
             "children": [
@@ -23422,7 +25234,8 @@
             "moduleName": "CLDSmartSDK",
             "declAttributes": [
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -25247,6 +27060,43 @@
         "children": [
           {
             "kind": "Var",
+            "name": "fingerprint",
+            "printedName": "fingerprint",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDDeviceUnlockType.Type) -> CLDSmartSDK.CLDDeviceUnlockType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDDeviceUnlockType",
+                    "printedName": "CLDSmartSDK.CLDDeviceUnlockType",
+                    "usr": "s:11CLDSmartSDK19CLDDeviceUnlockTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDDeviceUnlockType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDDeviceUnlockType",
+                        "printedName": "CLDSmartSDK.CLDDeviceUnlockType",
+                        "usr": "s:11CLDSmartSDK19CLDDeviceUnlockTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK19CLDDeviceUnlockTypeO11fingerprintyA2CmF",
+            "mangledName": "$s11CLDSmartSDK19CLDDeviceUnlockTypeO11fingerprintyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
             "name": "password",
             "printedName": "password",
             "children": [
@@ -25284,6 +27134,43 @@
           },
           {
             "kind": "Var",
+            "name": "totpPassword",
+            "printedName": "totpPassword",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDDeviceUnlockType.Type) -> CLDSmartSDK.CLDDeviceUnlockType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDDeviceUnlockType",
+                    "printedName": "CLDSmartSDK.CLDDeviceUnlockType",
+                    "usr": "s:11CLDSmartSDK19CLDDeviceUnlockTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDDeviceUnlockType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDDeviceUnlockType",
+                        "printedName": "CLDSmartSDK.CLDDeviceUnlockType",
+                        "usr": "s:11CLDSmartSDK19CLDDeviceUnlockTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK19CLDDeviceUnlockTypeO12totpPasswordyA2CmF",
+            "mangledName": "$s11CLDSmartSDK19CLDDeviceUnlockTypeO12totpPasswordyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
             "name": "tmpPassword",
             "printedName": "tmpPassword",
             "children": [
@@ -25317,6 +27204,80 @@
             "declKind": "EnumElement",
             "usr": "s:11CLDSmartSDK19CLDDeviceUnlockTypeO11tmpPasswordyA2CmF",
             "mangledName": "$s11CLDSmartSDK19CLDDeviceUnlockTypeO11tmpPasswordyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "card",
+            "printedName": "card",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDDeviceUnlockType.Type) -> CLDSmartSDK.CLDDeviceUnlockType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDDeviceUnlockType",
+                    "printedName": "CLDSmartSDK.CLDDeviceUnlockType",
+                    "usr": "s:11CLDSmartSDK19CLDDeviceUnlockTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDDeviceUnlockType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDDeviceUnlockType",
+                        "printedName": "CLDSmartSDK.CLDDeviceUnlockType",
+                        "usr": "s:11CLDSmartSDK19CLDDeviceUnlockTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK19CLDDeviceUnlockTypeO4cardyA2CmF",
+            "mangledName": "$s11CLDSmartSDK19CLDDeviceUnlockTypeO4cardyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "face",
+            "printedName": "face",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDDeviceUnlockType.Type) -> CLDSmartSDK.CLDDeviceUnlockType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDDeviceUnlockType",
+                    "printedName": "CLDSmartSDK.CLDDeviceUnlockType",
+                    "usr": "s:11CLDSmartSDK19CLDDeviceUnlockTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDDeviceUnlockType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDDeviceUnlockType",
+                        "printedName": "CLDSmartSDK.CLDDeviceUnlockType",
+                        "usr": "s:11CLDSmartSDK19CLDDeviceUnlockTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK19CLDDeviceUnlockTypeO4faceyA2CmF",
+            "mangledName": "$s11CLDSmartSDK19CLDDeviceUnlockTypeO4faceyA2CmF",
             "moduleName": "CLDSmartSDK"
           },
           {
@@ -25395,80 +27356,6 @@
           },
           {
             "kind": "Var",
-            "name": "fingerprint",
-            "printedName": "fingerprint",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(CLDSmartSDK.CLDDeviceUnlockType.Type) -> CLDSmartSDK.CLDDeviceUnlockType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CLDDeviceUnlockType",
-                    "printedName": "CLDSmartSDK.CLDDeviceUnlockType",
-                    "usr": "s:11CLDSmartSDK19CLDDeviceUnlockTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "CLDSmartSDK.CLDDeviceUnlockType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CLDDeviceUnlockType",
-                        "printedName": "CLDSmartSDK.CLDDeviceUnlockType",
-                        "usr": "s:11CLDSmartSDK19CLDDeviceUnlockTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:11CLDSmartSDK19CLDDeviceUnlockTypeO11fingerprintyA2CmF",
-            "mangledName": "$s11CLDSmartSDK19CLDDeviceUnlockTypeO11fingerprintyA2CmF",
-            "moduleName": "CLDSmartSDK"
-          },
-          {
-            "kind": "Var",
-            "name": "card",
-            "printedName": "card",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(CLDSmartSDK.CLDDeviceUnlockType.Type) -> CLDSmartSDK.CLDDeviceUnlockType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CLDDeviceUnlockType",
-                    "printedName": "CLDSmartSDK.CLDDeviceUnlockType",
-                    "usr": "s:11CLDSmartSDK19CLDDeviceUnlockTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "CLDSmartSDK.CLDDeviceUnlockType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CLDDeviceUnlockType",
-                        "printedName": "CLDSmartSDK.CLDDeviceUnlockType",
-                        "usr": "s:11CLDSmartSDK19CLDDeviceUnlockTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:11CLDSmartSDK19CLDDeviceUnlockTypeO4cardyA2CmF",
-            "mangledName": "$s11CLDSmartSDK19CLDDeviceUnlockTypeO4cardyA2CmF",
-            "moduleName": "CLDSmartSDK"
-          },
-          {
-            "kind": "Var",
             "name": "palm_venous",
             "printedName": "palm_venous",
             "children": [
@@ -25502,6 +27389,43 @@
             "declKind": "EnumElement",
             "usr": "s:11CLDSmartSDK19CLDDeviceUnlockTypeO11palm_venousyA2CmF",
             "mangledName": "$s11CLDSmartSDK19CLDDeviceUnlockTypeO11palm_venousyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "palmVein",
+            "printedName": "palmVein",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDDeviceUnlockType.Type) -> CLDSmartSDK.CLDDeviceUnlockType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDDeviceUnlockType",
+                    "printedName": "CLDSmartSDK.CLDDeviceUnlockType",
+                    "usr": "s:11CLDSmartSDK19CLDDeviceUnlockTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDDeviceUnlockType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDDeviceUnlockType",
+                        "printedName": "CLDSmartSDK.CLDDeviceUnlockType",
+                        "usr": "s:11CLDSmartSDK19CLDDeviceUnlockTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK19CLDDeviceUnlockTypeO8palmVeinyA2CmF",
+            "mangledName": "$s11CLDSmartSDK19CLDDeviceUnlockTypeO8palmVeinyA2CmF",
             "moduleName": "CLDSmartSDK"
           },
           {
@@ -26301,25 +28225,26 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "CLDSmartSDK.CLDDeviceKeyType?",
+                "printedName": "CLDSmartSDK.CLDDeviceUnlockType?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "CLDDeviceKeyType",
-                    "printedName": "CLDSmartSDK.CLDDeviceKeyType",
-                    "usr": "s:11CLDSmartSDK16CLDDeviceKeyTypeO"
+                    "name": "CLDDeviceUnlockType",
+                    "printedName": "CLDSmartSDK.CLDDeviceUnlockType",
+                    "usr": "s:11CLDSmartSDK19CLDDeviceUnlockTypeO"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:11CLDSmartSDK12CLDDeviceKeyV11unlock_typeAA0cD4TypeOSgvp",
-            "mangledName": "$s11CLDSmartSDK12CLDDeviceKeyV11unlock_typeAA0cD4TypeOSgvp",
+            "usr": "s:11CLDSmartSDK12CLDDeviceKeyV11unlock_typeAA0C10UnlockTypeOSgvp",
+            "mangledName": "$s11CLDSmartSDK12CLDDeviceKeyV11unlock_typeAA0C10UnlockTypeOSgvp",
             "moduleName": "CLDSmartSDK",
             "declAttributes": [
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -26332,21 +28257,82 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "CLDSmartSDK.CLDDeviceKeyType?",
+                    "printedName": "CLDSmartSDK.CLDDeviceUnlockType?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "CLDDeviceKeyType",
-                        "printedName": "CLDSmartSDK.CLDDeviceKeyType",
-                        "usr": "s:11CLDSmartSDK16CLDDeviceKeyTypeO"
+                        "name": "CLDDeviceUnlockType",
+                        "printedName": "CLDSmartSDK.CLDDeviceUnlockType",
+                        "usr": "s:11CLDSmartSDK19CLDDeviceUnlockTypeO"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11CLDSmartSDK12CLDDeviceKeyV11unlock_typeAA0cD4TypeOSgvg",
-                "mangledName": "$s11CLDSmartSDK12CLDDeviceKeyV11unlock_typeAA0cD4TypeOSgvg",
+                "usr": "s:11CLDSmartSDK12CLDDeviceKeyV11unlock_typeAA0C10UnlockTypeOSgvg",
+                "mangledName": "$s11CLDSmartSDK12CLDDeviceKeyV11unlock_typeAA0C10UnlockTypeOSgvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unlock_type_raw",
+            "printedName": "unlock_type_raw",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK12CLDDeviceKeyV15unlock_type_rawSiSgvp",
+            "mangledName": "$s11CLDSmartSDK12CLDDeviceKeyV15unlock_type_rawSiSgvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK12CLDDeviceKeyV15unlock_type_rawSiSgvg",
+                "mangledName": "$s11CLDSmartSDK12CLDDeviceKeyV15unlock_type_rawSiSgvg",
                 "moduleName": "CLDSmartSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -26639,7 +28625,9 @@
             "usr": "s:11CLDSmartSDK12CLDDeviceKeyV4fromACs7Decoder_p_tKcfc",
             "mangledName": "$s11CLDSmartSDK12CLDDeviceKeyV4fromACs7Decoder_p_tKcfc",
             "moduleName": "CLDSmartSDK",
-            "implicit": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
             "throwing": true,
             "init_kind": "Designated"
           },
@@ -26664,7 +28652,9 @@
             "usr": "s:11CLDSmartSDK12CLDDeviceKeyV6encode2toys7Encoder_p_tKF",
             "mangledName": "$s11CLDSmartSDK12CLDDeviceKeyV6encode2toys7Encoder_p_tKF",
             "moduleName": "CLDSmartSDK",
-            "implicit": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
             "throwing": true,
             "funcSelfKind": "NonMutating"
           }
@@ -32780,6 +34770,457 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "CLDAddPasswordResult",
+        "printedName": "CLDAddPasswordResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "accepted",
+            "printedName": "accepted",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK20CLDAddPasswordResultV8acceptedSbvp",
+            "mangledName": "$s11CLDSmartSDK20CLDAddPasswordResultV8acceptedSbvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK20CLDAddPasswordResultV8acceptedSbvg",
+                "mangledName": "$s11CLDSmartSDK20CLDAddPasswordResultV8acceptedSbvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "code",
+            "printedName": "code",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK20CLDAddPasswordResultV4codeSivp",
+            "mangledName": "$s11CLDSmartSDK20CLDAddPasswordResultV4codeSivp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK20CLDAddPasswordResultV4codeSivg",
+                "mangledName": "$s11CLDSmartSDK20CLDAddPasswordResultV4codeSivg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK20CLDAddPasswordResultV7messageSSSgvp",
+            "mangledName": "$s11CLDSmartSDK20CLDAddPasswordResultV7messageSSSgvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK20CLDAddPasswordResultV7messageSSSgvg",
+                "mangledName": "$s11CLDSmartSDK20CLDAddPasswordResultV7messageSSSgvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "keyRecordID",
+            "printedName": "keyRecordID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK20CLDAddPasswordResultV11keyRecordIDSiSgvp",
+            "mangledName": "$s11CLDSmartSDK20CLDAddPasswordResultV11keyRecordIDSiSgvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK20CLDAddPasswordResultV11keyRecordIDSiSgvg",
+                "mangledName": "$s11CLDSmartSDK20CLDAddPasswordResultV11keyRecordIDSiSgvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "checkToken",
+            "printedName": "checkToken",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK20CLDAddPasswordResultV10checkTokenSSSgvp",
+            "mangledName": "$s11CLDSmartSDK20CLDAddPasswordResultV10checkTokenSSSgvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK20CLDAddPasswordResultV10checkTokenSSSgvg",
+                "mangledName": "$s11CLDSmartSDK20CLDAddPasswordResultV10checkTokenSSSgvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isActionShadow",
+            "printedName": "isActionShadow",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK20CLDAddPasswordResultV14isActionShadowSiSgvp",
+            "mangledName": "$s11CLDSmartSDK20CLDAddPasswordResultV14isActionShadowSiSgvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK20CLDAddPasswordResultV14isActionShadowSiSgvg",
+                "mangledName": "$s11CLDSmartSDK20CLDAddPasswordResultV14isActionShadowSiSgvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(accepted:code:message:keyRecordID:checkToken:isActionShadow:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CLDAddPasswordResult",
+                "printedName": "CLDSmartSDK.CLDAddPasswordResult",
+                "usr": "s:11CLDSmartSDK20CLDAddPasswordResultV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11CLDSmartSDK20CLDAddPasswordResultV8accepted4code7message11keyRecordID10checkToken14isActionShadowACSb_SiSSSgSiSgAjKtcfc",
+            "mangledName": "$s11CLDSmartSDK20CLDAddPasswordResultV8accepted4code7message11keyRecordID10checkToken14isActionShadowACSb_SiSSSgSiSgAjKtcfc",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11CLDSmartSDK20CLDAddPasswordResultV",
+        "mangledName": "$s11CLDSmartSDK20CLDAddPasswordResultV",
+        "moduleName": "CLDSmartSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "CLDInputKeyState",
         "printedName": "CLDInputKeyState",
         "children": [
@@ -32972,7 +35413,8 @@
         "mangledName": "$s11CLDSmartSDK16CLDInputKeyStateO",
         "moduleName": "CLDSmartSDK",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "enumRawTypeName": "Int",
         "conformances": [
@@ -36253,6 +38695,283 @@
               "Override"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "methodName",
+            "printedName": "methodName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@CLDSmartSDK@objc(cs)MQTTCoreMessage(py)methodName",
+            "mangledName": "$s11CLDSmartSDK15MQTTCoreMessageC10methodNameSSvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "Dynamic",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@CLDSmartSDK@objc(cs)MQTTCoreMessage(im)methodName",
+                "mangledName": "$s11CLDSmartSDK15MQTTCoreMessageC10methodNameSSvg",
+                "moduleName": "CLDSmartSDK",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "eventMethod",
+            "printedName": "eventMethod",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CLDMQTTMessageMethod",
+                "printedName": "CLDSmartSDK.CLDMQTTMessageMethod",
+                "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK15MQTTCoreMessageC11eventMethodAA014CLDMQTTMessageF0Ovp",
+            "mangledName": "$s11CLDSmartSDK15MQTTCoreMessageC11eventMethodAA014CLDMQTTMessageF0Ovp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "NonObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDMQTTMessageMethod",
+                    "printedName": "CLDSmartSDK.CLDMQTTMessageMethod",
+                    "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK15MQTTCoreMessageC11eventMethodAA014CLDMQTTMessageF0Ovg",
+                "mangledName": "$s11CLDSmartSDK15MQTTCoreMessageC11eventMethodAA014CLDMQTTMessageF0Ovg",
+                "moduleName": "CLDSmartSDK",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "deviceVID",
+            "printedName": "deviceVID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@CLDSmartSDK@objc(cs)MQTTCoreMessage(py)deviceVID",
+            "mangledName": "$s11CLDSmartSDK15MQTTCoreMessageC9deviceVIDSSvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "Dynamic",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@CLDSmartSDK@objc(cs)MQTTCoreMessage(im)deviceVID",
+                "mangledName": "$s11CLDSmartSDK15MQTTCoreMessageC9deviceVIDSSvg",
+                "moduleName": "CLDSmartSDK",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "messagePayload",
+            "printedName": "messagePayload",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@CLDSmartSDK@objc(cs)MQTTCoreMessage(py)messagePayload",
+            "mangledName": "$s11CLDSmartSDK15MQTTCoreMessageC14messagePayloadSDySSypGvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "Dynamic",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@CLDSmartSDK@objc(cs)MQTTCoreMessage(im)messagePayload",
+                "mangledName": "$s11CLDSmartSDK15MQTTCoreMessageC14messagePayloadSDySSypGvg",
+                "moduleName": "CLDSmartSDK",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "actionID",
+            "printedName": "actionID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@CLDSmartSDK@objc(cs)MQTTCoreMessage(py)actionID",
+            "mangledName": "$s11CLDSmartSDK15MQTTCoreMessageC8actionIDSSSgvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "Dynamic",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@CLDSmartSDK@objc(cs)MQTTCoreMessage(im)actionID",
+                "mangledName": "$s11CLDSmartSDK15MQTTCoreMessageC8actionIDSSSgvg",
+                "moduleName": "CLDSmartSDK",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Class",
@@ -37201,6 +39920,674 @@
         "printedName": "CocoaMQTT",
         "declKind": "Import",
         "moduleName": "CLDSmartSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CLDSmartSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CLDMQTTMessageMethod",
+        "printedName": "CLDMQTTMessageMethod",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDMQTTMessageMethod.Type) -> CLDSmartSDK.CLDMQTTMessageMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDMQTTMessageMethod",
+                    "printedName": "CLDSmartSDK.CLDMQTTMessageMethod",
+                    "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDMQTTMessageMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDMQTTMessageMethod",
+                        "printedName": "CLDSmartSDK.CLDMQTTMessageMethod",
+                        "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO7unknownyA2CmF",
+            "mangledName": "$s11CLDSmartSDK20CLDMQTTMessageMethodO7unknownyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "addDevice",
+            "printedName": "addDevice",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDMQTTMessageMethod.Type) -> CLDSmartSDK.CLDMQTTMessageMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDMQTTMessageMethod",
+                    "printedName": "CLDSmartSDK.CLDMQTTMessageMethod",
+                    "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDMQTTMessageMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDMQTTMessageMethod",
+                        "printedName": "CLDSmartSDK.CLDMQTTMessageMethod",
+                        "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO9addDeviceyA2CmF",
+            "mangledName": "$s11CLDSmartSDK20CLDMQTTMessageMethodO9addDeviceyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "delDevice",
+            "printedName": "delDevice",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDMQTTMessageMethod.Type) -> CLDSmartSDK.CLDMQTTMessageMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDMQTTMessageMethod",
+                    "printedName": "CLDSmartSDK.CLDMQTTMessageMethod",
+                    "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDMQTTMessageMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDMQTTMessageMethod",
+                        "printedName": "CLDSmartSDK.CLDMQTTMessageMethod",
+                        "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO9delDeviceyA2CmF",
+            "mangledName": "$s11CLDSmartSDK20CLDMQTTMessageMethodO9delDeviceyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "otherLogin",
+            "printedName": "otherLogin",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDMQTTMessageMethod.Type) -> CLDSmartSDK.CLDMQTTMessageMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDMQTTMessageMethod",
+                    "printedName": "CLDSmartSDK.CLDMQTTMessageMethod",
+                    "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDMQTTMessageMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDMQTTMessageMethod",
+                        "printedName": "CLDSmartSDK.CLDMQTTMessageMethod",
+                        "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO10otherLoginyA2CmF",
+            "mangledName": "$s11CLDSmartSDK20CLDMQTTMessageMethodO10otherLoginyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "event",
+            "printedName": "event",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDMQTTMessageMethod.Type) -> CLDSmartSDK.CLDMQTTMessageMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDMQTTMessageMethod",
+                    "printedName": "CLDSmartSDK.CLDMQTTMessageMethod",
+                    "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDMQTTMessageMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDMQTTMessageMethod",
+                        "printedName": "CLDSmartSDK.CLDMQTTMessageMethod",
+                        "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO5eventyA2CmF",
+            "mangledName": "$s11CLDSmartSDK20CLDMQTTMessageMethodO5eventyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "updateDeviceStatus",
+            "printedName": "updateDeviceStatus",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDMQTTMessageMethod.Type) -> CLDSmartSDK.CLDMQTTMessageMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDMQTTMessageMethod",
+                    "printedName": "CLDSmartSDK.CLDMQTTMessageMethod",
+                    "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDMQTTMessageMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDMQTTMessageMethod",
+                        "printedName": "CLDSmartSDK.CLDMQTTMessageMethod",
+                        "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO18updateDeviceStatusyA2CmF",
+            "mangledName": "$s11CLDSmartSDK20CLDMQTTMessageMethodO18updateDeviceStatusyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "deviceEvent",
+            "printedName": "deviceEvent",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDMQTTMessageMethod.Type) -> CLDSmartSDK.CLDMQTTMessageMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDMQTTMessageMethod",
+                    "printedName": "CLDSmartSDK.CLDMQTTMessageMethod",
+                    "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDMQTTMessageMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDMQTTMessageMethod",
+                        "printedName": "CLDSmartSDK.CLDMQTTMessageMethod",
+                        "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO11deviceEventyA2CmF",
+            "mangledName": "$s11CLDSmartSDK20CLDMQTTMessageMethodO11deviceEventyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "actionReport",
+            "printedName": "actionReport",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDMQTTMessageMethod.Type) -> CLDSmartSDK.CLDMQTTMessageMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDMQTTMessageMethod",
+                    "printedName": "CLDSmartSDK.CLDMQTTMessageMethod",
+                    "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDMQTTMessageMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDMQTTMessageMethod",
+                        "printedName": "CLDSmartSDK.CLDMQTTMessageMethod",
+                        "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO12actionReportyA2CmF",
+            "mangledName": "$s11CLDSmartSDK20CLDMQTTMessageMethodO12actionReportyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "updateKeyList",
+            "printedName": "updateKeyList",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDMQTTMessageMethod.Type) -> CLDSmartSDK.CLDMQTTMessageMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDMQTTMessageMethod",
+                    "printedName": "CLDSmartSDK.CLDMQTTMessageMethod",
+                    "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDMQTTMessageMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDMQTTMessageMethod",
+                        "printedName": "CLDSmartSDK.CLDMQTTMessageMethod",
+                        "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO13updateKeyListyA2CmF",
+            "mangledName": "$s11CLDSmartSDK20CLDMQTTMessageMethodO13updateKeyListyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "otaDownload",
+            "printedName": "otaDownload",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDMQTTMessageMethod.Type) -> CLDSmartSDK.CLDMQTTMessageMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDMQTTMessageMethod",
+                    "printedName": "CLDSmartSDK.CLDMQTTMessageMethod",
+                    "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDMQTTMessageMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDMQTTMessageMethod",
+                        "printedName": "CLDSmartSDK.CLDMQTTMessageMethod",
+                        "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO11otaDownloadyA2CmF",
+            "mangledName": "$s11CLDSmartSDK20CLDMQTTMessageMethodO11otaDownloadyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "otaUpgrade",
+            "printedName": "otaUpgrade",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDMQTTMessageMethod.Type) -> CLDSmartSDK.CLDMQTTMessageMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDMQTTMessageMethod",
+                    "printedName": "CLDSmartSDK.CLDMQTTMessageMethod",
+                    "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDMQTTMessageMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDMQTTMessageMethod",
+                        "printedName": "CLDSmartSDK.CLDMQTTMessageMethod",
+                        "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO10otaUpgradeyA2CmF",
+            "mangledName": "$s11CLDSmartSDK20CLDMQTTMessageMethodO10otaUpgradeyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "playback",
+            "printedName": "playback",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDMQTTMessageMethod.Type) -> CLDSmartSDK.CLDMQTTMessageMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDMQTTMessageMethod",
+                    "printedName": "CLDSmartSDK.CLDMQTTMessageMethod",
+                    "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDMQTTMessageMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDMQTTMessageMethod",
+                        "printedName": "CLDSmartSDK.CLDMQTTMessageMethod",
+                        "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO8playbackyA2CmF",
+            "mangledName": "$s11CLDSmartSDK20CLDMQTTMessageMethodO8playbackyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "deviceLink",
+            "printedName": "deviceLink",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDMQTTMessageMethod.Type) -> CLDSmartSDK.CLDMQTTMessageMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDMQTTMessageMethod",
+                    "printedName": "CLDSmartSDK.CLDMQTTMessageMethod",
+                    "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDMQTTMessageMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDMQTTMessageMethod",
+                        "printedName": "CLDSmartSDK.CLDMQTTMessageMethod",
+                        "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO10deviceLinkyA2CmF",
+            "mangledName": "$s11CLDSmartSDK20CLDMQTTMessageMethodO10deviceLinkyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "nfEvent",
+            "printedName": "nfEvent",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDMQTTMessageMethod.Type) -> CLDSmartSDK.CLDMQTTMessageMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDMQTTMessageMethod",
+                    "printedName": "CLDSmartSDK.CLDMQTTMessageMethod",
+                    "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDMQTTMessageMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDMQTTMessageMethod",
+                        "printedName": "CLDSmartSDK.CLDMQTTMessageMethod",
+                        "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO7nfEventyA2CmF",
+            "mangledName": "$s11CLDSmartSDK20CLDMQTTMessageMethodO7nfEventyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CLDSmartSDK.CLDMQTTMessageMethod?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDMQTTMessageMethod",
+                    "printedName": "CLDSmartSDK.CLDMQTTMessageMethod",
+                    "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO8rawValueACSgSS_tcfc",
+            "mangledName": "$s11CLDSmartSDK20CLDMQTTMessageMethodO8rawValueACSgSS_tcfc",
+            "moduleName": "CLDSmartSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO8rawValueSSvp",
+            "mangledName": "$s11CLDSmartSDK20CLDMQTTMessageMethodO8rawValueSSvp",
+            "moduleName": "CLDSmartSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO8rawValueSSvg",
+                "mangledName": "$s11CLDSmartSDK20CLDMQTTMessageMethodO8rawValueSSvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11CLDSmartSDK20CLDMQTTMessageMethodO",
+        "mangledName": "$s11CLDSmartSDK20CLDMQTTMessageMethodO",
+        "moduleName": "CLDSmartSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -45239,28 +48626,42 @@
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 4984,
+      "offset": 4828,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5203,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5247,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngine.swift",
       "kind": "StringLiteral",
-      "offset": 5894,
+      "offset": 6738,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngine.swift",
       "kind": "StringLiteral",
-      "offset": 5925,
+      "offset": 6769,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngine.swift",
       "kind": "StringLiteral",
-      "offset": 5955,
+      "offset": 6799,
       "length": 31,
       "value": "\"com.cldsmart.sdk.engineConfig\""
     },
@@ -45372,133 +48773,133 @@
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "Array",
-      "offset": 33544,
+      "offset": 34155,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 40369,
+      "offset": 40980,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 42336,
+      "offset": 42947,
       "length": 3,
       "value": "120"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "StringLiteral",
-      "offset": 48600,
+      "offset": 49211,
       "length": 7,
       "value": "\"Arpha\""
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 51309,
+      "offset": 61217,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 59627,
+      "offset": 69535,
       "length": 2,
       "value": "90"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 61259,
+      "offset": 71167,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "BooleanLiteral",
-      "offset": 63097,
+      "offset": 73005,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 63116,
+      "offset": 73024,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 63131,
+      "offset": 73039,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 64949,
+      "offset": 74857,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "BooleanLiteral",
-      "offset": 70010,
+      "offset": 79918,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "BooleanLiteral",
-      "offset": 71035,
+      "offset": 80943,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 72167,
+      "offset": 82075,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 72951,
+      "offset": 82859,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 75921,
+      "offset": 85829,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 77675,
+      "offset": 87583,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 77717,
+      "offset": 87625,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 84192,
+      "offset": 94121,
       "length": 1,
       "value": "0"
     },
@@ -46128,420 +49529,441 @@
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 14465,
+      "offset": 16114,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 14477,
+      "offset": 16126,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 14485,
+      "offset": 16134,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 14493,
+      "offset": 16142,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 14508,
+      "offset": 16157,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 14813,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
-      "kind": "IntegerLiteral",
-      "offset": 14830,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
-      "kind": "IntegerLiteral",
-      "offset": 14852,
-      "length": 2,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
-      "kind": "IntegerLiteral",
-      "offset": 14872,
-      "length": 2,
-      "value": "12"
-    },
-    {
-      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
-      "kind": "IntegerLiteral",
-      "offset": 14890,
+      "offset": 16465,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 14900,
+      "offset": 16487,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16513,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16538,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16556,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 14917,
+      "offset": 16574,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16604,
+      "length": 2,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16632,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16658,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 14989,
+      "offset": 16681,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16753,
       "length": 7,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 14998,
+      "offset": 16762,
       "length": 5,
       "value": "2"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 15005,
+      "offset": 16769,
       "length": 4,
       "value": "3"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 15011,
+      "offset": 16775,
       "length": 7,
       "value": "4"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 15020,
+      "offset": 16784,
       "length": 9,
       "value": "5"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 15031,
+      "offset": 16795,
       "length": 12,
       "value": "6"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 16903,
+      "offset": 21397,
       "length": 2,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 16907,
+      "offset": 21401,
       "length": 6,
       "value": "2"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 16968,
+      "offset": 21462,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 16971,
+      "offset": 21465,
       "length": 7,
       "value": "2"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 16980,
+      "offset": 21474,
       "length": 6,
       "value": "3"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 19569,
+      "offset": 24063,
       "length": 5,
       "value": "20000"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 19641,
+      "offset": 24135,
       "length": 5,
       "value": "20005"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 19709,
+      "offset": 24203,
       "length": 5,
       "value": "10003"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 19788,
+      "offset": 24282,
       "length": 5,
       "value": "42208"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 19867,
+      "offset": 24361,
       "length": 5,
       "value": "42209"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 19929,
+      "offset": 24423,
       "length": 5,
       "value": "42236"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 20025,
+      "offset": 24519,
       "length": 5,
       "value": "42237"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 20086,
+      "offset": 24580,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 20161,
+      "offset": 24655,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 20214,
+      "offset": 24708,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 20276,
+      "offset": 24770,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 20335,
+      "offset": 24829,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 20406,
+      "offset": 24900,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 20796,
+      "offset": 25290,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 20830,
+      "offset": 25324,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 20862,
+      "offset": 25356,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 20923,
+      "offset": 25417,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 20961,
+      "offset": 25455,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 21148,
+      "offset": 26550,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 21174,
+      "offset": 26576,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 21199,
+      "offset": 26601,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 21262,
+      "offset": 26664,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 21284,
+      "offset": 26686,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 21310,
+      "offset": 26712,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 21335,
+      "offset": 26737,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 21353,
+      "offset": 26755,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 21371,
+      "offset": 26773,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 21399,
+      "offset": 26801,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 21427,
+      "offset": 26829,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 21450,
+      "offset": 26852,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 23335,
+      "offset": 28737,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 23389,
+      "offset": 28791,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 23476,
+      "offset": 28878,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 23563,
+      "offset": 28965,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 23674,
+      "offset": 29076,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 23702,
+      "offset": 29104,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 23724,
+      "offset": 29126,
       "length": 1,
       "value": "1"
     },
@@ -47834,6 +51256,41 @@
       "value": "6"
     },
     {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldMQTTDiagnosticEx.swift",
+      "kind": "StringLiteral",
+      "offset": 715,
+      "length": 8,
+      "value": "\"method\""
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldMQTTDiagnosticEx.swift",
+      "kind": "StringLiteral",
+      "offset": 1050,
+      "length": 13,
+      "value": "\"device_info\""
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldMQTTDiagnosticEx.swift",
+      "kind": "StringLiteral",
+      "offset": 1085,
+      "length": 5,
+      "value": "\"vid\""
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldMQTTDiagnosticEx.swift",
+      "kind": "StringLiteral",
+      "offset": 1106,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldMQTTDiagnosticEx.swift",
+      "kind": "StringLiteral",
+      "offset": 1362,
+      "length": 11,
+      "value": "\"action_id\""
+    },
+    {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "StringLiteral",
       "offset": 591,
@@ -48369,41 +51826,41 @@
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "Array",
       "offset": 9919,
-      "length": 303,
-      "value": "[\"password\", \"password_confirmation\", \"old_password\", \"current_password\", \"new_password\", \"new_password_confirmation\", \"validate_code\", \"secret\", \"secret_key\", \"app_client_secret\", \"sign\", \"signature\"]"
+      "length": 380,
+      "value": "[\"password\", \"password_confirmation\", \"old_password\", \"current_password\", \"new_password\", \"new_password_confirmation\", \"validate_code\", \"secret\", \"secret_key\", \"bt_secret\", \"encrypt_key\", \"one_time_password_key\", \"app_client_secret\", \"sign\", \"signature\"]"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "Array",
-      "offset": 10314,
+      "offset": 10391,
       "length": 189,
       "value": "[\"authorization\", \"token\", \"access_token\", \"refresh_token\", \"device_token\", \"reg_token\", \"reset_token\", \"member_token\"]"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "Dictionary",
-      "offset": 12931,
+      "offset": 13008,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "Dictionary",
-      "offset": 14492,
+      "offset": 14569,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "BooleanLiteral",
-      "offset": 28399,
+      "offset": 28933,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "StringLiteral",
-      "offset": 30537,
+      "offset": 31071,
       "length": 17,
       "value": "\"urlPathParamKey\""
     },
