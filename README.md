@@ -2,7 +2,7 @@
 
 CLDSmartSDK iOS SDK 提供账号认证、设备绑定、蓝牙通信、IoT 控制、消息推送和音视频能力。
 
-- 当前版本：`1.4.2`
+- 当前版本：`1.4.3`
 - 最低系统：iOS 13.0
 - Swift：5.9 或更高版本
 - 分发形式：静态 XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.2'
+      :tag => '1.4.3'
 end
 ```
 
@@ -350,6 +350,58 @@ func deleteDevice(vid: String) {
 
 原有 `deleteDevice(vid:code:token:completion:)` 继续保留以兼容已有客户代码。新接入项目应优先使用 `deleteDevice(vid:reset:completion:)`。
 
+## 指纹录入与列表同步
+
+指纹业务按“BLE 就绪 -> 录入成功 -> 本地列表上报 -> 云端列表查询”执行。`bleIsConnected` 只代表物理连接；发送业务命令前必须确认 `bleIsReady == true`。`progress == 100` 时状态仍可能是 `.inputting`，只有 `.inputSuccess` 才是最终成功。
+
+```swift
+func enrollFingerprint(device: CLDDevice, name: String) {
+    let engine = CldSmartEngine.shared
+    let fingerprint = CLDPassword(
+        unlock_type: CLDInputKeyType.fingerprint.rawValue,
+        note: name
+    )
+
+    guard engine.bleIsReady else {
+        print("BLE 尚未完成 VLink 握手")
+        return
+    }
+
+    engine.addKeyInput(
+        vid: device.vid,
+        password: fingerprint,
+        isBLE: true,
+        timeout: max(device.input_key_timeout.fingerprint, 120)
+    ) { progress, state in
+        print("fingerprint: progress=\(progress), state=\(state.rawValue)")
+        guard state == .inputSuccess else { return }
+
+        engine.syncDeviceKeyListFromBLE(
+            vid: device.vid,
+            type: .fingerprint
+        ) { success, localCount, code, message in
+            guard success, code == 20000 else {
+                print(message ?? "同步设备指纹失败")
+                return
+            }
+
+            engine.getDeviceKeyList(
+                vid: device.vid,
+                type: .fingerprint
+            ) { list, code, message in
+                guard code == 20000, let list else {
+                    print(message ?? "查询云端指纹列表失败")
+                    return
+                }
+                print("设备本地指纹数：\(localCount)，云端指纹数：\(list.count)")
+            }
+        }
+    }
+}
+```
+
+首次进入页面或尚未连接时，先使用设备的 `bluetooth_id`、`input_bt_config ?? bt_config` 和 `bt_secret` 调用 `connectBLE`；其成功回调后仍应检查 `bleIsReady`。不要在已有连接或连接中的状态下重复调用 `connectBLE`。`getDeviceKeyList` 只查询云端数据，不直接读取设备；BLE 录入后应先调用 `syncDeviceKeyListFromBLE`。不要把 `bt_secret`、Token 或原始 BLE 数据写入日志。
+
 ## APNs 推送 Token
 
 正式 App 应启用 Push Notifications Capability，并注册远程通知。登录请求中的 `device_token` 和 `reg_token` 使用同一个 APNs Token。
@@ -434,6 +486,14 @@ Debug/Sandbox 构建使用 `isAPNsSandbox: true`，正式 APNs 环境使用 `fal
 不要直接用新账号覆盖旧会话。按“服务端登出 -> `deinitEngine` -> `initEngine` -> 新账号登录”的顺序切换。
 
 ## 版本说明
+
+### 1.4.3
+
+- 修复指纹列表请求类型，`.fingerprint` 现在按服务端约定发送 `finger_print`。
+- 新增 `bleIsReady`，用于区分物理连接和已完成 VLink 随机码/密钥握手的可用连接。
+- 新增 `syncDeviceKeyListFromBLE`，读取门锁本地凭证并同步至云端后再查询列表。
+- 修复 BLE 指纹录入进度与 busy 状态处理；`progress=100` 不再被误判为最终成功。
+- SDK 与 VLink 使用静态链接，避免宿主 App 同时加载重复 Objective-C 类。
 
 ### 1.4.2
 

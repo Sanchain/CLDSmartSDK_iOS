@@ -177,6 +177,9 @@ extension CLDSmartSDK.CldSmartEngine {
   public func getDeviceKeyList(vid: Swift.String, type: CLDSmartSDK.CLDDeviceKeyType, page: Swift.Int = 1, pageSize: Swift.Int = 20, completion: @escaping ([CLDSmartSDK.CLDDeviceKey]?, Swift.Int, Swift.String?) -> Swift.Void)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
+  public func syncDeviceKeyListFromBLE(vid: Swift.String, type: CLDSmartSDK.CLDDeviceKeyType, completion: @escaping (Swift.Bool, Swift.Int, Swift.Int, Swift.String?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func deleteDeviceKey(vid: Swift.String, keyId: Swift.Int, isBLE: Swift.Bool, completion: @escaping (Swift.Bool, Swift.Int, Swift.String?) -> Swift.Void)
   #endif
   public func renameDeviceKey(vid: Swift.String, keyId: Swift.Int, name: Swift.String, completion: @escaping CLDSmartSDK.CLDBoolBlock)
@@ -1128,6 +1131,9 @@ extension CLDSmartSDK.CldSmartEngine {
   public var bleIsConnected: Swift.Bool {
     get
   }
+  public var bleIsReady: Swift.Bool {
+    get
+  }
   public var bleIsConnecting: Swift.Bool {
     get
   }
@@ -1343,6 +1349,7 @@ public enum NetworkMethod : Swift.String {
   case iotGetProperty
   case iotSetProperty
   case reportPasswordList
+  case syncBLEDeviceKeys
   case reportBatchEvents
   case eventsReport
   case remoteLock

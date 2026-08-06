@@ -2,7 +2,7 @@
 
 CLDSmartSDK for iOS provides account authentication, device binding, Bluetooth communication, IoT control, push messaging, and audio/video capabilities.
 
-- Current version: `1.4.2`
+- Current version: `1.4.3`
 - Minimum deployment target: iOS 13.0
 - Swift: 5.9 or later
 - Distribution: static XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.2'
+      :tag => '1.4.3'
 end
 ```
 
@@ -352,6 +352,58 @@ Sessions cached by `1.2.0` or earlier do not contain a login mode. After upgradi
 
 The existing `deleteDevice(vid:code:token:completion:)` API remains available for source compatibility. New integrations should use `deleteDevice(vid:reset:completion:)`.
 
+## Fingerprint Enrollment and List Synchronization
+
+Run the fingerprint flow in this order: BLE ready, enrollment success, local-list upload, then cloud-list query. `bleIsConnected` only indicates a physical connection. Verify `bleIsReady == true` before sending a command. The device may report `progress == 100` while the state is still `.inputting`; only `.inputSuccess` is final success.
+
+```swift
+func enrollFingerprint(device: CLDDevice, name: String) {
+    let engine = CldSmartEngine.shared
+    let fingerprint = CLDPassword(
+        unlock_type: CLDInputKeyType.fingerprint.rawValue,
+        note: name
+    )
+
+    guard engine.bleIsReady else {
+        print("The VLink handshake is not ready")
+        return
+    }
+
+    engine.addKeyInput(
+        vid: device.vid,
+        password: fingerprint,
+        isBLE: true,
+        timeout: max(device.input_key_timeout.fingerprint, 120)
+    ) { progress, state in
+        print("fingerprint: progress=\(progress), state=\(state.rawValue)")
+        guard state == .inputSuccess else { return }
+
+        engine.syncDeviceKeyListFromBLE(
+            vid: device.vid,
+            type: .fingerprint
+        ) { success, localCount, code, message in
+            guard success, code == 20000 else {
+                print(message ?? "Failed to synchronize device fingerprints")
+                return
+            }
+
+            engine.getDeviceKeyList(
+                vid: device.vid,
+                type: .fingerprint
+            ) { list, code, message in
+                guard code == 20000, let list else {
+                    print(message ?? "Failed to query cloud fingerprints")
+                    return
+                }
+                print("Local fingerprints: \(localCount), cloud fingerprints: \(list.count)")
+            }
+        }
+    }
+}
+```
+
+When the device is not connected, first call `connectBLE` with its `bluetooth_id`, `input_bt_config ?? bt_config`, and `bt_secret`; verify `bleIsReady` after the success callback. Do not start another connection while one is connected or connecting. `getDeviceKeyList` queries cloud records and does not read the lock directly, so call `syncDeviceKeyListFromBLE` first after BLE enrollment. Never log `bt_secret`, tokens, or raw encrypted BLE data.
+
 ## APNs Device Token
 
 A production application must enable the Push Notifications capability and register for remote notifications. The login request uses the same APNs token for `device_token` and `reg_token`.
@@ -436,6 +488,14 @@ Verify that the SDK server, App ID/Secret Key, `countryCode`, and `regionCode` b
 Do not overwrite an existing session. Switch users in this order: server logout, `deinitEngine`, `initEngine`, and then new-user login.
 
 ## Release Notes
+
+### 1.4.3
+
+- Fixed fingerprint-list requests so `.fingerprint` sends the backend value `finger_print`.
+- Added `bleIsReady` to distinguish a physical BLE connection from a connection with a completed VLink random-code/key handshake.
+- Added `syncDeviceKeyListFromBLE` to read local lock credentials and upload them before querying the cloud list.
+- Fixed BLE fingerprint progress forwarding and stale busy-state handling; `progress=100` is no longer treated as final success by itself.
+- Linked CLDSmartSDK and VLink statically to prevent duplicate Objective-C class implementations in host applications.
 
 ### 1.4.2
 
