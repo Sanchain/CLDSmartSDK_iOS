@@ -2,7 +2,7 @@
 
 CLDSmartSDK iOS SDK 提供账号认证、设备绑定、蓝牙通信、IoT 控制、消息推送和音视频能力。
 
-- 当前版本：`1.4.4`
+- 当前版本：`1.4.5`
 - 最低系统：iOS 13.0
 - Swift：5.9 或更高版本
 - 分发形式：静态 XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.4'
+      :tag => '1.4.5'
 end
 ```
 
@@ -318,13 +318,23 @@ engine.logout { success in
 
 ## 共享成员与设备转移
 
-`updateShareMemberList` 提交的是设备当前应保留的完整共享成员标识列表，不是要新增或删除的差量。删除一个共享成员时，先从查询结果中移除目标成员，再提交剩余的全部 `member_identity`。当最后一个共享成员被删除时，必须传入空数组：
+`updateShareMemberList` 提交的是设备当前应保留的完整非空共享成员标识列表，不是要新增或删除的差量。为兼容旧客户，从 `1.4.5` 开始传入空数组会在 SDK 本地返回 `false`，不会请求服务端。
+
+删除一个共享成员请使用显式接口：
 
 ```swift
-engine.updateShareMemberList(
-    vid: deviceVID,
-    memberIds: []
-) { success in
+engine.removeShareMember(vid: deviceVID, memberId: targetMemberID) { success in
+    guard success else {
+        print("删除共享成员失败")
+        return
+    }
+}
+```
+
+明确清空全部共享成员时，客户 App 必须先做二次确认，再调用：
+
+```swift
+engine.clearShareMemberList(vid: deviceVID) { success in
     guard success else {
         print("清空共享成员失败")
         return
@@ -332,7 +342,7 @@ engine.updateShareMemberList(
 }
 ```
 
-从 `1.4.4` 开始，空数组会正常请求服务端并清除全部共享成员。旧版本会在 SDK 本地直接返回 `false`。
+三个方法复用现有的共享成员全量覆盖服务端接口，不要求后端增加路由。`removeShareMember` 会先读取最新列表，再提交删除后的完整列表，包括删除最后一人时的空列表。同一 VID 的添加、删除和清空必须串行，避免并发全量更新互相覆盖。
 
 设备所有权转移先调用 `fetchChangeOwnerCode`，并且 `account` 与 `identify` 至少传一个。成功取得 `event_code` 只代表账户确认完成；最终转移仍需完成验证码流程并调用 `verifyChangeOwner`。
 
@@ -391,6 +401,12 @@ func deleteDevice(vid: String) {
 从 `1.2.0` 或更早版本升级后，旧缓存会话不包含登录模式。首次调用统一删除设备接口前，应让用户退出并重新登录一次。否则接口会返回 `40101` 和 `Unknown login mode. Please log in again.`，用于防止 SDK 误用不匹配的删除接口。
 
 原有 `deleteDevice(vid:code:token:completion:)` 继续保留以兼容已有客户代码。新接入项目应优先使用 `deleteDevice(vid:reset:completion:)`。
+
+## BLE 连接与远程开锁并发
+
+`connectBLE(name:config:encryptKey:timeout:completion:)` 的 completion 固定在主线程且最多回调一次。VLink 使用全局 BLE 管理器，因此同一时刻只接受一笔名称连接任务；重叠调用立即返回 `false`，不会取消当前任务。连接完成会取消对应的 SDK 兜底超时任务；超时后请等待 completion 返回再重试，SDK 会先清理旧连接，避免旧断开事件影响新连接。
+
+`unlockDevice(vid:unLock:timeout:completion:)` 的 completion 同样固定在主线程且最多回调一次。不同 VID 的监听、计时器和任务状态相互隔离，可以并行；同一 VID 已有任务时，新调用立即返回 `false`，不会中断当前任务。状态等待超时从服务端确认受理后开始计算，与旧版语义一致。
 
 ## 指纹录入与列表同步
 
@@ -528,6 +544,13 @@ Debug/Sandbox 构建使用 `isAPNsSandbox: true`，正式 APNs 环境使用 `fal
 不要直接用新账号覆盖旧会话。按“服务端登出 -> `deinitEngine` -> `initEngine` -> 新账号登录”的顺序切换。
 
 ## 版本说明
+
+### 1.4.5
+
+- 恢复 `updateShareMemberList` 的旧版空数组保护；空数组本地返回 `false`，不再隐式清空共享成员。
+- 新增 `removeShareMember` 和 `clearShareMemberList`，分别显式删除单个成员和清空全部成员，继续复用现有服务端全量覆盖接口。
+- BLE 名称连接增加独立任务 ID、可取消超时任务和断开清理窗口，completion 固定主线程且最多一次，重叠连接不会中断当前任务。
+- 远程开关锁按 VID 隔离监听、计时器和任务状态；不同 VID 可并行，同一 VID 的重叠调用返回 `false`，旧任务不能结束新任务。
 
 ### 1.4.4
 

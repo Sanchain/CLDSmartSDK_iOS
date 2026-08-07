@@ -5893,6 +5893,102 @@
           },
           {
             "kind": "Function",
+            "name": "removeShareMember",
+            "printedName": "removeShareMember(vid:memberId:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CLDSmartSDK14CldSmartEngineC17removeShareMember3vid8memberId10completionySS_SSySbctF",
+            "mangledName": "$s11CLDSmartSDK14CldSmartEngineC17removeShareMember3vid8memberId10completionySS_SSySbctF",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearShareMemberList",
+            "printedName": "clearShareMemberList(vid:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CLDSmartSDK14CldSmartEngineC20clearShareMemberList3vid10completionySS_ySbctF",
+            "mangledName": "$s11CLDSmartSDK14CldSmartEngineC20clearShareMemberList3vid10completionySS_ySbctF",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "addDigitsPassword",
             "printedName": "addDigitsPassword(vid:password:isBLE:completion:)",
             "children": [
@@ -49178,218 +49274,232 @@
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "kind": "BooleanLiteral",
+      "offset": 823,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "kind": "BooleanLiteral",
+      "offset": 886,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "Dictionary",
-      "offset": 1194,
+      "offset": 1709,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "Dictionary",
-      "offset": 1445,
+      "offset": 1960,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "Dictionary",
-      "offset": 1632,
+      "offset": 2147,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "Dictionary",
-      "offset": 1968,
+      "offset": 2483,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "Dictionary",
-      "offset": 2392,
+      "offset": 2907,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "Dictionary",
-      "offset": 2669,
+      "offset": 3184,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "Dictionary",
-      "offset": 3343,
+      "offset": 3858,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "Dictionary",
-      "offset": 3894,
+      "offset": 4409,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "StringLiteral",
-      "offset": 26321,
+      "offset": 26836,
       "length": 3,
       "value": "\"4\""
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "BooleanLiteral",
-      "offset": 27622,
+      "offset": 28137,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 30149,
+      "offset": 30664,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 30168,
+      "offset": 30683,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "Array",
-      "offset": 38648,
+      "offset": 39163,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 46423,
+      "offset": 46938,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 48390,
+      "offset": 48905,
       "length": 3,
       "value": "120"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "StringLiteral",
-      "offset": 54654,
+      "offset": 55169,
       "length": 7,
       "value": "\"Arpha\""
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 66742,
+      "offset": 69375,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 77348,
+      "offset": 79981,
       "length": 2,
       "value": "90"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 78980,
+      "offset": 81613,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "BooleanLiteral",
-      "offset": 80818,
+      "offset": 83451,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 80837,
+      "offset": 83470,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 80852,
+      "offset": 83485,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 82670,
+      "offset": 85303,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "BooleanLiteral",
-      "offset": 87731,
+      "offset": 90364,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "BooleanLiteral",
-      "offset": 88756,
+      "offset": 91389,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 89888,
+      "offset": 92521,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 90672,
+      "offset": 93305,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 93642,
+      "offset": 96362,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 95850,
+      "offset": 100201,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 95892,
+      "offset": 100243,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 102388,
+      "offset": 106739,
       "length": 1,
       "value": "0"
     },
@@ -51278,120 +51388,127 @@
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
+      "kind": "StringLiteral",
+      "offset": 540,
+      "length": 40,
+      "value": "\"com.cldsmartsdk.ble-connect-completion\""
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 2503,
+      "offset": 5887,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 3331,
+      "offset": 6715,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 4134,
+      "offset": 7627,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 6578,
+      "offset": 10059,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 7359,
+      "offset": 10840,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 7362,
+      "offset": 10843,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 7369,
+      "offset": 10850,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 7398,
+      "offset": 10879,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 8023,
+      "offset": 11504,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 8026,
+      "offset": 11507,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 8033,
+      "offset": 11514,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 8062,
+      "offset": 11543,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 8649,
+      "offset": 12130,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 8652,
+      "offset": 12133,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 8659,
+      "offset": 12140,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 8688,
+      "offset": 12169,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 9392,
+      "offset": 12873,
       "length": 2,
       "value": "10"
     },

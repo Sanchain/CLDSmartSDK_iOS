@@ -2,7 +2,7 @@
 
 CLDSmartSDK for iOS provides account authentication, device binding, Bluetooth communication, IoT control, push messaging, and audio/video capabilities.
 
-- Current version: `1.4.4`
+- Current version: `1.4.5`
 - Minimum deployment target: iOS 13.0
 - Swift: 5.9 or later
 - Distribution: static XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.4'
+      :tag => '1.4.5'
 end
 ```
 
@@ -320,13 +320,23 @@ engine.logout { success in
 
 ## Shared Members and Device Ownership Transfer
 
-`updateShareMemberList` replaces the complete shared-member list for a device. It does not accept an incremental add/delete list. To remove a member, remove that member from the query result and submit every remaining `member_identity`. Pass an empty array when removing the final shared member:
+`updateShareMemberList` replaces the complete non-empty shared-member list for a device. It does not accept an incremental add/delete list. For backward compatibility, starting with `1.4.5`, an empty array returns `false` locally and does not send a backend request.
+
+Use the explicit API to remove one member:
 
 ```swift
-engine.updateShareMemberList(
-    vid: deviceVID,
-    memberIds: []
-) { success in
+engine.removeShareMember(vid: deviceVID, memberId: targetMemberID) { success in
+    guard success else {
+        print("Failed to remove the shared member")
+        return
+    }
+}
+```
+
+Require user confirmation before explicitly clearing all shared members:
+
+```swift
+engine.clearShareMemberList(vid: deviceVID) { success in
     guard success else {
         print("Failed to clear shared members")
         return
@@ -334,7 +344,7 @@ engine.updateShareMemberList(
 }
 ```
 
-Starting with `1.4.4`, an empty array is sent to the backend and clears all shared members. Earlier versions returned `false` locally without making a request.
+All three methods reuse the existing full-list replacement backend route; no additional backend route is required. `removeShareMember` first fetches the current list and then submits the remaining complete list, including an empty list when removing the last member. Serialize add, remove, and clear operations for the same VID so concurrent full-list updates do not overwrite each other.
 
 To transfer device ownership, first call `fetchChangeOwnerCode` and provide at least one of `account` or `identify`. Receiving an `event_code` only completes the account-confirmation step. The application must still complete the captcha flow and call `verifyChangeOwner`.
 
@@ -393,6 +403,12 @@ func deleteDevice(vid: String) {
 Sessions cached by `1.2.0` or earlier do not contain a login mode. After upgrading, have the user log out and sign in again before the first unified device-deletion call. Otherwise, the API returns `40101` with `Unknown login mode. Please log in again.` to prevent the SDK from selecting the wrong deletion API.
 
 The existing `deleteDevice(vid:code:token:completion:)` API remains available for source compatibility. New integrations should use `deleteDevice(vid:reset:completion:)`.
+
+## BLE Connection and Remote Lock Concurrency
+
+The completion of `connectBLE(name:config:encryptKey:timeout:completion:)` runs on the main thread at most once. VLink uses a global BLE manager, so only one name-based connection attempt is accepted at a time; an overlapping call immediately returns `false` without canceling the active attempt. Completion cancels the matching SDK fallback timeout. After a timeout, wait for completion before retrying so the SDK can clean up the old connection before a new attempt starts.
+
+The completion of `unlockDevice(vid:unLock:timeout:completion:)` also runs on the main thread at most once. Observers, timers, and task state are isolated by VID, so different VIDs can run concurrently. A same-VID overlap immediately returns `false` without interrupting the active operation. The status timeout starts after backend acceptance, preserving the legacy timing semantics.
 
 ## Fingerprint Enrollment and List Synchronization
 
@@ -530,6 +546,13 @@ Verify that the SDK server, App ID/Secret Key, `countryCode`, and `regionCode` b
 Do not overwrite an existing session. Switch users in this order: server logout, `deinitEngine`, `initEngine`, and then new-user login.
 
 ## Release Notes
+
+### 1.4.5
+
+- Restored the legacy empty-array guard in `updateShareMemberList`; an empty array returns `false` locally and no longer clears members implicitly.
+- Added `removeShareMember` and `clearShareMemberList` for explicit single-member removal and full clearing while reusing the existing backend full-list route.
+- Added per-attempt IDs, cancelable timeout work, and a disconnect cleanup window to BLE name-based connections; completion runs on the main thread at most once, and overlapping calls do not interrupt the active attempt.
+- Isolated remote lock observers, timers, and state by VID; different VIDs can run concurrently, same-VID overlap returns `false`, and stale tasks cannot complete newer tasks.
 
 ### 1.4.4
 

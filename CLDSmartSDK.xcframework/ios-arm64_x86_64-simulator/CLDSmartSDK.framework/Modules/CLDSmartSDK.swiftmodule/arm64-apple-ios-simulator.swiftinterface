@@ -220,6 +220,8 @@ extension CLDSmartSDK.CldSmartEngine {
   public func checkShareMember(account: Swift.String, mfr: Swift.String = "Arpha", completion: @escaping (CLDSmartSDK.CLDShareMember?, Swift.Int, Swift.String?) -> Swift.Void)
   #endif
   public func updateShareMemberList(vid: Swift.String, memberIds: [Swift.String], completion: @escaping CLDSmartSDK.CLDBoolBlock)
+  public func removeShareMember(vid: Swift.String, memberId: Swift.String, completion: @escaping CLDSmartSDK.CLDBoolBlock)
+  public func clearShareMemberList(vid: Swift.String, completion: @escaping CLDSmartSDK.CLDBoolBlock)
   #if compiler(>=5.3) && $NonescapableTypes
   public func addDigitsPassword(vid: Swift.String, password: CLDSmartSDK.CLDPassword, isBLE: Swift.Bool, completion: @escaping (Swift.Bool, Swift.Int, Swift.String?) -> Swift.Void)
   #endif
