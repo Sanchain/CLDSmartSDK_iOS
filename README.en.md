@@ -2,7 +2,7 @@
 
 CLDSmartSDK for iOS provides account authentication, device binding, Bluetooth communication, IoT control, push messaging, and audio/video capabilities.
 
-- Current version: `1.4.3`
+- Current version: `1.4.4`
 - Minimum deployment target: iOS 13.0
 - Swift: 5.9 or later
 - Distribution: static XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.3'
+      :tag => '1.4.4'
 end
 ```
 
@@ -318,6 +318,48 @@ engine.logout { success in
 }
 ```
 
+## Shared Members and Device Ownership Transfer
+
+`updateShareMemberList` replaces the complete shared-member list for a device. It does not accept an incremental add/delete list. To remove a member, remove that member from the query result and submit every remaining `member_identity`. Pass an empty array when removing the final shared member:
+
+```swift
+engine.updateShareMemberList(
+    vid: deviceVID,
+    memberIds: []
+) { success in
+    guard success else {
+        print("Failed to clear shared members")
+        return
+    }
+}
+```
+
+Starting with `1.4.4`, an empty array is sent to the backend and clears all shared members. Earlier versions returned `false` locally without making a request.
+
+To transfer device ownership, first call `fetchChangeOwnerCode` and provide at least one of `account` or `identify`. Receiving an `event_code` only completes the account-confirmation step. The application must still complete the captcha flow and call `verifyChangeOwner`.
+
+```swift
+engine.fetchChangeOwnerCode(
+    vid: deviceVID,
+    account: targetAccount
+) { eventCode in
+    guard let eventCode else {
+        print("Failed to obtain the ownership-transfer code")
+        return
+    }
+
+    // Obtain and display the captcha, then pass the user's input here.
+    engine.verifyChangeOwner(
+        code: eventCode,
+        captcha: captcha
+    ) { success in
+        print("Ownership transfer result: \(success)")
+    }
+}
+```
+
+Version `1.4.4` fixes the missing `devices/` path segment that caused the account-confirmation request to return HTTP 404.
+
 ## Delete a Device
 
 Version `1.3.0` provides one device-deletion API for both account modes. The SDK selects the matching server API from the current login mode, so the application does not determine the account type itself.
@@ -488,6 +530,12 @@ Verify that the SDK server, App ID/Secret Key, `countryCode`, and `regionCode` b
 Do not overwrite an existing session. Switch users in this order: server logout, `deinitEngine`, `initEngine`, and then new-user login.
 
 ## Release Notes
+
+### 1.4.4
+
+- Fixed the device ownership account-confirmation route so `fetchChangeOwnerCode` no longer receives HTTP 404.
+- Fixed deletion of the final shared member; `updateShareMemberList` now accepts an empty array to clear all shared members.
+- Documented full-list replacement semantics for shared members and the device ownership transfer flow.
 
 ### 1.4.3
 

@@ -121,6 +121,9 @@ public class CldSmartEngineConfig : Swift.Codable {
   public var isLoggedIn: Swift.Bool {
     get
   }
+  public var isMQTTConnected: Swift.Bool {
+    get
+  }
   @objc override dynamic public init()
   @objc deinit
 }
@@ -197,6 +200,9 @@ extension CLDSmartSDK.CldSmartEngine {
   public func bindBLEDevice(device: VLink.APBLEDevice, product: CLDSmartSDK.CLDProduct, completion: @escaping CLDSmartSDK.CLDBoolBlock)
   #if compiler(>=5.3) && $NonescapableTypes
   public func fetchChangeOwnerCode(vid: Swift.String, account: Swift.String? = nil, identify: Swift.String? = nil, completion: @escaping (Swift.String?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func fetchChangeOwnerCodeWithResult(vid: Swift.String, account: Swift.String? = nil, identify: Swift.String? = nil, completion: @escaping (Swift.String?, Swift.Int, Swift.String?) -> Swift.Void)
   #endif
   public func verifyChangeOwner(code: Swift.String, captcha: Swift.String, completion: @escaping CLDSmartSDK.CLDBoolBlock)
   #if compiler(>=5.3) && $NonescapableTypes

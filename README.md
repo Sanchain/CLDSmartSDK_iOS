@@ -2,7 +2,7 @@
 
 CLDSmartSDK iOS SDK 提供账号认证、设备绑定、蓝牙通信、IoT 控制、消息推送和音视频能力。
 
-- 当前版本：`1.4.3`
+- 当前版本：`1.4.4`
 - 最低系统：iOS 13.0
 - Swift：5.9 或更高版本
 - 分发形式：静态 XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.3'
+      :tag => '1.4.4'
 end
 ```
 
@@ -316,6 +316,48 @@ engine.logout { success in
 }
 ```
 
+## 共享成员与设备转移
+
+`updateShareMemberList` 提交的是设备当前应保留的完整共享成员标识列表，不是要新增或删除的差量。删除一个共享成员时，先从查询结果中移除目标成员，再提交剩余的全部 `member_identity`。当最后一个共享成员被删除时，必须传入空数组：
+
+```swift
+engine.updateShareMemberList(
+    vid: deviceVID,
+    memberIds: []
+) { success in
+    guard success else {
+        print("清空共享成员失败")
+        return
+    }
+}
+```
+
+从 `1.4.4` 开始，空数组会正常请求服务端并清除全部共享成员。旧版本会在 SDK 本地直接返回 `false`。
+
+设备所有权转移先调用 `fetchChangeOwnerCode`，并且 `account` 与 `identify` 至少传一个。成功取得 `event_code` 只代表账户确认完成；最终转移仍需完成验证码流程并调用 `verifyChangeOwner`。
+
+```swift
+engine.fetchChangeOwnerCode(
+    vid: deviceVID,
+    account: targetAccount
+) { eventCode in
+    guard let eventCode else {
+        print("获取设备转移授权码失败")
+        return
+    }
+
+    // 获取并展示验证码后，将用户输入的验证码传给 verifyChangeOwner。
+    engine.verifyChangeOwner(
+        code: eventCode,
+        captcha: captcha
+    ) { success in
+        print("设备转移结果：\(success)")
+    }
+}
+```
+
+`1.4.4` 修复了账户确认接口缺少 `devices/` 路径段导致的 HTTP 404。
+
 ## 删除设备
 
 `1.3.0` 提供统一删除设备接口。客户自有账号和 CLDSmart 公司账号使用相同调用方式，SDK 会根据当前登录模式自动选择对应的服务端接口，客户 App 不需要自行判断账号类型。
@@ -486,6 +528,12 @@ Debug/Sandbox 构建使用 `isAPNsSandbox: true`，正式 APNs 环境使用 `fal
 不要直接用新账号覆盖旧会话。按“服务端登出 -> `deinitEngine` -> `initEngine` -> 新账号登录”的顺序切换。
 
 ## 版本说明
+
+### 1.4.4
+
+- 修复设备所有权转移账户确认接口路径，避免 `fetchChangeOwnerCode` 返回 HTTP 404。
+- 修复删除最后一个共享成员时 SDK 直接返回 `false`；`updateShareMemberList` 现在允许用空数组清除全部共享成员。
+- 补充共享成员全量覆盖语义和设备转移调用说明。
 
 ### 1.4.3
 
