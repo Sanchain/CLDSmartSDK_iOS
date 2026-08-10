@@ -2,7 +2,7 @@
 
 CLDSmartSDK for iOS provides account authentication, device binding, Bluetooth communication, IoT control, push messaging, and audio/video capabilities.
 
-- Current version: `1.4.5`
+- Current version: `1.4.6`
 - Minimum deployment target: iOS 13.0
 - Swift: 5.9 or later
 - Distribution: static XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.5'
+      :tag => '1.4.6'
 end
 ```
 
@@ -344,7 +344,7 @@ engine.clearShareMemberList(vid: deviceVID) { success in
 }
 ```
 
-All three methods reuse the existing full-list replacement backend route; no additional backend route is required. `removeShareMember` first fetches the current list and then submits the remaining complete list, including an empty list when removing the last member. Serialize add, remove, and clear operations for the same VID so concurrent full-list updates do not overwrite each other.
+All three methods reuse the existing full-list replacement backend route; no additional backend route is required. `removeShareMember` first fetches the current list and then submits the remaining complete list, including an empty list when removing the last member. Starting with `1.4.6`, the SDK serializes add, remove, and clear operations by VID within the current application process; different VIDs can still run concurrently. The application UI should still prevent duplicate submissions. A local queue cannot prevent full-list overwrites when multiple phones or application processes modify the same VID; complete protection requires backend version checks or atomic add/remove routes.
 
 To transfer device ownership, first call `fetchChangeOwnerCode` and provide at least one of `account` or `identify`. Receiving an `event_code` only completes the account-confirmation step. The application must still complete the captcha flow and call `verifyChangeOwner`.
 
@@ -406,7 +406,7 @@ The existing `deleteDevice(vid:code:token:completion:)` API remains available fo
 
 ## BLE Connection and Remote Lock Concurrency
 
-The completion of `connectBLE(name:config:encryptKey:timeout:completion:)` runs on the main thread at most once. VLink uses a global BLE manager, so only one name-based connection attempt is accepted at a time; an overlapping call immediately returns `false` without canceling the active attempt. Completion cancels the matching SDK fallback timeout. After a timeout, wait for completion before retrying so the SDK can clean up the old connection before a new attempt starts.
+Starting with `1.4.6`, `connectBLE(name:config:encryptKey:timeout:completion:)` and `connectBLE(device:config:encryptKey:timeout:completion:)` share one global connection coordinator. Both completions run on the main thread at most once. VLink uses a global BLE manager, so the two entry points accept only one combined connection attempt at a time; an overlapping call immediately returns `false` without canceling the active attempt. Completion cancels the matching SDK fallback timeout. After a timeout, wait for completion before retrying so the SDK can clean up the old connection before a new attempt starts. The device-based entry point now honors the caller-provided `timeout` and safely accepts a `nil` completion.
 
 The completion of `unlockDevice(vid:unLock:timeout:completion:)` also runs on the main thread at most once. Observers, timers, and task state are isolated by VID, so different VIDs can run concurrently. A same-VID overlap immediately returns `false` without interrupting the active operation. The status timeout starts after backend acceptance, preserving the legacy timing semantics.
 
@@ -546,6 +546,13 @@ Verify that the SDK server, App ID/Secret Key, `countryCode`, and `regionCode` b
 Do not overwrite an existing session. Switch users in this order: server logout, `deinitEngine`, `initEngine`, and then new-user login.
 
 ## Release Notes
+
+### 1.4.6
+
+- Serialized shared-member updates, single-member removal, and full clearing by VID within the current application process, while allowing different VIDs to proceed concurrently.
+- Unified both `connectBLE` overloads under one global coordinator; overlapping calls return `false`, each attempt has an independent ID and cancelable timeout, and completion runs on the main thread at most once.
+- Updated `connectBLE(device:...)` to honor the caller-provided `timeout` and safely support a `nil` completion.
+- Kept the public Swift Interface and Objective-C header identical to `1.4.5`, so customer method signatures do not change.
 
 ### 1.4.5
 

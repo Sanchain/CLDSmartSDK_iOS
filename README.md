@@ -2,7 +2,7 @@
 
 CLDSmartSDK iOS SDK 提供账号认证、设备绑定、蓝牙通信、IoT 控制、消息推送和音视频能力。
 
-- 当前版本：`1.4.5`
+- 当前版本：`1.4.6`
 - 最低系统：iOS 13.0
 - Swift：5.9 或更高版本
 - 分发形式：静态 XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.5'
+      :tag => '1.4.6'
 end
 ```
 
@@ -342,7 +342,7 @@ engine.clearShareMemberList(vid: deviceVID) { success in
 }
 ```
 
-三个方法复用现有的共享成员全量覆盖服务端接口，不要求后端增加路由。`removeShareMember` 会先读取最新列表，再提交删除后的完整列表，包括删除最后一人时的空列表。同一 VID 的添加、删除和清空必须串行，避免并发全量更新互相覆盖。
+三个方法复用现有的共享成员全量覆盖服务端接口，不要求后端增加路由。`removeShareMember` 会先读取最新列表，再提交删除后的完整列表，包括删除最后一人时的空列表。从 `1.4.6` 开始，SDK 会在当前 App 进程内按 VID 串行执行添加、删除和清空；不同 VID 仍可并行。客户界面仍应避免重复提交。多台手机或多个 App 进程同时修改同一 VID 时，本地队列无法避免全量列表互相覆盖，彻底解决需要服务端提供版本校验或原子增删接口。
 
 设备所有权转移先调用 `fetchChangeOwnerCode`，并且 `account` 与 `identify` 至少传一个。成功取得 `event_code` 只代表账户确认完成；最终转移仍需完成验证码流程并调用 `verifyChangeOwner`。
 
@@ -404,7 +404,7 @@ func deleteDevice(vid: String) {
 
 ## BLE 连接与远程开锁并发
 
-`connectBLE(name:config:encryptKey:timeout:completion:)` 的 completion 固定在主线程且最多回调一次。VLink 使用全局 BLE 管理器，因此同一时刻只接受一笔名称连接任务；重叠调用立即返回 `false`，不会取消当前任务。连接完成会取消对应的 SDK 兜底超时任务；超时后请等待 completion 返回再重试，SDK 会先清理旧连接，避免旧断开事件影响新连接。
+从 `1.4.6` 开始，`connectBLE(name:config:encryptKey:timeout:completion:)` 和 `connectBLE(device:config:encryptKey:timeout:completion:)` 共用同一个全局连接协调器，completion 固定在主线程且最多回调一次。VLink 使用全局 BLE 管理器，因此两个入口合计同一时刻只接受一笔连接任务；重叠调用立即返回 `false`，不会取消当前任务。连接完成会取消对应的 SDK 兜底超时任务；超时后请等待 completion 返回再重试，SDK 会先清理旧连接，避免旧断开事件影响新连接。`device` 入口现在会使用调用方传入的 `timeout`，且允许 completion 为 `nil`。
 
 `unlockDevice(vid:unLock:timeout:completion:)` 的 completion 同样固定在主线程且最多回调一次。不同 VID 的监听、计时器和任务状态相互隔离，可以并行；同一 VID 已有任务时，新调用立即返回 `false`，不会中断当前任务。状态等待超时从服务端确认受理后开始计算，与旧版语义一致。
 
@@ -544,6 +544,13 @@ Debug/Sandbox 构建使用 `isAPNsSandbox: true`，正式 APNs 环境使用 `fal
 不要直接用新账号覆盖旧会话。按“服务端登出 -> `deinitEngine` -> `initEngine` -> 新账号登录”的顺序切换。
 
 ## 版本说明
+
+### 1.4.6
+
+- 共享成员的更新、单成员删除和全部清空在当前 App 进程内按 VID 串行，避免同一 VID 的并发全量写请求互相覆盖；不同 VID 仍可并行。
+- 两个 `connectBLE` 重载共用全局连接协调器，重叠调用返回 `false`；每笔任务使用独立 ID，完成时取消对应超时任务，completion 固定主线程且最多一次。
+- `connectBLE(device:...)` 改为使用调用方传入的 `timeout`，并安全支持 `nil` completion。
+- 公开 Swift Interface 和 Objective-C 头文件与 `1.4.5` 一致，客户无需修改方法签名。
 
 ### 1.4.5
 
