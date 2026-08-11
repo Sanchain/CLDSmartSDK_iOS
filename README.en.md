@@ -2,7 +2,7 @@
 
 CLDSmartSDK for iOS provides account authentication, device binding, Bluetooth communication, IoT control, push messaging, and audio/video capabilities.
 
-- Current version: `1.4.6`
+- Current version: `1.4.7`
 - Minimum deployment target: iOS 13.0
 - Swift: 5.9 or later
 - Distribution: static XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.6'
+      :tag => '1.4.7'
 end
 ```
 
@@ -546,6 +546,15 @@ Verify that the SDK server, App ID/Secret Key, `countryCode`, and `regionCode` b
 Do not overwrite an existing session. Switch users in this order: server logout, `deinitEngine`, `initEngine`, and then new-user login.
 
 ## Release Notes
+
+### 1.4.7
+
+- Added optional `CLDDeviceInfo.is_online` and `CLDDeviceInfo.power` for the cloud online state and power snapshot returned by the device-info API. Missing fields decode as `nil`, and `power_status` keeps its existing semantics.
+- Added `formatSDCard(vid:completion:)`. A successful HTTP response only means the request was accepted; final success requires the MQTT `stored_reset` event with `params.result == 1`.
+- Fixed the `MediaCore` recorder lifecycle so stop, failure, and destroy release the recorder cleanly and allow recording or live-view reconstruction. Public method signatures are unchanged.
+- Started the existing OTA timeout timer immediately after the request succeeds and MQTT subscription is installed.
+- Repaired the simulator `CLDSmartSDK-Swift.h`; device arm64 and simulator arm64/x86_64 all pass Clang validation.
+- No existing API was removed or re-signed. Existing clients only need to update the complete XCFramework/Pod and rebuild. Code that exhaustively switches over `NetworkAPI` must add `.resetSDCard` or `@unknown default`.
 
 ### 1.4.6
 

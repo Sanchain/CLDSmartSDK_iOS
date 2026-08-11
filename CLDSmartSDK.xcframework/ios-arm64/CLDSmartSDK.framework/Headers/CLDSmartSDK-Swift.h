@@ -513,6 +513,7 @@ typedef SWIFT_ENUM(NSInteger, NetworkAPI, open) {
   NetworkAPISendDeleteAccountVerificationCode = 68,
   NetworkAPIDeleteMemberAccount = 69,
   NetworkAPIDeleteDeviceBySignature = 70,
+  NetworkAPIResetSDCard = 71,
 };
 
 SWIFT_CLASS("_TtC11CLDSmartSDK11NetworkCore")

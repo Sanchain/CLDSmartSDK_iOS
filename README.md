@@ -2,7 +2,7 @@
 
 CLDSmartSDK iOS SDK 提供账号认证、设备绑定、蓝牙通信、IoT 控制、消息推送和音视频能力。
 
-- 当前版本：`1.4.6`
+- 当前版本：`1.4.7`
 - 最低系统：iOS 13.0
 - Swift：5.9 或更高版本
 - 分发形式：静态 XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.6'
+      :tag => '1.4.7'
 end
 ```
 
@@ -544,6 +544,15 @@ Debug/Sandbox 构建使用 `isAPNsSandbox: true`，正式 APNs 环境使用 `fal
 不要直接用新账号覆盖旧会话。按“服务端登出 -> `deinitEngine` -> `initEngine` -> 新账号登录”的顺序切换。
 
 ## 版本说明
+
+### 1.4.7
+
+- `CLDDeviceInfo` 新增可选字段 `is_online` 和 `power`，用于读取设备详情接口返回的云端在线状态和电量快照；旧响应缺少字段时为 `nil`，`power_status` 语义不变。
+- 新增 `formatSDCard(vid:completion:)`。HTTP 成功仅表示请求已受理，最终以 MQTT `stored_reset` 事件且 `params.result == 1` 为成功。
+- 修复 `MediaCore` 录像器生命周期，停止、失败和销毁后完整释放，支持再次录像和退出直播后重建；公开方法签名不变。
+- OTA 请求成功并订阅 MQTT 后立即启动已有超时计时器，修复首个计时周期未开始的问题。
+- 修复模拟器 `CLDSmartSDK-Swift.h` 的完整性，设备 arm64、模拟器 arm64/x86_64 均通过 Clang 检查。
+- 本版本未删除接口或修改已有方法签名，原有客户更新完整 XCFramework/Pod 后重新编译即可。若直接穷举 `NetworkAPI`，需补充 `.resetSDCard` 或 `@unknown default`。
 
 ### 1.4.6
 

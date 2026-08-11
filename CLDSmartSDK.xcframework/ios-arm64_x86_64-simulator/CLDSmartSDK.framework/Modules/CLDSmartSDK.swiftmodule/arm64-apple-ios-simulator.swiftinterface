@@ -195,6 +195,9 @@ extension CLDSmartSDK.CldSmartEngine {
   #if compiler(>=5.3) && $NonescapableTypes
   public func fetchDeviceNotify(vid: Swift.String, scenes: CLDSmartSDK.CLDNotifyScenes, completion: @escaping ([CLDSmartSDK.CLDNotifySwitch]?) -> Swift.Void)
   #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func formatSDCard(vid: Swift.String, completion: @escaping (Swift.Bool, Swift.Int, Swift.String?) -> Swift.Void)
+  #endif
   public func refreshAPNs(token: Swift.String, completion: @escaping CLDSmartSDK.CLDBoolBlock)
   public func reportDeviceAttrs(vid: Swift.String, product: Swift.String, payload: Foundation.Data, completion: @escaping CLDSmartSDK.CLDBoolBlock)
   public func bindBLEDevice(device: VLink.APBLEDevice, product: CLDSmartSDK.CLDProduct, completion: @escaping CLDSmartSDK.CLDBoolBlock)
@@ -732,6 +735,8 @@ public struct CLDDevice : Swift.Codable {
 public struct CLDDeviceInfo : Swift.Codable {
   public let vid: Swift.String
   public let ip: Swift.String
+  public let is_online: Swift.Int?
+  public let power: Swift.Int?
   public let version: Swift.String
   public let timezone: Swift.String
   public let latest_version_time: Swift.String
@@ -1380,6 +1385,7 @@ public enum NetworkMethod : Swift.String {
   case sendDeleteAccountVerificationCode
   case deleteMemberAccount
   case deleteDeviceBySignature
+  case resetSDCard
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
   #endif
