@@ -2,7 +2,7 @@
 
 CLDSmartSDK iOS SDK 提供账号认证、设备绑定、蓝牙通信、IoT 控制、消息推送和音视频能力。
 
-- 当前版本：`1.4.7`
+- 当前版本：`1.4.8`
 - 最低系统：iOS 13.0
 - Swift：5.9 或更高版本
 - 分发形式：静态 XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.7'
+      :tag => '1.4.8'
 end
 ```
 
@@ -544,6 +544,13 @@ Debug/Sandbox 构建使用 `isAPNsSandbox: true`，正式 APNs 环境使用 `fal
 不要直接用新账号覆盖旧会话。按“服务端登出 -> `deinitEngine` -> `initEngine` -> 新账号登录”的顺序切换。
 
 ## 版本说明
+
+### 1.4.8
+
+- 配件绑定与解绑按真实传输方式分流：`bindWiFiAccessory`、`unbindWiFiAccessory` 保持原 WiFi 服务端参数，不发送 `is_blue`；BLE 配件方法由 SDK 内部发送 `is_blue=1`。
+- Keypad/DL500 套装使用 BLE 配件关系：Keypad 为主设备，DL500 为配件。其他 WiFi 配件继续调用 WiFi 方法，现有 MQTT 确认流程不变。
+- 客户 App 无需也不应自行拼接 `is_blue`；现有公开方法签名未修改，未使用配件功能的客户不受影响。
+- device arm64、simulator arm64/x86_64 XCFramework 结构校验以及 CocoaPods 临时工程编译通过。
 
 ### 1.4.7
 

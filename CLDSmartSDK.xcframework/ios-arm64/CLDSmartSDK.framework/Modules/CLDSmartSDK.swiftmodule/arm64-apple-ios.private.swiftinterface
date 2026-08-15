@@ -234,6 +234,7 @@ extension CLDSmartSDK.CldSmartEngine {
   public func breakKeyInput(vid: Swift.String, keyType: CLDSmartSDK.CLDInputKeyType, isBLE: Swift.Bool, completion: CLDSmartSDK.CLDBoolBlock? = nil)
   #endif
   public func bindBLEAccessory(mac: Swift.String, secret: Swift.String, timeout: Foundation.TimeInterval = 90, completion: @escaping CLDSmartSDK.CLDBoolBlock)
+  public func bindBLEAccessory(vid: Swift.String, linkVid: Swift.String, mac: Swift.String, secret: Swift.String, timeout: Foundation.TimeInterval = 90, completion: @escaping CLDSmartSDK.CLDBoolBlock)
   public func bindWiFiAccessory(vid: Swift.String, linkVid: Swift.String, timeout: Swift.Double = 40, completion: @escaping CLDSmartSDK.CLDBoolBlock)
   public func cancelBindAccessory()
   #if compiler(>=5.3) && $NonescapableTypes

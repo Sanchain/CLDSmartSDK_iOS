@@ -2,7 +2,7 @@
 
 CLDSmartSDK for iOS provides account authentication, device binding, Bluetooth communication, IoT control, push messaging, and audio/video capabilities.
 
-- Current version: `1.4.7`
+- Current version: `1.4.8`
 - Minimum deployment target: iOS 13.0
 - Swift: 5.9 or later
 - Distribution: static XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.7'
+      :tag => '1.4.8'
 end
 ```
 
@@ -546,6 +546,13 @@ Verify that the SDK server, App ID/Secret Key, `countryCode`, and `regionCode` b
 Do not overwrite an existing session. Switch users in this order: server logout, `deinitEngine`, `initEngine`, and then new-user login.
 
 ## Release Notes
+
+### 1.4.8
+
+- Routed accessory binding and unbinding by their actual transport. `bindWiFiAccessory` and `unbindWiFiAccessory` preserve the existing WiFi backend payload and omit `is_blue`; BLE accessory APIs add `is_blue=1` internally.
+- The Keypad/DL500 set uses a BLE accessory relationship: Keypad is the primary device and DL500 is the accessory. Other WiFi accessories continue to use the WiFi APIs and the existing MQTT confirmation flow.
+- Client applications do not need to construct `is_blue` and should not do so. Existing public method signatures are unchanged, and clients that do not use accessory APIs are unaffected.
+- The device arm64 and simulator arm64/x86_64 XCFramework slices passed structural validation and CocoaPods temporary-project compilation.
 
 ### 1.4.7
 
