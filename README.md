@@ -2,7 +2,7 @@
 
 CLDSmartSDK iOS SDK 提供账号认证、设备绑定、蓝牙通信、IoT 控制、消息推送和音视频能力。
 
-- 当前版本：`1.4.8`
+- 当前版本：`1.4.9`
 - 最低系统：iOS 13.0
 - Swift：5.9 或更高版本
 - 分发形式：静态 XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.8'
+      :tag => '1.4.9'
 end
 ```
 
@@ -460,6 +460,40 @@ func enrollFingerprint(device: CLDDevice, name: String) {
 
 首次进入页面或尚未连接时，先使用设备的 `bluetooth_id`、`input_bt_config ?? bt_config` 和 `bt_secret` 调用 `connectBLE`；其成功回调后仍应检查 `bleIsReady`。不要在已有连接或连接中的状态下重复调用 `connectBLE`。`getDeviceKeyList` 只查询云端数据，不直接读取设备；BLE 录入后应先调用 `syncDeviceKeyListFromBLE`。不要把 `bt_secret`、Token 或原始 BLE 数据写入日志。
 
+## DL500 蓝牙 OTA
+
+DL500（`match_num == 11`）是纯蓝牙设备，使用 `upgradeDL500Device`。不要对 DL500 调用面向联网设备的 MQTT OTA `upgradeDevice`。
+
+```swift
+let engine = CldSmartEngine.shared
+
+engine.upgradeDL500Device(vid: dl500VID, timeout: 5) {
+    progress, status, errorCode, message in
+    switch status {
+    case .success:
+        // 只有设备 C014 整包校验返回 0 才会进入 success。
+        print("DL500 OTA success")
+    case .failed:
+        print("DL500 OTA failed: \(errorCode ?? 0), \(message ?? "")")
+    case .cancelled:
+        print("DL500 OTA cancelled")
+    default:
+        print("DL500 OTA \(status): \(progress)%")
+    }
+}
+```
+
+SDK 会根据 `vid` 查询 DL500 和固件信息、下载固件、必要时自动连接目标蓝牙，并执行 `C010` 至 `C014`。进度范围为 `0...100`：下载占 `0...49`，BLE 传输占 `50...99`，C014 校验成功后为 `100`。
+
+- `.success` 是唯一成功终态，表示 C014 未超时且 `response.data[1] == 0`。
+- `.verifying` 仍在等待设备整包校验，不能提示成功。
+- 云端 OTA 状态上报只用于后台记录，不是设备成功依据。
+- 同时只能进行一笔 DL500 OTA；可用 `dl500OTAIsRunning` 防止重复点击。
+- 用户取消时调用 `cancelDL500OTA()`，原升级回调会收到 `.cancelled`。
+- 升级期间保持 App 在前台、设备唤醒且电量充足，不要并发发送其他 BLE 指令。
+
+WiFi/联网设备继续使用现有 `upgradeDevice(vid:timeout:completion:)`，行为不变。
+
 ## APNs 推送 Token
 
 正式 App 应启用 Push Notifications Capability，并注册远程通知。登录请求中的 `device_token` 和 `reg_token` 使用同一个 APNs Token。
@@ -544,6 +578,14 @@ Debug/Sandbox 构建使用 `isAPNsSandbox: true`，正式 APNs 环境使用 `fal
 不要直接用新账号覆盖旧会话。按“服务端登出 -> `deinitEngine` -> `initEngine` -> 新账号登录”的顺序切换。
 
 ## 版本说明
+
+### 1.4.9
+
+- 新增 `upgradeDL500Device(vid:timeout:completion:)`，封装 DL500 固件查询、HTTP 下载、目标 BLE 自动连接以及 C010-C014 完整 OTA 流程。
+- 新增 `CLDDL500OTAStatus`、`CLDDL500OTAErrorCode`、`dl500OTAIsRunning` 和 `cancelDL500OTA()`；进度和终态回调固定在主线程。
+- DL500 成功只认 C014 整包校验返回 0；下载完成、C013 传输完成和云端状态上报成功均不作为设备升级成功。
+- 增加单任务互斥、回包长度校验、首尾包边界处理、每包独立超时重试、BLE 断连/后台/取消收尾以及错误码。
+- 现有 WiFi/联网设备 `upgradeDevice` MQTT OTA 方法和行为不变。
 
 ### 1.4.8
 

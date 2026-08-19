@@ -2,7 +2,7 @@
 
 CLDSmartSDK for iOS provides account authentication, device binding, Bluetooth communication, IoT control, push messaging, and audio/video capabilities.
 
-- Current version: `1.4.8`
+- Current version: `1.4.9`
 - Minimum deployment target: iOS 13.0
 - Swift: 5.9 or later
 - Distribution: static XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.8'
+      :tag => '1.4.9'
 end
 ```
 
@@ -462,6 +462,40 @@ func enrollFingerprint(device: CLDDevice, name: String) {
 
 When the device is not connected, first call `connectBLE` with its `bluetooth_id`, `input_bt_config ?? bt_config`, and `bt_secret`; verify `bleIsReady` after the success callback. Do not start another connection while one is connected or connecting. `getDeviceKeyList` queries cloud records and does not read the lock directly, so call `syncDeviceKeyListFromBLE` first after BLE enrollment. Never log `bt_secret`, tokens, or raw encrypted BLE data.
 
+## DL500 Bluetooth OTA
+
+DL500 (`match_num == 11`) is a Bluetooth-only device. Use `upgradeDL500Device`; do not call the MQTT-based `upgradeDevice` API for a DL500.
+
+```swift
+let engine = CldSmartEngine.shared
+
+engine.upgradeDL500Device(vid: dl500VID, timeout: 5) {
+    progress, status, errorCode, message in
+    switch status {
+    case .success:
+        // success is emitted only after the device accepts C014 validation.
+        print("DL500 OTA success")
+    case .failed:
+        print("DL500 OTA failed: \(errorCode ?? 0), \(message ?? "")")
+    case .cancelled:
+        print("DL500 OTA cancelled")
+    default:
+        print("DL500 OTA \(status): \(progress)%")
+    }
+}
+```
+
+The SDK resolves the DL500 and firmware metadata from `vid`, downloads the firmware, connects to the target BLE device when needed, and executes C010 through C014. Download progress maps to `0...49`, BLE transfer maps to `50...99`, and successful C014 validation emits `100`.
+
+- `.success` is the only successful terminal state. It means C014 did not time out and `response.data[1] == 0`.
+- `.verifying` is still in progress and must not be shown as success.
+- Cloud OTA status reporting records the result but does not determine device success.
+- Only one DL500 OTA can run at a time. Use `dl500OTAIsRunning` to prevent duplicate starts.
+- Call `cancelDL500OTA()` for an explicit user cancellation; the original callback receives `.cancelled`.
+- Keep the app in the foreground and the device awake and powered. Do not send other BLE commands during OTA.
+
+WiFi/networked devices continue to use `upgradeDevice(vid:timeout:completion:)` without behavior changes.
+
 ## APNs Device Token
 
 A production application must enable the Push Notifications capability and register for remote notifications. The login request uses the same APNs token for `device_token` and `reg_token`.
@@ -546,6 +580,14 @@ Verify that the SDK server, App ID/Secret Key, `countryCode`, and `regionCode` b
 Do not overwrite an existing session. Switch users in this order: server logout, `deinitEngine`, `initEngine`, and then new-user login.
 
 ## Release Notes
+
+### 1.4.9
+
+- Added `upgradeDL500Device(vid:timeout:completion:)` to orchestrate DL500 firmware lookup, HTTP download, target BLE connection, and the complete C010-C014 OTA protocol.
+- Added `CLDDL500OTAStatus`, `CLDDL500OTAErrorCode`, `dl500OTAIsRunning`, and `cancelDL500OTA()`. Progress and terminal callbacks are delivered on the main thread.
+- DL500 success now strictly requires C014 whole-file validation result 0. Download completion, C013 completion, and successful cloud status reporting are not device-upgrade success.
+- Added single-operation exclusion, response-length checks, first/last-packet bounds handling, one independent timeout retry per packet, and terminal handling for disconnect, background entry, and cancellation.
+- Existing MQTT OTA behavior and `upgradeDevice` signatures for WiFi/networked devices remain unchanged.
 
 ### 1.4.8
 
