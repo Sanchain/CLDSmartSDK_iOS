@@ -1193,6 +1193,58 @@ extension CLDSmartSDK.CldSmartEngine {
   #endif
   public func bindBLEDeviceViaPidDn(device: VLink.APBLEDevice, product: CLDSmartSDK.CLDProduct, timeout: Foundation.TimeInterval = 10, completion: @escaping CLDSmartSDK.CLDBoolBlock)
 }
+public enum CLDDL500OTAStatus : Swift.Int {
+  case preparing
+  case downloading
+  case transferring
+  case verifying
+  case success
+  case failed
+  case cancelled
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum CLDDL500OTAErrorCode : Swift.Int {
+  case invalidVID
+  case operationInProgress
+  case deviceNotFound
+  case unsupportedDevice
+  case firmwareUnavailable
+  case noUpdateAvailable
+  case invalidFirmware
+  case downloadFailed
+  case bluetoothUnavailable
+  case bluetoothConnectionFailed
+  case bluetoothOccupied
+  case bluetoothDisconnected
+  case requestTimeout
+  case requestRejected
+  case invalidResponse
+  case transferFailed
+  case verificationFailed
+  case cancelled
+  case applicationBackgrounded
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public typealias CLDDL500OTACompletion = (_ progress: Swift.Int, _ status: CLDSmartSDK.CLDDL500OTAStatus, _ errorCode: Swift.Int?, _ message: Swift.String?) -> Swift.Void
+extension CLDSmartSDK.CldSmartEngine {
+  public var dl500OTAIsRunning: Swift.Bool {
+    get
+  }
+  public func upgradeDL500Device(vid: Swift.String, timeout: Foundation.TimeInterval = 5, completion: @escaping CLDSmartSDK.CLDDL500OTACompletion)
+  public func cancelDL500OTA()
+}
 @objc @_inheritsConvenienceInitializers @objcMembers public class MQTTCoreMessage : ObjectiveC.NSObject {
   @objc override dynamic public init()
   @objc deinit
@@ -1515,6 +1567,12 @@ extension CLDSmartSDK.CLDInputKeyState : Swift.RawRepresentable {}
 extension CLDSmartSDK.CLDInputKeyType : Swift.Equatable {}
 extension CLDSmartSDK.CLDInputKeyType : Swift.Hashable {}
 extension CLDSmartSDK.CLDInputKeyType : Swift.RawRepresentable {}
+extension CLDSmartSDK.CLDDL500OTAStatus : Swift.Equatable {}
+extension CLDSmartSDK.CLDDL500OTAStatus : Swift.Hashable {}
+extension CLDSmartSDK.CLDDL500OTAStatus : Swift.RawRepresentable {}
+extension CLDSmartSDK.CLDDL500OTAErrorCode : Swift.Equatable {}
+extension CLDSmartSDK.CLDDL500OTAErrorCode : Swift.Hashable {}
+extension CLDSmartSDK.CLDDL500OTAErrorCode : Swift.RawRepresentable {}
 extension CLDSmartSDK.CLDMQTTMessageMethod : Swift.Equatable {}
 extension CLDSmartSDK.CLDMQTTMessageMethod : Swift.Hashable {}
 extension CLDSmartSDK.CLDMQTTMessageMethod : Swift.RawRepresentable {}
