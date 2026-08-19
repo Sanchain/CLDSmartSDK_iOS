@@ -1193,7 +1193,7 @@ extension CLDSmartSDK.CldSmartEngine {
   #endif
   public func bindBLEDeviceViaPidDn(device: VLink.APBLEDevice, product: CLDSmartSDK.CLDProduct, timeout: Foundation.TimeInterval = 10, completion: @escaping CLDSmartSDK.CLDBoolBlock)
 }
-public enum CLDDL500OTAStatus : Swift.Int {
+public enum CLDBLEOTAStatus : Swift.Int {
   case preparing
   case downloading
   case transferring
@@ -1209,7 +1209,7 @@ public enum CLDDL500OTAStatus : Swift.Int {
     get
   }
 }
-public enum CLDDL500OTAErrorCode : Swift.Int {
+public enum CLDBLEOTAErrorCode : Swift.Int {
   case invalidVID
   case operationInProgress
   case deviceNotFound
@@ -1237,12 +1237,26 @@ public enum CLDDL500OTAErrorCode : Swift.Int {
     get
   }
 }
-public typealias CLDDL500OTACompletion = (_ progress: Swift.Int, _ status: CLDSmartSDK.CLDDL500OTAStatus, _ errorCode: Swift.Int?, _ message: Swift.String?) -> Swift.Void
+public typealias CLDBLEOTACompletion = (_ progress: Swift.Int, _ status: CLDSmartSDK.CLDBLEOTAStatus, _ errorCode: Swift.Int?, _ message: Swift.String?) -> Swift.Void
+@available(*, deprecated, renamed: "CLDBLEOTAStatus")
+public typealias CLDDL500OTAStatus = CLDSmartSDK.CLDBLEOTAStatus
+@available(*, deprecated, renamed: "CLDBLEOTAErrorCode")
+public typealias CLDDL500OTAErrorCode = CLDSmartSDK.CLDBLEOTAErrorCode
+@available(*, deprecated, renamed: "CLDBLEOTACompletion")
+public typealias CLDDL500OTACompletion = CLDSmartSDK.CLDBLEOTACompletion
 extension CLDSmartSDK.CldSmartEngine {
+  public var bleOTAIsRunning: Swift.Bool {
+    get
+  }
+  public func upgradeBLEDevice(vid: Swift.String, timeout: Foundation.TimeInterval = 5, completion: @escaping CLDSmartSDK.CLDBLEOTACompletion)
+  public func cancelBLEOTA()
+  @available(*, deprecated, renamed: "bleOTAIsRunning")
   public var dl500OTAIsRunning: Swift.Bool {
     get
   }
+  @available(*, deprecated, renamed: "upgradeBLEDevice(vid:timeout:completion:)")
   public func upgradeDL500Device(vid: Swift.String, timeout: Foundation.TimeInterval = 5, completion: @escaping CLDSmartSDK.CLDDL500OTACompletion)
+  @available(*, deprecated, renamed: "cancelBLEOTA()")
   public func cancelDL500OTA()
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class MQTTCoreMessage : ObjectiveC.NSObject {
@@ -1567,12 +1581,12 @@ extension CLDSmartSDK.CLDInputKeyState : Swift.RawRepresentable {}
 extension CLDSmartSDK.CLDInputKeyType : Swift.Equatable {}
 extension CLDSmartSDK.CLDInputKeyType : Swift.Hashable {}
 extension CLDSmartSDK.CLDInputKeyType : Swift.RawRepresentable {}
-extension CLDSmartSDK.CLDDL500OTAStatus : Swift.Equatable {}
-extension CLDSmartSDK.CLDDL500OTAStatus : Swift.Hashable {}
-extension CLDSmartSDK.CLDDL500OTAStatus : Swift.RawRepresentable {}
-extension CLDSmartSDK.CLDDL500OTAErrorCode : Swift.Equatable {}
-extension CLDSmartSDK.CLDDL500OTAErrorCode : Swift.Hashable {}
-extension CLDSmartSDK.CLDDL500OTAErrorCode : Swift.RawRepresentable {}
+extension CLDSmartSDK.CLDBLEOTAStatus : Swift.Equatable {}
+extension CLDSmartSDK.CLDBLEOTAStatus : Swift.Hashable {}
+extension CLDSmartSDK.CLDBLEOTAStatus : Swift.RawRepresentable {}
+extension CLDSmartSDK.CLDBLEOTAErrorCode : Swift.Equatable {}
+extension CLDSmartSDK.CLDBLEOTAErrorCode : Swift.Hashable {}
+extension CLDSmartSDK.CLDBLEOTAErrorCode : Swift.RawRepresentable {}
 extension CLDSmartSDK.CLDMQTTMessageMethod : Swift.Equatable {}
 extension CLDSmartSDK.CLDMQTTMessageMethod : Swift.Hashable {}
 extension CLDSmartSDK.CLDMQTTMessageMethod : Swift.RawRepresentable {}
