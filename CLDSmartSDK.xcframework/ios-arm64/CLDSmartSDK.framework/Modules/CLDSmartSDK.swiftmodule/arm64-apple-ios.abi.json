@@ -51005,3829 +51005,3955 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngine.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngine.swift",
       "kind": "StringLiteral",
       "offset": 1764,
       "length": 4,
       "value": "\"86\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngine.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngine.swift",
       "kind": "StringLiteral",
       "offset": 1787,
       "length": 5,
       "value": "\"886\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngine.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngine.swift",
       "kind": "StringLiteral",
       "offset": 1807,
       "length": 3,
       "value": "\"N\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngine.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngine.swift",
       "kind": "IntegerLiteral",
       "offset": 2369,
       "length": 9,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngine.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngine.swift",
       "kind": "IntegerLiteral",
       "offset": 2380,
       "length": 7,
       "value": "2"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngine.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngine.swift",
       "kind": "IntegerLiteral",
       "offset": 2460,
       "length": 17,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngine.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngine.swift",
       "kind": "IntegerLiteral",
       "offset": 2479,
       "length": 10,
       "value": "2"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngine.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngine.swift",
       "kind": "IntegerLiteral",
       "offset": 2491,
       "length": 7,
       "value": "3"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngine.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngine.swift",
       "kind": "IntegerLiteral",
       "offset": 4080,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngine.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngine.swift",
       "kind": "IntegerLiteral",
       "offset": 4094,
       "length": 7,
       "value": "2"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngine.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngine.swift",
       "kind": "IntegerLiteral",
       "offset": 4111,
       "length": 5,
       "value": "3"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngine.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngine.swift",
       "kind": "IntegerLiteral",
       "offset": 4172,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngine.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngine.swift",
       "kind": "IntegerLiteral",
       "offset": 4178,
       "length": 4,
       "value": "2"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngine.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngine.swift",
       "kind": "BooleanLiteral",
       "offset": 4559,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngine.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngine.swift",
       "kind": "BooleanLiteral",
       "offset": 4828,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngine.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngine.swift",
       "kind": "BooleanLiteral",
       "offset": 5203,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngine.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngine.swift",
       "kind": "BooleanLiteral",
       "offset": 5247,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngine.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngine.swift",
       "kind": "StringLiteral",
       "offset": 6738,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngine.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngine.swift",
       "kind": "StringLiteral",
       "offset": 6769,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngine.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngine.swift",
       "kind": "StringLiteral",
       "offset": 6799,
       "length": 31,
       "value": "\"com.cldsmart.sdk.engineConfig\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
       "offset": 312,
       "length": 5,
       "value": "-1009"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
       "offset": 348,
       "length": 4,
       "value": "1053"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
       "offset": 378,
       "length": 4,
       "value": "1054"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
       "offset": 658,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
       "offset": 681,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "BooleanLiteral",
       "offset": 1356,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "BooleanLiteral",
       "offset": 1419,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "StringLiteral",
       "offset": 2157,
       "length": 39,
       "value": "\"com.cldsmartsdk.share-member-mutation\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "Dictionary",
       "offset": 4530,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "Dictionary",
       "offset": 4781,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "Dictionary",
       "offset": 4968,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "Dictionary",
       "offset": 5304,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "Dictionary",
       "offset": 5728,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "Dictionary",
       "offset": 6005,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "Dictionary",
       "offset": 6679,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "Dictionary",
       "offset": 7230,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "StringLiteral",
       "offset": 29657,
       "length": 3,
       "value": "\"4\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "BooleanLiteral",
       "offset": 30958,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
       "offset": 33485,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
       "offset": 33504,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "Array",
       "offset": 41984,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
       "offset": 50191,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
       "offset": 52158,
       "length": 3,
       "value": "120"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "StringLiteral",
       "offset": 58422,
       "length": 7,
       "value": "\"Arpha\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
       "offset": 74017,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
       "offset": 84623,
       "length": 2,
       "value": "90"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
       "offset": 86506,
       "length": 2,
       "value": "90"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
       "offset": 87315,
       "length": 2,
       "value": "40"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "BooleanLiteral",
       "offset": 89284,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
       "offset": 89303,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
       "offset": 89318,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
       "offset": 91475,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "BooleanLiteral",
       "offset": 96570,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "BooleanLiteral",
       "offset": 97595,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
       "offset": 98727,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
       "offset": 99511,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
       "offset": 102568,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
       "offset": 106407,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
       "offset": 106449,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineNetworkEx.swift",
       "kind": "IntegerLiteral",
       "offset": 112945,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldSmartEngineUDPEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldSmartEngineUDPEx.swift",
       "kind": "StringLiteral",
       "offset": 285,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldSmartEngineUDPEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldSmartEngineUDPEx.swift",
       "kind": "StringLiteral",
       "offset": 325,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldSmartEngineUDPEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldSmartEngineUDPEx.swift",
       "kind": "IntegerLiteral",
       "offset": 359,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldSmartEngineUDPEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldSmartEngineUDPEx.swift",
       "kind": "StringLiteral",
       "offset": 390,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldSmartEngineUDPEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldSmartEngineUDPEx.swift",
       "kind": "StringLiteral",
       "offset": 429,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldSmartEngineUDPEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldSmartEngineUDPEx.swift",
       "kind": "IntegerLiteral",
       "offset": 1234,
       "length": 6,
       "value": "100000"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldSmartEngineUDPEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldSmartEngineUDPEx.swift",
       "kind": "StringLiteral",
       "offset": 4643,
       "length": 35,
       "value": "\"com.cldsmart.udp.discovery.serial\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldSmartEngineUDPEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldSmartEngineUDPEx.swift",
       "kind": "IntegerLiteral",
       "offset": 4714,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldSmartEngineUDPEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldSmartEngineUDPEx.swift",
       "kind": "BooleanLiteral",
       "offset": 4789,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/MediaCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/MediaCore.swift",
       "kind": "IntegerLiteral",
       "offset": 827,
       "length": 2,
       "value": "-2"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/MediaCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/MediaCore.swift",
       "kind": "IntegerLiteral",
       "offset": 831,
       "length": 9,
       "value": "-1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/MediaCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/MediaCore.swift",
       "kind": "IntegerLiteral",
       "offset": 842,
       "length": 2,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/MediaCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/MediaCore.swift",
       "kind": "IntegerLiteral",
       "offset": 846,
       "length": 2,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/MediaCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/MediaCore.swift",
       "kind": "IntegerLiteral",
       "offset": 850,
       "length": 4,
       "value": "2"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/MediaCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/MediaCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1319,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/MediaCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/MediaCore.swift",
       "kind": "BooleanLiteral",
       "offset": 1488,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/MediaCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/MediaCore.swift",
       "kind": "IntegerLiteral",
       "offset": 2542,
       "length": 4,
       "value": "2048"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/MediaCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/MediaCore.swift",
       "kind": "IntegerLiteral",
       "offset": 2547,
       "length": 4,
       "value": "1563"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/MediaCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/MediaCore.swift",
       "kind": "IntegerLiteral",
       "offset": 2572,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/MediaCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/MediaCore.swift",
       "kind": "IntegerLiteral",
       "offset": 2600,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/MediaCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/MediaCore.swift",
       "kind": "IntegerLiteral",
       "offset": 5510,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/MediaCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/MediaCore.swift",
       "kind": "IntegerLiteral",
       "offset": 5529,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/MediaCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/MediaCore.swift",
       "kind": "BooleanLiteral",
       "offset": 5551,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/MediaCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/MediaCore.swift",
       "kind": "IntegerLiteral",
       "offset": 10117,
       "length": 4,
       "value": "3600"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/MediaCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/MediaCore.swift",
       "kind": "BooleanLiteral",
       "offset": 10141,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 203,
       "length": 7,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 220,
       "length": 11,
       "value": "2"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 241,
       "length": 9,
       "value": "3"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 260,
       "length": 13,
       "value": "4"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 283,
       "length": 14,
       "value": "5"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 307,
       "length": 13,
       "value": "6"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 382,
       "length": 11,
       "value": "\"ac_wakeup\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 416,
       "length": 16,
       "value": "\"ac_live_stream\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 458,
       "length": 17,
       "value": "\"ac_stream_onoff\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 494,
       "length": 12,
       "value": "\"ac_add_key\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 528,
       "length": 12,
       "value": "\"ac_del_key\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 560,
       "length": 12,
       "value": "\"ac_restart\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 591,
       "length": 11,
       "value": "\"open_lock\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 621,
       "length": 10,
       "value": "\"hangup_c\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 656,
       "length": 13,
       "value": "\"ac_sd_reset\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 687,
       "length": 10,
       "value": "\"ac_siren\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 719,
       "length": 9,
       "value": "\"ac_talk\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 749,
       "length": 15,
       "value": "\"ac_play_pause\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 782,
       "length": 10,
       "value": "\"ac_reply\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 810,
       "length": 8,
       "value": "\"ac_ptz\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 1135,
       "length": 6,
       "value": "\"none\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 1165,
       "length": 14,
       "value": "\"anti_flicker\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 1198,
       "length": 7,
       "value": "\"b_mac\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 1224,
       "length": 10,
       "value": "\"beep_vol\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 1259,
       "length": 15,
       "value": "\"charge_status\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 1294,
       "length": 3,
       "value": "\"e\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 1321,
       "length": 10,
       "value": "\"flip_swt\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 1355,
       "length": 11,
       "value": "\"icut_mode\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 1390,
       "length": 15,
       "value": "\"indicator_swt\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 1426,
       "length": 11,
       "value": "\"logo_mark\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 1458,
       "length": 6,
       "value": "\"mark\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 1487,
       "length": 10,
       "value": "\"lowpower\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 1522,
       "length": 8,
       "value": "\"motion\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 1559,
       "length": 14,
       "value": "\"motion_timer\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 1597,
       "length": 8,
       "value": "\"n_mode\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 1628,
       "length": 13,
       "value": "\"siren_range\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 1665,
       "length": 11,
       "value": "\"siren_swt\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 1699,
       "length": 8,
       "value": "\"stored\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 1732,
       "length": 11,
       "value": "\"newstored\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 1771,
       "length": 8,
       "value": "\"auto_l\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 1801,
       "length": 5,
       "value": "\"d_s\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 1831,
       "length": 9,
       "value": "\"l_delay\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 1863,
       "length": 8,
       "value": "\"is_rtv\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 1891,
       "length": 5,
       "value": "\"mac\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 1919,
       "length": 11,
       "value": "\"light_swt\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 1952,
       "length": 12,
       "value": "\"auto_reply\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 1985,
       "length": 11,
       "value": "\"care_mode\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 2023,
       "length": 9,
       "value": "\"dormant\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 2056,
       "length": 11,
       "value": "\"dmt_timer\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 2097,
       "length": 10,
       "value": "\"pack_swt\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 2133,
       "length": 16,
       "value": "\"unknow_snapswt\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 2172,
       "length": 13,
       "value": "\"unknow_thld\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 2208,
       "length": 13,
       "value": "\"unknow_time\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 2245,
       "length": 14,
       "value": "\"unknow_faceq\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 2280,
       "length": 6,
       "value": "\"lang\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 2309,
       "length": 13,
       "value": "\"fix_rectime\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 2344,
       "length": 12,
       "value": "\"utc_offset\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 4317,
       "length": 13,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "StringLiteral",
       "offset": 5983,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "BooleanLiteral",
       "offset": 6025,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 16343,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 16355,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 16363,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 16371,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 16386,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 16695,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 16717,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 16743,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 16768,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 16786,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 16804,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 16834,
       "length": 2,
       "value": "11"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 16862,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 16888,
       "length": 2,
       "value": "13"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 16911,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 16983,
       "length": 7,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 16992,
       "length": 5,
       "value": "2"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 16999,
       "length": 4,
       "value": "3"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 17005,
       "length": 7,
       "value": "4"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 17014,
       "length": 9,
       "value": "5"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 17025,
       "length": 12,
       "value": "6"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 22661,
       "length": 2,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 22665,
       "length": 6,
       "value": "2"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 22726,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 22729,
       "length": 7,
       "value": "2"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 22738,
       "length": 6,
       "value": "3"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 25327,
       "length": 5,
       "value": "20000"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 25399,
       "length": 5,
       "value": "20005"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 25467,
       "length": 5,
       "value": "10003"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 25546,
       "length": 5,
       "value": "42208"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 25625,
       "length": 5,
       "value": "42209"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 25687,
       "length": 5,
       "value": "42236"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 25783,
       "length": 5,
       "value": "42237"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 25844,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 25919,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 25972,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 26034,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 26093,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 26164,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 26677,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 26711,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 26743,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 26804,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 26842,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 27937,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 27963,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 27988,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 28051,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 28073,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 28099,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 28124,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 28142,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 28160,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 28188,
       "length": 2,
       "value": "11"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 28216,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 28239,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "BooleanLiteral",
       "offset": 30124,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 30178,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 30265,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 30352,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 30463,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 30491,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDSmartModel.swift",
       "kind": "IntegerLiteral",
       "offset": 30513,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/TOTP.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/TOTP.swift",
       "kind": "IntegerLiteral",
       "offset": 2338,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/TOTP.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/TOTP.swift",
       "kind": "IntegerLiteral",
       "offset": 2361,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "Array",
       "offset": 4219,
       "length": 129,
       "value": "[\"A\", \"B\", \"C\", \"D\", \"E\", \"F\", \"G\", \"H\", \"I\", \"J\", \"K\", \"L\", \"M\", \"N\", \"O\", \"P\", \"Q\", \"R\", \"S\", \"T\", \"U\", \"V\", \"W\", \"X\", \"Y\", \"Z\", \"2\", \"3\", \"4\", \"5\", \"6\", \"7\"]"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "Array",
       "offset": 4447,
       "length": 129,
       "value": "[\"0\", \"1\", \"2\", \"3\", \"4\", \"5\", \"6\", \"7\", \"8\", \"9\", \"A\", \"B\", \"C\", \"D\", \"E\", \"F\", \"G\", \"H\", \"I\", \"J\", \"K\", \"L\", \"M\", \"N\", \"O\", \"P\", \"Q\", \"R\", \"S\", \"T\", \"U\", \"V\"]"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7143,
       "length": 3,
       "value": "255"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7398,
       "length": 2,
       "value": "26"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7401,
       "length": 2,
       "value": "27"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7405,
       "length": 2,
       "value": "28"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7408,
       "length": 2,
       "value": "29"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7411,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7414,
       "length": 2,
       "value": "31"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7465,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7468,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7471,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7475,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7478,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7481,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7484,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7488,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7491,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7494,
       "length": 1,
       "value": "9"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7496,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7500,
       "length": 2,
       "value": "11"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7503,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7506,
       "length": 2,
       "value": "13"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7509,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7530,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7533,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7536,
       "length": 2,
       "value": "17"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7539,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7543,
       "length": 2,
       "value": "19"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7546,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7549,
       "length": 2,
       "value": "21"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7552,
       "length": 2,
       "value": "22"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7556,
       "length": 2,
       "value": "23"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7559,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7562,
       "length": 2,
       "value": "25"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7603,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7606,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7609,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7613,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7616,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7619,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7622,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7626,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7629,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7632,
       "length": 1,
       "value": "9"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7634,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7638,
       "length": 2,
       "value": "11"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7641,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7644,
       "length": 2,
       "value": "13"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7647,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7668,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7671,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7674,
       "length": 2,
       "value": "17"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7677,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7681,
       "length": 2,
       "value": "19"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7684,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7687,
       "length": 2,
       "value": "21"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7690,
       "length": 2,
       "value": "22"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7694,
       "length": 2,
       "value": "23"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7697,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 7700,
       "length": 2,
       "value": "25"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8547,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8550,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8553,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8556,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8560,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8563,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8566,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8569,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8573,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8576,
       "length": 1,
       "value": "9"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8618,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8621,
       "length": 2,
       "value": "11"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8624,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8628,
       "length": 2,
       "value": "13"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8631,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8634,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8637,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8641,
       "length": 2,
       "value": "17"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8644,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8647,
       "length": 2,
       "value": "19"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8650,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8654,
       "length": 2,
       "value": "21"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8657,
       "length": 2,
       "value": "22"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8660,
       "length": 2,
       "value": "23"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8663,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8684,
       "length": 2,
       "value": "25"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8687,
       "length": 2,
       "value": "26"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8690,
       "length": 2,
       "value": "27"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8693,
       "length": 2,
       "value": "28"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8697,
       "length": 2,
       "value": "29"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8700,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8703,
       "length": 2,
       "value": "31"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8756,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8759,
       "length": 2,
       "value": "11"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8762,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8766,
       "length": 2,
       "value": "13"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8769,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8772,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8775,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8779,
       "length": 2,
       "value": "17"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8782,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8785,
       "length": 2,
       "value": "19"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8788,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8792,
       "length": 2,
       "value": "21"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8795,
       "length": 2,
       "value": "22"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8798,
       "length": 2,
       "value": "23"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8801,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8822,
       "length": 2,
       "value": "25"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8825,
       "length": 2,
       "value": "26"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8828,
       "length": 2,
       "value": "27"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8831,
       "length": 2,
       "value": "28"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8835,
       "length": 2,
       "value": "29"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8838,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 8841,
       "length": 2,
       "value": "31"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
       "kind": "StringLiteral",
       "offset": 678,
       "length": 40,
       "value": "\"com.cldsmartsdk.ble-connect-completion\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
       "kind": "IntegerLiteral",
       "offset": 880,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
       "kind": "IntegerLiteral",
       "offset": 6721,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
       "kind": "IntegerLiteral",
       "offset": 7901,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
       "kind": "IntegerLiteral",
       "offset": 8813,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
       "kind": "IntegerLiteral",
       "offset": 10983,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
       "kind": "IntegerLiteral",
       "offset": 11764,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
       "kind": "IntegerLiteral",
       "offset": 11767,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
       "kind": "IntegerLiteral",
       "offset": 11774,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
       "kind": "IntegerLiteral",
       "offset": 11803,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
       "kind": "IntegerLiteral",
       "offset": 12428,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
       "kind": "IntegerLiteral",
       "offset": 12431,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
       "kind": "IntegerLiteral",
       "offset": 12438,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
       "kind": "IntegerLiteral",
       "offset": 12467,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
       "kind": "IntegerLiteral",
       "offset": 13054,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
       "kind": "IntegerLiteral",
       "offset": 13057,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
       "kind": "IntegerLiteral",
       "offset": 13064,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
       "kind": "IntegerLiteral",
       "offset": 13093,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothEx.swift",
       "kind": "IntegerLiteral",
       "offset": 13797,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 293,
+      "offset": 297,
       "length": 11,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 314,
+      "offset": 318,
       "length": 12,
       "value": "2"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 336,
+      "offset": 340,
       "length": 9,
       "value": "3"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 355,
+      "offset": 359,
       "length": 7,
       "value": "4"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 372,
+      "offset": 376,
       "length": 6,
       "value": "5"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 388,
+      "offset": 392,
       "length": 9,
       "value": "6"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 520,
+      "offset": 524,
       "length": 5,
       "value": "-5100"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 557,
+      "offset": 561,
       "length": 5,
       "value": "-5101"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 589,
+      "offset": 593,
       "length": 5,
       "value": "-5102"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 624,
+      "offset": 628,
       "length": 5,
       "value": "-5103"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 661,
+      "offset": 665,
       "length": 5,
       "value": "-5104"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 696,
+      "offset": 700,
       "length": 5,
       "value": "-5105"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 729,
+      "offset": 733,
       "length": 5,
       "value": "-5106"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 761,
+      "offset": 765,
       "length": 5,
       "value": "-5107"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 799,
+      "offset": 803,
       "length": 5,
       "value": "-5108"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 842,
+      "offset": 846,
       "length": 5,
       "value": "-5109"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 877,
+      "offset": 881,
       "length": 5,
       "value": "-5110"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 916,
+      "offset": 920,
       "length": 5,
       "value": "-5111"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 948,
+      "offset": 952,
       "length": 5,
       "value": "-5112"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 981,
+      "offset": 985,
       "length": 5,
       "value": "-5113"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 1014,
+      "offset": 1018,
       "length": 5,
       "value": "-5114"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 1046,
+      "offset": 1050,
       "length": 5,
       "value": "-5115"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 1082,
+      "offset": 1086,
       "length": 5,
       "value": "-5116"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 1109,
+      "offset": 1113,
       "length": 5,
       "value": "-5117"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 1150,
+      "offset": 1154,
       "length": 5,
       "value": "-5118"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1917,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
+      "kind": "StringLiteral",
+      "offset": 2021,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
+      "kind": "StringLiteral",
+      "offset": 2149,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
+      "kind": "StringLiteral",
+      "offset": 2275,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "BooleanLiteral",
-      "offset": 3071,
+      "offset": 3966,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 8413,
+      "offset": 9308,
       "length": 7,
       "value": "999999"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "StringLiteral",
-      "offset": 8463,
+      "offset": 9358,
       "length": 12,
       "value": "\"SDRRKCOUWA\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 8521,
+      "offset": 9416,
       "length": 3,
       "value": "512"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 8998,
+      "offset": 9980,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 9030,
+      "offset": 10012,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 9059,
+      "offset": 10041,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 9088,
+      "offset": 10070,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "BooleanLiteral",
-      "offset": 9119,
+      "offset": 10101,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "BooleanLiteral",
-      "offset": 9159,
+      "offset": 10141,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "BooleanLiteral",
-      "offset": 9209,
+      "offset": 10191,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "BooleanLiteral",
-      "offset": 9254,
+      "offset": 10236,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 10356,
+      "offset": 10431,
+      "length": 2,
+      "value": "49"
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10471,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
+      "kind": "StringLiteral",
+      "offset": 10561,
+      "length": 6,
+      "value": "\"none\""
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
+      "kind": "StringLiteral",
+      "offset": 11761,
+      "length": 14,
+      "value": "\"device.query\""
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
+      "kind": "StringLiteral",
+      "offset": 11777,
+      "length": 12,
+      "value": "\"vid=\""
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
+      "kind": "StringLiteral",
+      "offset": 11788,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11958,
       "length": 5,
       "value": "20000"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "StringLiteral",
-      "offset": 10542,
+      "offset": 12144,
       "length": 32,
       "value": "\"Bluetooth device was not found\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
+      "kind": "StringLiteral",
+      "offset": 12278,
+      "length": 15,
+      "value": "\"device.loaded\""
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
+      "kind": "StringLiteral",
+      "offset": 12311,
+      "length": 82,
+      "value": "\"vid=\""
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
+      "kind": "StringLiteral",
+      "offset": 12329,
+      "length": 7,
+      "value": "\" product=\""
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
+      "kind": "StringLiteral",
+      "offset": 12362,
+      "length": 8,
+      "value": "\" matchNum=\""
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
+      "kind": "StringLiteral",
+      "offset": 12391,
+      "length": 1,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
+      "kind": "StringLiteral",
+      "offset": 12416,
+      "length": 74,
+      "value": "\"protocol=\""
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
+      "kind": "StringLiteral",
+      "offset": 12454,
+      "length": 11,
+      "value": "\" bluetoothID=\""
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
+      "kind": "StringLiteral",
+      "offset": 12489,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 10677,
+      "offset": 12552,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "StringLiteral",
-      "offset": 10773,
+      "offset": 12648,
       "length": 65,
       "value": "\"The target device does not use the Bluetooth transport protocol\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "BooleanLiteral",
-      "offset": 24156,
+      "offset": 30421,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 28912,
+      "offset": 39656,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldEngineDL500OTAEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngineBluetoothOTAEx.swift",
       "kind": "IntegerLiteral",
-      "offset": 30413,
+      "offset": 41571,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/MQTTCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/MQTTCore.swift",
       "kind": "StringLiteral",
       "offset": 171,
       "length": 9,
       "value": "\"unknown\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/MQTTCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/MQTTCore.swift",
       "kind": "StringLiteral",
       "offset": 238,
       "length": 11,
       "value": "\"addDevice\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/MQTTCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/MQTTCore.swift",
       "kind": "StringLiteral",
       "offset": 289,
       "length": 11,
       "value": "\"delDevice\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/MQTTCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/MQTTCore.swift",
       "kind": "StringLiteral",
       "offset": 341,
       "length": 12,
       "value": "\"otherLogin\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/MQTTCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/MQTTCore.swift",
       "kind": "StringLiteral",
       "offset": 392,
       "length": 7,
       "value": "\"event\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/MQTTCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/MQTTCore.swift",
       "kind": "StringLiteral",
       "offset": 488,
       "length": 20,
       "value": "\"updateDeviceStatus\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/MQTTCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/MQTTCore.swift",
       "kind": "StringLiteral",
       "offset": 556,
       "length": 13,
       "value": "\"deviceEvent\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/MQTTCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/MQTTCore.swift",
       "kind": "StringLiteral",
       "offset": 626,
       "length": 14,
       "value": "\"actionReport\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/MQTTCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/MQTTCore.swift",
       "kind": "StringLiteral",
       "offset": 707,
       "length": 13,
       "value": "\"otaDownload\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/MQTTCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/MQTTCore.swift",
       "kind": "StringLiteral",
       "offset": 739,
       "length": 12,
       "value": "\"otaUpgrade\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/MQTTCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/MQTTCore.swift",
       "kind": "StringLiteral",
       "offset": 768,
       "length": 10,
       "value": "\"playback\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/MQTTCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/MQTTCore.swift",
       "kind": "StringLiteral",
       "offset": 797,
       "length": 12,
       "value": "\"deviceLink\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/MQTTCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/MQTTCore.swift",
       "kind": "StringLiteral",
       "offset": 841,
       "length": 9,
       "value": "\"nfEvent\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/MQTTCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/MQTTCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1045,
       "length": 12,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/MQTTCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/MQTTCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1059,
       "length": 14,
       "value": "2"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/MQTTCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/MQTTCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1075,
       "length": 14,
       "value": "3"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/MQTTCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/MQTTCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1091,
       "length": 11,
       "value": "4"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/MQTTCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/MQTTCore.swift",
       "kind": "StringLiteral",
       "offset": 1290,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/MQTTCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/MQTTCore.swift",
       "kind": "Dictionary",
       "offset": 1326,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/MQTTCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/MQTTCore.swift",
       "kind": "BooleanLiteral",
       "offset": 1636,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/MQTTCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/MQTTCore.swift",
       "kind": "StringLiteral",
       "offset": 1703,
       "length": 25,
       "value": "\"MQTTMessageNotification\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/MQTTCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/MQTTCore.swift",
       "kind": "StringLiteral",
       "offset": 1791,
       "length": 25,
       "value": "\"MQTTConnectNotification\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
       "kind": "IntegerLiteral",
       "offset": 345,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
       "kind": "BooleanLiteral",
       "offset": 382,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
       "kind": "IntegerLiteral",
       "offset": 556,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
       "kind": "BooleanLiteral",
       "offset": 686,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
       "kind": "BooleanLiteral",
       "offset": 691,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
       "kind": "FloatLiteral",
       "offset": 740,
       "length": 3,
       "value": "4.0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
       "kind": "FloatLiteral",
       "offset": 744,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
       "kind": "BooleanLiteral",
       "offset": 613,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
       "kind": "IntegerLiteral",
       "offset": 1463,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
       "kind": "IntegerLiteral",
       "offset": 1485,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
       "kind": "BooleanLiteral",
       "offset": 1507,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
       "kind": "IntegerLiteral",
       "offset": 3600,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
       "kind": "IntegerLiteral",
       "offset": 3603,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
       "kind": "IntegerLiteral",
       "offset": 3738,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
       "kind": "IntegerLiteral",
       "offset": 3761,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
       "kind": "IntegerLiteral",
       "offset": 4022,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
       "kind": "IntegerLiteral",
       "offset": 4025,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
       "kind": "BooleanLiteral",
       "offset": 4092,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
       "kind": "IntegerLiteral",
       "offset": 4636,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
       "kind": "IntegerLiteral",
       "offset": 4639,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
       "kind": "BooleanLiteral",
       "offset": 4834,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
       "kind": "IntegerLiteral",
       "offset": 5091,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
       "kind": "IntegerLiteral",
       "offset": 5154,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
       "kind": "IntegerLiteral",
       "offset": 5157,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
       "kind": "IntegerLiteral",
       "offset": 5293,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/FWLiveScrollView.swift",
       "kind": "IntegerLiteral",
       "offset": 5301,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/HOTP.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/HOTP.swift",
       "kind": "IntegerLiteral",
       "offset": 2314,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/SwiftOTP\/Generator.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/SwiftOTP\/Generator.swift",
       "kind": "IntegerLiteral",
       "offset": 2488,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldMQTTDiagnosticEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldMQTTDiagnosticEx.swift",
       "kind": "StringLiteral",
       "offset": 715,
       "length": 8,
       "value": "\"method\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldMQTTDiagnosticEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldMQTTDiagnosticEx.swift",
       "kind": "StringLiteral",
       "offset": 1050,
       "length": 13,
       "value": "\"device_info\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldMQTTDiagnosticEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldMQTTDiagnosticEx.swift",
       "kind": "StringLiteral",
       "offset": 1085,
       "length": 5,
       "value": "\"vid\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldMQTTDiagnosticEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldMQTTDiagnosticEx.swift",
       "kind": "StringLiteral",
       "offset": 1106,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/CldMQTTDiagnosticEx.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldMQTTDiagnosticEx.swift",
       "kind": "StringLiteral",
       "offset": 1362,
       "length": 11,
       "value": "\"action_id\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "StringLiteral",
       "offset": 591,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "StringLiteral",
       "offset": 613,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "StringLiteral",
       "offset": 635,
       "length": 5,
       "value": "\"PUT\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "StringLiteral",
       "offset": 659,
       "length": 8,
       "value": "\"DELETE\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 739,
       "length": 13,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 762,
       "length": 14,
       "value": "2"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 786,
       "length": 15,
       "value": "3"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 811,
       "length": 17,
       "value": "4"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 838,
       "length": 15,
       "value": "5"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 863,
       "length": 18,
       "value": "6"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 891,
       "length": 11,
       "value": "7"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 912,
       "length": 11,
       "value": "8"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 933,
       "length": 13,
       "value": "9"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 956,
       "length": 14,
       "value": "10"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 980,
       "length": 14,
       "value": "11"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1004,
       "length": 7,
       "value": "12"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1021,
       "length": 5,
       "value": "13"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1036,
       "length": 6,
       "value": "14"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1052,
       "length": 13,
       "value": "15"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1075,
       "length": 11,
       "value": "16"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1096,
       "length": 7,
       "value": "17"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1113,
       "length": 12,
       "value": "18"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1135,
       "length": 13,
       "value": "19"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1158,
       "length": 12,
       "value": "20"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1180,
       "length": 15,
       "value": "21"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1205,
       "length": 12,
       "value": "22"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1227,
       "length": 15,
       "value": "23"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1252,
       "length": 12,
       "value": "24"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1274,
       "length": 17,
       "value": "25"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1301,
       "length": 16,
       "value": "26"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1327,
       "length": 13,
       "value": "27"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1350,
       "length": 20,
       "value": "28"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1380,
       "length": 13,
       "value": "29"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1403,
       "length": 18,
       "value": "30"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1431,
       "length": 17,
       "value": "31"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1458,
       "length": 17,
       "value": "32"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1485,
       "length": 16,
       "value": "33"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1511,
       "length": 19,
       "value": "34"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1540,
       "length": 14,
       "value": "35"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1564,
       "length": 12,
       "value": "36"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1586,
       "length": 12,
       "value": "37"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1608,
       "length": 13,
       "value": "38"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1631,
       "length": 15,
       "value": "39"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1656,
       "length": 18,
       "value": "40"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1684,
       "length": 20,
       "value": "41"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1714,
       "length": 10,
       "value": "42"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1734,
       "length": 15,
       "value": "43"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1759,
       "length": 11,
       "value": "44"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1780,
       "length": 14,
       "value": "45"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1804,
       "length": 14,
       "value": "46"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1828,
       "length": 18,
       "value": "47"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1856,
       "length": 17,
       "value": "48"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1883,
       "length": 17,
       "value": "49"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1910,
       "length": 12,
       "value": "50"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1932,
       "length": 10,
       "value": "51"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1952,
       "length": 9,
       "value": "52"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1971,
       "length": 18,
       "value": "53"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 1999,
       "length": 14,
       "value": "54"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 2023,
       "length": 16,
       "value": "55"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 2049,
       "length": 13,
       "value": "56"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 2072,
       "length": 14,
       "value": "57"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 2096,
       "length": 16,
       "value": "58"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 2122,
       "length": 12,
       "value": "59"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 2144,
       "length": 15,
       "value": "60"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 2169,
       "length": 12,
       "value": "61"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 2191,
       "length": 13,
       "value": "62"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 2214,
       "length": 15,
       "value": "63"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 2239,
       "length": 12,
       "value": "64"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 2261,
       "length": 18,
       "value": "65"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 2289,
       "length": 10,
       "value": "66"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 2309,
       "length": 16,
       "value": "67"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 2335,
       "length": 33,
       "value": "68"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 2378,
       "length": 19,
       "value": "69"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 2407,
       "length": 23,
       "value": "70"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "IntegerLiteral",
       "offset": 2440,
       "length": 11,
       "value": "71"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "BooleanLiteral",
       "offset": 9779,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "Array",
       "offset": 9837,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "StringLiteral",
       "offset": 9863,
       "length": 27,
       "value": "\"com.cldsmart.sdk.userinfo\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "Array",
       "offset": 10118,
       "length": 380,
       "value": "[\"password\", \"password_confirmation\", \"old_password\", \"current_password\", \"new_password\", \"new_password_confirmation\", \"validate_code\", \"secret\", \"secret_key\", \"bt_secret\", \"encrypt_key\", \"one_time_password_key\", \"app_client_secret\", \"sign\", \"signature\"]"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "Array",
       "offset": 10590,
       "length": 189,
       "value": "[\"authorization\", \"token\", \"access_token\", \"refresh_token\", \"device_token\", \"reg_token\", \"reset_token\", \"member_token\"]"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "Dictionary",
       "offset": 13207,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "Dictionary",
       "offset": 14768,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "BooleanLiteral",
       "offset": 29132,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/NetworkCore.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/NetworkCore.swift",
       "kind": "StringLiteral",
       "offset": 31270,
       "length": 17,
       "value": "\"urlPathParamKey\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/PrivateExtension.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/PrivateExtension.swift",
       "kind": "StringLiteral",
       "offset": 2966,
       "length": 3,
       "value": "\" \""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/PrivateExtension.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/PrivateExtension.swift",
       "kind": "StringLiteral",
       "offset": 2977,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/PrivateExtension.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/PrivateExtension.swift",
       "kind": "StringLiteral",
       "offset": 3006,
       "length": 4,
       "value": "\"\n\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/PrivateExtension.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/PrivateExtension.swift",
       "kind": "StringLiteral",
       "offset": 3018,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/PrivateExtension.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/PrivateExtension.swift",
       "kind": "IntegerLiteral",
       "offset": 3102,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/PrivateExtension.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/PrivateExtension.swift",
       "kind": "IntegerLiteral",
       "offset": 3107,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/PrivateExtension.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/PrivateExtension.swift",
       "kind": "IntegerLiteral",
       "offset": 3202,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/PrivateExtension.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/PrivateExtension.swift",
       "kind": "IntegerLiteral",
       "offset": 3264,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/PrivateExtension.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/PrivateExtension.swift",
       "kind": "IntegerLiteral",
       "offset": 3287,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/PrivateExtension.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/PrivateExtension.swift",
       "kind": "IntegerLiteral",
       "offset": 3353,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/PrivateExtension.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/PrivateExtension.swift",
       "kind": "IntegerLiteral",
       "offset": 3474,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/PrivateExtension.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/PrivateExtension.swift",
       "kind": "BooleanLiteral",
       "offset": 9658,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/Metal\/MetalRender.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/Metal\/MetalRender.swift",
       "kind": "IntegerLiteral",
       "offset": 268,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/Metal\/MetalRender.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/Metal\/MetalRender.swift",
       "kind": "IntegerLiteral",
       "offset": 317,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/Metal\/MetalRender.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/Metal\/MetalRender.swift",
       "kind": "IntegerLiteral",
       "offset": 368,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/Metal\/MetalRender.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/Metal\/MetalRender.swift",
       "kind": "IntegerLiteral",
       "offset": 419,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/Metal\/MetalRender.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/Metal\/MetalRender.swift",
       "kind": "IntegerLiteral",
       "offset": 849,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/Metal\/MetalRender.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/Metal\/MetalRender.swift",
       "kind": "IntegerLiteral",
       "offset": 1156,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/Metal\/MetalRender.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/Metal\/MetalRender.swift",
       "kind": "IntegerLiteral",
       "offset": 1187,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/cldsmartsdk-ios-release-clone-1.4.10\/CLDSmartSDK\/Classes\/Metal\/MetalRender.swift",
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/Metal\/MetalRender.swift",
       "kind": "IntegerLiteral",
       "offset": 6756,
       "length": 1,

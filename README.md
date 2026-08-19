@@ -2,7 +2,7 @@
 
 CLDSmartSDK iOS SDK 提供账号认证、设备绑定、蓝牙通信、IoT 控制、消息推送和音视频能力。
 
-- 当前版本：`1.4.10`
+- 当前版本：`1.4.11`
 - 最低系统：iOS 13.0
 - Swift：5.9 或更高版本
 - 分发形式：静态 XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.10'
+      :tag => '1.4.11'
 end
 ```
 
@@ -497,6 +497,10 @@ SDK 会根据 `vid` 查询设备和固件信息、校验主 `bt_config.protocol 
 - 用户取消时调用 `cancelBLEOTA()`，原升级回调会收到 `.cancelled`。
 - 升级期间保持 App 在前台、设备唤醒且电量充足，不要并发发送其他 BLE 指令。
 
+从 `1.4.11` 起，客户现场可按 `[CLDSmartSDK][BLEOTA]` 过滤日志。日志包含同一次升级的操作编号、累计耗时、固件字节数、协商分包长度、当前包号/总包数、重试次数、最近 RTT、最近响应和 BLE 连接状态，不包含固件内容、蓝牙密钥或账号凭证。默认 `timeout=5` 时，同一 C013 分包约 15 秒无进展会返回 `.failed` 与错误码 `-5112`，不会无限停在传输中。
+
+Keypad/KeypadP 扫描结果的 `binded` 直接来自 manufacturer data 第 4 字节，不读取 SDK 缓存或云端列表。例如 `FFFF010100000D` 中的第 4 字节 `01` 表示设备仍广播“已绑定”，真正恢复未绑定后应为 `FFFF010000000D`。如果设备端重置后仍广播 `01`，应检查是否执行完整恢复出厂、是否重启并刷新广播，以及设备固件是否清除了本地绑定标志。
+
 `1.4.9` 的 `upgradeDL500Device`、`cancelDL500OTA`、`dl500OTAIsRunning` 及旧 DL500 类型仍可编译，但已标记为 deprecated 并转发到通用 BLE OTA。WiFi/联网设备继续使用现有 `upgradeDevice(vid:timeout:completion:)`，行为不变。
 
 ## APNs 推送 Token
@@ -583,6 +587,15 @@ Debug/Sandbox 构建使用 `isAPNsSandbox: true`，正式 APNs 环境使用 `fal
 不要直接用新账号覆盖旧会话。按“服务端登出 -> `deinitEngine` -> `initEngine` -> 新账号登录”的顺序切换。
 
 ## 版本说明
+
+### 1.4.11
+
+- 修复 `1.4.10` 中连续 C013 分包可能丢失下一包回调和定时器、导致 OTA 永久停在 `.transferring` 的问题；客户调用方式不变。
+- 新增 `[CLDSmartSDK][BLEOTA]` 结构化诊断日志，覆盖固件下载、BLE 连接、C010-C014、分包进度、重试、RTT、响应、BLE 状态及最终错误。
+- 新增独立 C013 无进展 watchdog；默认 `timeout=5` 时约 15 秒无进展返回 `.failed/-5112`。
+- OTA 实现文件更名为 `CldEngineBluetoothOTAEx.swift`，体现它适用于所有满足传输配置和协议能力的纯蓝牙设备；扫描、连接和通用命令仍由 `CldEngineBluetoothEx.swift` 负责。
+- 补充 Keypad/KeypadP manufacturer data 绑定位诊断。`FFFF010100000D` 表示设备广播已绑定，`FFFF010000000D` 才表示未绑定。
+- Device arm64、Simulator arm64/x86_64 XCFramework、Swift Interface、CocoaPods lint 和客户工程编译已通过。真实 DL500、Keypad 与 KeypadP 固件仍需完成真机 OTA 验收。
 
 ### 1.4.10
 

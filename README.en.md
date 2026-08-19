@@ -2,7 +2,7 @@
 
 CLDSmartSDK for iOS provides account authentication, device binding, Bluetooth communication, IoT control, push messaging, and audio/video capabilities.
 
-- Current version: `1.4.10`
+- Current version: `1.4.11`
 - Minimum deployment target: iOS 13.0
 - Swift: 5.9 or later
 - Distribution: static XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.10'
+      :tag => '1.4.11'
 end
 ```
 
@@ -499,6 +499,10 @@ The SDK resolves device and firmware metadata from `vid`, verifies that the prim
 - Call `cancelBLEOTA()` for an explicit user cancellation; the original callback receives `.cancelled`.
 - Keep the app in the foreground and the device awake and powered. Do not send other BLE commands during OTA.
 
+Starting with `1.4.11`, filter field logs by `[CLDSmartSDK][BLEOTA]`. The logs include an operation ID, elapsed time, firmware size, negotiated packet length, packet index/count, retry count, latest RTT and response, BLE state, and the terminal error. Firmware bytes, Bluetooth secrets, and account credentials are never logged. With the default `timeout=5`, an unchanged C013 packet fails with `.failed` and error `-5112` after approximately 15 seconds instead of remaining in transfer indefinitely.
+
+The Keypad/KeypadP scan result `binded` comes directly from byte 4 of manufacturer data; it is not read from an SDK cache or the cloud device list. For example, byte 4 is `01` in `FFFF010100000D`, so the device is still advertising itself as bound. A fully reset device should advertise `FFFF010000000D`. If `01` remains after a reset, verify that a full factory reset was performed, advertising was restarted, and the device firmware cleared its local binding flag.
+
 The `1.4.9` `upgradeDL500Device`, `cancelDL500OTA`, `dl500OTAIsRunning`, and legacy DL500 types still compile, but are deprecated wrappers around the generic BLE OTA implementation. WiFi/networked devices continue to use `upgradeDevice(vid:timeout:completion:)` without behavior changes.
 
 ## APNs Device Token
@@ -585,6 +589,15 @@ Verify that the SDK server, App ID/Secret Key, `countryCode`, and `regionCode` b
 Do not overwrite an existing session. Switch users in this order: server logout, `deinitEngine`, `initEngine`, and then new-user login.
 
 ## Release Notes
+
+### 1.4.11
+
+- Fixed a `1.4.10` race where consecutive C013 packets could lose the next callback and timer, leaving OTA permanently in `.transferring`. Client call sites do not change.
+- Added `[CLDSmartSDK][BLEOTA]` structured diagnostics for download, connection, C010-C014, packet progress, retries, RTT, responses, BLE state, and terminal errors.
+- Added an independent C013 no-progress watchdog. With the default `timeout=5`, approximately 15 seconds without progress returns `.failed/-5112`.
+- Renamed the implementation file to `CldEngineBluetoothOTAEx.swift` to reflect support for every Bluetooth-only device with the required transport configuration and OTA protocol. Scanning, connection, and generic commands remain in `CldEngineBluetoothEx.swift`.
+- Documented the Keypad/KeypadP manufacturer-data binding flag: `FFFF010100000D` advertises bound, while `FFFF010000000D` advertises unbound.
+- Device arm64 and simulator arm64/x86_64 XCFrameworks, Swift interfaces, CocoaPods lint, and client builds passed. Physical-device OTA acceptance is still required for DL500, Keypad, and KeypadP firmware.
 
 ### 1.4.10
 

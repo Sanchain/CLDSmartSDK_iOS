@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name        = "CLDSmartSDK_iOS"
-  s.version     = "1.4.10"
+  s.version     = "1.4.11"
   s.summary     = "集成FuweiCloud接口、音视频模块、蓝牙模块功能的SDK"
   s.homepage    = "https://github.com/Sanchain/CLDSmartSDK_iOS"
   s.license     = { :type => "MIT" }
