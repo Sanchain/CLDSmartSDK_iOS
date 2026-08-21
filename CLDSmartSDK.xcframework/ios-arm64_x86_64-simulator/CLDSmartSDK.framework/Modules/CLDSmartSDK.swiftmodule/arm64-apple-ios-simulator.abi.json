@@ -23,6 +23,3974 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "CLDLockCalibrationEntryType",
+        "printedName": "CLDLockCalibrationEntryType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "handle",
+            "printedName": "handle",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDLockCalibrationEntryType.Type) -> CLDSmartSDK.CLDLockCalibrationEntryType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDLockCalibrationEntryType",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationEntryType",
+                    "usr": "s:11CLDSmartSDK27CLDLockCalibrationEntryTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationEntryType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationEntryType",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationEntryType",
+                        "usr": "s:11CLDSmartSDK27CLDLockCalibrationEntryTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK27CLDLockCalibrationEntryTypeO6handleyA2CmF",
+            "mangledName": "$s11CLDSmartSDK27CLDLockCalibrationEntryTypeO6handleyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "keyed",
+            "printedName": "keyed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDLockCalibrationEntryType.Type) -> CLDSmartSDK.CLDLockCalibrationEntryType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDLockCalibrationEntryType",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationEntryType",
+                    "usr": "s:11CLDSmartSDK27CLDLockCalibrationEntryTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationEntryType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationEntryType",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationEntryType",
+                        "usr": "s:11CLDSmartSDK27CLDLockCalibrationEntryTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK27CLDLockCalibrationEntryTypeO5keyedyA2CmF",
+            "mangledName": "$s11CLDSmartSDK27CLDLockCalibrationEntryTypeO5keyedyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CLDSmartSDK.CLDLockCalibrationEntryType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDLockCalibrationEntryType",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationEntryType",
+                    "usr": "s:11CLDSmartSDK27CLDLockCalibrationEntryTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11CLDSmartSDK27CLDLockCalibrationEntryTypeO8rawValueACSgs5UInt8V_tcfc",
+            "mangledName": "$s11CLDSmartSDK27CLDLockCalibrationEntryTypeO8rawValueACSgs5UInt8V_tcfc",
+            "moduleName": "CLDSmartSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK27CLDLockCalibrationEntryTypeO8rawValues5UInt8Vvp",
+            "mangledName": "$s11CLDSmartSDK27CLDLockCalibrationEntryTypeO8rawValues5UInt8Vvp",
+            "moduleName": "CLDSmartSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK27CLDLockCalibrationEntryTypeO8rawValues5UInt8Vvg",
+                "mangledName": "$s11CLDSmartSDK27CLDLockCalibrationEntryTypeO8rawValues5UInt8Vvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[CLDSmartSDK.CLDLockCalibrationEntryType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDLockCalibrationEntryType",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationEntryType",
+                    "usr": "s:11CLDSmartSDK27CLDLockCalibrationEntryTypeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK27CLDLockCalibrationEntryTypeO8allCasesSayACGvpZ",
+            "mangledName": "$s11CLDSmartSDK27CLDLockCalibrationEntryTypeO8allCasesSayACGvpZ",
+            "moduleName": "CLDSmartSDK",
+            "static": true,
+            "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[CLDSmartSDK.CLDLockCalibrationEntryType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationEntryType",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationEntryType",
+                        "usr": "s:11CLDSmartSDK27CLDLockCalibrationEntryTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK27CLDLockCalibrationEntryTypeO8allCasesSayACGvgZ",
+                "mangledName": "$s11CLDSmartSDK27CLDLockCalibrationEntryTypeO8allCasesSayACGvgZ",
+                "moduleName": "CLDSmartSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11CLDSmartSDK27CLDLockCalibrationEntryTypeO",
+        "mangledName": "$s11CLDSmartSDK27CLDLockCalibrationEntryTypeO",
+        "moduleName": "CLDSmartSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "UInt8",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[CLDSmartSDK.CLDLockCalibrationEntryType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationEntryType",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationEntryType",
+                        "usr": "s:11CLDSmartSDK27CLDLockCalibrationEntryTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CLDLockCalibrationManualMode",
+        "printedName": "CLDLockCalibrationManualMode",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "withLatch",
+            "printedName": "withLatch",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDLockCalibrationManualMode.Type) -> CLDSmartSDK.CLDLockCalibrationManualMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDLockCalibrationManualMode",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationManualMode",
+                    "usr": "s:11CLDSmartSDK28CLDLockCalibrationManualModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationManualMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationManualMode",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationManualMode",
+                        "usr": "s:11CLDSmartSDK28CLDLockCalibrationManualModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK28CLDLockCalibrationManualModeO9withLatchyA2CmF",
+            "mangledName": "$s11CLDSmartSDK28CLDLockCalibrationManualModeO9withLatchyA2CmF",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "withoutLatch",
+            "printedName": "withoutLatch",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDLockCalibrationManualMode.Type) -> CLDSmartSDK.CLDLockCalibrationManualMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDLockCalibrationManualMode",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationManualMode",
+                    "usr": "s:11CLDSmartSDK28CLDLockCalibrationManualModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationManualMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationManualMode",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationManualMode",
+                        "usr": "s:11CLDSmartSDK28CLDLockCalibrationManualModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK28CLDLockCalibrationManualModeO12withoutLatchyA2CmF",
+            "mangledName": "$s11CLDSmartSDK28CLDLockCalibrationManualModeO12withoutLatchyA2CmF",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK28CLDLockCalibrationManualModeO9hashValueSivp",
+            "mangledName": "$s11CLDSmartSDK28CLDLockCalibrationManualModeO9hashValueSivp",
+            "moduleName": "CLDSmartSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK28CLDLockCalibrationManualModeO9hashValueSivg",
+                "mangledName": "$s11CLDSmartSDK28CLDLockCalibrationManualModeO9hashValueSivg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CLDSmartSDK28CLDLockCalibrationManualModeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s11CLDSmartSDK28CLDLockCalibrationManualModeO4hash4intoys6HasherVz_tF",
+            "moduleName": "CLDSmartSDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLDLockCalibrationManualMode",
+                "printedName": "CLDSmartSDK.CLDLockCalibrationManualMode",
+                "usr": "s:11CLDSmartSDK28CLDLockCalibrationManualModeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLDLockCalibrationManualMode",
+                "printedName": "CLDSmartSDK.CLDLockCalibrationManualMode",
+                "usr": "s:11CLDSmartSDK28CLDLockCalibrationManualModeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CLDSmartSDK28CLDLockCalibrationManualModeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s11CLDSmartSDK28CLDLockCalibrationManualModeO2eeoiySbAC_ACtFZ",
+            "moduleName": "CLDSmartSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11CLDSmartSDK28CLDLockCalibrationManualModeO",
+        "mangledName": "$s11CLDSmartSDK28CLDLockCalibrationManualModeO",
+        "moduleName": "CLDSmartSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CLDLockCalibrationDoorSensorOption",
+        "printedName": "CLDLockCalibrationDoorSensorOption",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "notInstalled",
+            "printedName": "notInstalled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDLockCalibrationDoorSensorOption.Type) -> CLDSmartSDK.CLDLockCalibrationDoorSensorOption",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDLockCalibrationDoorSensorOption",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationDoorSensorOption",
+                    "usr": "s:11CLDSmartSDK34CLDLockCalibrationDoorSensorOptionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationDoorSensorOption.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationDoorSensorOption",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationDoorSensorOption",
+                        "usr": "s:11CLDSmartSDK34CLDLockCalibrationDoorSensorOptionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK34CLDLockCalibrationDoorSensorOptionO12notInstalledyA2CmF",
+            "mangledName": "$s11CLDSmartSDK34CLDLockCalibrationDoorSensorOptionO12notInstalledyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "installed",
+            "printedName": "installed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDLockCalibrationDoorSensorOption.Type) -> CLDSmartSDK.CLDLockCalibrationDoorSensorOption",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDLockCalibrationDoorSensorOption",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationDoorSensorOption",
+                    "usr": "s:11CLDSmartSDK34CLDLockCalibrationDoorSensorOptionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationDoorSensorOption.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationDoorSensorOption",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationDoorSensorOption",
+                        "usr": "s:11CLDSmartSDK34CLDLockCalibrationDoorSensorOptionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK34CLDLockCalibrationDoorSensorOptionO9installedyA2CmF",
+            "mangledName": "$s11CLDSmartSDK34CLDLockCalibrationDoorSensorOptionO9installedyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK34CLDLockCalibrationDoorSensorOptionO9hashValueSivp",
+            "mangledName": "$s11CLDSmartSDK34CLDLockCalibrationDoorSensorOptionO9hashValueSivp",
+            "moduleName": "CLDSmartSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK34CLDLockCalibrationDoorSensorOptionO9hashValueSivg",
+                "mangledName": "$s11CLDSmartSDK34CLDLockCalibrationDoorSensorOptionO9hashValueSivg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CLDSmartSDK34CLDLockCalibrationDoorSensorOptionO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s11CLDSmartSDK34CLDLockCalibrationDoorSensorOptionO4hash4intoys6HasherVz_tF",
+            "moduleName": "CLDSmartSDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLDLockCalibrationDoorSensorOption",
+                "printedName": "CLDSmartSDK.CLDLockCalibrationDoorSensorOption",
+                "usr": "s:11CLDSmartSDK34CLDLockCalibrationDoorSensorOptionO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLDLockCalibrationDoorSensorOption",
+                "printedName": "CLDSmartSDK.CLDLockCalibrationDoorSensorOption",
+                "usr": "s:11CLDSmartSDK34CLDLockCalibrationDoorSensorOptionO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CLDSmartSDK34CLDLockCalibrationDoorSensorOptionO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s11CLDSmartSDK34CLDLockCalibrationDoorSensorOptionO2eeoiySbAC_ACtFZ",
+            "moduleName": "CLDSmartSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11CLDSmartSDK34CLDLockCalibrationDoorSensorOptionO",
+        "mangledName": "$s11CLDSmartSDK34CLDLockCalibrationDoorSensorOptionO",
+        "moduleName": "CLDSmartSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CLDLockCalibrationProfile",
+        "printedName": "CLDLockCalibrationProfile",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "identifier",
+            "printedName": "identifier",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK25CLDLockCalibrationProfileV10identifierSSvp",
+            "mangledName": "$s11CLDSmartSDK25CLDLockCalibrationProfileV10identifierSSvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK25CLDLockCalibrationProfileV10identifierSSvg",
+                "mangledName": "$s11CLDSmartSDK25CLDLockCalibrationProfileV10identifierSSvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "supportsAutomaticCalibration",
+            "printedName": "supportsAutomaticCalibration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK25CLDLockCalibrationProfileV017supportsAutomaticD0Sbvp",
+            "mangledName": "$s11CLDSmartSDK25CLDLockCalibrationProfileV017supportsAutomaticD0Sbvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK25CLDLockCalibrationProfileV017supportsAutomaticD0Sbvg",
+                "mangledName": "$s11CLDSmartSDK25CLDLockCalibrationProfileV017supportsAutomaticD0Sbvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "requiresEntryTypeSelection",
+            "printedName": "requiresEntryTypeSelection",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK25CLDLockCalibrationProfileV26requiresEntryTypeSelectionSbvp",
+            "mangledName": "$s11CLDSmartSDK25CLDLockCalibrationProfileV26requiresEntryTypeSelectionSbvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK25CLDLockCalibrationProfileV26requiresEntryTypeSelectionSbvg",
+                "mangledName": "$s11CLDSmartSDK25CLDLockCalibrationProfileV26requiresEntryTypeSelectionSbvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "supportsFinalStatus",
+            "printedName": "supportsFinalStatus",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK25CLDLockCalibrationProfileV19supportsFinalStatusSbvp",
+            "mangledName": "$s11CLDSmartSDK25CLDLockCalibrationProfileV19supportsFinalStatusSbvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK25CLDLockCalibrationProfileV19supportsFinalStatusSbvg",
+                "mangledName": "$s11CLDSmartSDK25CLDLockCalibrationProfileV19supportsFinalStatusSbvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(identifier:supportsAutomaticCalibration:requiresEntryTypeSelection:supportsFinalStatus:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CLDLockCalibrationProfile",
+                "printedName": "CLDSmartSDK.CLDLockCalibrationProfile",
+                "usr": "s:11CLDSmartSDK25CLDLockCalibrationProfileV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11CLDSmartSDK25CLDLockCalibrationProfileV10identifier017supportsAutomaticD026requiresEntryTypeSelection0G11FinalStatusACSS_S3btcfc",
+            "mangledName": "$s11CLDSmartSDK25CLDLockCalibrationProfileV10identifier017supportsAutomaticD026requiresEntryTypeSelection0G11FinalStatusACSS_S3btcfc",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "standard",
+            "printedName": "standard",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CLDLockCalibrationProfile",
+                "printedName": "CLDSmartSDK.CLDLockCalibrationProfile",
+                "usr": "s:11CLDSmartSDK25CLDLockCalibrationProfileV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK25CLDLockCalibrationProfileV8standardACvpZ",
+            "mangledName": "$s11CLDSmartSDK25CLDLockCalibrationProfileV8standardACvpZ",
+            "moduleName": "CLDSmartSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDLockCalibrationProfile",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationProfile",
+                    "usr": "s:11CLDSmartSDK25CLDLockCalibrationProfileV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK25CLDLockCalibrationProfileV8standardACvgZ",
+                "mangledName": "$s11CLDSmartSDK25CLDLockCalibrationProfileV8standardACvgZ",
+                "moduleName": "CLDSmartSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLDLockCalibrationProfile",
+                "printedName": "CLDSmartSDK.CLDLockCalibrationProfile",
+                "usr": "s:11CLDSmartSDK25CLDLockCalibrationProfileV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLDLockCalibrationProfile",
+                "printedName": "CLDSmartSDK.CLDLockCalibrationProfile",
+                "usr": "s:11CLDSmartSDK25CLDLockCalibrationProfileV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CLDSmartSDK25CLDLockCalibrationProfileV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s11CLDSmartSDK25CLDLockCalibrationProfileV2eeoiySbAC_ACtFZ",
+            "moduleName": "CLDSmartSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11CLDSmartSDK25CLDLockCalibrationProfileV",
+        "mangledName": "$s11CLDSmartSDK25CLDLockCalibrationProfileV",
+        "moduleName": "CLDSmartSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CLDLockCalibrationConfiguration",
+        "printedName": "CLDLockCalibrationConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "profile",
+            "printedName": "profile",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CLDLockCalibrationProfile",
+                "printedName": "CLDSmartSDK.CLDLockCalibrationProfile",
+                "usr": "s:11CLDSmartSDK25CLDLockCalibrationProfileV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK31CLDLockCalibrationConfigurationV7profileAA0cD7ProfileVvp",
+            "mangledName": "$s11CLDSmartSDK31CLDLockCalibrationConfigurationV7profileAA0cD7ProfileVvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDLockCalibrationProfile",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationProfile",
+                    "usr": "s:11CLDSmartSDK25CLDLockCalibrationProfileV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK31CLDLockCalibrationConfigurationV7profileAA0cD7ProfileVvg",
+                "mangledName": "$s11CLDSmartSDK31CLDLockCalibrationConfigurationV7profileAA0cD7ProfileVvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(profile:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CLDLockCalibrationConfiguration",
+                "printedName": "CLDSmartSDK.CLDLockCalibrationConfiguration",
+                "usr": "s:11CLDSmartSDK31CLDLockCalibrationConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLDLockCalibrationProfile",
+                "printedName": "CLDSmartSDK.CLDLockCalibrationProfile",
+                "hasDefaultArg": true,
+                "usr": "s:11CLDSmartSDK25CLDLockCalibrationProfileV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11CLDSmartSDK31CLDLockCalibrationConfigurationV7profileAcA0cD7ProfileV_tcfc",
+            "mangledName": "$s11CLDSmartSDK31CLDLockCalibrationConfigurationV7profileAcA0cD7ProfileV_tcfc",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLDLockCalibrationConfiguration",
+                "printedName": "CLDSmartSDK.CLDLockCalibrationConfiguration",
+                "usr": "s:11CLDSmartSDK31CLDLockCalibrationConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLDLockCalibrationConfiguration",
+                "printedName": "CLDSmartSDK.CLDLockCalibrationConfiguration",
+                "usr": "s:11CLDSmartSDK31CLDLockCalibrationConfigurationV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CLDSmartSDK31CLDLockCalibrationConfigurationV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s11CLDSmartSDK31CLDLockCalibrationConfigurationV2eeoiySbAC_ACtFZ",
+            "moduleName": "CLDSmartSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11CLDSmartSDK31CLDLockCalibrationConfigurationV",
+        "mangledName": "$s11CLDSmartSDK31CLDLockCalibrationConfigurationV",
+        "moduleName": "CLDSmartSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CLDLockCalibrationStage",
+        "printedName": "CLDLockCalibrationStage",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "ready",
+            "printedName": "ready",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDLockCalibrationStage.Type) -> CLDSmartSDK.CLDLockCalibrationStage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDLockCalibrationStage",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationStage",
+                    "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationStage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationStage",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationStage",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO5readyyA2CmF",
+            "mangledName": "$s11CLDSmartSDK23CLDLockCalibrationStageO5readyyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "preparingLockedPosition",
+            "printedName": "preparingLockedPosition",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDLockCalibrationStage.Type) -> CLDSmartSDK.CLDLockCalibrationStage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDLockCalibrationStage",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationStage",
+                    "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationStage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationStage",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationStage",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO23preparingLockedPositionyA2CmF",
+            "mangledName": "$s11CLDSmartSDK23CLDLockCalibrationStageO23preparingLockedPositionyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "recordLockedPosition",
+            "printedName": "recordLockedPosition",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDLockCalibrationStage.Type) -> CLDSmartSDK.CLDLockCalibrationStage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDLockCalibrationStage",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationStage",
+                    "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationStage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationStage",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationStage",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO20recordLockedPositionyA2CmF",
+            "mangledName": "$s11CLDSmartSDK23CLDLockCalibrationStageO20recordLockedPositionyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "selectEntryType",
+            "printedName": "selectEntryType",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDLockCalibrationStage.Type) -> CLDSmartSDK.CLDLockCalibrationStage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDLockCalibrationStage",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationStage",
+                    "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationStage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationStage",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationStage",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO15selectEntryTypeyA2CmF",
+            "mangledName": "$s11CLDSmartSDK23CLDLockCalibrationStageO15selectEntryTypeyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "preparingUnlockedPosition",
+            "printedName": "preparingUnlockedPosition",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDLockCalibrationStage.Type) -> CLDSmartSDK.CLDLockCalibrationStage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDLockCalibrationStage",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationStage",
+                    "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationStage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationStage",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationStage",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO25preparingUnlockedPositionyA2CmF",
+            "mangledName": "$s11CLDSmartSDK23CLDLockCalibrationStageO25preparingUnlockedPositionyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "recordUnlockedPosition",
+            "printedName": "recordUnlockedPosition",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDLockCalibrationStage.Type) -> CLDSmartSDK.CLDLockCalibrationStage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDLockCalibrationStage",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationStage",
+                    "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationStage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationStage",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationStage",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO22recordUnlockedPositionyA2CmF",
+            "mangledName": "$s11CLDSmartSDK23CLDLockCalibrationStageO22recordUnlockedPositionyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "chooseDoorSensor",
+            "printedName": "chooseDoorSensor",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDLockCalibrationStage.Type) -> CLDSmartSDK.CLDLockCalibrationStage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDLockCalibrationStage",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationStage",
+                    "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationStage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationStage",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationStage",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO16chooseDoorSensoryA2CmF",
+            "mangledName": "$s11CLDSmartSDK23CLDLockCalibrationStageO16chooseDoorSensoryA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "calibratingDoorSensor",
+            "printedName": "calibratingDoorSensor",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDLockCalibrationStage.Type) -> CLDSmartSDK.CLDLockCalibrationStage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDLockCalibrationStage",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationStage",
+                    "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationStage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationStage",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationStage",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO21calibratingDoorSensoryA2CmF",
+            "mangledName": "$s11CLDSmartSDK23CLDLockCalibrationStageO21calibratingDoorSensoryA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "testUnlock",
+            "printedName": "testUnlock",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDLockCalibrationStage.Type) -> CLDSmartSDK.CLDLockCalibrationStage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDLockCalibrationStage",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationStage",
+                    "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationStage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationStage",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationStage",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO10testUnlockyA2CmF",
+            "mangledName": "$s11CLDSmartSDK23CLDLockCalibrationStageO10testUnlockyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "testLock",
+            "printedName": "testLock",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDLockCalibrationStage.Type) -> CLDSmartSDK.CLDLockCalibrationStage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDLockCalibrationStage",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationStage",
+                    "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationStage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationStage",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationStage",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO8testLockyA2CmF",
+            "mangledName": "$s11CLDSmartSDK23CLDLockCalibrationStageO8testLockyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "completed",
+            "printedName": "completed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDLockCalibrationStage.Type) -> CLDSmartSDK.CLDLockCalibrationStage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDLockCalibrationStage",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationStage",
+                    "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationStage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationStage",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationStage",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO9completedyA2CmF",
+            "mangledName": "$s11CLDSmartSDK23CLDLockCalibrationStageO9completedyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "cancelled",
+            "printedName": "cancelled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDLockCalibrationStage.Type) -> CLDSmartSDK.CLDLockCalibrationStage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDLockCalibrationStage",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationStage",
+                    "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationStage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationStage",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationStage",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO9cancelledyA2CmF",
+            "mangledName": "$s11CLDSmartSDK23CLDLockCalibrationStageO9cancelledyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CLDSmartSDK.CLDLockCalibrationStage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDLockCalibrationStage",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationStage",
+                    "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO8rawValueACSgSS_tcfc",
+            "mangledName": "$s11CLDSmartSDK23CLDLockCalibrationStageO8rawValueACSgSS_tcfc",
+            "moduleName": "CLDSmartSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO8rawValueSSvp",
+            "mangledName": "$s11CLDSmartSDK23CLDLockCalibrationStageO8rawValueSSvp",
+            "moduleName": "CLDSmartSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO8rawValueSSvg",
+                "mangledName": "$s11CLDSmartSDK23CLDLockCalibrationStageO8rawValueSSvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO",
+        "mangledName": "$s11CLDSmartSDK23CLDLockCalibrationStageO",
+        "moduleName": "CLDSmartSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CLDLockCalibrationResult",
+        "printedName": "CLDLockCalibrationResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "latchType",
+            "printedName": "latchType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK24CLDLockCalibrationResultV9latchTypes5UInt8Vvp",
+            "mangledName": "$s11CLDSmartSDK24CLDLockCalibrationResultV9latchTypes5UInt8Vvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK24CLDLockCalibrationResultV9latchTypes5UInt8Vvg",
+                "mangledName": "$s11CLDSmartSDK24CLDLockCalibrationResultV9latchTypes5UInt8Vvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "magneticType",
+            "printedName": "magneticType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK24CLDLockCalibrationResultV12magneticTypes5UInt8Vvp",
+            "mangledName": "$s11CLDSmartSDK24CLDLockCalibrationResultV12magneticTypes5UInt8Vvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK24CLDLockCalibrationResultV12magneticTypes5UInt8Vvg",
+                "mangledName": "$s11CLDSmartSDK24CLDLockCalibrationResultV12magneticTypes5UInt8Vvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "state",
+            "printedName": "state",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK24CLDLockCalibrationResultV5states5UInt8Vvp",
+            "mangledName": "$s11CLDSmartSDK24CLDLockCalibrationResultV5states5UInt8Vvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK24CLDLockCalibrationResultV5states5UInt8Vvg",
+                "mangledName": "$s11CLDSmartSDK24CLDLockCalibrationResultV5states5UInt8Vvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(latchType:magneticType:state:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CLDLockCalibrationResult",
+                "printedName": "CLDSmartSDK.CLDLockCalibrationResult",
+                "usr": "s:11CLDSmartSDK24CLDLockCalibrationResultV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11CLDSmartSDK24CLDLockCalibrationResultV9latchType08magneticG05stateACs5UInt8V_A2Htcfc",
+            "mangledName": "$s11CLDSmartSDK24CLDLockCalibrationResultV9latchType08magneticG05stateACs5UInt8V_A2Htcfc",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "latchNeedsCalibration",
+            "printedName": "latchNeedsCalibration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK24CLDLockCalibrationResultV010latchNeedsD0Sbvp",
+            "mangledName": "$s11CLDSmartSDK24CLDLockCalibrationResultV010latchNeedsD0Sbvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK24CLDLockCalibrationResultV010latchNeedsD0Sbvg",
+                "mangledName": "$s11CLDSmartSDK24CLDLockCalibrationResultV010latchNeedsD0Sbvg",
+                "moduleName": "CLDSmartSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "magneticNeedsCalibration",
+            "printedName": "magneticNeedsCalibration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK24CLDLockCalibrationResultV013magneticNeedsD0Sbvp",
+            "mangledName": "$s11CLDSmartSDK24CLDLockCalibrationResultV013magneticNeedsD0Sbvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK24CLDLockCalibrationResultV013magneticNeedsD0Sbvg",
+                "mangledName": "$s11CLDSmartSDK24CLDLockCalibrationResultV013magneticNeedsD0Sbvg",
+                "moduleName": "CLDSmartSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isCalibrated",
+            "printedName": "isCalibrated",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK24CLDLockCalibrationResultV12isCalibratedSbvp",
+            "mangledName": "$s11CLDSmartSDK24CLDLockCalibrationResultV12isCalibratedSbvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK24CLDLockCalibrationResultV12isCalibratedSbvg",
+                "mangledName": "$s11CLDSmartSDK24CLDLockCalibrationResultV12isCalibratedSbvg",
+                "moduleName": "CLDSmartSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLDLockCalibrationResult",
+                "printedName": "CLDSmartSDK.CLDLockCalibrationResult",
+                "usr": "s:11CLDSmartSDK24CLDLockCalibrationResultV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLDLockCalibrationResult",
+                "printedName": "CLDSmartSDK.CLDLockCalibrationResult",
+                "usr": "s:11CLDSmartSDK24CLDLockCalibrationResultV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CLDSmartSDK24CLDLockCalibrationResultV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s11CLDSmartSDK24CLDLockCalibrationResultV2eeoiySbAC_ACtFZ",
+            "moduleName": "CLDSmartSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11CLDSmartSDK24CLDLockCalibrationResultV",
+        "mangledName": "$s11CLDSmartSDK24CLDLockCalibrationResultV",
+        "moduleName": "CLDSmartSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CLDLockCalibrationError",
+        "printedName": "CLDLockCalibrationError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "bluetoothNotReady",
+            "printedName": "bluetoothNotReady",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDLockCalibrationError.Type) -> CLDSmartSDK.CLDLockCalibrationError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDLockCalibrationError",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationError",
+                    "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationError",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationError",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO17bluetoothNotReadyyA2CmF",
+            "mangledName": "$s11CLDSmartSDK23CLDLockCalibrationErrorO17bluetoothNotReadyyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "timeout",
+            "printedName": "timeout",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDLockCalibrationError.Type) -> CLDSmartSDK.CLDLockCalibrationError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDLockCalibrationError",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationError",
+                    "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationError",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationError",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO7timeoutyA2CmF",
+            "mangledName": "$s11CLDSmartSDK23CLDLockCalibrationErrorO7timeoutyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "rejected",
+            "printedName": "rejected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDLockCalibrationError.Type) -> (Swift.UInt8) -> CLDSmartSDK.CLDLockCalibrationError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.UInt8) -> CLDSmartSDK.CLDLockCalibrationError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationError",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationError",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(code: Swift.UInt8)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UInt8",
+                            "printedName": "Swift.UInt8",
+                            "usr": "s:s5UInt8V"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationError",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationError",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO8rejectedyACs5UInt8V_tcACmF",
+            "mangledName": "$s11CLDSmartSDK23CLDLockCalibrationErrorO8rejectedyACs5UInt8V_tcACmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "invalidResponse",
+            "printedName": "invalidResponse",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDLockCalibrationError.Type) -> CLDSmartSDK.CLDLockCalibrationError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDLockCalibrationError",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationError",
+                    "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationError",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationError",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO15invalidResponseyA2CmF",
+            "mangledName": "$s11CLDSmartSDK23CLDLockCalibrationErrorO15invalidResponseyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "unsupported",
+            "printedName": "unsupported",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDLockCalibrationError.Type) -> (Swift.String) -> CLDSmartSDK.CLDLockCalibrationError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> CLDSmartSDK.CLDLockCalibrationError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationError",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationError",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(operation: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationError",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationError",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO11unsupportedyACSS_tcACmF",
+            "mangledName": "$s11CLDSmartSDK23CLDLockCalibrationErrorO11unsupportedyACSS_tcACmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "invalidState",
+            "printedName": "invalidState",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDLockCalibrationError.Type) -> (Swift.String, CLDSmartSDK.CLDLockCalibrationStage) -> CLDSmartSDK.CLDLockCalibrationError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, CLDSmartSDK.CLDLockCalibrationStage) -> CLDSmartSDK.CLDLockCalibrationError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationError",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationError",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(expected: Swift.String, actual: CLDSmartSDK.CLDLockCalibrationStage)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CLDLockCalibrationStage",
+                            "printedName": "CLDSmartSDK.CLDLockCalibrationStage",
+                            "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationError",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationError",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO12invalidStateyACSS_AA0cD5StageOtcACmF",
+            "mangledName": "$s11CLDSmartSDK23CLDLockCalibrationErrorO12invalidStateyACSS_AA0cD5StageOtcACmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "cancelled",
+            "printedName": "cancelled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDLockCalibrationError.Type) -> CLDSmartSDK.CLDLockCalibrationError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDLockCalibrationError",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationError",
+                    "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationError",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationError",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO9cancelledyA2CmF",
+            "mangledName": "$s11CLDSmartSDK23CLDLockCalibrationErrorO9cancelledyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO16errorDescriptionSSSgvp",
+            "mangledName": "$s11CLDSmartSDK23CLDLockCalibrationErrorO16errorDescriptionSSSgvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO16errorDescriptionSSSgvg",
+                "mangledName": "$s11CLDSmartSDK23CLDLockCalibrationErrorO16errorDescriptionSSSgvg",
+                "moduleName": "CLDSmartSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLDLockCalibrationError",
+                "printedName": "CLDSmartSDK.CLDLockCalibrationError",
+                "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLDLockCalibrationError",
+                "printedName": "CLDSmartSDK.CLDLockCalibrationError",
+                "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s11CLDSmartSDK23CLDLockCalibrationErrorO2eeoiySbAC_ACtFZ",
+            "moduleName": "CLDSmartSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO",
+        "mangledName": "$s11CLDSmartSDK23CLDLockCalibrationErrorO",
+        "moduleName": "CLDSmartSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CLDLockCalibrationEvent",
+        "printedName": "CLDLockCalibrationEvent",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "stageChanged",
+            "printedName": "stageChanged",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDLockCalibrationEvent.Type) -> (CLDSmartSDK.CLDLockCalibrationStage) -> CLDSmartSDK.CLDLockCalibrationEvent",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CLDSmartSDK.CLDLockCalibrationStage) -> CLDSmartSDK.CLDLockCalibrationEvent",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationEvent",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationEvent",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationEventO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationStage",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationStage",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationEvent",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationEvent",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationEventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK23CLDLockCalibrationEventO12stageChangedyAcA0cD5StageOcACmF",
+            "mangledName": "$s11CLDSmartSDK23CLDLockCalibrationEventO12stageChangedyAcA0cD5StageOcACmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "doorSensorCalibrated",
+            "printedName": "doorSensorCalibrated",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDLockCalibrationEvent.Type) -> CLDSmartSDK.CLDLockCalibrationEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDLockCalibrationEvent",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationEvent",
+                    "usr": "s:11CLDSmartSDK23CLDLockCalibrationEventO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationEvent",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationEvent",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationEventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK23CLDLockCalibrationEventO20doorSensorCalibratedyA2CmF",
+            "mangledName": "$s11CLDSmartSDK23CLDLockCalibrationEventO20doorSensorCalibratedyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "unlockTestPassed",
+            "printedName": "unlockTestPassed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDLockCalibrationEvent.Type) -> CLDSmartSDK.CLDLockCalibrationEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDLockCalibrationEvent",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationEvent",
+                    "usr": "s:11CLDSmartSDK23CLDLockCalibrationEventO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationEvent",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationEvent",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationEventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK23CLDLockCalibrationEventO16unlockTestPassedyA2CmF",
+            "mangledName": "$s11CLDSmartSDK23CLDLockCalibrationEventO16unlockTestPassedyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "lockTestPassed",
+            "printedName": "lockTestPassed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDLockCalibrationEvent.Type) -> CLDSmartSDK.CLDLockCalibrationEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDLockCalibrationEvent",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationEvent",
+                    "usr": "s:11CLDSmartSDK23CLDLockCalibrationEventO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationEvent",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationEvent",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationEventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK23CLDLockCalibrationEventO14lockTestPassedyA2CmF",
+            "mangledName": "$s11CLDSmartSDK23CLDLockCalibrationEventO14lockTestPassedyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "completed",
+            "printedName": "completed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDLockCalibrationEvent.Type) -> (CLDSmartSDK.CLDLockCalibrationResult) -> CLDSmartSDK.CLDLockCalibrationEvent",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CLDSmartSDK.CLDLockCalibrationResult) -> CLDSmartSDK.CLDLockCalibrationEvent",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationEvent",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationEvent",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationEventO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationResult",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationResult",
+                        "usr": "s:11CLDSmartSDK24CLDLockCalibrationResultV"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationEvent",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationEvent",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationEventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK23CLDLockCalibrationEventO9completedyAcA0cD6ResultVcACmF",
+            "mangledName": "$s11CLDSmartSDK23CLDLockCalibrationEventO9completedyAcA0cD6ResultVcACmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "failed",
+            "printedName": "failed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDLockCalibrationEvent.Type) -> (CLDSmartSDK.CLDLockCalibrationError) -> CLDSmartSDK.CLDLockCalibrationEvent",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CLDSmartSDK.CLDLockCalibrationError) -> CLDSmartSDK.CLDLockCalibrationEvent",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationEvent",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationEvent",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationEventO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationError",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationError",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationEvent",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationEvent",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationEventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK23CLDLockCalibrationEventO6failedyAcA0cD5ErrorOcACmF",
+            "mangledName": "$s11CLDSmartSDK23CLDLockCalibrationEventO6failedyAcA0cD5ErrorOcACmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "disconnected",
+            "printedName": "disconnected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CLDSmartSDK.CLDLockCalibrationEvent.Type) -> CLDSmartSDK.CLDLockCalibrationEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDLockCalibrationEvent",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationEvent",
+                    "usr": "s:11CLDSmartSDK23CLDLockCalibrationEventO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationEvent",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationEvent",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationEventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CLDSmartSDK23CLDLockCalibrationEventO12disconnectedyA2CmF",
+            "mangledName": "$s11CLDSmartSDK23CLDLockCalibrationEventO12disconnectedyA2CmF",
+            "moduleName": "CLDSmartSDK"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLDLockCalibrationEvent",
+                "printedName": "CLDSmartSDK.CLDLockCalibrationEvent",
+                "usr": "s:11CLDSmartSDK23CLDLockCalibrationEventO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLDLockCalibrationEvent",
+                "printedName": "CLDSmartSDK.CLDLockCalibrationEvent",
+                "usr": "s:11CLDSmartSDK23CLDLockCalibrationEventO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CLDSmartSDK23CLDLockCalibrationEventO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s11CLDSmartSDK23CLDLockCalibrationEventO2eeoiySbAC_ACtFZ",
+            "moduleName": "CLDSmartSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11CLDSmartSDK23CLDLockCalibrationEventO",
+        "mangledName": "$s11CLDSmartSDK23CLDLockCalibrationEventO",
+        "moduleName": "CLDSmartSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CLDLockCalibrationSessionDelegate",
+        "printedName": "CLDLockCalibrationSessionDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "lockCalibrationSession",
+            "printedName": "lockCalibrationSession(_:didReceive:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLDLockCalibrationSession",
+                "printedName": "CLDSmartSDK.CLDLockCalibrationSession",
+                "usr": "s:11CLDSmartSDK25CLDLockCalibrationSessionC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLDLockCalibrationEvent",
+                "printedName": "CLDSmartSDK.CLDLockCalibrationEvent",
+                "usr": "s:11CLDSmartSDK23CLDLockCalibrationEventO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CLDSmartSDK33CLDLockCalibrationSessionDelegateP04lockdE0_10didReceiveyAA0cdE0C_AA0cD5EventOtF",
+            "mangledName": "$s11CLDSmartSDK33CLDLockCalibrationSessionDelegateP04lockdE0_10didReceiveyAA0cdE0C_AA0cD5EventOtF",
+            "moduleName": "CLDSmartSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : CLDSmartSDK.CLDLockCalibrationSessionDelegate>",
+            "sugared_genericSig": "<Self where Self : CLDSmartSDK.CLDLockCalibrationSessionDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:11CLDSmartSDK33CLDLockCalibrationSessionDelegateP",
+        "mangledName": "$s11CLDSmartSDK33CLDLockCalibrationSessionDelegateP",
+        "moduleName": "CLDSmartSDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CLDLockCalibrationSession",
+        "printedName": "CLDLockCalibrationSession",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any CLDSmartSDK.CLDLockCalibrationSessionDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK25CLDLockCalibrationSessionC8delegateAA0cdE8Delegate_pSgvp",
+            "mangledName": "$s11CLDSmartSDK25CLDLockCalibrationSessionC8delegateAA0cdE8Delegate_pSgvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any CLDSmartSDK.CLDLockCalibrationSessionDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationSessionDelegate",
+                        "printedName": "any CLDSmartSDK.CLDLockCalibrationSessionDelegate",
+                        "usr": "s:11CLDSmartSDK33CLDLockCalibrationSessionDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK25CLDLockCalibrationSessionC8delegateAA0cdE8Delegate_pSgvg",
+                "mangledName": "$s11CLDSmartSDK25CLDLockCalibrationSessionC8delegateAA0cdE8Delegate_pSgvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any CLDSmartSDK.CLDLockCalibrationSessionDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationSessionDelegate",
+                        "printedName": "any CLDSmartSDK.CLDLockCalibrationSessionDelegate",
+                        "usr": "s:11CLDSmartSDK33CLDLockCalibrationSessionDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK25CLDLockCalibrationSessionC8delegateAA0cdE8Delegate_pSgvs",
+                "mangledName": "$s11CLDSmartSDK25CLDLockCalibrationSessionC8delegateAA0cdE8Delegate_pSgvs",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK25CLDLockCalibrationSessionC8delegateAA0cdE8Delegate_pSgvM",
+                "mangledName": "$s11CLDSmartSDK25CLDLockCalibrationSessionC8delegateAA0cdE8Delegate_pSgvM",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "stage",
+            "printedName": "stage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CLDLockCalibrationStage",
+                "printedName": "CLDSmartSDK.CLDLockCalibrationStage",
+                "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK25CLDLockCalibrationSessionC5stageAA0cD5StageOvp",
+            "mangledName": "$s11CLDSmartSDK25CLDLockCalibrationSessionC5stageAA0cD5StageOvp",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLDLockCalibrationStage",
+                    "printedName": "CLDSmartSDK.CLDLockCalibrationStage",
+                    "usr": "s:11CLDSmartSDK23CLDLockCalibrationStageO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK25CLDLockCalibrationSessionC5stageAA0cD5StageOvg",
+                "mangledName": "$s11CLDSmartSDK25CLDLockCalibrationSessionC5stageAA0cD5StageOvg",
+                "moduleName": "CLDSmartSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(engine:configuration:timeout:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CLDLockCalibrationSession",
+                "printedName": "CLDSmartSDK.CLDLockCalibrationSession",
+                "usr": "s:11CLDSmartSDK25CLDLockCalibrationSessionC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CldSmartEngine",
+                "printedName": "CLDSmartSDK.CldSmartEngine",
+                "hasDefaultArg": true,
+                "usr": "c:@M@CLDSmartSDK@objc(cs)CldSmartEngine"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLDLockCalibrationConfiguration",
+                "printedName": "CLDSmartSDK.CLDLockCalibrationConfiguration",
+                "hasDefaultArg": true,
+                "usr": "s:11CLDSmartSDK31CLDLockCalibrationConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11CLDSmartSDK25CLDLockCalibrationSessionC6engine13configuration7timeoutAcA14CldSmartEngineC_AA0cD13ConfigurationVSdtcfc",
+            "mangledName": "$s11CLDSmartSDK25CLDLockCalibrationSessionC6engine13configuration7timeoutAcA14CldSmartEngineC_AA0cD13ConfigurationVSdtcfc",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "beginManual",
+            "printedName": "beginManual(mode:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLDLockCalibrationManualMode",
+                "printedName": "CLDSmartSDK.CLDLockCalibrationManualMode",
+                "usr": "s:11CLDSmartSDK28CLDLockCalibrationManualModeO"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<(), CLDSmartSDK.CLDLockCalibrationError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<(), CLDSmartSDK.CLDLockCalibrationError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationError",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationError",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CLDSmartSDK25CLDLockCalibrationSessionC11beginManual4mode10completionyAA0cdG4ModeO_ys6ResultOyytAA0cD5ErrorOGctF",
+            "mangledName": "$s11CLDSmartSDK25CLDLockCalibrationSessionC11beginManual4mode10completionyAA0cdG4ModeO_ys6ResultOyytAA0cD5ErrorOGctF",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "beginAutomatic",
+            "printedName": "beginAutomatic(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<(), CLDSmartSDK.CLDLockCalibrationError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<(), CLDSmartSDK.CLDLockCalibrationError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationError",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationError",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CLDSmartSDK25CLDLockCalibrationSessionC14beginAutomatic10completionyys6ResultOyytAA0cD5ErrorOGc_tF",
+            "mangledName": "$s11CLDSmartSDK25CLDLockCalibrationSessionC14beginAutomatic10completionyys6ResultOyytAA0cD5ErrorOGc_tF",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "saveLockedPosition",
+            "printedName": "saveLockedPosition(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<(), CLDSmartSDK.CLDLockCalibrationError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<(), CLDSmartSDK.CLDLockCalibrationError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationError",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationError",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CLDSmartSDK25CLDLockCalibrationSessionC18saveLockedPosition10completionyys6ResultOyytAA0cD5ErrorOGc_tF",
+            "mangledName": "$s11CLDSmartSDK25CLDLockCalibrationSessionC18saveLockedPosition10completionyys6ResultOyytAA0cD5ErrorOGc_tF",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "selectEntryType",
+            "printedName": "selectEntryType(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLDLockCalibrationEntryType",
+                "printedName": "CLDSmartSDK.CLDLockCalibrationEntryType",
+                "usr": "s:11CLDSmartSDK27CLDLockCalibrationEntryTypeO"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<(), CLDSmartSDK.CLDLockCalibrationError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<(), CLDSmartSDK.CLDLockCalibrationError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationError",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationError",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CLDSmartSDK25CLDLockCalibrationSessionC15selectEntryType_10completionyAA0cdgH0O_ys6ResultOyytAA0cD5ErrorOGctF",
+            "mangledName": "$s11CLDSmartSDK25CLDLockCalibrationSessionC15selectEntryType_10completionyAA0cdgH0O_ys6ResultOyytAA0cD5ErrorOGctF",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "saveUnlockedPosition",
+            "printedName": "saveUnlockedPosition(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<(), CLDSmartSDK.CLDLockCalibrationError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<(), CLDSmartSDK.CLDLockCalibrationError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationError",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationError",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CLDSmartSDK25CLDLockCalibrationSessionC20saveUnlockedPosition10completionyys6ResultOyytAA0cD5ErrorOGc_tF",
+            "mangledName": "$s11CLDSmartSDK25CLDLockCalibrationSessionC20saveUnlockedPosition10completionyys6ResultOyytAA0cD5ErrorOGc_tF",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "configureDoorSensor",
+            "printedName": "configureDoorSensor(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLDLockCalibrationDoorSensorOption",
+                "printedName": "CLDSmartSDK.CLDLockCalibrationDoorSensorOption",
+                "usr": "s:11CLDSmartSDK34CLDLockCalibrationDoorSensorOptionO"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<(), CLDSmartSDK.CLDLockCalibrationError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<(), CLDSmartSDK.CLDLockCalibrationError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationError",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationError",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CLDSmartSDK25CLDLockCalibrationSessionC19configureDoorSensor_10completionyAA0cdgH6OptionO_ys6ResultOyytAA0cD5ErrorOGctF",
+            "mangledName": "$s11CLDSmartSDK25CLDLockCalibrationSessionC19configureDoorSensor_10completionyAA0cdgH6OptionO_ys6ResultOyytAA0cD5ErrorOGctF",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startUnlockTest",
+            "printedName": "startUnlockTest(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<(), CLDSmartSDK.CLDLockCalibrationError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<(), CLDSmartSDK.CLDLockCalibrationError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationError",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationError",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CLDSmartSDK25CLDLockCalibrationSessionC15startUnlockTest10completionyys6ResultOyytAA0cD5ErrorOGc_tF",
+            "mangledName": "$s11CLDSmartSDK25CLDLockCalibrationSessionC15startUnlockTest10completionyys6ResultOyytAA0cD5ErrorOGc_tF",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startLockTest",
+            "printedName": "startLockTest(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<(), CLDSmartSDK.CLDLockCalibrationError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<(), CLDSmartSDK.CLDLockCalibrationError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationError",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationError",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CLDSmartSDK25CLDLockCalibrationSessionC13startLockTest10completionyys6ResultOyytAA0cD5ErrorOGc_tF",
+            "mangledName": "$s11CLDSmartSDK25CLDLockCalibrationSessionC13startLockTest10completionyys6ResultOyytAA0cD5ErrorOGc_tF",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "complete",
+            "printedName": "complete(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<CLDSmartSDK.CLDLockCalibrationResult, CLDSmartSDK.CLDLockCalibrationError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<CLDSmartSDK.CLDLockCalibrationResult, CLDSmartSDK.CLDLockCalibrationError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationResult",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationResult",
+                        "usr": "s:11CLDSmartSDK24CLDLockCalibrationResultV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationError",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationError",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CLDSmartSDK25CLDLockCalibrationSessionC8complete10completionyys6ResultOyAA0cdH0VAA0cD5ErrorOGc_tF",
+            "mangledName": "$s11CLDSmartSDK25CLDLockCalibrationSessionC8complete10completionyys6ResultOyAA0cdH0VAA0cD5ErrorOGc_tF",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cancel",
+            "printedName": "cancel(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Result<(), CLDSmartSDK.CLDLockCalibrationError>) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Result<(), CLDSmartSDK.CLDLockCalibrationError>) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Result",
+                        "printedName": "Swift.Result<(), CLDSmartSDK.CLDLockCalibrationError>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CLDLockCalibrationError",
+                            "printedName": "CLDSmartSDK.CLDLockCalibrationError",
+                            "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO"
+                          }
+                        ],
+                        "usr": "s:s6ResultO"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CLDSmartSDK25CLDLockCalibrationSessionC6cancel10completionyys6ResultOyytAA0cD5ErrorOGcSg_tF",
+            "mangledName": "$s11CLDSmartSDK25CLDLockCalibrationSessionC6cancel10completionyys6ResultOyytAA0cD5ErrorOGcSg_tF",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchFinalStatus",
+            "printedName": "fetchFinalStatus(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<CLDSmartSDK.CLDLockCalibrationResult, CLDSmartSDK.CLDLockCalibrationError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<CLDSmartSDK.CLDLockCalibrationResult, CLDSmartSDK.CLDLockCalibrationError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationResult",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationResult",
+                        "usr": "s:11CLDSmartSDK24CLDLockCalibrationResultV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationError",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationError",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CLDSmartSDK25CLDLockCalibrationSessionC16fetchFinalStatus10completionyys6ResultOyAA0cdJ0VAA0cD5ErrorOGc_tF",
+            "mangledName": "$s11CLDSmartSDK25CLDLockCalibrationSessionC16fetchFinalStatus10completionyys6ResultOyAA0cdJ0VAA0cD5ErrorOGc_tF",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "invalidate",
+            "printedName": "invalidate()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CLDSmartSDK25CLDLockCalibrationSessionC10invalidateyyF",
+            "mangledName": "$s11CLDSmartSDK25CLDLockCalibrationSessionC10invalidateyyF",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11CLDSmartSDK25CLDLockCalibrationSessionC",
+        "mangledName": "$s11CLDSmartSDK25CLDLockCalibrationSessionC",
+        "moduleName": "CLDSmartSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CLDSmartSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "VLink",
+        "printedName": "VLink",
+        "declKind": "Import",
+        "moduleName": "CLDSmartSDK"
+      },
+      {
+        "kind": "TypeDecl",
         "name": "CldServerCode",
         "printedName": "CldServerCode",
         "children": [
@@ -2445,6 +6413,67 @@
               "Override"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchLockCalibrationStatus",
+            "printedName": "fetchLockCalibrationStatus(timeout:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<CLDSmartSDK.CLDLockCalibrationResult, CLDSmartSDK.CLDLockCalibrationError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<CLDSmartSDK.CLDLockCalibrationResult, CLDSmartSDK.CLDLockCalibrationError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationResult",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationResult",
+                        "usr": "s:11CLDSmartSDK24CLDLockCalibrationResultV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLDLockCalibrationError",
+                        "printedName": "CLDSmartSDK.CLDLockCalibrationError",
+                        "usr": "s:11CLDSmartSDK23CLDLockCalibrationErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CLDSmartSDK14CldSmartEngineC26fetchLockCalibrationStatus7timeout10completionySd_ys6ResultOyAA07CLDLockhL0VAA0mH5ErrorOGctF",
+            "mangledName": "$s11CLDSmartSDK14CldSmartEngineC26fetchLockCalibrationStatus7timeout10completionySd_ys6ResultOyAA07CLDLockhL0VAA0mH5ErrorOGctF",
+            "moduleName": "CLDSmartSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Var",
@@ -50431,6 +54460,13 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "_ExpressibleByBuiltinStringLiteral",
+            "printedName": "_ExpressibleByBuiltinStringLiteral",
+            "usr": "s:s34_ExpressibleByBuiltinStringLiteralP",
+            "mangledName": "$ss34_ExpressibleByBuiltinStringLiteralP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
@@ -50533,13 +54569,6 @@
             "printedName": "_ExpressibleByBuiltinExtendedGraphemeClusterLiteral",
             "usr": "s:s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP",
             "mangledName": "$ss51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_ExpressibleByBuiltinStringLiteral",
-            "printedName": "_ExpressibleByBuiltinStringLiteral",
-            "usr": "s:s34_ExpressibleByBuiltinStringLiteralP",
-            "mangledName": "$ss34_ExpressibleByBuiltinStringLiteralP"
           },
           {
             "kind": "Conformance",
@@ -51004,6 +55033,90 @@
     "json_format_version": 8
   },
   "ConstValues": [
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDLockCalibration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 448,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDLockCalibration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 467,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDLockCalibration.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1522,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDLockCalibration.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1571,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDLockCalibration.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1613,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDLockCalibration.swift",
+      "kind": "StringLiteral",
+      "offset": 2020,
+      "length": 16,
+      "value": "\"vlink-standard\""
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDLockCalibration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7871,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDLockCalibration.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9595,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDLockCalibration.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9638,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDLockCalibration.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9679,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDLockCalibration.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9775,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDLockCalibration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9999,
+      "length": 1,
+      "value": "5"
+    },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CldEngine.swift",
       "kind": "StringLiteral",

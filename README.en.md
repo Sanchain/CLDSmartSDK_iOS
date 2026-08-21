@@ -2,7 +2,7 @@
 
 CLDSmartSDK for iOS provides account authentication, device binding, Bluetooth communication, IoT control, push messaging, and audio/video capabilities.
 
-- Current version: `1.4.11`
+- Current version: `1.4.12`
 - Minimum deployment target: iOS 13.0
 - Swift: 5.9 or later
 - Distribution: static XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.11'
+      :tag => '1.4.12'
 end
 ```
 
@@ -589,6 +589,14 @@ Verify that the SDK server, App ID/Secret Key, `countryCode`, and `regionCode` b
 Do not overwrite an existing session. Switch users in this order: server logout, `deinitEngine`, `initEngine`, and then new-user login.
 
 ## Release Notes
+
+### 1.4.12
+
+- Added the model-independent `CLDLockCalibrationSession` for manual/automatic calibration, latch and entry selection, door sensor setup, unlock/lock tests, cancellation, and completion.
+- Added typed `CLDLockCalibrationStage`, `CLDLockCalibrationEvent`, `CLDLockCalibrationError`, and `CLDLockCalibrationResult` so customer pages consume business results instead of parsing BLE `Data`.
+- `complete` exits calibration and reads `latchType`, `magneticType`, and `state`; after emergency unlock or another lock workflow, `fetchFinalStatus` reads the same typed result.
+- Added `CLDLockCalibrationProfile` as the future protocol-adapter entry point without model-specific public API names.
+- Device arm64, simulator arm64/x86_64 XCFramework, Swift interfaces, and the Demo customer-page build passed validation.
 
 ### 1.4.11
 

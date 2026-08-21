@@ -2,7 +2,7 @@
 
 CLDSmartSDK iOS SDK 提供账号认证、设备绑定、蓝牙通信、IoT 控制、消息推送和音视频能力。
 
-- 当前版本：`1.4.11`
+- 当前版本：`1.4.12`
 - 最低系统：iOS 13.0
 - Swift：5.9 或更高版本
 - 分发形式：静态 XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.11'
+      :tag => '1.4.12'
 end
 ```
 
@@ -587,6 +587,14 @@ Debug/Sandbox 构建使用 `isAPNsSandbox: true`，正式 APNs 环境使用 `fal
 不要直接用新账号覆盖旧会话。按“服务端登出 -> `deinitEngine` -> `initEngine` -> 新账号登录”的顺序切换。
 
 ## 版本说明
+
+### 1.4.12
+
+- 新增不绑定具体锁型号的 `CLDLockCalibrationSession`，覆盖手动/自动校准、锁舌/开门方式、门磁、解锁测试、上锁测试、取消和完成。
+- 新增 `CLDLockCalibrationStage`、`CLDLockCalibrationEvent`、`CLDLockCalibrationError` 和 `CLDLockCalibrationResult`；客户页面只处理 typed 业务结果，不解析蓝牙 `Data`。
+- `complete` 会退出校准并自动读取最终 `latchType`、`magneticType`、`state`；紧急解锁或其他门锁流程完成后可通过 `fetchFinalStatus` 读取相同结果。
+- 新增 `CLDLockCalibrationProfile` 作为未来锁型号协议适配入口，公共 API 不使用型号专用命名。
+- 设备 arm64、模拟器 arm64/x86_64 XCFramework、Swift Interface、Demo 客户页面编译验证已通过。
 
 ### 1.4.11
 

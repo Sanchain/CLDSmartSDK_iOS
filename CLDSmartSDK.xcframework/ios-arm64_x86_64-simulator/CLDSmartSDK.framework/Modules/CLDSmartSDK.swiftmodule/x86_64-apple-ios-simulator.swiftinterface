@@ -19,6 +19,165 @@ import VLink
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+public enum CLDLockCalibrationEntryType : Swift.UInt8, Swift.CaseIterable {
+  case handle
+  case keyed
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.UInt8)
+  #endif
+  public typealias AllCases = [CLDSmartSDK.CLDLockCalibrationEntryType]
+  public typealias RawValue = Swift.UInt8
+  nonisolated public static var allCases: [CLDSmartSDK.CLDLockCalibrationEntryType] {
+    get
+  }
+  public var rawValue: Swift.UInt8 {
+    get
+  }
+}
+public enum CLDLockCalibrationManualMode : Swift.Equatable {
+  case withLatch
+  case withoutLatch
+  public static func == (a: CLDSmartSDK.CLDLockCalibrationManualMode, b: CLDSmartSDK.CLDLockCalibrationManualMode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum CLDLockCalibrationDoorSensorOption : Swift.Equatable {
+  case notInstalled
+  case installed
+  public static func == (a: CLDSmartSDK.CLDLockCalibrationDoorSensorOption, b: CLDSmartSDK.CLDLockCalibrationDoorSensorOption) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct CLDLockCalibrationProfile : Swift.Equatable {
+  public let identifier: Swift.String
+  public let supportsAutomaticCalibration: Swift.Bool
+  public let requiresEntryTypeSelection: Swift.Bool
+  public let supportsFinalStatus: Swift.Bool
+  public init(identifier: Swift.String, supportsAutomaticCalibration: Swift.Bool = true, requiresEntryTypeSelection: Swift.Bool = true, supportsFinalStatus: Swift.Bool = true)
+  public static let standard: CLDSmartSDK.CLDLockCalibrationProfile
+  public static func == (a: CLDSmartSDK.CLDLockCalibrationProfile, b: CLDSmartSDK.CLDLockCalibrationProfile) -> Swift.Bool
+}
+public struct CLDLockCalibrationConfiguration : Swift.Equatable {
+  public let profile: CLDSmartSDK.CLDLockCalibrationProfile
+  public init(profile: CLDSmartSDK.CLDLockCalibrationProfile = .standard)
+  public static func == (a: CLDSmartSDK.CLDLockCalibrationConfiguration, b: CLDSmartSDK.CLDLockCalibrationConfiguration) -> Swift.Bool
+}
+public enum CLDLockCalibrationStage : Swift.String, Swift.Equatable {
+  case ready
+  case preparingLockedPosition
+  case recordLockedPosition
+  case selectEntryType
+  case preparingUnlockedPosition
+  case recordUnlockedPosition
+  case chooseDoorSensor
+  case calibratingDoorSensor
+  case testUnlock
+  case testLock
+  case completed
+  case cancelled
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct CLDLockCalibrationResult : Swift.Equatable {
+  public let latchType: Swift.UInt8
+  public let magneticType: Swift.UInt8
+  public let state: Swift.UInt8
+  public init(latchType: Swift.UInt8, magneticType: Swift.UInt8, state: Swift.UInt8)
+  public var latchNeedsCalibration: Swift.Bool {
+    get
+  }
+  public var magneticNeedsCalibration: Swift.Bool {
+    get
+  }
+  public var isCalibrated: Swift.Bool {
+    get
+  }
+  public static func == (a: CLDSmartSDK.CLDLockCalibrationResult, b: CLDSmartSDK.CLDLockCalibrationResult) -> Swift.Bool
+}
+public enum CLDLockCalibrationError : Swift.Error, Swift.Equatable, Foundation.LocalizedError {
+  case bluetoothNotReady
+  case timeout
+  case rejected(code: Swift.UInt8)
+  case invalidResponse
+  case unsupported(operation: Swift.String)
+  case invalidState(expected: Swift.String, actual: CLDSmartSDK.CLDLockCalibrationStage)
+  case cancelled
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var errorDescription: Swift.String? {
+    get
+  }
+  #endif
+  public static func == (a: CLDSmartSDK.CLDLockCalibrationError, b: CLDSmartSDK.CLDLockCalibrationError) -> Swift.Bool
+}
+public enum CLDLockCalibrationEvent : Swift.Equatable {
+  case stageChanged(CLDSmartSDK.CLDLockCalibrationStage)
+  case doorSensorCalibrated
+  case unlockTestPassed
+  case lockTestPassed
+  case completed(CLDSmartSDK.CLDLockCalibrationResult)
+  case failed(CLDSmartSDK.CLDLockCalibrationError)
+  case disconnected
+  public static func == (a: CLDSmartSDK.CLDLockCalibrationEvent, b: CLDSmartSDK.CLDLockCalibrationEvent) -> Swift.Bool
+}
+public protocol CLDLockCalibrationSessionDelegate : AnyObject {
+  func lockCalibrationSession(_ session: CLDSmartSDK.CLDLockCalibrationSession, didReceive event: CLDSmartSDK.CLDLockCalibrationEvent)
+}
+extension CLDSmartSDK.CldSmartEngine {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func fetchLockCalibrationStatus(timeout: Foundation.TimeInterval = 5, completion: @escaping (Swift.Result<CLDSmartSDK.CLDLockCalibrationResult, CLDSmartSDK.CLDLockCalibrationError>) -> Swift.Void)
+  #endif
+}
+final public class CLDLockCalibrationSession {
+  weak final public var delegate: (any CLDSmartSDK.CLDLockCalibrationSessionDelegate)?
+  final public var stage: CLDSmartSDK.CLDLockCalibrationStage {
+    get
+  }
+  public init(engine: CLDSmartSDK.CldSmartEngine = .shared, configuration: CLDSmartSDK.CLDLockCalibrationConfiguration = .init(), timeout: Foundation.TimeInterval = 5)
+  @objc deinit
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func beginManual(mode: CLDSmartSDK.CLDLockCalibrationManualMode, completion: @escaping (Swift.Result<Swift.Void, CLDSmartSDK.CLDLockCalibrationError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func beginAutomatic(completion: @escaping (Swift.Result<Swift.Void, CLDSmartSDK.CLDLockCalibrationError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func saveLockedPosition(completion: @escaping (Swift.Result<Swift.Void, CLDSmartSDK.CLDLockCalibrationError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func selectEntryType(_ entryType: CLDSmartSDK.CLDLockCalibrationEntryType, completion: @escaping (Swift.Result<Swift.Void, CLDSmartSDK.CLDLockCalibrationError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func saveUnlockedPosition(completion: @escaping (Swift.Result<Swift.Void, CLDSmartSDK.CLDLockCalibrationError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func configureDoorSensor(_ option: CLDSmartSDK.CLDLockCalibrationDoorSensorOption, completion: @escaping (Swift.Result<Swift.Void, CLDSmartSDK.CLDLockCalibrationError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func startUnlockTest(completion: @escaping (Swift.Result<Swift.Void, CLDSmartSDK.CLDLockCalibrationError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func startLockTest(completion: @escaping (Swift.Result<Swift.Void, CLDSmartSDK.CLDLockCalibrationError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func complete(completion: @escaping (Swift.Result<CLDSmartSDK.CLDLockCalibrationResult, CLDSmartSDK.CLDLockCalibrationError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func cancel(completion: ((Swift.Result<Swift.Void, CLDSmartSDK.CLDLockCalibrationError>) -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func fetchFinalStatus(completion: @escaping (Swift.Result<CLDSmartSDK.CLDLockCalibrationResult, CLDSmartSDK.CLDLockCalibrationError>) -> Swift.Void)
+  #endif
+  final public func invalidate()
+}
 extension Foundation.NSNotification.Name {
   public static let CldSmartOnBleDidStateChanged: Foundation.NSNotification.Name
   public static let CldSmartOnBleDidDiscover: Foundation.NSNotification.Name
@@ -1524,6 +1683,13 @@ extension Foundation.Data {
   #endif
   @objc deinit
 }
+extension CLDSmartSDK.CLDLockCalibrationEntryType : Swift.Equatable {}
+extension CLDSmartSDK.CLDLockCalibrationEntryType : Swift.Hashable {}
+extension CLDSmartSDK.CLDLockCalibrationEntryType : Swift.RawRepresentable {}
+extension CLDSmartSDK.CLDLockCalibrationManualMode : Swift.Hashable {}
+extension CLDSmartSDK.CLDLockCalibrationDoorSensorOption : Swift.Hashable {}
+extension CLDSmartSDK.CLDLockCalibrationStage : Swift.Hashable {}
+extension CLDSmartSDK.CLDLockCalibrationStage : Swift.RawRepresentable {}
 extension CLDSmartSDK.CldServerCode : Swift.Equatable {}
 extension CLDSmartSDK.CldServerCode : Swift.Hashable {}
 extension CLDSmartSDK.CldServerCode : Swift.RawRepresentable {}
