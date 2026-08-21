@@ -2007,8 +2007,8 @@
           },
           {
             "kind": "Var",
-            "name": "latchNeedsCalibration",
-            "printedName": "latchNeedsCalibration",
+            "name": "requiresLatchCalibration",
+            "printedName": "requiresLatchCalibration",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2018,8 +2018,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:11CLDSmartSDK24CLDLockCalibrationResultV010latchNeedsD0Sbvp",
-            "mangledName": "$s11CLDSmartSDK24CLDLockCalibrationResultV010latchNeedsD0Sbvp",
+            "usr": "s:11CLDSmartSDK24CLDLockCalibrationResultV013requiresLatchD0Sbvp",
+            "mangledName": "$s11CLDSmartSDK24CLDLockCalibrationResultV013requiresLatchD0Sbvp",
             "moduleName": "CLDSmartSDK",
             "declAttributes": [
               "AccessControl"
@@ -2038,8 +2038,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11CLDSmartSDK24CLDLockCalibrationResultV010latchNeedsD0Sbvg",
-                "mangledName": "$s11CLDSmartSDK24CLDLockCalibrationResultV010latchNeedsD0Sbvg",
+                "usr": "s:11CLDSmartSDK24CLDLockCalibrationResultV013requiresLatchD0Sbvg",
+                "mangledName": "$s11CLDSmartSDK24CLDLockCalibrationResultV013requiresLatchD0Sbvg",
                 "moduleName": "CLDSmartSDK",
                 "accessorKind": "get"
               }
@@ -2047,8 +2047,8 @@
           },
           {
             "kind": "Var",
-            "name": "magneticNeedsCalibration",
-            "printedName": "magneticNeedsCalibration",
+            "name": "isMagneticCalibrated",
+            "printedName": "isMagneticCalibrated",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2058,8 +2058,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:11CLDSmartSDK24CLDLockCalibrationResultV013magneticNeedsD0Sbvp",
-            "mangledName": "$s11CLDSmartSDK24CLDLockCalibrationResultV013magneticNeedsD0Sbvp",
+            "usr": "s:11CLDSmartSDK24CLDLockCalibrationResultV20isMagneticCalibratedSbvp",
+            "mangledName": "$s11CLDSmartSDK24CLDLockCalibrationResultV20isMagneticCalibratedSbvp",
             "moduleName": "CLDSmartSDK",
             "declAttributes": [
               "AccessControl"
@@ -2078,8 +2078,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11CLDSmartSDK24CLDLockCalibrationResultV013magneticNeedsD0Sbvg",
-                "mangledName": "$s11CLDSmartSDK24CLDLockCalibrationResultV013magneticNeedsD0Sbvg",
+                "usr": "s:11CLDSmartSDK24CLDLockCalibrationResultV20isMagneticCalibratedSbvg",
+                "mangledName": "$s11CLDSmartSDK24CLDLockCalibrationResultV20isMagneticCalibratedSbvg",
                 "moduleName": "CLDSmartSDK",
                 "accessorKind": "get"
               }
@@ -2120,6 +2120,90 @@
                 "declKind": "Accessor",
                 "usr": "s:11CLDSmartSDK24CLDLockCalibrationResultV12isCalibratedSbvg",
                 "mangledName": "$s11CLDSmartSDK24CLDLockCalibrationResultV12isCalibratedSbvg",
+                "moduleName": "CLDSmartSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "latchNeedsCalibration",
+            "printedName": "latchNeedsCalibration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK24CLDLockCalibrationResultV010latchNeedsD0Sbvp",
+            "mangledName": "$s11CLDSmartSDK24CLDLockCalibrationResultV010latchNeedsD0Sbvp",
+            "moduleName": "CLDSmartSDK",
+            "deprecated": true,
+            "declAttributes": [
+              "AccessControl",
+              "Available"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK24CLDLockCalibrationResultV010latchNeedsD0Sbvg",
+                "mangledName": "$s11CLDSmartSDK24CLDLockCalibrationResultV010latchNeedsD0Sbvg",
+                "moduleName": "CLDSmartSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "magneticNeedsCalibration",
+            "printedName": "magneticNeedsCalibration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CLDSmartSDK24CLDLockCalibrationResultV013magneticNeedsD0Sbvp",
+            "mangledName": "$s11CLDSmartSDK24CLDLockCalibrationResultV013magneticNeedsD0Sbvp",
+            "moduleName": "CLDSmartSDK",
+            "deprecated": true,
+            "declAttributes": [
+              "AccessControl",
+              "Available"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CLDSmartSDK24CLDLockCalibrationResultV013magneticNeedsD0Sbvg",
+                "mangledName": "$s11CLDSmartSDK24CLDLockCalibrationResultV013magneticNeedsD0Sbvg",
                 "moduleName": "CLDSmartSDK",
                 "accessorKind": "get"
               }
@@ -55078,42 +55162,42 @@
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDLockCalibration.swift",
       "kind": "IntegerLiteral",
-      "offset": 7871,
+      "offset": 8574,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDLockCalibration.swift",
       "kind": "BooleanLiteral",
-      "offset": 9595,
+      "offset": 10299,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDLockCalibration.swift",
       "kind": "BooleanLiteral",
-      "offset": 9638,
+      "offset": 10342,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDLockCalibration.swift",
       "kind": "BooleanLiteral",
-      "offset": 9679,
+      "offset": 10383,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDLockCalibration.swift",
       "kind": "BooleanLiteral",
-      "offset": 9775,
+      "offset": 10479,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lndu\/Documents\/cldsmartsdk-ios\/CLDSmartSDK\/Classes\/CLDLockCalibration.swift",
       "kind": "IntegerLiteral",
-      "offset": 9999,
+      "offset": 10703,
       "length": 1,
       "value": "5"
     },

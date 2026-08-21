@@ -92,13 +92,21 @@ public struct CLDLockCalibrationResult : Swift.Equatable {
   public let magneticType: Swift.UInt8
   public let state: Swift.UInt8
   public init(latchType: Swift.UInt8, magneticType: Swift.UInt8, state: Swift.UInt8)
-  public var latchNeedsCalibration: Swift.Bool {
+  public var requiresLatchCalibration: Swift.Bool {
     get
   }
-  public var magneticNeedsCalibration: Swift.Bool {
+  public var isMagneticCalibrated: Swift.Bool {
     get
   }
   public var isCalibrated: Swift.Bool {
+    get
+  }
+  @available(*, deprecated, renamed: "requiresLatchCalibration")
+  public var latchNeedsCalibration: Swift.Bool {
+    get
+  }
+  @available(*, deprecated, message: "Use isMagneticCalibrated. magneticType == 1 means calibrated.")
+  public var magneticNeedsCalibration: Swift.Bool {
     get
   }
   public static func == (a: CLDSmartSDK.CLDLockCalibrationResult, b: CLDSmartSDK.CLDLockCalibrationResult) -> Swift.Bool

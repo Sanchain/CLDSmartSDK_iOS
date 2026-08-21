@@ -2,7 +2,7 @@
 
 CLDSmartSDK for iOS provides account authentication, device binding, Bluetooth communication, IoT control, push messaging, and audio/video capabilities.
 
-- Current version: `1.4.12`
+- Current version: `1.4.13`
 - Minimum deployment target: iOS 13.0
 - Swift: 5.9 or later
 - Distribution: static XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.12'
+      :tag => '1.4.13'
 end
 ```
 
@@ -589,6 +589,14 @@ Verify that the SDK server, App ID/Secret Key, `countryCode`, and `regionCode` b
 Do not overwrite an existing session. Switch users in this order: server logout, `deinitEngine`, `initEngine`, and then new-user login.
 
 ## Release Notes
+
+### 1.4.13
+
+- Added `requiresLatchCalibration`, `isMagneticCalibrated`, and `isCalibrated` to `CLDLockCalibrationResult`, so customer pages do not interpret raw `0x9077` bytes.
+- Clarified that `magneticType == 1` means the door sensor is calibrated; corrected and deprecated the ambiguous `magneticNeedsCalibration` property.
+- Calibration sessions now select an internal protocol adapter by `CLDLockCalibrationProfile.identifier`. Unknown profiles return `unsupported` instead of sending the standard lock protocol.
+- The Demo emergency-unlock completion path now calls `fetchLockCalibrationStatus` instead of sending and decoding `0x9077` itself.
+- Device arm64 and simulator arm64/x86_64 XCFramework slices, Swift interfaces, SDK and Demo builds, and the CocoaPods temporary client project passed validation.
 
 ### 1.4.12
 
