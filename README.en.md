@@ -2,7 +2,7 @@
 
 CLDSmartSDK for iOS provides account authentication, device binding, Bluetooth communication, IoT control, push messaging, and audio/video capabilities.
 
-- Current version: `1.4.13`
+- Current version: `1.4.14`
 - Minimum deployment target: iOS 13.0
 - Swift: 5.9 or later
 - Distribution: static XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.13'
+      :tag => '1.4.14'
 end
 ```
 
@@ -589,6 +589,14 @@ Verify that the SDK server, App ID/Secret Key, `countryCode`, and `regionCode` b
 Do not overwrite an existing session. Switch users in this order: server logout, `deinitEngine`, `initEngine`, and then new-user login.
 
 ## Release Notes
+
+### 1.4.14
+
+- Added `markNotificationAsRead(notifyId:completion:)` to mark one notification from `CLDEvent.notify_id` as read.
+- Added `deleteNotifications(notifyIds:completion:)` to delete 1 to 100 notifications per request. Deletion is irreversible, so client applications should request confirmation first.
+- Both APIs return `success/code/message`; invalid IDs return local code `-1000` without sending a network request.
+- The Demo Events page and customer API catalog now include runnable examples, input validation, and delete confirmation.
+- Device arm64 and simulator arm64/x86_64 XCFramework slices, Swift interfaces, and the CocoaPods temporary client project passed validation.
 
 ### 1.4.13
 

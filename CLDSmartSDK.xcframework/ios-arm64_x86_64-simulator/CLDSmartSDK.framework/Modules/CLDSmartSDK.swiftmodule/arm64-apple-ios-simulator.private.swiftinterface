@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
-// swift-module-flags: -target arm64-apple-ios13-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name CLDSmartSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios13-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name CLDSmartSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import AVFoundation
 import AgoraRtcKit
 @_exported import CLDSmartSDK
@@ -22,9 +22,7 @@ import _SwiftConcurrencyShims
 public enum CLDLockCalibrationEntryType : Swift.UInt8, Swift.CaseIterable {
   case handle
   case keyed
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.UInt8)
-  #endif
   public typealias AllCases = [CLDSmartSDK.CLDLockCalibrationEntryType]
   public typealias RawValue = Swift.UInt8
   nonisolated public static var allCases: [CLDSmartSDK.CLDLockCalibrationEntryType] {
@@ -79,9 +77,7 @@ public enum CLDLockCalibrationStage : Swift.String, Swift.Equatable {
   case testLock
   case completed
   case cancelled
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -119,11 +115,9 @@ public enum CLDLockCalibrationError : Swift.Error, Swift.Equatable, Foundation.L
   case unsupported(operation: Swift.String)
   case invalidState(expected: Swift.String, actual: CLDSmartSDK.CLDLockCalibrationStage)
   case cancelled
-  #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
     get
   }
-  #endif
   public static func == (a: CLDSmartSDK.CLDLockCalibrationError, b: CLDSmartSDK.CLDLockCalibrationError) -> Swift.Bool
 }
 public enum CLDLockCalibrationEvent : Swift.Equatable {
@@ -140,9 +134,7 @@ public protocol CLDLockCalibrationSessionDelegate : AnyObject {
   func lockCalibrationSession(_ session: CLDSmartSDK.CLDLockCalibrationSession, didReceive event: CLDSmartSDK.CLDLockCalibrationEvent)
 }
 extension CLDSmartSDK.CldSmartEngine {
-  #if compiler(>=5.3) && $NonescapableTypes
   public func fetchLockCalibrationStatus(timeout: Foundation.TimeInterval = 5, completion: @escaping (Swift.Result<CLDSmartSDK.CLDLockCalibrationResult, CLDSmartSDK.CLDLockCalibrationError>) -> Swift.Void)
-  #endif
 }
 final public class CLDLockCalibrationSession {
   weak final public var delegate: (any CLDSmartSDK.CLDLockCalibrationSessionDelegate)?
@@ -151,39 +143,17 @@ final public class CLDLockCalibrationSession {
   }
   public init(engine: CLDSmartSDK.CldSmartEngine = .shared, configuration: CLDSmartSDK.CLDLockCalibrationConfiguration = .init(), timeout: Foundation.TimeInterval = 5)
   @objc deinit
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func beginManual(mode: CLDSmartSDK.CLDLockCalibrationManualMode, completion: @escaping (Swift.Result<Swift.Void, CLDSmartSDK.CLDLockCalibrationError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func beginAutomatic(completion: @escaping (Swift.Result<Swift.Void, CLDSmartSDK.CLDLockCalibrationError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func saveLockedPosition(completion: @escaping (Swift.Result<Swift.Void, CLDSmartSDK.CLDLockCalibrationError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func selectEntryType(_ entryType: CLDSmartSDK.CLDLockCalibrationEntryType, completion: @escaping (Swift.Result<Swift.Void, CLDSmartSDK.CLDLockCalibrationError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func saveUnlockedPosition(completion: @escaping (Swift.Result<Swift.Void, CLDSmartSDK.CLDLockCalibrationError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func configureDoorSensor(_ option: CLDSmartSDK.CLDLockCalibrationDoorSensorOption, completion: @escaping (Swift.Result<Swift.Void, CLDSmartSDK.CLDLockCalibrationError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func startUnlockTest(completion: @escaping (Swift.Result<Swift.Void, CLDSmartSDK.CLDLockCalibrationError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func startLockTest(completion: @escaping (Swift.Result<Swift.Void, CLDSmartSDK.CLDLockCalibrationError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func complete(completion: @escaping (Swift.Result<CLDSmartSDK.CLDLockCalibrationResult, CLDSmartSDK.CLDLockCalibrationError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func cancel(completion: ((Swift.Result<Swift.Void, CLDSmartSDK.CLDLockCalibrationError>) -> Swift.Void)? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func fetchFinalStatus(completion: @escaping (Swift.Result<CLDSmartSDK.CLDLockCalibrationResult, CLDSmartSDK.CLDLockCalibrationError>) -> Swift.Void)
-  #endif
   final public func invalidate()
 }
 extension Foundation.NSNotification.Name {
@@ -197,9 +167,7 @@ public enum CldServerCode : Swift.String, Swift.Codable {
   case mainland
   case taiwan
   case us
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -207,9 +175,7 @@ public enum CldServerCode : Swift.String, Swift.Codable {
 }
 @objc public enum CldSmartEngineVideoState : Swift.Int {
   case starting, streaming, stopped
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -217,9 +183,7 @@ public enum CldServerCode : Swift.String, Swift.Codable {
 }
 @objc public enum CldSmartEngineRecordState : Swift.Int {
   case started, overDurationError, otherError, stopped
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -236,9 +200,7 @@ public enum CldServerCode : Swift.String, Swift.Codable {
   @objc optional func onBleDidStateChanged(state: CoreBluetooth.CBManagerState)
   @objc optional func onBleDidDiscover(device: VLink.APBLEDevice)
   @objc optional func onBleDidConnected(state: VLink.APBLEDeviceConnectStatus)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc optional func onBleDidDisconnected(error: (any Swift.Error)?)
-  #endif
   @objc optional func onBleDidReceivedReponse(response: VLink.APBLEResponse)
 }
 public enum CldLogLevel : Swift.Int {
@@ -246,9 +208,7 @@ public enum CldLogLevel : Swift.Int {
   case info
   case warning
   case error
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -256,9 +216,7 @@ public enum CldLogLevel : Swift.Int {
 }
 public enum CldLanguage : Swift.Int, Swift.Codable {
   case en, hans, hant
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -277,11 +235,9 @@ public class CldSmartEngineConfig : Swift.Codable {
     get
     set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public var userInfo: CLDSmartSDK.CLDUserInfo? {
     get
   }
-  #endif
   public var isInitialized: Swift.Bool {
     get
   }
@@ -304,9 +260,7 @@ extension CLDSmartSDK.CldSmartEngine {
   public static let bleResponseTimeoutMsg: Swift.String
   public static let bleDisconnectCode: Swift.Int
   public static let bleDisconnectMsg: Swift.String
-  #if compiler(>=5.3) && $NonescapableTypes
   public func initEngine(appId: Swift.String, secertKey: Swift.String, config: CLDSmartSDK.CldSmartEngineConfig? = nil, completion: @escaping CLDSmartSDK.CLDBoolBlock)
-  #endif
   public func deinitEngine()
   public func login(account: Swift.String, completion: @escaping CLDSmartSDK.CLDBoolBlock)
   public func login(account: Swift.String, password: Swift.String, context: CLDSmartSDK.CLDAuthContext, completion: @escaping CLDSmartSDK.CLDAccountLoginBlock)
@@ -323,170 +277,82 @@ extension CLDSmartSDK.CldSmartEngine {
   public func getMqttConfig()
   public func fetchCaptcha(intent: CLDSmartSDK.CLDCaptchaIntent, completion: @escaping CLDSmartSDK.CLDStringBlock)
   public func deleteAccount(captcha: Swift.String, completion: @escaping CLDSmartSDK.CLDBoolBlock)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func fetchOfflinePassword(device: CLDSmartSDK.CLDDevice, completion: @escaping (Swift.String?, Swift.Int) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func syncDeviceTime(completion: @escaping (Swift.Bool, Swift.String?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getDevicesList(vid: Swift.String? = nil, deviceId: Swift.String? = nil, did: Swift.String? = nil, query: Swift.String? = nil, completion: @escaping ([CLDSmartSDK.CLDDevice]?, Swift.Int, Swift.String?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getDeviceInfo(vid: Swift.String, completion: @escaping (CLDSmartSDK.CLDDeviceInfo?, Swift.Int, Swift.String?) -> Swift.Void)
-  #endif
   public func renameDevice(vid: Swift.String, name: Swift.String, completion: @escaping CLDSmartSDK.CLDBoolBlock)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func fetchImage(codeLen: Swift.String = "4", completion: @escaping (Swift.String?, Swift.String?) -> Swift.Void)
-  #endif
   public func deleteDevice(vid: Swift.String, code: Swift.String, token: Swift.String, completion: @escaping CLDSmartSDK.CLDBoolBlock)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func deleteDevice(vid: Swift.String, reset: Swift.Bool = true, completion: @escaping (Swift.Bool, Swift.Int, Swift.String?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getDeviceKeyList(vid: Swift.String, type: CLDSmartSDK.CLDDeviceKeyType, page: Swift.Int = 1, pageSize: Swift.Int = 20, completion: @escaping ([CLDSmartSDK.CLDDeviceKey]?, Swift.Int, Swift.String?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func syncDeviceKeyListFromBLE(vid: Swift.String, type: CLDSmartSDK.CLDDeviceKeyType, completion: @escaping (Swift.Bool, Swift.Int, Swift.Int, Swift.String?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func deleteDeviceKey(vid: Swift.String, keyId: Swift.Int, isBLE: Swift.Bool, completion: @escaping (Swift.Bool, Swift.Int, Swift.String?) -> Swift.Void)
-  #endif
   public func renameDeviceKey(vid: Swift.String, keyId: Swift.Int, name: Swift.String, completion: @escaping CLDSmartSDK.CLDBoolBlock)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getGroupsList(completion: @escaping ([CLDSmartSDK.CLDProductGroup]?, Swift.Int, Swift.String?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func switchDeviceNotify(vid: Swift.String, type: CLDSmartSDK.CLDSwithNotifyType, switches: [[Swift.String : Any]] = [], completion: @escaping (Swift.Bool, Swift.Int, Swift.String?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func fetchDeviceNotify(vid: Swift.String, scenes: CLDSmartSDK.CLDNotifyScenes, completion: @escaping ([CLDSmartSDK.CLDNotifySwitch]?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func formatSDCard(vid: Swift.String, completion: @escaping (Swift.Bool, Swift.Int, Swift.String?) -> Swift.Void)
-  #endif
   public func refreshAPNs(token: Swift.String, completion: @escaping CLDSmartSDK.CLDBoolBlock)
   public func reportDeviceAttrs(vid: Swift.String, product: Swift.String, payload: Foundation.Data, completion: @escaping CLDSmartSDK.CLDBoolBlock)
   public func bindBLEDevice(device: VLink.APBLEDevice, product: CLDSmartSDK.CLDProduct, completion: @escaping CLDSmartSDK.CLDBoolBlock)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func fetchChangeOwnerCode(vid: Swift.String, account: Swift.String? = nil, identify: Swift.String? = nil, completion: @escaping (Swift.String?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func fetchChangeOwnerCodeWithResult(vid: Swift.String, account: Swift.String? = nil, identify: Swift.String? = nil, completion: @escaping (Swift.String?, Swift.Int, Swift.String?) -> Swift.Void)
-  #endif
   public func verifyChangeOwner(code: Swift.String, captcha: Swift.String, completion: @escaping CLDSmartSDK.CLDBoolBlock)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func startDiscoverBLE(products: [CLDSmartSDK.CLDProduct], timeout: Swift.Int = 30, completion: @escaping (_ device: VLink.APBLEDevice?, _ isFinished: Swift.Bool) -> Swift.Void)
-  #endif
   public func stopDiscoverBLE()
-  #if compiler(>=5.3) && $NonescapableTypes
   public func bindWiFiDevice(ssid: Swift.String, password: Swift.String?, timeout: Foundation.TimeInterval = 120, completion: @escaping (Swift.String?, CLDSmartSDK.CLDDeviceNetConfigError) -> Swift.Void)
-  #endif
   public func cancelBindWiFiDevice()
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getShareMemberList(vid: Swift.String, completion: @escaping ([CLDSmartSDK.CLDShareMember]?, Swift.Int, Swift.String?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func checkShareMember(account: Swift.String, mfr: Swift.String = "Arpha", completion: @escaping (CLDSmartSDK.CLDShareMember?, Swift.Int, Swift.String?) -> Swift.Void)
-  #endif
   public func updateShareMemberList(vid: Swift.String, memberIds: [Swift.String], completion: @escaping CLDSmartSDK.CLDBoolBlock)
   public func removeShareMember(vid: Swift.String, memberId: Swift.String, completion: @escaping CLDSmartSDK.CLDBoolBlock)
   public func clearShareMemberList(vid: Swift.String, completion: @escaping CLDSmartSDK.CLDBoolBlock)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func addDigitsPassword(vid: Swift.String, password: CLDSmartSDK.CLDPassword, isBLE: Swift.Bool, completion: @escaping (Swift.Bool, Swift.Int, Swift.String?) -> Swift.Void)
-  #endif
   public func addDigitsPasswordWithResult(vid: Swift.String, password: CLDSmartSDK.CLDPassword, isBLE: Swift.Bool, completion: @escaping (CLDSmartSDK.CLDAddPasswordResult) -> Swift.Void)
   public func addKeyInput(vid: Swift.String, password: CLDSmartSDK.CLDPassword, isBLE: Swift.Bool, timeout: Swift.Int = 20, completion: @escaping (Swift.Int, CLDSmartSDK.CLDInputKeyState) -> Swift.Void)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func breakKeyInput(vid: Swift.String, keyType: CLDSmartSDK.CLDInputKeyType, isBLE: Swift.Bool, completion: CLDSmartSDK.CLDBoolBlock? = nil)
-  #endif
   public func bindBLEAccessory(mac: Swift.String, secret: Swift.String, timeout: Foundation.TimeInterval = 90, completion: @escaping CLDSmartSDK.CLDBoolBlock)
   public func bindBLEAccessory(vid: Swift.String, linkVid: Swift.String, mac: Swift.String, secret: Swift.String, timeout: Foundation.TimeInterval = 90, completion: @escaping CLDSmartSDK.CLDBoolBlock)
   public func bindWiFiAccessory(vid: Swift.String, linkVid: Swift.String, timeout: Swift.Double = 40, completion: @escaping CLDSmartSDK.CLDBoolBlock)
   public func cancelBindAccessory()
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getAccessoryList(vid: Swift.String, isBound: Swift.Bool = false, page: Swift.Int = 1, size: Swift.Int = 10, completion: @escaping ([CLDSmartSDK.CLDAccessory]?, Swift.Int, Swift.String?) -> Swift.Void)
-  #endif
   public func unbindWiFiAccessory(vid: Swift.String, linkVids: [Swift.String], completion: @escaping CLDSmartSDK.CLDBoolBlock)
   public func unbindBLEAcessory(vid: Swift.String, linkVid: Swift.String, mac: Swift.String, secret: Swift.String, completion: @escaping CLDSmartSDK.CLDBoolBlock)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func upgradeDevice(vid: Swift.String, timeout: Swift.Int = 20, completion: @escaping (Swift.Int, CLDSmartSDK.CLDWiFiOTAUpgradeStatus, Swift.Int?, Swift.String?) -> Swift.Void)
-  #endif
   public func cancelDownloadOTA(vid: Swift.String, status: CLDSmartSDK.CLDWiFiOTAUpgradeStatus, completion: @escaping CLDSmartSDK.CLDBoolBlock)
   public func updateOTAState(vid: Swift.String, product: Swift.String, status: Swift.Int, completion: @escaping CLDSmartSDK.CLDBoolBlock)
   public func updateBleOpenFunctionInfo(vid: Swift.String, product: Swift.String, keys: [CLDSmartSDK.CLDPassword], completion: @escaping CLDSmartSDK.CLDBoolBlock)
   public func updateSingleEvent(vid: Swift.String, product: Swift.String, cmd: Swift.Int, info: [Swift.String : Any], completion: @escaping CLDSmartSDK.CLDBoolBlock)
   public func updateBatchEvent(vid: Swift.String, product: Swift.String, cmd: Swift.Int, infos: [CLDSmartSDK.CLDAlarmEvent], completion: @escaping CLDSmartSDK.CLDBoolBlock)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func iotDo(action: CLDSmartSDK.CLDIoTModelAction, vid: Swift.String, param: [Swift.String : Any], isAsync: Swift.Bool = false, completion: @escaping (Swift.String?, [Swift.String : Any]?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func iotDo(action: Swift.String, vid: Swift.String, param: [Swift.String : Any], isAsync: Swift.Bool = false, completion: @escaping (Swift.String?, [Swift.String : Any]?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func iotGet(properties: [CLDSmartSDK.CLDIoTModelProperty], vid: Swift.String, type: Swift.Int = 1, completion: @escaping ([CLDSmartSDK.CLDIoTProperty]?, Swift.Int, Swift.String?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func iotGet(properties: [Swift.String], vid: Swift.String, type: Swift.Int = 1, completion: @escaping ([CLDSmartSDK.CLDIoTProperty]?, Swift.Int, Swift.String?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func iotSet(properties: [CLDSmartSDK.CLDIoTModelProperty : Any], vid: Swift.String, completion: @escaping (Swift.Bool, Swift.Int, Swift.String?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func iotSet(properties: [Swift.String : Any], vid: Swift.String, completion: @escaping (Swift.Bool, Swift.Int, Swift.String?) -> Swift.Void)
-  #endif
   public func unlockDevice(vid: Swift.String, unLock: Swift.Bool, timeout: Swift.Int = 10, completion: @escaping CLDSmartSDK.CLDBoolBlock)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getNotifyList(page: Swift.Int = 1, pageSize: Swift.Int = 10, startTimestamp: Swift.Int? = nil, endTimestamp: Swift.Int? = nil, probeList: [Swift.String]? = nil, storageList: [Swift.String]? = nil, vids: [Swift.String]? = nil, isread: Swift.Int? = nil, eventList: [Swift.String]? = nil, completion: @escaping (CLDSmartSDK.CLDEventInfo?, Swift.Int, Swift.String?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
+  public func markNotificationAsRead(notifyId: Swift.Int, completion: @escaping (Swift.Bool, Swift.Int, Swift.String?) -> Swift.Void)
+  public func deleteNotifications(notifyIds: [Swift.Int], completion: @escaping (Swift.Bool, Swift.Int, Swift.String?) -> Swift.Void)
   public func playBack(notify: CLDSmartSDK.CLDEvent, completion: @escaping (Swift.Int?, Swift.Int?, Swift.String?) -> Swift.Void)
-  #endif
   public func cleanAll()
   public func cacheUsage(completion: @escaping (Swift.Int) -> Swift.Void)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getBleAllProperty(vid: Swift.String, completion: @escaping (CLDSmartSDK.CLDDeviceAllAttr?, Swift.Int, Swift.String?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func qrcodeMatch(netSSID: Swift.String, netPW: Swift.String?, completion: @escaping CLDSmartSDK.CLDStringBlock)
-  #endif
   public func checkMatchResult(qrStr: Swift.String, completion: @escaping (Swift.Int, Swift.String) -> Swift.Void)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func checkMatchResult(memberToken: Swift.String, completion: @escaping (Swift.Int, Swift.String, [Swift.String : Any]?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getTemperateToken(duration: Swift.Int = 0, completion: @escaping (Swift.String?, Swift.Int, Swift.String?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getStrangerFaceList(vid: Swift.String, page: Swift.Int, pageSize: Swift.Int, completion: @escaping (CLDSmartSDK.CLDFaceNoteInfo?, Swift.Int, Swift.String?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func setStrangerNote(vid: Swift.String, faceId: Swift.String, note: Swift.String, completion: @escaping (Swift.Int, Swift.String?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func deleteStrangerFace(vid: Swift.String, ids: [Swift.Int], completion: @escaping (Swift.Int, Swift.String?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func presetAdd(vid: Swift.String, name: Swift.String, filePath: Swift.String, completion: @escaping (Swift.Int, Swift.String?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func presetList(vid: Swift.String, page: Swift.Int, pageSize: Swift.Int, completion: @escaping ([CLDSmartSDK.CLDPTZPoint]?, Swift.Int, Swift.String?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func presetUpdate(presetSpotId: Swift.Int, name: Swift.String, completion: @escaping (Swift.Int, Swift.String?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func presetDel(presetSpotIds: [Swift.Int], completion: @escaping (Swift.Int, Swift.String?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func presetReturnSet(presetSpotId: Swift.Int, completion: @escaping (Swift.Int, Swift.String?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func decodePushInfo(payload: Swift.String) -> [Swift.String : Any]?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func devicekeySynckey(vid: Swift.String, keyType: Swift.String, completion: @escaping (Swift.Int, Swift.String?) -> Swift.Void)
-  #endif
 }
 @objc @objcMembers public class CLDUDPDevice : ObjectiveC.NSObject {
   @objc public var mac: Swift.String
@@ -498,17 +364,13 @@ extension CLDSmartSDK.CldSmartEngine {
   @objc deinit
 }
 extension CLDSmartSDK.CldSmartEngine {
-  #if compiler(>=5.3) && $NonescapableTypes
   public func startDiscoverUDP(products: [CLDSmartSDK.CLDProduct], timeout: Swift.Int = 100000, completion: @escaping (_ device: CLDSmartSDK.CLDUDPDevice?, _ isFinished: Swift.Bool) -> Swift.Void)
-  #endif
   public func stopDiscoverUDP()
   public func bindUDPDevice(device: CLDSmartSDK.CLDUDPDevice, completion: @escaping CLDSmartSDK.CLDBoolBlock)
 }
 public enum MediaCoreStreamRate : Swift.Int {
   case none, `default`, sd, hd, auto
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -516,9 +378,7 @@ public enum MediaCoreStreamRate : Swift.Int {
 }
 @objc @_inheritsConvenienceInitializers public class MediaCore : ObjectiveC.NSObject {
   public static let shared: CLDSmartSDK.MediaCore
-  #if compiler(>=5.3) && $NonescapableTypes
   public func initRtcEngine(vid: Swift.String, playerView: CLDSmartSDK.FWLiveScrollView, whRatio: CoreFoundation.CGFloat = 2048/1563, rotation: CoreFoundation.CGFloat = 0, audioEncodeFormat: Swift.Int = 0, completion: @escaping (Swift.Bool, Swift.Int?, Swift.String?) -> Swift.Void)
-  #endif
   public func startLiveStream()
   public func stopLiveStream()
   public func destroy()
@@ -526,13 +386,9 @@ public enum MediaCoreStreamRate : Swift.Int {
   public func stopRecording()
   public func microphoneEnabled(_ enabled: Swift.Bool) -> Swift.Bool
   public func speakerEnabled(_ enabled: Swift.Bool)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func switchIntercom(open: Swift.Bool, vid: Swift.String, completion: @escaping (Swift.Bool, Swift.String?, [Swift.String : Any]?) -> Swift.Void)
-  #endif
   public func takeSnapshot(_ filePath: Swift.String)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func switchResolution(vid: Swift.String, rate: CLDSmartSDK.MediaCoreStreamRate, completion: @escaping (Swift.Bool, Swift.String?, [Swift.String : Any]?) -> Swift.Void)
-  #endif
   @objc override dynamic public init()
   @objc deinit
 }
@@ -555,9 +411,7 @@ public enum CLDWiFiOTAUpgradeStatus : Swift.Int {
   case requestFailed
   case downloadFailed
   case upgradeFailed
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -578,9 +432,7 @@ public enum CLDIoTModelAction : Swift.String {
   case playback
   case reply
   case acptz
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -624,9 +476,7 @@ public enum CLDIoTModelProperty : Swift.String {
   case language
   case fixRectime
   case utcOffset
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -638,11 +488,9 @@ public struct CLDIoTProperty {
   public let data_id: Swift.String
   public let dataIdProperty: CLDSmartSDK.CLDIoTModelProperty
   public let value: Any?
-  #if compiler(>=5.3) && $NonescapableTypes
   public var intValue: Swift.Int? {
     get
   }
-  #endif
 }
 public struct CLDEventInfo : Swift.Codable {
   public let notifications: [CLDSmartSDK.CLDEvent]
@@ -683,9 +531,7 @@ public struct CLDEvent : Swift.Codable {
 }
 public enum CLDCaptchaIntent : Swift.Int {
   case changeOnwer, deleteAccount
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -705,9 +551,7 @@ public enum CLDLoginMode : Swift.String, Swift.Codable {
   case unknown
   case customerOwned
   case accountPassword
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -924,9 +768,7 @@ public struct CLDDeviceInfo : Swift.Codable {
 }
 public enum CLDDeviceKeyType : Swift.Int, Swift.Codable {
   case fingerprint, password, card, face, palm_venous
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -943,9 +785,7 @@ public enum CLDDeviceUnlockType : Swift.Int, Swift.Codable {
   case adminPassword
   case palm_venous
   case palmVein
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -953,9 +793,7 @@ public enum CLDDeviceUnlockType : Swift.Int, Swift.Codable {
 }
 public enum CLDDeviceKeyStatus : Swift.Int, Swift.Codable {
   case inactive, invalid, valid, sync, deleted, addFailed, deleteFailed
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1028,9 +866,7 @@ public struct CLDBLEConfig : Swift.Codable {
 }
 public enum CLDSwithNotifyType : Swift.Int {
   case off, on, custom
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1038,9 +874,7 @@ public enum CLDSwithNotifyType : Swift.Int {
 }
 public enum CLDNotifyScenes : Swift.Int {
   case list, setting, notice
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1114,9 +948,7 @@ public enum CLDDeviceNetConfigError : Swift.Int {
   public var devicePairSuccess: Swift.Bool {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1144,17 +976,13 @@ public struct CLDAddPasswordResult {
   public let keyRecordID: Swift.Int?
   public let checkToken: Swift.String?
   public let isActionShadow: Swift.Int?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(accepted: Swift.Bool, code: Swift.Int, message: Swift.String?, keyRecordID: Swift.Int? = nil, checkToken: Swift.String? = nil, isActionShadow: Swift.Int? = nil)
-  #endif
 }
 public enum CLDInputKeyState : Swift.Int {
   case inputting
   case inputSuccess
   case inputFailed
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1170,9 +998,7 @@ public enum CLDInputKeyType : Swift.Int {
   case periodPassword
   case adminPassword
   case palmVein
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1225,15 +1051,9 @@ public struct TOTP {
   public let digits: Swift.Int
   public let timeInterval: Swift.Int
   public let algorithm: CLDSmartSDK.OTPAlgorithm
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(secret: Foundation.Data, digits: Swift.Int = 6, timeInterval: Swift.Int = 30, algorithm: CLDSmartSDK.OTPAlgorithm = .sha1)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func generate(time: Foundation.Date) -> Swift.String?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func generate(secondsPast1970: Swift.Int) -> Swift.String?
-  #endif
 }
 extension Foundation.Data {
   public var bytes: Swift.Array<Swift.UInt8> {
@@ -1246,43 +1066,27 @@ extension Swift.Array where Element == Swift.UInt8 {
 }
 public func base32Encode(_ data: Foundation.Data) -> Swift.String
 public func base32HexEncode(_ data: Foundation.Data) -> Swift.String
-#if compiler(>=5.3) && $NonescapableTypes
 public func base32DecodeToData(_ string: Swift.String) -> Foundation.Data?
-#endif
-#if compiler(>=5.3) && $NonescapableTypes
 public func base32HexDecodeToData(_ string: Swift.String) -> Foundation.Data?
-#endif
 public func base32Encode(_ array: [Swift.UInt8]) -> Swift.String
 public func base32HexEncode(_ array: [Swift.UInt8]) -> Swift.String
-#if compiler(>=5.3) && $NonescapableTypes
 public func base32Decode(_ string: Swift.String) -> [Swift.UInt8]?
-#endif
-#if compiler(>=5.3) && $NonescapableTypes
 public func base32HexDecode(_ string: Swift.String) -> [Swift.UInt8]?
-#endif
 extension Swift.String {
-  #if compiler(>=5.3) && $NonescapableTypes
   public var base32DecodedData: Foundation.Data? {
     get
   }
-  #endif
   public var base32EncodedString: Swift.String {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public func base32DecodedString(_ encoding: Swift.String.Encoding = .utf8) -> Swift.String?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var base32HexDecodedData: Foundation.Data? {
     get
   }
-  #endif
   public var base32HexEncodedString: Swift.String {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public func base32HexDecodedString(_ encoding: Swift.String.Encoding = .utf8) -> Swift.String?
-  #endif
 }
 extension Foundation.Data {
   public var base32EncodedString: Swift.String {
@@ -1291,22 +1095,18 @@ extension Foundation.Data {
   public var base32EncodedData: Foundation.Data {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public var base32DecodedData: Foundation.Data? {
     get
   }
-  #endif
   public var base32HexEncodedString: Swift.String {
     get
   }
   public var base32HexEncodedData: Foundation.Data {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public var base32HexDecodedData: Foundation.Data? {
     get
   }
-  #endif
 }
 extension CLDSmartSDK.CldSmartEngine {
   public var bleIsConnected: Swift.Bool {
@@ -1321,43 +1121,23 @@ extension CLDSmartSDK.CldSmartEngine {
   public var bleState: CoreBluetooth.CBManagerState {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public var bleEncryptKey: Foundation.Data? {
     get
     set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var bleDevice: VLink.APBLEDevice? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func disconnectBLE(peripheral: CoreBluetooth.CBPeripheral? = nil)
-  #endif
   public func startScanBLE(_ prefixes: [Swift.String])
   public func stopScanBLE()
-  #if compiler(>=5.3) && $NonescapableTypes
   public func connectBLE(device: VLink.APBLEDevice, config: CLDSmartSDK.CLDBLEConfig, encryptKey: Foundation.Data?, timeout: Foundation.TimeInterval = 10, completion: ((Swift.Bool) -> Swift.Void)?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func connectBLE(device: VLink.APBLEDevice, config: CLDSmartSDK.CLDBLEConfig, encryptKey: Foundation.Data?, timeout: Foundation.TimeInterval = 10) async -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func connectBLE(name: Swift.String, config: CLDSmartSDK.CLDBLEConfig, encryptKey: Swift.String?, timeout: Foundation.TimeInterval = 20, completion: ((Swift.Bool) -> Swift.Void)?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func connectBLE(name: Swift.String, config: CLDSmartSDK.CLDBLEConfig, encryptKey: Swift.String?, timeout: Foundation.TimeInterval = 10) async -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func sendBLE(command: VLink.APBLEVLinkCommandType, data: Foundation.Data? = nil, seq: Swift.UInt16 = UInt16(arc4random_uniform(UInt32(powl(2, 10)) - 1)), timeout: Foundation.TimeInterval = 5, completion: VLink.APBLECommandResponseBlock?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func sendBLE(command: VLink.APBLEVLinkCommandType, data: Foundation.Data? = nil, seq: Swift.UInt16 = UInt16(arc4random_uniform(UInt32(powl(2, 10)) - 1)), timeout: Foundation.TimeInterval = 5) async -> VLink.APBLEResponse
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func sendBLEEntity(command: VLink.APBLEVLinkCommandType, dataObject: VLink.APBLEParameter? = nil, seq: Swift.UInt16 = UInt16(arc4random_uniform(UInt32(powl(2, 10)) - 1)), timeout: Foundation.TimeInterval = 5, completion: VLink.APBLECommandResponseBlock?)
-  #endif
   public func bindBLEDeviceViaPidDn(device: VLink.APBLEDevice, product: CLDSmartSDK.CLDProduct, timeout: Foundation.TimeInterval = 10, completion: @escaping CLDSmartSDK.CLDBoolBlock)
 }
 public enum CLDBLEOTAStatus : Swift.Int {
@@ -1368,9 +1148,7 @@ public enum CLDBLEOTAStatus : Swift.Int {
   case success
   case failed
   case cancelled
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1396,9 +1174,7 @@ public enum CLDBLEOTAErrorCode : Swift.Int {
   case verificationFailed
   case cancelled
   case applicationBackgrounded
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1441,26 +1217,18 @@ extension CLDSmartSDK.CldSmartEngine {
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class FWLiveScrollView : UIKit.UIScrollView, UIKit.UIScrollViewDelegate {
   @_Concurrency.MainActor @preconcurrency convenience public init(frame: CoreFoundation.CGRect = CGRectZero, zoomView: UIKit.UIView = UIView(), aspectRatio: CoreFoundation.CGFloat = 1, rotation: CoreFoundation.CGFloat = 0, zoomEnabled: Swift.Bool = false)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc public func viewForZooming(in scrollView: UIKit.UIScrollView) -> UIKit.UIView?
-  #endif
   @_Concurrency.MainActor @preconcurrency @objc public func scrollViewDidZoom(_ scrollView: UIKit.UIScrollView)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
   @objc deinit
 }
 public struct HOTP {
   public let secret: Foundation.Data
   public let digits: Swift.Int
   public let algorithm: CLDSmartSDK.OTPAlgorithm
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(secret: Foundation.Data, digits: Swift.Int = 6, algorithm: CLDSmartSDK.OTPAlgorithm = .sha1)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func generate(counter: Swift.UInt64) -> Swift.String?
-  #endif
 }
 extension CLDSmartSDK.CldSmartEngine {
   public func addEventCallBack(completion: @escaping (CLDSmartSDK.MQTTCoreMessage) -> Swift.Void)
@@ -1483,9 +1251,7 @@ public enum CLDMQTTMessageMethod : Swift.String {
   case playback
   case deviceLink
   case nfEvent
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -1504,11 +1270,9 @@ extension CLDSmartSDK.MQTTCoreMessage {
   @objc dynamic public var messagePayload: [Swift.String : Any] {
     @objc get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public var actionID: Swift.String? {
     @objc get
   }
-  #endif
 }
 public enum OTPAlgorithm {
   case sha1
@@ -1539,9 +1303,7 @@ public enum NetworkMethod : Swift.String {
   case post
   case put
   case delete
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -1620,9 +1382,9 @@ public enum NetworkMethod : Swift.String {
   case deleteMemberAccount
   case deleteDeviceBySignature
   case resetSDCard
-  #if compiler(>=5.3) && $NonescapableTypes
+  case markNotificationRead
+  case deleteNotifications
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1683,12 +1445,10 @@ extension Foundation.Data {
   }
 }
 @_hasMissingDesignatedInitializers @propertyWrapper public class UserDefault<T> where T : Swift.Decodable, T : Swift.Encodable {
-  #if compiler(>=5.3) && $NonescapableTypes
   public var wrappedValue: T? {
     get
     set
   }
-  #endif
   @objc deinit
 }
 extension CLDSmartSDK.CLDLockCalibrationEntryType : Swift.Equatable {}

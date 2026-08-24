@@ -2,7 +2,7 @@
 
 CLDSmartSDK iOS SDK 提供账号认证、设备绑定、蓝牙通信、IoT 控制、消息推送和音视频能力。
 
-- 当前版本：`1.4.13`
+- 当前版本：`1.4.14`
 - 最低系统：iOS 13.0
 - Swift：5.9 或更高版本
 - 分发形式：静态 XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.13'
+      :tag => '1.4.14'
 end
 ```
 
@@ -587,6 +587,14 @@ Debug/Sandbox 构建使用 `isAPNsSandbox: true`，正式 APNs 环境使用 `fal
 不要直接用新账号覆盖旧会话。按“服务端登出 -> `deinitEngine` -> `initEngine` -> 新账号登录”的顺序切换。
 
 ## 版本说明
+
+### 1.4.14
+
+- 新增 `markNotificationAsRead(notifyId:completion:)`，使用 `CLDEvent.notify_id` 将单条通知标记为已读。
+- 新增 `deleteNotifications(notifyIds:completion:)`，支持一次删除 1 到 100 条通知；删除不可恢复，客户 App 应在调用前二次确认。
+- 两个接口统一返回 `success/code/message`；非法 ID 在本地返回 `code == -1000`，不会发送网络请求。
+- Demo 的 Events 页面和客户 API 目录已增加可运行示例、参数校验与删除确认。
+- Device arm64、Simulator arm64/x86_64 XCFramework、Swift Interface 和 CocoaPods 临时客户工程均已验证。
 
 ### 1.4.13
 
