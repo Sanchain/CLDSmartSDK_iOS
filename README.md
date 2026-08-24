@@ -2,7 +2,7 @@
 
 CLDSmartSDK iOS SDK 提供账号认证、设备绑定、蓝牙通信、IoT 控制、消息推送和音视频能力。
 
-- 当前版本：`1.4.14`
+- 当前版本：`1.4.15`
 - 最低系统：iOS 13.0
 - Swift：5.9 或更高版本
 - 分发形式：静态 XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.14'
+      :tag => '1.4.15'
 end
 ```
 
@@ -587,6 +587,15 @@ Debug/Sandbox 构建使用 `isAPNsSandbox: true`，正式 APNs 环境使用 `fal
 不要直接用新账号覆盖旧会话。按“服务端登出 -> `deinitEngine` -> `initEngine` -> 新账号登录”的顺序切换。
 
 ## 版本说明
+
+### 1.4.15
+
+- 新增 `CLDSessionInvalidReason`、`sessionInvalidHandler`、`lastSessionInvalidReason` 和 `Notification.Name.cldSessionDidInvalidate`，客户 App 可统一监听必须重新登录的会话终态。
+- `40101` 先由 SDK 自动刷新 Access Token；只有刷新失败或重试仍失败才清除会话并通知客户。`40102` 表示账号在其他客户端登录，`40105` 表示 Refresh Token 已过期，两者会立即清除会话并通知客户。
+- 会话失效回调固定在主线程，回调前 SDK 已清除本地用户信息并断开 MQTT；清除后调用其他公开 API 仍返回最近的终态错误码。
+- 修复并发请求重复发送失效事件，以及旧账号迟到响应误清除新账号会话的问题。
+- 继续提供 `markNotificationAsRead(notifyId:completion:)` 和 `deleteNotifications(notifyIds:completion:)` 通知管理接口。
+- Device arm64、Simulator arm64/x86_64 XCFramework、Swift Interface、SDK/Demo 编译和 CocoaPods 临时客户工程均已验证。
 
 ### 1.4.14
 

@@ -1274,6 +1274,39 @@ extension CLDSmartSDK.MQTTCoreMessage {
     @objc get
   }
 }
+@objc public enum CLDSessionInvalidReason : Swift.Int {
+  case accessTokenRefreshFailed = 40101
+  case loggedInElsewhere = 40102
+  case refreshTokenExpired = 40105
+  public var code: Swift.Int {
+    get
+  }
+  public var message: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public typealias CLDSessionInvalidHandler = (CLDSmartSDK.CLDSessionInvalidReason) -> Swift.Void
+extension Foundation.NSNotification.Name {
+  public static let cldSessionDidInvalidate: Foundation.Notification.Name
+}
+public enum CLDSessionInvalidationUserInfoKey {
+  public static let reason: Swift.String
+  public static let code: Swift.String
+}
+extension CLDSmartSDK.CldSmartEngine {
+  public var sessionInvalidHandler: CLDSmartSDK.CLDSessionInvalidHandler? {
+    get
+    set
+  }
+  public var lastSessionInvalidReason: CLDSmartSDK.CLDSessionInvalidReason? {
+    get
+  }
+}
 public enum OTPAlgorithm {
   case sha1
   case sha256
@@ -1290,6 +1323,7 @@ public enum NetworkError : Swift.Error {
   case invalidURL
   case invalidToken
   case loggedInByOther
+  case refreshTokenExpired
   case invalidResponse
   case responseParseError
   public static func == (a: CLDSmartSDK.NetworkError, b: CLDSmartSDK.NetworkError) -> Swift.Bool
@@ -1524,6 +1558,9 @@ extension CLDSmartSDK.CLDBLEOTAErrorCode : Swift.RawRepresentable {}
 extension CLDSmartSDK.CLDMQTTMessageMethod : Swift.Equatable {}
 extension CLDSmartSDK.CLDMQTTMessageMethod : Swift.Hashable {}
 extension CLDSmartSDK.CLDMQTTMessageMethod : Swift.RawRepresentable {}
+extension CLDSmartSDK.CLDSessionInvalidReason : Swift.Equatable {}
+extension CLDSmartSDK.CLDSessionInvalidReason : Swift.Hashable {}
+extension CLDSmartSDK.CLDSessionInvalidReason : Swift.RawRepresentable {}
 extension CLDSmartSDK.OTPAlgorithm : Swift.Equatable {}
 extension CLDSmartSDK.OTPAlgorithm : Swift.Hashable {}
 extension CLDSmartSDK.NetworkError : Swift.Equatable {}

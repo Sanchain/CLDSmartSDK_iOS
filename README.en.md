@@ -2,7 +2,7 @@
 
 CLDSmartSDK for iOS provides account authentication, device binding, Bluetooth communication, IoT control, push messaging, and audio/video capabilities.
 
-- Current version: `1.4.14`
+- Current version: `1.4.15`
 - Minimum deployment target: iOS 13.0
 - Swift: 5.9 or later
 - Distribution: static XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.14'
+      :tag => '1.4.15'
 end
 ```
 
@@ -589,6 +589,15 @@ Verify that the SDK server, App ID/Secret Key, `countryCode`, and `regionCode` b
 Do not overwrite an existing session. Switch users in this order: server logout, `deinitEngine`, `initEngine`, and then new-user login.
 
 ## Release Notes
+
+### 1.4.15
+
+- Added `CLDSessionInvalidReason`, `sessionInvalidHandler`, `lastSessionInvalidReason`, and `Notification.Name.cldSessionDidInvalidate` so client apps can handle terminal sessions that require a new login.
+- For `40101`, the SDK first refreshes the access token and only invalidates the session if refresh or retry fails. `40102` means the account logged in on another client, and `40105` means the refresh token expired; both invalidate the session immediately.
+- Session-invalid callbacks run on the main thread after local user data is cleared and MQTT is disconnected. Subsequent public API calls preserve the latest terminal error code.
+- Fixed duplicate invalidation events from concurrent requests and delayed responses from a previous account clearing a newer session.
+- `markNotificationAsRead(notifyId:completion:)` and `deleteNotifications(notifyIds:completion:)` remain available for notification management.
+- Device arm64 and simulator arm64/x86_64 XCFramework slices, Swift interfaces, SDK/Demo builds, and the CocoaPods temporary client project passed validation.
 
 ### 1.4.14
 

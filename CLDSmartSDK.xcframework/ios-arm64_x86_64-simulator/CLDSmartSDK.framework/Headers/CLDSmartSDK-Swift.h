@@ -375,6 +375,19 @@ extern "C" {
 
 #if defined(__OBJC__)
 
+/// The terminal authentication reasons reported by CLDSmartSDK.
+/// A backend <code>40101</code> is first handled internally by refreshing the access
+/// token. Clients receive <code>.accessTokenRefreshFailed</code> only when refresh or the
+/// retried request fails, so a successful refresh remains transparent.
+typedef SWIFT_ENUM(NSInteger, CLDSessionInvalidReason, open) {
+/// Access token recovery failed and the user must sign in again.
+  CLDSessionInvalidReasonAccessTokenRefreshFailed = 40101,
+/// The same account signed in on another client.
+  CLDSessionInvalidReasonLoggedInElsewhere = 40102,
+/// The refresh token has expired and the user must sign in again.
+  CLDSessionInvalidReasonRefreshTokenExpired = 40105,
+};
+
 SWIFT_ENUM_FWD_DECL(NSInteger, CldSmartEngineVideoState)
 SWIFT_ENUM_FWD_DECL(NSInteger, CldSmartEngineRecordState)
 @class NSString;
@@ -978,6 +991,19 @@ extern "C" {
 #endif
 
 #if defined(__OBJC__)
+
+/// The terminal authentication reasons reported by CLDSmartSDK.
+/// A backend <code>40101</code> is first handled internally by refreshing the access
+/// token. Clients receive <code>.accessTokenRefreshFailed</code> only when refresh or the
+/// retried request fails, so a successful refresh remains transparent.
+typedef SWIFT_ENUM(NSInteger, CLDSessionInvalidReason, open) {
+/// Access token recovery failed and the user must sign in again.
+  CLDSessionInvalidReasonAccessTokenRefreshFailed = 40101,
+/// The same account signed in on another client.
+  CLDSessionInvalidReasonLoggedInElsewhere = 40102,
+/// The refresh token has expired and the user must sign in again.
+  CLDSessionInvalidReasonRefreshTokenExpired = 40105,
+};
 
 SWIFT_ENUM_FWD_DECL(NSInteger, CldSmartEngineVideoState)
 SWIFT_ENUM_FWD_DECL(NSInteger, CldSmartEngineRecordState)
