@@ -2,7 +2,7 @@
 
 CLDSmartSDK for iOS provides account authentication, device binding, Bluetooth communication, IoT control, push messaging, and audio/video capabilities.
 
-- Current version: `1.4.15`
+- Current version: `1.4.16`
 - Minimum deployment target: iOS 13.0
 - Swift: 5.9 or later
 - Distribution: static XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.15'
+      :tag => '1.4.16'
 end
 ```
 
@@ -589,6 +589,14 @@ Verify that the SDK server, App ID/Secret Key, `countryCode`, and `regionCode` b
 Do not overwrite an existing session. Switch users in this order: server logout, `deinitEngine`, `initEngine`, and then new-user login.
 
 ## Release Notes
+
+### 1.4.16
+
+- Added Google Assistant and Alexa cloud authorization APIs: `getVoiceAssistantAvailability`, `getVoiceAssistantLinkStatus`, `getAlexaAuthorizationLinks`, `completeAlexaLink`, `authorizeAlexaSkill`, `getGoogleAssistantAuthorizationInfo`, `unlinkVoiceAssistant`, and `setGoogleAssistantPIN`.
+- Added public models `CLDVoiceAssistant`, `CLDVoiceAssistantAvailability`, `CLDVoiceAssistantLinkStatus`, `CLDAlexaAuthorizationLinks`, `CLDAlexaSkillAuthorizationRequest`, `CLDAlexaSkillAuthorizationResult`, and `CLDGoogleAssistantAuthorizationInfo`.
+- SDK logs redact OAuth authorization codes, `state`, authorization URLs, deep links, and voice PINs. Client apps remain responsible for opening authorization entries, handling universal links, and completing the flow with customer-specific client IDs, Alexa skills, Google actions, and real accounts.
+- UI automation covers the Voice Assistants demo page, its nine input fields, and ten API actions. Device arm64 and simulator arm64/x86_64 XCFramework slices, Swift interfaces, CocoaPods lint, and a temporary client project build also passed validation.
+- Simulator automation without third-party accounts does not cover the real Alexa/Google OAuth lifecycle. Authorization, callbacks, link status, unlinking, and Google PIN must still be validated before production integration.
 
 ### 1.4.15
 

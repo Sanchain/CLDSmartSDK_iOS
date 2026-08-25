@@ -2,7 +2,7 @@
 
 CLDSmartSDK iOS SDK 提供账号认证、设备绑定、蓝牙通信、IoT 控制、消息推送和音视频能力。
 
-- 当前版本：`1.4.15`
+- 当前版本：`1.4.16`
 - 最低系统：iOS 13.0
 - Swift：5.9 或更高版本
 - 分发形式：静态 XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.15'
+      :tag => '1.4.16'
 end
 ```
 
@@ -587,6 +587,14 @@ Debug/Sandbox 构建使用 `isAPNsSandbox: true`，正式 APNs 环境使用 `fal
 不要直接用新账号覆盖旧会话。按“服务端登出 -> `deinitEngine` -> `initEngine` -> 新账号登录”的顺序切换。
 
 ## 版本说明
+
+### 1.4.16
+
+- 新增 Google Assistant 与 Alexa 云端授权 API：`getVoiceAssistantAvailability`、`getVoiceAssistantLinkStatus`、`getAlexaAuthorizationLinks`、`completeAlexaLink`、`authorizeAlexaSkill`、`getGoogleAssistantAuthorizationInfo`、`unlinkVoiceAssistant` 和 `setGoogleAssistantPIN`。
+- 新增 `CLDVoiceAssistant`、`CLDVoiceAssistantAvailability`、`CLDVoiceAssistantLinkStatus`、`CLDAlexaAuthorizationLinks`、`CLDAlexaSkillAuthorizationRequest`、`CLDAlexaSkillAuthorizationResult` 和 `CLDGoogleAssistantAuthorizationInfo` 公开模型。
+- SDK 日志会隐藏 OAuth 授权码、`state`、授权 URL、Deep Link 和语音 PIN；客户 App 负责打开授权入口、接收 Universal Link，并使用客户专属 Client ID、Alexa Skill、Google Action 和真实账号完成授权闭环。
+- Voice Assistants Demo 页面、9 个输入字段和 10 个 API 操作入口已通过 UI 自动化；Device arm64、Simulator arm64/x86_64 XCFramework、Swift Interface、CocoaPods lint 和临时客户工程编译均已验证。
+- 无账号的 Simulator 自动化不覆盖真实 Alexa/Google OAuth 生命周期；正式接入前仍需验证授权、回调、绑定状态、解绑和 Google PIN。
 
 ### 1.4.15
 

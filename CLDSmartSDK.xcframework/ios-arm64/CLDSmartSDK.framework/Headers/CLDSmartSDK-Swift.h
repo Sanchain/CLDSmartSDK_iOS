@@ -594,6 +594,15 @@ typedef SWIFT_ENUM(NSInteger, NetworkAPI, open) {
   NetworkAPIResetSDCard = 71,
   NetworkAPIMarkNotificationRead = 72,
   NetworkAPIDeleteNotifications = 73,
+  NetworkAPIVoiceAssistantAvailability = 74,
+  NetworkAPIVoiceAssistantLinkStatus = 75,
+  NetworkAPIAlexaAuthorizationLinks = 76,
+  NetworkAPICompleteAlexaLink = 77,
+  NetworkAPIAuthorizeAlexaSkill = 78,
+  NetworkAPIUnlinkAlexa = 79,
+  NetworkAPIGoogleAssistantAuthorizationInfo = 80,
+  NetworkAPIUnlinkGoogleAssistant = 81,
+  NetworkAPIChangeGoogleAssistantPIN = 82,
 };
 
 SWIFT_CLASS("_TtC11CLDSmartSDK11NetworkCore")

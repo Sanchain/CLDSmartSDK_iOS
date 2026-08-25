@@ -260,6 +260,14 @@ extension CLDSmartSDK.CldSmartEngine {
   public static let bleResponseTimeoutMsg: Swift.String
   public static let bleDisconnectCode: Swift.Int
   public static let bleDisconnectMsg: Swift.String
+  public func getVoiceAssistantAvailability(appType: Swift.Int = 2, completion: @escaping (CLDSmartSDK.CLDVoiceAssistantAvailability?, Swift.Int, Swift.String?) -> Swift.Void)
+  public func getVoiceAssistantLinkStatus(assistant: CLDSmartSDK.CLDVoiceAssistant, completion: @escaping (CLDSmartSDK.CLDVoiceAssistantLinkStatus?, Swift.Int, Swift.String?) -> Swift.Void)
+  public func getAlexaAuthorizationLinks(requestType: Swift.Int = 2, completion: @escaping (CLDSmartSDK.CLDAlexaAuthorizationLinks?, Swift.Int, Swift.String?) -> Swift.Void)
+  public func completeAlexaLink(authorizationCode: Swift.String, requestType: Swift.Int = 2, completion: @escaping CLDSmartSDK.CLDAuthBlock)
+  public func authorizeAlexaSkill(request: CLDSmartSDK.CLDAlexaSkillAuthorizationRequest, completion: @escaping (CLDSmartSDK.CLDAlexaSkillAuthorizationResult?, Swift.Int, Swift.String?) -> Swift.Void)
+  public func getGoogleAssistantAuthorizationInfo(completion: @escaping (CLDSmartSDK.CLDGoogleAssistantAuthorizationInfo?, Swift.Int, Swift.String?) -> Swift.Void)
+  public func unlinkVoiceAssistant(assistant: CLDSmartSDK.CLDVoiceAssistant, completion: @escaping CLDSmartSDK.CLDAuthBlock)
+  public func setGoogleAssistantPIN(_ pin: Swift.String, completion: @escaping CLDSmartSDK.CLDAuthBlock)
   public func initEngine(appId: Swift.String, secertKey: Swift.String, config: CLDSmartSDK.CldSmartEngineConfig? = nil, completion: @escaping CLDSmartSDK.CLDBoolBlock)
   public func deinitEngine()
   public func login(account: Swift.String, completion: @escaping CLDSmartSDK.CLDBoolBlock)
@@ -547,6 +555,51 @@ public struct CLDAuthContext {
 public typealias CLDAuthBlock = (Swift.Bool, Swift.Int, Swift.String?) -> Swift.Void
 public typealias CLDAccountLoginBlock = (CLDSmartSDK.CLDUserInfo?, Swift.Int, Swift.String?) -> Swift.Void
 public typealias CLDResetTokenBlock = (Swift.String?, Swift.Int, Swift.String?) -> Swift.Void
+public enum CLDVoiceAssistant : Swift.String, Swift.Codable {
+  case alexa
+  case googleAssistant
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct CLDVoiceAssistantAvailability : Swift.Decodable {
+  public let isAlexaAvailable: Swift.Bool
+  public let isGoogleAssistantAvailable: Swift.Bool
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CLDVoiceAssistantLinkStatus : Swift.Decodable {
+  public let accountLinkStatus: Swift.Int
+  public let skillStatus: Swift.Int
+  public var isLinked: Swift.Bool {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CLDAlexaAuthorizationLinks : Swift.Decodable {
+  public let appURL: Foundation.URL
+  public let webURL: Foundation.URL
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CLDAlexaSkillAuthorizationRequest {
+  public let clientID: Swift.String
+  public let redirectURI: Swift.String
+  public let state: Swift.String
+  public let scope: Swift.String
+  public let responseType: Swift.String
+  public init(clientID: Swift.String, redirectURI: Swift.String, state: Swift.String, scope: Swift.String, responseType: Swift.String)
+}
+public struct CLDAlexaSkillAuthorizationResult : Swift.Decodable {
+  public let redirectURL: Foundation.URL
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CLDGoogleAssistantAuthorizationInfo : Swift.Decodable {
+  public let clientID: Swift.String
+  public let authorizationCode: Swift.String
+  public let deepLink: Foundation.URL
+  public init(from decoder: any Swift.Decoder) throws
+}
 public enum CLDLoginMode : Swift.String, Swift.Codable {
   case unknown
   case customerOwned
@@ -1418,6 +1471,15 @@ public enum NetworkMethod : Swift.String {
   case resetSDCard
   case markNotificationRead
   case deleteNotifications
+  case voiceAssistantAvailability
+  case voiceAssistantLinkStatus
+  case alexaAuthorizationLinks
+  case completeAlexaLink
+  case authorizeAlexaSkill
+  case unlinkAlexa
+  case googleAssistantAuthorizationInfo
+  case unlinkGoogleAssistant
+  case changeGoogleAssistantPIN
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -1522,6 +1584,9 @@ extension CLDSmartSDK.CLDIoTModelProperty : Swift.RawRepresentable {}
 extension CLDSmartSDK.CLDCaptchaIntent : Swift.Equatable {}
 extension CLDSmartSDK.CLDCaptchaIntent : Swift.Hashable {}
 extension CLDSmartSDK.CLDCaptchaIntent : Swift.RawRepresentable {}
+extension CLDSmartSDK.CLDVoiceAssistant : Swift.Equatable {}
+extension CLDSmartSDK.CLDVoiceAssistant : Swift.Hashable {}
+extension CLDSmartSDK.CLDVoiceAssistant : Swift.RawRepresentable {}
 extension CLDSmartSDK.CLDLoginMode : Swift.Equatable {}
 extension CLDSmartSDK.CLDLoginMode : Swift.Hashable {}
 extension CLDSmartSDK.CLDLoginMode : Swift.RawRepresentable {}
