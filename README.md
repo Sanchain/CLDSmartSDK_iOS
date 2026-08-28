@@ -2,7 +2,7 @@
 
 CLDSmartSDK iOS SDK 提供账号认证、设备绑定、蓝牙通信、IoT 控制、消息推送和音视频能力。
 
-- 当前版本：`1.4.16`
+- 当前版本：`1.4.17`
 - 最低系统：iOS 13.0
 - Swift：5.9 或更高版本
 - 分发形式：静态 XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.16'
+      :tag => '1.4.17'
 end
 ```
 
@@ -161,8 +161,8 @@ engine.logout { _ in
 let authContext = CLDAuthContext(
     countryCode: "N",       // 邮箱（包括中国区邮箱）使用 "N"；中国大陆手机号使用 "+86"
     regionCode: "US",       // 中国区账号（手机号或邮箱）均使用 "CN"
-    deviceToken: apnsToken,  // APNs 十六进制 Token
-    isAPNsSandbox: true      // APNs Sandbox 为 true，Production 为 false
+    deviceToken: apnsToken,  // 尚未取得 APNs Token 时传空字符串
+    isAPNsSandbox: true      // 按 aps-environment 设置，与业务服务器环境无关
 )
 ```
 
@@ -505,7 +505,9 @@ Keypad/KeypadP 扫描结果的 `binded` 直接来自 manufacturer data 第 4 字
 
 ## APNs 推送 Token
 
-正式 App 应启用 Push Notifications Capability，并注册远程通知。登录请求中的 `device_token` 和 `reg_token` 使用同一个 APNs Token。
+App 应启用 Push Notifications Capability，并注册远程通知。登录请求中的 `device_token`
+和 `reg_token` 使用同一个 APNs Token。Token 可能早于或晚于登录返回，因此客户 App
+应先缓存 Token，只在 `initEngine` 和密码登录均成功后同步。
 
 ```swift
 private var apnsToken = ""
@@ -520,7 +522,7 @@ func application(
 
     apnsToken = token
 
-    // 如果 Token 在登录后才取得，通知服务端更新。
+    // 如果 Token 在登录后取得，立即通知服务端更新；登录前只缓存。
     if CldSmartEngine.shared.isLoggedIn {
         CldSmartEngine.shared.refreshAPNs(token: token) { success in
             print("APNs token updated: \(success)")
@@ -529,7 +531,11 @@ func application(
 }
 ```
 
-Debug/Sandbox 构建使用 `isAPNsSandbox: true`，正式 APNs 环境使用 `false`。SDK 在 Token 为空时会生成开发占位值，但占位值不能接收推送，生产环境必须传入真实 Token。
+密码登录成功后，如果 Token 已经缓存，应再调用一次 `refreshAPNs(token:completion:)`。
+`isAPNsSandbox` 必须按已安装 App 签名中的 `aps-environment` 设置：值为
+`development` 时传 `true`，值为 `production` 时传 `false`。它与 `.us`、
+`isDevServer` 等业务服务器配置相互独立。SDK 在 Token 为空时会生成唯一占位值，
+但占位值不能接收推送。
 
 ## 权限与 Capability
 
@@ -587,6 +593,14 @@ Debug/Sandbox 构建使用 `isAPNsSandbox: true`，正式 APNs 环境使用 `fal
 不要直接用新账号覆盖旧会话。按“服务端登出 -> `deinitEngine` -> `initEngine` -> 新账号登录”的顺序切换。
 
 ## 版本说明
+
+### 1.4.17
+
+- 修复 Release 版 SDK 在刷新 APNs Token 时固定选择 Production 的问题。账号密码登录成功后会保存 `CLDAuthContext.isAPNsSandbox`，后续刷新自动复用同一环境。
+- `isAPNsSandbox` 现在明确按 App 签名的 `aps-environment` 设置，与业务测试/正式服务器无关；`ios_dev=1` 表示 Sandbox，`ios_dev=0` 表示 Production。
+- 登录和刷新都会清理 Token 中的尖括号与空白字符，诊断日志只输出环境、`ios_dev` 和 Token 长度，不输出 Token 原文。
+- 公开 API 签名不变；旧 `login(account:)` 和升级前缓存的登录态保留旧版默认行为。使用账号密码登录的客户升级后应重新登录一次，再同步 APNs Token。
+- Device arm64、Simulator arm64/x86_64 XCFramework、Swift Interface、CocoaPods lint 和临时客户工程 Release 编译均已验证；最终推送仍需真机确认后台选择正确 APNs 环境并收到 Apple HTTP 200。
 
 ### 1.4.16
 

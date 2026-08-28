@@ -2,7 +2,7 @@
 
 CLDSmartSDK for iOS provides account authentication, device binding, Bluetooth communication, IoT control, push messaging, and audio/video capabilities.
 
-- Current version: `1.4.16`
+- Current version: `1.4.17`
 - Minimum deployment target: iOS 13.0
 - Swift: 5.9 or later
 - Distribution: static XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.16'
+      :tag => '1.4.17'
 end
 ```
 
@@ -161,8 +161,8 @@ Create the account context:
 let authContext = CLDAuthContext(
     countryCode: "N",       // Use "N" for email (including China); use "+86" for a mainland China phone.
     regionCode: "US",       // Use "CN" for any mainland China account.
-    deviceToken: apnsToken,  // Hex-encoded APNs token.
-    isAPNsSandbox: true      // true for APNs Sandbox, false for Production.
+    deviceToken: apnsToken,  // Pass an empty string if the APNs token is not available yet.
+    isAPNsSandbox: true      // Match aps-environment; independent of the business server.
 )
 ```
 
@@ -507,7 +507,10 @@ The `1.4.9` `upgradeDL500Device`, `cancelDL500OTA`, `dl500OTAIsRunning`, and leg
 
 ## APNs Device Token
 
-A production application must enable the Push Notifications capability and register for remote notifications. The login request uses the same APNs token for `device_token` and `reg_token`.
+The app must enable the Push Notifications capability and register for remote notifications.
+The login request uses the same APNs token for `device_token` and `reg_token`. Because the
+token can arrive before or after login completes, cache it first and synchronize it only after
+both `initEngine` and password login succeed.
 
 ```swift
 private var apnsToken = ""
@@ -522,7 +525,7 @@ func application(
 
     apnsToken = token
 
-    // Update the backend when the token arrives after login.
+    // Update the backend immediately after login; cache it before login.
     if CldSmartEngine.shared.isLoggedIn {
         CldSmartEngine.shared.refreshAPNs(token: token) { success in
             print("APNs token updated: \(success)")
@@ -531,7 +534,11 @@ func application(
 }
 ```
 
-Use `isAPNsSandbox: true` for Debug/Sandbox builds and `false` for the production APNs environment. The SDK generates a development placeholder when the token is empty, but a placeholder cannot receive notifications. Always provide a real token in production.
+If the token was already cached, call `refreshAPNs(token:completion:)` once after password login
+succeeds. Set `isAPNsSandbox` from the installed app's signed `aps-environment` entitlement:
+use `true` for `development` and `false` for `production`. This setting is independent of the
+`.us` region and `isDevServer` business-server selection. The SDK creates a unique placeholder
+when the token is empty, but a placeholder cannot receive notifications.
 
 ## Permissions and Capabilities
 
@@ -589,6 +596,14 @@ Verify that the SDK server, App ID/Secret Key, `countryCode`, and `regionCode` b
 Do not overwrite an existing session. Switch users in this order: server logout, `deinitEngine`, `initEngine`, and then new-user login.
 
 ## Release Notes
+
+### 1.4.17
+
+- Fixed Release SDK builds selecting APNs Production when refreshing a Sandbox device token. A successful password login now persists `CLDAuthContext.isAPNsSandbox`, and later token refreshes reuse that environment.
+- `isAPNsSandbox` now explicitly follows the app's signed `aps-environment` entitlement and is independent of the test/production business server. `ios_dev=1` selects Sandbox and `ios_dev=0` selects Production.
+- Login and refresh requests remove angle brackets and whitespace from APNs tokens. Diagnostic logs contain only the environment, `ios_dev`, and token length, never the token value.
+- Public API signatures are unchanged. Legacy `login(account:)` and sessions cached by older SDKs retain their previous default behavior. Password-login clients must log in once after upgrading and then synchronize the APNs token.
+- Device arm64 and simulator arm64/x86_64 XCFrameworks, Swift interfaces, CocoaPods lint, and a temporary Release client build passed. Final acceptance still requires a physical-device push and an Apple APNs HTTP 200 response from the selected environment.
 
 ### 1.4.16
 
