@@ -2,7 +2,7 @@
 
 CLDSmartSDK for iOS provides account authentication, device binding, Bluetooth communication, IoT control, push messaging, and audio/video capabilities.
 
-- Current version: `1.4.17`
+- Current version: `1.4.18`
 - Minimum deployment target: iOS 13.0
 - Swift: 5.9 or later
 - Distribution: static XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.17'
+      :tag => '1.4.18'
 end
 ```
 
@@ -596,6 +596,13 @@ Verify that the SDK server, App ID/Secret Key, `countryCode`, and `regionCode` b
 Do not overwrite an existing session. Switch users in this order: server logout, `deinitEngine`, `initEngine`, and then new-user login.
 
 ## Release Notes
+
+### 1.4.18
+
+- Merged the APNs token environment fix: `CLDAuthContext.isAPNsSandbox` is persisted after password login and reused for later token refreshes, so the SDK no longer always selects Production.
+- Added BLE `0x9093` status synchronization. The SDK automatically queries lock state and battery data from supported devices and publishes structured results through `CldSmartOnBleDidSynchronizeStatus`; the existing `CldSmartOnBleDidReceivedReponse`, `connectBLE`, and `sendBLE` APIs remain compatible.
+- Device-list refresh, login switching, unbinding, and disconnect cleanup now clear 9093 state so status cannot leak across users or devices.
+- Device arm64, simulator arm64/x86_64 XCFrameworks, Swift interfaces, CocoaPods lint, and a temporary customer Release build passed validation. Final APNs acceptance still requires a customer physical device to receive a push in the matching Sandbox/Production environment.
 
 ### 1.4.17
 

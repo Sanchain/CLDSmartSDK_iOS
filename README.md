@@ -2,7 +2,7 @@
 
 CLDSmartSDK iOS SDK 提供账号认证、设备绑定、蓝牙通信、IoT 控制、消息推送和音视频能力。
 
-- 当前版本：`1.4.17`
+- 当前版本：`1.4.18`
 - 最低系统：iOS 13.0
 - Swift：5.9 或更高版本
 - 分发形式：静态 XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.17'
+      :tag => '1.4.18'
 end
 ```
 
@@ -593,6 +593,13 @@ func application(
 不要直接用新账号覆盖旧会话。按“服务端登出 -> `deinitEngine` -> `initEngine` -> 新账号登录”的顺序切换。
 
 ## 版本说明
+
+### 1.4.18
+
+- 合并 APNs Token 环境修复：账号密码登录成功后持久化 `CLDAuthContext.isAPNsSandbox`，后续刷新 Token 继续使用设备当前的 `aps-environment`，不再固定调用 Production。
+- 新增 BLE `0x9093` 状态同步处理。SDK 根据设备状态通知自动查询锁状态和电量，并通过 `CldSmartOnBleDidSynchronizeStatus` 发布结构化结果；原有 `CldSmartOnBleDidReceivedReponse` 通知和 `connectBLE`/`sendBLE` 调用保持兼容。
+- 设备列表刷新、登录切换、解绑和断开连接会同步清理 9093 缓存，避免跨用户或跨设备串状态。
+- Device arm64、Simulator arm64/x86_64 XCFramework、Swift Interface、CocoaPods lint 和临时客户工程 Release 编译均已验证；APNs 最终验收仍需客户真机在匹配的 Sandbox/Production 环境收到推送。
 
 ### 1.4.17
 

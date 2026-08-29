@@ -1188,10 +1188,35 @@ extension CLDSmartSDK.CldSmartEngine {
   public func connectBLE(device: VLink.APBLEDevice, config: CLDSmartSDK.CLDBLEConfig, encryptKey: Foundation.Data?, timeout: Foundation.TimeInterval = 10) async -> Swift.Bool
   public func connectBLE(name: Swift.String, config: CLDSmartSDK.CLDBLEConfig, encryptKey: Swift.String?, timeout: Foundation.TimeInterval = 20, completion: ((Swift.Bool) -> Swift.Void)?)
   public func connectBLE(name: Swift.String, config: CLDSmartSDK.CLDBLEConfig, encryptKey: Swift.String?, timeout: Foundation.TimeInterval = 10) async -> Swift.Bool
+  public func connectBLE(device: CLDSmartSDK.CLDDevice, timeout: Foundation.TimeInterval = 20, completion: ((Swift.Bool) -> Swift.Void)?)
+  public func connectBLE(device: CLDSmartSDK.CLDDevice, timeout: Foundation.TimeInterval = 20) async -> Swift.Bool
   public func sendBLE(command: VLink.APBLEVLinkCommandType, data: Foundation.Data? = nil, seq: Swift.UInt16 = UInt16(arc4random_uniform(UInt32(powl(2, 10)) - 1)), timeout: Foundation.TimeInterval = 5, completion: VLink.APBLECommandResponseBlock?)
   public func sendBLE(command: VLink.APBLEVLinkCommandType, data: Foundation.Data? = nil, seq: Swift.UInt16 = UInt16(arc4random_uniform(UInt32(powl(2, 10)) - 1)), timeout: Foundation.TimeInterval = 5) async -> VLink.APBLEResponse
   public func sendBLEEntity(command: VLink.APBLEVLinkCommandType, dataObject: VLink.APBLEParameter? = nil, seq: Swift.UInt16 = UInt16(arc4random_uniform(UInt32(powl(2, 10)) - 1)), timeout: Foundation.TimeInterval = 5, completion: VLink.APBLECommandResponseBlock?)
   public func bindBLEDeviceViaPidDn(device: VLink.APBLEDevice, product: CLDSmartSDK.CLDProduct, timeout: Foundation.TimeInterval = 10, completion: @escaping CLDSmartSDK.CLDBoolBlock)
+}
+extension Foundation.NSNotification.Name {
+  public static let CldSmartOnBleDidSynchronizeStatus: Foundation.Notification.Name
+}
+@objc public enum CLDBLEStatusSyncUpdateKind : Swift.Int {
+  case lockState = 1
+  case battery = 2
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers final public class CLDBLEStatusSyncUpdate : ObjectiveC.NSObject {
+  @objc final public let vid: Swift.String
+  @objc final public let kind: CLDSmartSDK.CLDBLEStatusSyncUpdateKind
+  @objc final public let syncFlags: Swift.UInt32
+  @objc final public let commandRawValue: Swift.UInt
+  @objc final public let data: Foundation.Data
+  @objc final public let battery: Swift.Int
+  @objc final public let batteryValue: Swift.Int
+  @objc final public let rechargeablePowerValue: Swift.Int
+  @objc deinit
 }
 public enum CLDBLEOTAStatus : Swift.Int {
   case preparing
@@ -1614,6 +1639,9 @@ extension CLDSmartSDK.CLDInputKeyState : Swift.RawRepresentable {}
 extension CLDSmartSDK.CLDInputKeyType : Swift.Equatable {}
 extension CLDSmartSDK.CLDInputKeyType : Swift.Hashable {}
 extension CLDSmartSDK.CLDInputKeyType : Swift.RawRepresentable {}
+extension CLDSmartSDK.CLDBLEStatusSyncUpdateKind : Swift.Equatable {}
+extension CLDSmartSDK.CLDBLEStatusSyncUpdateKind : Swift.Hashable {}
+extension CLDSmartSDK.CLDBLEStatusSyncUpdateKind : Swift.RawRepresentable {}
 extension CLDSmartSDK.CLDBLEOTAStatus : Swift.Equatable {}
 extension CLDSmartSDK.CLDBLEOTAStatus : Swift.Hashable {}
 extension CLDSmartSDK.CLDBLEOTAStatus : Swift.RawRepresentable {}

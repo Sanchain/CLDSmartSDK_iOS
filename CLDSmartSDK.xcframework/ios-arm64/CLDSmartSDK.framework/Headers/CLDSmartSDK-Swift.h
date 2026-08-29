@@ -375,6 +375,33 @@ extern "C" {
 
 #if defined(__OBJC__)
 
+@class NSString;
+SWIFT_ENUM_FWD_DECL(NSInteger, CLDBLEStatusSyncUpdateKind)
+@class NSData;
+/// A high-level result produced after the SDK handles a device 0x9093 notification.
+/// Existing raw <code>CldSmartOnBleDidReceivedReponse</code> notifications are still posted.
+SWIFT_CLASS("_TtC11CLDSmartSDK22CLDBLEStatusSyncUpdate")
+@interface CLDBLEStatusSyncUpdate : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull vid;
+@property (nonatomic, readonly) enum CLDBLEStatusSyncUpdateKind kind;
+@property (nonatomic, readonly) uint32_t syncFlags;
+@property (nonatomic, readonly) NSUInteger commandRawValue;
+@property (nonatomic, readonly, copy) NSData * _Nonnull data;
+/// Selected battery percentage. <code>-1</code> for lock-state updates.
+@property (nonatomic, readonly) NSInteger battery;
+/// Dry-cell value from 0x8064. <code>-1</code> means that field is not used.
+@property (nonatomic, readonly) NSInteger batteryValue;
+/// Rechargeable-cell value from 0x8064. <code>-1</code> means that field is not used.
+@property (nonatomic, readonly) NSInteger rechargeablePowerValue;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+typedef SWIFT_ENUM(NSInteger, CLDBLEStatusSyncUpdateKind, open) {
+  CLDBLEStatusSyncUpdateKindLockState = 1,
+  CLDBLEStatusSyncUpdateKindBattery = 2,
+};
+
 /// The terminal authentication reasons reported by CLDSmartSDK.
 /// A backend <code>40101</code> is first handled internally by refreshing the access
 /// token. Clients receive <code>.accessTokenRefreshFailed</code> only when refresh or the
@@ -390,7 +417,6 @@ typedef SWIFT_ENUM(NSInteger, CLDSessionInvalidReason, open) {
 
 SWIFT_ENUM_FWD_DECL(NSInteger, CldSmartEngineVideoState)
 SWIFT_ENUM_FWD_DECL(NSInteger, CldSmartEngineRecordState)
-@class NSString;
 @class APBLEDevice;
 @class APBLEResponse;
 SWIFT_PROTOCOL("_TtP11CLDSmartSDK22CLDSmartEngineDelegate_")
