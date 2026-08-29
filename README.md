@@ -2,7 +2,7 @@
 
 CLDSmartSDK iOS SDK 提供账号认证、设备绑定、蓝牙通信、IoT 控制、消息推送和音视频能力。
 
-- 当前版本：`1.4.18`
+- 当前版本：`1.4.19`
 - 最低系统：iOS 13.0
 - Swift：5.9 或更高版本
 - 分发形式：静态 XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.18'
+      :tag => '1.4.19'
 end
 ```
 
@@ -593,6 +593,12 @@ func application(
 不要直接用新账号覆盖旧会话。按“服务端登出 -> `deinitEngine` -> `initEngine` -> 新账号登录”的顺序切换。
 
 ## 版本说明
+
+### 1.4.19
+
+- 修复 Wi-Fi/联网设备 OTA 的 MQTT 状态映射，`upgradeDevice(vid:timeout:completion:)` 现在稳定返回 `.downloading`、`.upgrading`、`.success`、`.downloadFailed` 和 `.upgradeFailed`，非 OTA 设备消息不会误触发 OTA 回调。
+- 新增内部 `CLDWiFiOTAEventStatusMapper` 及单元测试，保持客户现有 OTA API 签名不变，客户可直接根据回调中的 `CLDWiFiOTAUpgradeStatus` 展示进度和最终结果。
+- 继续包含 1.4.18 的 APNs 环境修复和 BLE `0x9093` 状态同步功能；升级 CocoaPods 依赖后无需修改原有调用方式。
 
 ### 1.4.18
 

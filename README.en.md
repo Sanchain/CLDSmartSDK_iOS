@@ -2,7 +2,7 @@
 
 CLDSmartSDK for iOS provides account authentication, device binding, Bluetooth communication, IoT control, push messaging, and audio/video capabilities.
 
-- Current version: `1.4.18`
+- Current version: `1.4.19`
 - Minimum deployment target: iOS 13.0
 - Swift: 5.9 or later
 - Distribution: static XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.18'
+      :tag => '1.4.19'
 end
 ```
 
@@ -596,6 +596,12 @@ Verify that the SDK server, App ID/Secret Key, `countryCode`, and `regionCode` b
 Do not overwrite an existing session. Switch users in this order: server logout, `deinitEngine`, `initEngine`, and then new-user login.
 
 ## Release Notes
+
+### 1.4.19
+
+- Fixed MQTT status mapping for Wi-Fi/network-device OTA. `upgradeDevice(vid:timeout:completion:)` now consistently reports `.downloading`, `.upgrading`, `.success`, `.downloadFailed`, and `.upgradeFailed`; unrelated device messages no longer trigger OTA callbacks.
+- Added the internal `CLDWiFiOTAEventStatusMapper` and unit tests. The existing customer-facing OTA API signature is unchanged; clients can use `CLDWiFiOTAUpgradeStatus` from the callback to render progress and the final result.
+- Continues to include the 1.4.18 APNs environment fix and BLE `0x9093` status synchronization. Existing customer call sites do not need to change after the CocoaPods upgrade.
 
 ### 1.4.18
 
