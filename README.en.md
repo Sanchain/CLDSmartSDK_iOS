@@ -2,7 +2,7 @@
 
 CLDSmartSDK for iOS provides account authentication, device binding, Bluetooth communication, IoT control, push messaging, and audio/video capabilities.
 
-- Current version: `1.4.19`
+- Current version: `1.4.20`
 - Minimum deployment target: iOS 13.0
 - Swift: 5.9 or later
 - Distribution: static XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.19'
+      :tag => '1.4.20'
 end
 ```
 
@@ -596,6 +596,13 @@ Verify that the SDK server, App ID/Secret Key, `countryCode`, and `regionCode` b
 Do not overwrite an existing session. Switch users in this order: server logout, `deinitEngine`, `initEngine`, and then new-user login.
 
 ## Release Notes
+
+### 1.4.20
+
+- Fixed Wi-Fi/network-device OTA timing out after the device had upgraded successfully when firmware omitted `msgToken` and the backend could not correlate the final MQTT success event.
+- `upgradeDevice(vid:timeout:completion:)` is unchanged. Explicit MQTT terminal states remain authoritative; when the final MQTT event is missing, the SDK confirms success only when the post-upgrade current version exactly matches the target recorded before the upgrade and the version actually changed.
+- Added structured `[CLDSmartSDK][WiFiOTA]` diagnostics, MQTT reconnect resubscription, Topic fallback requests, overlapping-operation protection, and strict version verification. No SDK or client App changes will be required after firmware adds `msgToken`.
+- Device arm64, simulator arm64/x86_64, Swift interfaces, all 22 automated tests, and the CocoaPods temporary Release client build passed validation.
 
 ### 1.4.19
 
