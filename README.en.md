@@ -2,7 +2,7 @@
 
 CLDSmartSDK for iOS provides account authentication, device binding, Bluetooth communication, IoT control, push messaging, and audio/video capabilities.
 
-- Current version: `1.4.20`
+- Current version: `1.4.21`
 - Minimum deployment target: iOS 13.0
 - Swift: 5.9 or later
 - Distribution: static XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.20'
+      :tag => '1.4.21'
 end
 ```
 
@@ -596,6 +596,16 @@ Verify that the SDK server, App ID/Secret Key, `countryCode`, and `regionCode` b
 Do not overwrite an existing session. Switch users in this order: server logout, `deinitEngine`, `initEngine`, and then new-user login.
 
 ## Release Notes
+
+### 1.4.21
+
+- Adds public APIs for the FAQ and Feedback features, matching the production app's behaviour.
+- `faqURL(appearance:platform:locale:safeAreaInsets:)` returns the FAQ H5 address without any network request. The host follows `serverCode` and `isDevServer`; the path is always `/morequestions`. The client app owns the `WKWebView`. Per-device FAQ and installation guides still read `CLDDevice.question_url` / `install_url`.
+- `submitFeedback(_:progress:completion:)` handles the whole chain: quota check, attachment packaging, device log collection, direct upload of logs and attachments, and submission. Attachments are zipped with the system `NSFileCoordinator`, adding no third-party dependency, and uploads stream from disk instead of loading the file into memory.
+- Also adds `checkFeedbackQuota(vid:completion:)` and `cancelFeedbackSubmission()`. Only one submission runs at a time, the terminal callback fires at most once, and every callback lands on the main thread.
+- Failure semantics are explicit: a failed device-log step never blocks submission; an attachment that still fails after 3 retries aborts the whole submission so no partial record is left; session codes `40101`/`40102`/`40105` are passed through so clients can trigger re-login.
+- Purely additive: the Swift interface has no removed or modified entries. Existing call sites need no changes, only a CocoaPods dependency update and a rebuild.
+- Verified: device arm64, simulator arm64/x86_64 XCFramework, Swift interface, 67 automated tests, and a CocoaPods temporary client project Release build.
 
 ### 1.4.20
 

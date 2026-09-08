@@ -2,7 +2,7 @@
 
 CLDSmartSDK iOS SDK 提供账号认证、设备绑定、蓝牙通信、IoT 控制、消息推送和音视频能力。
 
-- 当前版本：`1.4.20`
+- 当前版本：`1.4.21`
 - 最低系统：iOS 13.0
 - Swift：5.9 或更高版本
 - 分发形式：静态 XCFramework
@@ -24,7 +24,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.20'
+      :tag => '1.4.21'
 end
 ```
 
@@ -593,6 +593,16 @@ func application(
 不要直接用新账号覆盖旧会话。按“服务端登出 -> `deinitEngine` -> `initEngine` -> 新账号登录”的顺序切换。
 
 ## 版本说明
+
+### 1.4.21
+
+- 新增「常见问题」和「意见反馈」两个功能的公开 API，行为与正式 App 对齐。
+- `faqURL(appearance:platform:locale:safeAreaInsets:)` 返回常见问题 H5 地址，不发起网络请求；域名随 `serverCode` 和 `isDevServer` 自动切换，路径固定为 `/morequestions`。界面由客户 App 用 `WKWebView` 承载。设备级常见问题和安装指引仍读 `CLDDevice.question_url` / `install_url`。
+- `submitFeedback(_:progress:completion:)` 一站式提交：SDK 内部完成额度校验、附件打包、设备日志回传、日志与附件直传和内容提交。附件用系统 `NSFileCoordinator` 打包成 ZIP，未引入任何第三方依赖，直传采用磁盘流式上传，不把文件读进内存。
+- 另提供 `checkFeedbackQuota(vid:completion:)` 预检额度和 `cancelFeedbackSubmission()` 取消。同一时间只允许一笔提交，终态回调最多执行一次，所有回调固定在主线程。
+- 失败语义明确：设备日志获取失败不阻断提交；附件上传重试 3 次仍失败则整笔终止，不留半提交记录；`40101`/`40102`/`40105` 会话码原样透传，便于客户触发重新登录。
+- 纯新增，Swift Interface 无任何删除或修改项。原有调用代码一行不改，升级 CocoaPods 依赖后重新编译即可。
+- Device arm64、Simulator arm64/x86_64 XCFramework、Swift Interface、67 个自动化测试和 CocoaPods 临时客户工程 Release 编译均已验证。
 
 ### 1.4.20
 

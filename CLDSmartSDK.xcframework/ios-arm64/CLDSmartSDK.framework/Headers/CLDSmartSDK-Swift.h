@@ -629,6 +629,10 @@ typedef SWIFT_ENUM(NSInteger, NetworkAPI, open) {
   NetworkAPIGoogleAssistantAuthorizationInfo = 80,
   NetworkAPIUnlinkGoogleAssistant = 81,
   NetworkAPIChangeGoogleAssistantPIN = 82,
+  NetworkAPIFeedbackCheck = 83,
+  NetworkAPIDeviceLogUpload = 84,
+  NetworkAPICreateUploadURL = 85,
+  NetworkAPISubmitFeedback = 86,
 };
 
 SWIFT_CLASS("_TtC11CLDSmartSDK11NetworkCore")

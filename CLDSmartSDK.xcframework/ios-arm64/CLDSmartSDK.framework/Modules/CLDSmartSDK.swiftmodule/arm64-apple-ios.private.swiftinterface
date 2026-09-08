@@ -362,6 +362,92 @@ extension CLDSmartSDK.CldSmartEngine {
   public func decodePushInfo(payload: Swift.String) -> [Swift.String : Any]?
   public func devicekeySynckey(vid: Swift.String, keyType: Swift.String, completion: @escaping (Swift.Int, Swift.String?) -> Swift.Void)
 }
+public enum CLDWebAppearance : Swift.String {
+  case light
+  case dark
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum CLDFeedbackFrequency : Swift.Int {
+  case everyTime
+  case frequently
+  case occasionally
+  case onlyOnce
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum CLDFeedbackQuota : Swift.Int {
+  case allowed
+  case tooFrequent
+  case dailyLimitReached
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum CLDFeedbackStage {
+  case checking
+  case packaging
+  case uploadingDeviceLog
+  case uploadingAppLog
+  case uploadingAttachment
+  case submitting
+  public static func == (a: CLDSmartSDK.CLDFeedbackStage, b: CLDSmartSDK.CLDFeedbackStage) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct CLDFeedbackProgress {
+  public let stage: CLDSmartSDK.CLDFeedbackStage
+  public let fractionCompleted: Swift.Double
+}
+public struct CLDFeedbackRequest {
+  public var vid: Swift.String
+  public var issueDescription: Swift.String
+  public var contact: Swift.String
+  public var issueTime: Foundation.Date
+  public var frequency: CLDSmartSDK.CLDFeedbackFrequency
+  public var attachmentPaths: [Swift.String]
+  public var uploadsDiagnosticLogs: Swift.Bool
+  public var appLogPaths: [Swift.String]
+  public var appUID: Swift.String?
+  public init(vid: Swift.String, issueDescription: Swift.String, contact: Swift.String, issueTime: Foundation.Date = Date(), frequency: CLDSmartSDK.CLDFeedbackFrequency, attachmentPaths: [Swift.String] = [], uploadsDiagnosticLogs: Swift.Bool = false, appLogPaths: [Swift.String] = [], appUID: Swift.String? = nil)
+}
+extension CLDSmartSDK.CldSmartEngine {
+  public func faqURL(appearance: CLDSmartSDK.CLDWebAppearance = .dark, platform: Swift.String? = nil, locale: Swift.String? = nil, safeAreaInsets: (top: Swift.Int, bottom: Swift.Int)? = nil) -> Foundation.URL?
+  public func checkFeedbackQuota(vid: Swift.String, completion: @escaping (CLDSmartSDK.CLDFeedbackQuota?, Swift.Int, Swift.String?) -> Swift.Void)
+  public func submitFeedback(_ request: CLDSmartSDK.CLDFeedbackRequest, progress: ((CLDSmartSDK.CLDFeedbackProgress) -> Swift.Void)? = nil, completion: @escaping (Swift.Bool, Swift.Int, Swift.String?) -> Swift.Void)
+  public func cancelFeedbackSubmission()
+  public static var feedbackInProgressCode: Swift.Int {
+    get
+  }
+  public static var feedbackCancelledCode: Swift.Int {
+    get
+  }
+  public static var feedbackPackagingFailedCode: Swift.Int {
+    get
+  }
+  public static var feedbackUploadFailedCode: Swift.Int {
+    get
+  }
+  public static var feedbackTooFrequentCode: Swift.Int {
+    get
+  }
+  public static var feedbackDailyLimitCode: Swift.Int {
+    get
+  }
+  public static var feedbackQuotaUnavailableCode: Swift.Int {
+    get
+  }
+}
 @objc @objcMembers public class CLDUDPDevice : ObjectiveC.NSObject {
   @objc public var mac: Swift.String
   @objc public var pairingCode: Swift.String
@@ -1505,6 +1591,10 @@ public enum NetworkMethod : Swift.String {
   case googleAssistantAuthorizationInfo
   case unlinkGoogleAssistant
   case changeGoogleAssistantPIN
+  case feedbackCheck
+  case deviceLogUpload
+  case createUploadURL
+  case submitFeedback
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -1594,6 +1684,17 @@ extension CLDSmartSDK.CldLogLevel : Swift.RawRepresentable {}
 extension CLDSmartSDK.CldLanguage : Swift.Equatable {}
 extension CLDSmartSDK.CldLanguage : Swift.Hashable {}
 extension CLDSmartSDK.CldLanguage : Swift.RawRepresentable {}
+extension CLDSmartSDK.CLDWebAppearance : Swift.Equatable {}
+extension CLDSmartSDK.CLDWebAppearance : Swift.Hashable {}
+extension CLDSmartSDK.CLDWebAppearance : Swift.RawRepresentable {}
+extension CLDSmartSDK.CLDFeedbackFrequency : Swift.Equatable {}
+extension CLDSmartSDK.CLDFeedbackFrequency : Swift.Hashable {}
+extension CLDSmartSDK.CLDFeedbackFrequency : Swift.RawRepresentable {}
+extension CLDSmartSDK.CLDFeedbackQuota : Swift.Equatable {}
+extension CLDSmartSDK.CLDFeedbackQuota : Swift.Hashable {}
+extension CLDSmartSDK.CLDFeedbackQuota : Swift.RawRepresentable {}
+extension CLDSmartSDK.CLDFeedbackStage : Swift.Equatable {}
+extension CLDSmartSDK.CLDFeedbackStage : Swift.Hashable {}
 extension CLDSmartSDK.MediaCoreStreamRate : Swift.Equatable {}
 extension CLDSmartSDK.MediaCoreStreamRate : Swift.Hashable {}
 extension CLDSmartSDK.MediaCoreStreamRate : Swift.RawRepresentable {}
