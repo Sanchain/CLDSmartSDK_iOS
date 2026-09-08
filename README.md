@@ -2,11 +2,16 @@
 
 CLDSmartSDK iOS SDK 提供账号认证、设备绑定、蓝牙通信、IoT 控制、消息推送和音视频能力。
 
-- 当前版本：`1.4.21`
+- 当前版本：`1.4.22`
 - 最低系统：iOS 13.0
 - Swift：5.9 或更高版本
 - 分发形式：静态 XCFramework
 - 完整接口文档：[CLDSmartSDK 开发文档](https://wvue9d885o0.feishu.cn/wiki/FKAcwoh0TibL0Sk99nfcgD2gn8f)
+
+### 1.4.22
+
+- 忘记密码验证码接口 `/api/v3/forget-check` 新增 `region_code` 参数。
+- 更新账号认证接入说明及参数示例。
 
 > `1.2.0` 的账号认证和账号删除接口面向 Swift。Objective-C 工程需要增加一层 Swift 包装后调用。
 
@@ -24,7 +29,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.21'
+      :tag => '1.4.22'
 end
 ```
 

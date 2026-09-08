@@ -2,11 +2,16 @@
 
 CLDSmartSDK for iOS provides account authentication, device binding, Bluetooth communication, IoT control, push messaging, and audio/video capabilities.
 
-- Current version: `1.4.21`
+- Current version: `1.4.22`
 - Minimum deployment target: iOS 13.0
 - Swift: 5.9 or later
 - Distribution: static XCFramework
 - Full API documentation: [CLDSmartSDK Developer Documentation](https://wvue9d885o0.feishu.cn/wiki/FKAcwoh0TibL0Sk99nfcgD2gn8f)
+
+### 1.4.22
+
+- Added the `region_code` parameter to the password recovery code endpoint `/api/v3/forget-check`.
+- Updated the account authentication integration notes and parameter examples.
 
 > Account authentication and account-deletion APIs in `1.2.0` are exposed to Swift. An Objective-C application must add a Swift wrapper before calling them.
 
@@ -24,7 +29,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.21'
+      :tag => '1.4.22'
 end
 ```
 
