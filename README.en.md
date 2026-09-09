@@ -2,11 +2,18 @@
 
 CLDSmartSDK for iOS provides account authentication, device binding, Bluetooth communication, IoT control, push messaging, and audio/video capabilities.
 
-- Current version: `1.4.22`
+- Current version: `1.4.23`
 - Minimum deployment target: iOS 13.0
 - Swift: 5.9 or later
 - Distribution: static XCFramework
 - Full API documentation: [CLDSmartSDK Developer Documentation](https://wvue9d885o0.feishu.cn/wiki/FKAcwoh0TibL0Sk99nfcgD2gn8f)
+
+### 1.4.23
+
+- Version `1.4.23 / Build 28`, released on 2026-09-09.
+- Added `validatePasswordResetCode(account:code:context:completion:)` to submit `region_code`, `country_code`, and `manufacturer` to `/api/v3/forget-validate`, preserving `account` and `validate_code`.
+- Use the same `CLDAuthContext` when requesting and validating a recovery code. The legacy overload without `context` keeps its original request fields and does not automatically submit `region_code`.
+- Automated tests: 67 passed, 0 failed. Actual code delivery and backend validation require integration-environment verification.
 
 ### 1.4.22
 
@@ -29,7 +36,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.22'
+      :tag => '1.4.23'
 end
 ```
 
@@ -237,7 +244,8 @@ engine.requestPasswordResetCode(
 
 engine.validatePasswordResetCode(
     account: account,
-    code: verificationCode
+    code: verificationCode,
+    context: authContext
 ) { resetToken, code, message in
     guard code == 20000, let resetToken, !resetToken.isEmpty else {
         return

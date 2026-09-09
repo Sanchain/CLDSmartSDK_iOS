@@ -275,6 +275,7 @@ extension CLDSmartSDK.CldSmartEngine {
   public func register(account: Swift.String, password: Swift.String, context: CLDSmartSDK.CLDAuthContext, completion: @escaping CLDSmartSDK.CLDAuthBlock)
   public func validateRegistrationCode(account: Swift.String, code: Swift.String, completion: @escaping CLDSmartSDK.CLDAuthBlock)
   public func requestPasswordResetCode(account: Swift.String, context: CLDSmartSDK.CLDAuthContext, completion: @escaping CLDSmartSDK.CLDAuthBlock)
+  public func validatePasswordResetCode(account: Swift.String, code: Swift.String, context: CLDSmartSDK.CLDAuthContext, completion: @escaping CLDSmartSDK.CLDResetTokenBlock)
   public func validatePasswordResetCode(account: Swift.String, code: Swift.String, completion: @escaping CLDSmartSDK.CLDResetTokenBlock)
   public func resetPassword(resetToken: Swift.String, newPassword: Swift.String, passwordConfirmation: Swift.String, completion: @escaping CLDSmartSDK.CLDAuthBlock)
   public func setPassword(password: Swift.String, completion: @escaping CLDSmartSDK.CLDAuthBlock)

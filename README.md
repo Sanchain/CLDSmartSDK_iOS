@@ -2,11 +2,18 @@
 
 CLDSmartSDK iOS SDK 提供账号认证、设备绑定、蓝牙通信、IoT 控制、消息推送和音视频能力。
 
-- 当前版本：`1.4.22`
+- 当前版本：`1.4.23`
 - 最低系统：iOS 13.0
 - Swift：5.9 或更高版本
 - 分发形式：静态 XCFramework
 - 完整接口文档：[CLDSmartSDK 开发文档](https://wvue9d885o0.feishu.cn/wiki/FKAcwoh0TibL0Sk99nfcgD2gn8f)
+
+### 1.4.23
+
+- 版本 `1.4.23 / Build 28`，发布日期：2026-09-09。
+- 新增 `validatePasswordResetCode(account:code:context:completion:)`，为 `/api/v3/forget-validate` 提交 `region_code`、`country_code` 和 `manufacturer`，保留 `account` 和 `validate_code`。
+- 发送和校验找回验证码应使用同一 `CLDAuthContext`。旧版无 `context` 方法保留原请求参数，不自动提交 `region_code`。
+- 自动化测试 67 项通过、0 失败。真实验证码投递与后端校验需在集成环境验收。
 
 ### 1.4.22
 
@@ -29,7 +36,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.22'
+      :tag => '1.4.23'
 end
 ```
 
@@ -237,7 +244,8 @@ engine.requestPasswordResetCode(
 
 engine.validatePasswordResetCode(
     account: account,
-    code: verificationCode
+    code: verificationCode,
+    context: authContext
 ) { resetToken, code, message in
     guard code == 20000, let resetToken, !resetToken.isEmpty else {
         return
