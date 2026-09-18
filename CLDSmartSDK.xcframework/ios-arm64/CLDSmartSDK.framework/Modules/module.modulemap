@@ -7,4 +7,5 @@ framework module CLDSmartSDK {
 
 module CLDSmartSDK.Swift {
   header "CLDSmartSDK-Swift.h"
+  requires objc
 }

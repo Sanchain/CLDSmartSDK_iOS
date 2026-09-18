@@ -2,11 +2,17 @@
 
 CLDSmartSDK iOS SDK 提供账号认证、设备绑定、蓝牙通信、IoT 控制、消息推送和音视频能力。
 
-- 当前版本：`1.4.23`
+- 当前版本：`1.4.24`
 - 最低系统：iOS 13.0
 - Swift：5.9 或更高版本
 - 分发形式：静态 XCFramework
 - 完整接口文档：[CLDSmartSDK 开发文档](https://wvue9d885o0.feishu.cn/wiki/FKAcwoh0TibL0Sk99nfcgD2gn8f)
+
+### 1.4.24
+
+- 版本 `1.4.24 / Build 29`，发布日期：2026-09-18。
+- `CldLanguage` 新增 `.de`、`.fr`、`.es`，用于配置请求后台时的语言。
+- 语言映射：`.en` -> `en`、`.hans` -> `zh-CN`、`.hant` -> `zh-TW`、`.de` -> `de`、`.fr` -> `fr`、`.es` -> `es`。
 
 ### 1.4.23
 
@@ -36,7 +42,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.23'
+      :tag => '1.4.24'
 end
 ```
 

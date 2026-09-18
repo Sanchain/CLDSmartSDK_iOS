@@ -2,11 +2,17 @@
 
 CLDSmartSDK for iOS provides account authentication, device binding, Bluetooth communication, IoT control, push messaging, and audio/video capabilities.
 
-- Current version: `1.4.23`
+- Current version: `1.4.24`
 - Minimum deployment target: iOS 13.0
 - Swift: 5.9 or later
 - Distribution: static XCFramework
 - Full API documentation: [CLDSmartSDK Developer Documentation](https://wvue9d885o0.feishu.cn/wiki/FKAcwoh0TibL0Sk99nfcgD2gn8f)
+
+### 1.4.24
+
+- Version `1.4.24 / Build 29`, released on 2026-09-18.
+- Added `.de`, `.fr`, and `.es` to `CldLanguage` for configuring the language used in backend requests.
+- Language mapping: `.en` -> `en`, `.hans` -> `zh-CN`, `.hant` -> `zh-TW`, `.de` -> `de`, `.fr` -> `fr`, `.es` -> `es`.
 
 ### 1.4.23
 
@@ -36,7 +42,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.23'
+      :tag => '1.4.24'
 end
 ```
 
