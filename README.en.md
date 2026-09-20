@@ -2,11 +2,19 @@
 
 CLDSmartSDK for iOS provides account authentication, device binding, Bluetooth communication, IoT control, push messaging, and audio/video capabilities.
 
-- Current version: `1.4.24`
+- Current version: `1.4.25`
 - Minimum deployment target: iOS 13.0
 - Swift: 5.9 or later
 - Distribution: static XCFramework
 - Full API documentation: [CLDSmartSDK Developer Documentation](https://wvue9d885o0.feishu.cn/wiki/FKAcwoh0TibL0Sk99nfcgD2gn8f)
+
+### 1.4.25
+
+- Version `1.4.25 / Build 30`, released on 2026-09-20.
+- Fixed `refreshAPNs(token:completion:)` always failing in customer-owned account mode (`login(account:completion:)`).
+- On 1.4.18 through 1.4.24 that mode had no way to record an APNs environment and the call returned failure; the build-configuration fallback is restored.
+- Added a `source` field (`login` / `buildConfigFallback`) to the structured log so the APNs environment source is visible in the field.
+- No public method signature changed.
 
 ### 1.4.24
 
@@ -42,7 +50,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.24'
+      :tag => '1.4.25'
 end
 ```
 

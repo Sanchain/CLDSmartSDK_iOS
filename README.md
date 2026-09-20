@@ -2,11 +2,19 @@
 
 CLDSmartSDK iOS SDK 提供账号认证、设备绑定、蓝牙通信、IoT 控制、消息推送和音视频能力。
 
-- 当前版本：`1.4.24`
+- 当前版本：`1.4.25`
 - 最低系统：iOS 13.0
 - Swift：5.9 或更高版本
 - 分发形式：静态 XCFramework
 - 完整接口文档：[CLDSmartSDK 开发文档](https://wvue9d885o0.feishu.cn/wiki/FKAcwoh0TibL0Sk99nfcgD2gn8f)
+
+### 1.4.25
+
+- 版本 `1.4.25 / Build 30`，发布日期：2026-09-20。
+- 修复客户自有账号模式（`login(account:completion:)`）下 `refreshAPNs(token:completion:)` 必然失败的问题。
+- `1.4.18` 至 `1.4.24` 上该模式没有途径写入 APNs 环境，接口直接返回失败；本版本恢复编译配置兜底。
+- 结构化日志新增 `source` 字段（`login` / `buildConfigFallback`），用于区分 APNs 环境来源。
+- 公开方法签名没有变化。
 
 ### 1.4.24
 
@@ -42,7 +50,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.24'
+      :tag => '1.4.25'
 end
 ```
 
