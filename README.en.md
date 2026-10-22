@@ -2,11 +2,21 @@
 
 CLDSmartSDK for iOS provides account authentication, device binding, Bluetooth communication, IoT control, push messaging, and audio/video capabilities.
 
-- Current version: `1.4.25`
+- Current version: `1.4.26`
 - Minimum deployment target: iOS 13.0
 - Swift: 5.9 or later
 - Distribution: static XCFramework
 - Full API documentation: [CLDSmartSDK Developer Documentation](https://wvue9d885o0.feishu.cn/wiki/FKAcwoh0TibL0Sk99nfcgD2gn8f)
+
+### 1.4.26
+
+- Released on 2026-10-22.
+- Updated the VLink Bluetooth library to `0e6dd00`.
+- Added device model enum values.
+- Added a device status synchronization notification command.
+- Fixed Wi-Fi name length limits and network configuration command serialization; added support for the country/region code field.
+- Added dashcam Bluetooth management and unified scanning for locks and dashcams, with improved scan deduplication and MAC address completion.
+- Extended the user and key management protocol with protocol version and user attribute fields.
 
 ### 1.4.25
 
@@ -50,7 +60,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.25'
+      :tag => '1.4.26'
 end
 ```
 

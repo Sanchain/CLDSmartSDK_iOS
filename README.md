@@ -2,11 +2,21 @@
 
 CLDSmartSDK iOS SDK 提供账号认证、设备绑定、蓝牙通信、IoT 控制、消息推送和音视频能力。
 
-- 当前版本：`1.4.25`
+- 当前版本：`1.4.26`
 - 最低系统：iOS 13.0
 - Swift：5.9 或更高版本
 - 分发形式：静态 XCFramework
 - 完整接口文档：[CLDSmartSDK 开发文档](https://wvue9d885o0.feishu.cn/wiki/FKAcwoh0TibL0Sk99nfcgD2gn8f)
+
+### 1.4.26
+
+- 发布日期：2026-10-22。
+- 更新 VLink 蓝牙库至 `0e6dd00`。
+- 新增设备型号枚举。
+- 新增设备状态同步通知指令。
+- 修复 Wi-Fi 名称长度限制及配网指令序列化问题，支持配网国家/地区码字段。
+- 新增行车记录仪蓝牙管理及门锁、记录仪统一扫描能力，完善扫描去重和 MAC 信息补填。
+- 扩展用户与密钥管理协议，支持协议版本及用户属性字段。
 
 ### 1.4.25
 
@@ -50,7 +60,7 @@ target 'YourApp' do
 
   pod 'CLDSmartSDK_iOS',
       :git => 'https://github.com/Sanchain/CLDSmartSDK_iOS.git',
-      :tag => '1.4.25'
+      :tag => '1.4.26'
 end
 ```
 
