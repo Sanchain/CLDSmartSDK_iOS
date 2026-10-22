@@ -18,5 +18,7 @@ FOUNDATION_EXPORT const unsigned char VLinkVersionString[];
 #import <VLink/APBLEDeviceType.h>
 #import <VLink/APBLEManager.h>
 #import <VLink/APBLEParameter.h>
+#import <VLink/APDashcamManager.h>
+#import <VLink/APDeviceScanCoordinator.h>
 
 

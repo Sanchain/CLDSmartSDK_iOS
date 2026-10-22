@@ -6,18 +6,23 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <VLink/APBLEDeviceType.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface APBLEParameter : NSObject
 
 @property (nonatomic, copy, readonly) NSData *data;
+@property (nonatomic, assign, readonly) NSInteger ver;
 
 + (NSArray<NSString *> *)propertyNames;
 
 - (instancetype)initWithData:(NSData *)data;
+/// 若子类未实现，则调用initWithData
+- (instancetype)initWithData:(NSData *)data ver:(NSInteger)ver;
 
 - (instancetype)initWithArguments:(NSArray *)arguments;
+- (instancetype)initWithArguments:(NSArray *)arguments ver:(NSInteger)ver;
 
 - (instancetype)initWithArguments:(NSArray *)arguments format:(NSString *)format;
 
@@ -85,18 +90,28 @@ typedef struct { // int16_t
 @end
 
 
-
+enum {
+    APNetConfigSSIDMaxBytes = 32,
+    APNetConfigPasswordMaxBytes = 64,
+    APNetConfigTokenMaxBytes = 32,
+    APNetConfigRegionMaxBytes = 4,
+};
 typedef struct {
-    uint8_t ssid[32];
-    uint8_t pw[64];
-    uint8_t pk[32]; ///< 配网Token
+    // 定长协议字段。内容不足时补 0；恰好占满时不要求末尾有 \0。
+    uint8_t ssid[APNetConfigSSIDMaxBytes];
+    uint8_t pw[APNetConfigPasswordMaxBytes];
+    uint8_t pk[APNetConfigTokenMaxBytes]; ///< 配网Token
     uint8_t timezone;
+    uint8_t region[APNetConfigRegionMaxBytes]; ///< 国家/地区码，用于设备端设置 Wi-Fi 法规域
 }APNetConfigReq_t;
 @interface APNetConfigReq : APBLEParameter
 @property (nonatomic, copy) NSString *ssid;
 @property (nonatomic, copy) NSString *pw;
 @property (nonatomic, copy) NSString *pk;
 @property (nonatomic, assign) uint8_t timezone;
+@property (nonatomic, copy) NSString *region; ///< 国家/地区码，用于设备端设置 Wi-Fi 法规域
+/// 参数超过协议字段容量时返回 nil，不进行截断。
+- (nullable NSData *)validatedData;
 @end
 
 typedef struct {
@@ -109,11 +124,20 @@ typedef struct {
 @end
 
 
+/// 指纹
 typedef struct {
-    uint32_t user_id; ///用户ID
+    uint8_t user_id;//用户id（可选）ver为2的时候
+    uint8_t user_type;//用户类型（可选） ver为2的时候：0-普通成员 1-主人 2-管理员 3-访客
+    uint8_t family_role;//身份属性（可选）ver为2的时候：0-其他身份属性（默认值） 1-儿童 2-老人
+    uint8_t coercion_type;//胁迫标记（可选）ver为2的时候：0-普通密钥((默认值) 1-胁迫密钥
+    uint16_t birthday;//生日日期（可选）ver为2的时候：精确到日；如12月14日，则是1214；
 }APAddFingerprintReq_t;
 @interface APAddFingerprintReq : APBLEParameter
-@property (nonatomic, assign) uint32_t user_id;
+@property (nonatomic, assign) uint8_t user_id;
+@property (nonatomic, assign) uint8_t user_type;
+@property (nonatomic, assign) uint8_t family_role;
+@property (nonatomic, assign) uint8_t coercion_type;
+@property (nonatomic, assign) uint16_t birthday;
 @end
 
 
@@ -149,6 +173,7 @@ typedef struct {
 @property (nonatomic, assign) uint16_t error_code; ///< 0 - 成功,1:失败
 @end
 
+/// 密码
 typedef struct {
     uint8_t pwd_type;// 0 – 长期密码; 1 – 周期性密码 2 – 临时密码
     uint8_t period;//周期有效性:bit0~6 分别代表周日~周六是否开启，0 为关闭，1 为开启;
@@ -157,6 +182,12 @@ typedef struct {
     uint32_t start_timestamp;//周期性密码及临时密码有效期开始时间戳(精确到秒)
     uint32_t end_timestamp; //周期性密码及临时密码有效期结束时间戳(精确到秒)
     uint8_t passwd[32]; //数字密码信息，以’\0’为结束符
+    
+    uint8_t user_id;//用户id（可选）ver为2的时候
+    uint8_t user_type;//用户类型（可选） ver为2的时候：0-普通成员 1-主人（拥有者） 2-管理员 3-访客
+    uint8_t family_role;//身份属性（可选）ver为2的时候：0-其他身份属性（默认值） 1-儿童 2-老人
+    uint8_t coercion_type;//胁迫标记（可选）ver为2的时候：0-普通密钥((默认值) 1-胁迫密钥
+    uint16_t birthday;//生日日期（可选）ver为2的时候：精确到日；如12月14日，则是1214；
 }APAddPasswordReq_t;
 @interface APAddPasswordReq : APBLEParameter
 @property (nonatomic, assign) uint8_t pwd_type;// 0 – 长期密码; 1 – 周期性密码 2 – 临时密码
@@ -166,27 +197,61 @@ typedef struct {
 @property (nonatomic, assign) uint32_t start_timestamp;//周期性密码及临时密码有效期开始时间戳(精确到秒)
 @property (nonatomic, assign) uint32_t end_timestamp; //周期性密码及临时密码有效期结束时间戳(精确到秒)
 @property (nonatomic, copy) NSString *passwd; ///< 数字密码信息
+
+@property (nonatomic, assign) uint8_t user_id;
+@property (nonatomic, assign) uint8_t user_type;
+@property (nonatomic, assign) uint8_t family_role;
+@property (nonatomic, assign) uint8_t coercion_type;
+@property (nonatomic, assign) uint16_t birthday;
 @end
 
 typedef struct {
     uint16_t new_id;
     int16_t err_no; // 0 - 成功 , 1 - 密码不合法, 2 - 备注信息不合法, 102 - 密码信 息重复, 103 - 数据条数已达到上限, -1 - 未知错误
     uint8_t type;//0=指纹开锁、1=普通密码开锁、2=动态密码开锁、3=临时密码开锁、4=感应 卡开锁、5=电子钥匙开锁、6=虹膜开锁、7、人脸开锁、8=未知方式、9 机械钥匙，10=远程开 锁,11=周期性密码 ,12 = 管理员密码开锁，13=门内开锁，14=旋钮开锁
+    uint8_t user_id;//用户id（可选）ver为2的时候
+    uint8_t user_type;//用户类型（可选） ver为2的时候：0-普通成员 1-主人（拥有者） 2-管理员 3-访客
+    uint8_t family_role;//身份属性（可选）ver为2的时候：0-其他身份属性（默认值） 1-儿童 2-老人
+    uint8_t coercion_type;//胁迫标记（可选）ver为2的时候：0-普通密钥((默认值) 1-胁迫密钥
+    uint16_t birthday;//生日日期（可选）ver为2的时候：精确到日；如12月14日，则是1214；
 }APAddPasswordResp_t;
 @interface APAddPasswordResp : APBLEParameter
 @property (nonatomic, assign) uint16_t new_id;
 @property (nonatomic, assign) int16_t err_no; // 0 - 成功 , 1 - 密码不合法, 2 - 备注信息不合法, 102 - 密码信 息重复, 103 - 数据条数已达到上限, -1 - 未知错误
 @property (nonatomic, assign) uint8_t type;//0=指纹开锁、1=普通密码开锁、2=动态密码开锁、3=临时密码开锁、4=感应 卡开锁、5=电子钥匙开锁、6=虹膜开锁、7、人脸开锁、8=未知方式、9 机械钥匙，10=远程开 锁,11=周期性密码 ,12 = 管理员密码开锁，13=门内开锁，14=旋钮开锁
+
+@property (nonatomic, assign) uint8_t user_id;
+@property (nonatomic, assign) uint8_t user_type;
+@property (nonatomic, assign) uint8_t family_role;
+@property (nonatomic, assign) uint8_t coercion_type;
+@property (nonatomic, assign) uint16_t birthday;
+@end
+
+/// 卡片(借用:掌静脉、人脸、白名单)
+typedef struct {
+    uint8_t user_id;//用户id（可选）ver为2的时候
+    uint8_t user_type;//用户类型（可选） ver为2的时候：0-普通成员 1-主人 2-管理员 3-访客
+    uint8_t family_role;//身份属性（可选）ver为2的时候：0-其他身份属性（默认值） 1-儿童 2-老人
+    uint16_t birthday;//生日日期（可选）ver为2的时候：精确到日；如12月14日，则是1214；
+}APNFCAddReq_t;
+@interface APNFCAddReq : APBLEParameter
+@property (nonatomic, assign) uint8_t user_id;
+@property (nonatomic, assign) uint8_t user_type;
+@property (nonatomic, assign) uint8_t family_role;
+@property (nonatomic, assign) uint16_t birthday;
 @end
 
 typedef struct {
     uint16_t result;
-    uint32_t user_id; //用户ID
+    uint32_t pwd_id;  //秘钥（卡片）ID
+    uint8_t user_id; //用户ID：ver为2的时候需要传
 }APNFCAddResultResp_t;
 @interface APNFCAddResultResp : APBLEParameter
 @property (nonatomic, assign) uint16_t result;
-@property (nonatomic, assign) uint32_t user_id; //用户ID
+@property (nonatomic, assign) uint32_t pwd_id;
+@property (nonatomic, assign) uint8_t user_id;
 @end
+
 
 // AddFace
 typedef struct {
@@ -204,31 +269,37 @@ typedef struct {
     uint8_t next_step;
     uint8_t state;
     uint16_t pwd_id;
+    uint8_t user_id;  //用户ID：ver为2的时候需要传
 }APFaceProgressNotifyResp_t;
 @interface APFaceProgressNotifyResp : APBLEParameter
 @property (nonatomic, assign) uint8_t step;
 @property (nonatomic, assign) uint8_t next_step;
 @property (nonatomic, assign) uint8_t state;
 @property (nonatomic, assign) uint16_t pwd_id;
+@property (nonatomic, assign) uint8_t user_id;
 @end
 
 
 typedef struct {
     uint16_t ID;//要删除的密码 id
-    uint32_t user_id; //用户 ID;
+    uint8_t user_id; //用户 ID;
+    uint8_t type;//（可选）ver为2的时候--0: 指纹; 1: 密码; 2: 门卡; 3: 人脸; 4: 掌纹;5: 指静脉;
 }APDelPasswordReq_t;
 @interface APDelPasswordReq : APBLEParameter
 @property (nonatomic, assign) uint16_t ID;//要删除的密码 id
-@property (nonatomic, assign) uint32_t user_id; //用户 ID;
+@property (nonatomic, assign) uint8_t user_id; //用户 ID;
+@property (nonatomic, assign) uint8_t type;
 @end
 
 typedef struct {
     uint16_t ID;//要删除的密码 id
-    uint32_t ret_code; //0 - 成功 , 1 - 失败
+    uint16_t ret_code; //0 - 成功 , 1 - 失败
+    uint8_t user_id;//用户id（可选）ver为2的时候
 }APDelPasswordResp_t;
 @interface APDelPasswordResp : APBLEParameter
 @property (nonatomic, assign) uint16_t ID;//要删除的密码 id
-@property (nonatomic, assign) uint32_t ret_code; //0 - 成功 , 1 - 失败
+@property (nonatomic, assign) uint16_t ret_code; //0 - 成功 , 1 - 失败
+@property (nonatomic, assign) uint8_t user_id;
 @end
 
 typedef struct {
@@ -256,6 +327,8 @@ typedef struct {
     uint16_t key_id;//钥匙编号,也就每种开锁方式的唯一编号
     uint8_t unlock_type; //开锁方式
     uint8_t hijack_flag; //劫持标记。 0 未劫持， 1 已劫持， 2 无法判断。
+    //string unlocker_alias; //开锁者备注，若不存在，填一字节'\0';
+    //uint8_t user_id; //用户ID（可选）ver为2的时候。
 }APUnlockEventResp_t;
 @interface APUnlockEventResp : APBLEParameter
 @property (nonatomic, assign) uint32_t local_timestamp;
@@ -263,6 +336,8 @@ typedef struct {
 @property (nonatomic, assign) uint16_t key_id;//钥匙编号,也就每种开锁方式的唯一编号
 @property (nonatomic, assign) uint8_t unlock_type; //开锁方式
 @property (nonatomic, assign) uint8_t hijack_flag; //劫持标记。 0 未劫持， 1 已劫持， 2 无法判断。
+@property (nonatomic, copy) NSString *unlocker_alias;
+@property (nonatomic, assign) uint8_t user_id;
 @end
 
 typedef struct {
@@ -320,12 +395,14 @@ typedef struct {
     uint32_t event_id; //事件唯 ID
     uint8_t type;//0=指纹开锁、1=普通密码开锁、2=动态密码开锁、3=临时密码开锁、4=感应 卡开锁、5=电子钥匙开锁、6=虹膜开锁、7、人脸开锁、8=未知方式、9 机械钥匙，10=远程开 锁, 11=周期性密码开锁,12=管理员密码开锁，13=门内开锁，14=旋钮开锁
     uint16_t key_id; //钥匙编号
+    uint8_t user_id; //用户ID（可选）ver为2的时候。
 }APAddPwdEventResp_t;
 @interface APAddPwdEventResp : APBLEParameter
 @property (nonatomic, assign) uint32_t local_timestamp;
 @property (nonatomic, assign) uint32_t event_id; //事件唯 ID
 @property (nonatomic, assign) uint8_t type;
 @property (nonatomic, assign) uint16_t key_id; //钥匙编号
+@property (nonatomic, assign) uint8_t user_id;
 @end
 
 typedef struct {
@@ -334,12 +411,14 @@ typedef struct {
     uint16_t key_id; //钥匙编号
     uint8_t type;//0=指纹开锁、1=普通密码开锁、2=动态密码开锁、3=临时密码开锁、4=感应 卡开锁、5=电子钥匙开锁、6=虹膜开锁、7、人脸开锁、8=未知方式、9 机械钥匙，10=远程开
     //锁,11=周期性密码开锁, 12=管理员密码开锁，13=门内开锁，14=旋钮开锁
+    uint8_t user_id;//用户id（可选）ver为2的时候
 }APDelPwdEventResp_t;
 @interface APDelPwdEventResp : APBLEParameter
 @property (nonatomic, assign) uint32_t local_timestamp;
 @property (nonatomic, assign) uint32_t event_id; //事件唯 ID
 @property (nonatomic, assign) uint16_t key_id;
 @property (nonatomic, assign) uint8_t type;
+@property (nonatomic, assign) uint8_t user_id;
 @end
 
 typedef struct {
@@ -888,6 +967,53 @@ typedef struct {
 @property (nonatomic, assign) uint16_t whitelist_id;
 @property (nonatomic, assign) uint8_t type;
 +(NSArray<APWhitelistResp *> *)listWithData:(NSData *)data;
+@end
+
+typedef NS_OPTIONS(uint32_t, APBLEStatusSyncFlag) {
+    APBLEStatusSyncFlagOnOff       = 0x00000001, ///< 开关状态变化
+    APBLEStatusSyncFlagBattery     = 0x00000002, ///< 电量状态变化
+    APBLEStatusSyncFlagAdminStatus = 0x00000004, ///< 管理员状态变化
+};
+// 上报设备状态同步通知(0x9093)
+typedef struct {
+    uint32_t sync_flag;
+} APStatusSyncNotifyResp_t;
+@interface APStatusSyncNotifyResp : APBLEParameter
+@property (nonatomic, assign) APBLEStatusSyncFlag syncFlag;
+@end
+
+
+//  删除用户或用户密码(0x8013)
+typedef struct {
+    uint8_t type;//- `0x00`: 删除成员; `0x01`: 密码; `0x02`: 门卡; `0x03`: 指纹; `0x04`: 人脸; `0x05`: 掌纹; `0x06`: 指静脉;`0x07`: 人脸白名单； `0xFF`: 删除所有普通用户的解锁方式（不含人脸白名单）
+    uint8_t step;//预留，默认0x00
+    uint8_t role;//管理员标记，- `0x00`: 普通成员<br>- `0x01`: 管理员
+    uint8_t user_id;//用户id，0x01 ~ 0xff（即 1~255），没有0的用户。
+    uint8_t key_id;//密钥id，删除用户默认0xff，若非0xff，那么就说明需要删除特定的密钥，作为0x8016的完整版，兼容key_id场景。
+    uint8_t del_wht;//删除范围，- `0x00`: 删除该成员下的所有解锁方式<br>- `0x01`: 删除该成员的某一个具体解锁方式
+} APDelUserOrUserPswReq_t;
+@interface APDelUserOrUserPswReq : APBLEParameter
+@property (nonatomic, assign) uint8_t type;
+@property (nonatomic, assign) uint8_t step;
+@property (nonatomic, assign) uint8_t role;
+@property (nonatomic, assign) uint8_t user_id;
+@property (nonatomic, assign) uint8_t key_id;
+@property (nonatomic, assign) uint8_t del_wht;
+@end
+
+
+typedef struct {
+    uint8_t ret_code; // - `0xFF`: 删除成功<br>- `0x00`: 删除失败<br>- `0x01`: 硬件编号不存在<br>- `0x02`: 该编号不能删除（如管理员权限限制）
+    uint8_t role;//管理员标记，- `0x00`: 普通成员<br>- `0x01`: 管理员
+    uint8_t user_id;//要删除的用户id，回显下发原值
+    uint8_t key_id;//要删除的key_id，回显下发原值
+    uint8_t del_wht;//删除范围，回显下发原值
+}APDelUserOrUserPswResp_t;
+@interface APDelUserOrUserPswResp : APBLEParameter
+@property (nonatomic, assign) uint8_t ret_code;
+@property (nonatomic, assign) uint8_t role;
+@property (nonatomic, assign) uint8_t user_id;
+@property (nonatomic, assign) uint8_t del_wht;
 @end
 
 #pragma pack()

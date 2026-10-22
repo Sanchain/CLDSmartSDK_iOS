@@ -98,6 +98,9 @@ typedef NS_ENUM(NSInteger, APBLEDeviceMatchType) {
     APBLEDeviceMatchTypeC630D = 76,
     APBLEDeviceMatchTypeDoorBellDuo = 81,
     APBLEDeviceMatchTypeB312US3L = 84, //B312US三语版    
+    APBLEDeviceMatchTypeTF100U = 97, // BenQ P2
+    APBLEDeviceMatchTypeTF100 = 98, // BenQ P2a
+    APBLEDeviceMatchTypeTS100 = 106, // BenQ P1 带视频
     APBLEDeviceMatchTypeD288 = 999999,
 };
 
@@ -114,6 +117,7 @@ typedef NS_ENUM(NSUInteger, APBLEVLinkCommandType) {
     APBLEVLinkCommandType_RemoteUnlock = 0x8001, ///< 远程开锁
     APBLEVLinkCommandType_RemoteLock = 0x8002, ///< 远程关锁
     APBLEVLinkCommandType_RandomCode = 0x8003, ///< 随机码
+    APBLEVLinkCommandType_DelUserOrUserPsw = 0x8013, ///< 删除用户或用户密码
     APBLEVLinkCommandType_PasswordAdd = 0x8015, ///< 添加密码
     APBLEVLinkCommandType_PasswordDelete = 0x8016, ///< 删除密码
     APBLEVLinkCommandType_PasswordList = 0x8017, ///< 密码列表
@@ -209,6 +213,7 @@ typedef NS_ENUM(NSUInteger, APBLEVLinkCommandType) {
     APBLEVLinkCommandType_CancelAddFaceWhitelist = 0x9090, /// 取消添加人脸白名单
     APBLEVLinkCommandType_FaceWhitelistProgressNotify = 0x9091, ///人脸白名单添加结果上报
     APBLEVLinkCommandType_SyncFaceWhitelist = 0x9092, /// 同步人脸白名单
+    APBLEVLinkCommandType_StatusSyncNotify = 0x9093, /// 上报设备状态同步通知
 };
 
 
